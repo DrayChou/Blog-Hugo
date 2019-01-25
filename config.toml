@@ -1,4 +1,4 @@
-baseURL = "https://idc.wf"
+baseURL = "https://draychou.github.io/Blog-Hugo/"
 title = "Dray's Home"
 # for smart copyright line, leave this blank and check [params.copyright]
 copyright = ""
