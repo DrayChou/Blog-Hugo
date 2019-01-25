@@ -13,18 +13,18 @@ Dependencies Resolved ==========================================================
 - mcrypt 确认你的linux没有安装mcrypt库，如果已安装，跳过安装步骤 [root@test-206 ~]# yum list installed|grep mcrypt libmcrypt.x86_64 2.5.8-4.el5.centos installed libmcrypt-devel.x86_64 2.5.8-4.el5.centos installed mcrypt.x86_64 2.6.8-1.el5 installed  以上显示已经安装过，若没有，则按以下两种方式安装
 yum命令懒人安装 yum install libmcrypt libmcrypt-devel mcrypt mhash  执行后会显示即将安装的相关库，你可以根据你的linux限定x86_64或者i386，如yum install libmcrypt.x86_64（如果yum命令无法连接仓库，请检查你的/etc/yum.repos.d/里的文件正确性，以及你的/etc/host是不是可达里面的域名）
 Dependencies Resolved ================================================================================ Package Arch Version Repository Size ================================================================================ Installing: libmcrypt i386 2.5.7-5.el5 epel 124 k libmcrypt x86_64 2.5.8-4.el5.centos extras 105 k libmcrypt-devel i386 2.'>
-<meta property='og:url' content='https://idc.wf/docs/centos-php-mcrypt/'>
+<meta property='og:url' content='https://draychou.github.io/Blog-Hugo/docs/centos-php-mcrypt/'>
 <meta property='og:site_name' content='Dray&#39;s Home'>
 <meta property='og:type' content='article'><meta property='article:section' content='docs'><meta name='twitter:card' content='summary'>
 
 <meta name="generator" content="Hugo 0.53" />
 
   <title> • Dray&#39;s Home</title>
-  <link rel='canonical' href='https://idc.wf/docs/centos-php-mcrypt/'>
+  <link rel='canonical' href='https://draychou.github.io/Blog-Hugo/docs/centos-php-mcrypt/'>
   
   
-  <link rel='icon' href='/favicon.ico'>
-<link rel='stylesheet' href='/assets/css/main.4a10984a.css'><link rel='stylesheet' href='/css/custom.css'><style>
+  <link rel='icon' href='/Blog-Hugo/favicon.ico'>
+<link rel='stylesheet' href='/Blog-Hugo/assets/css/main.4a10984a.css'><link rel='stylesheet' href='/Blog-Hugo/css/custom.css'><style>
 :root{--color-accent:dodgerblue;}
 </style>
 
@@ -40,8 +40,8 @@ Dependencies Resolved ==========================================================
   <header>
     
     <div class='logo'>
-      <a href='/'>
-        <img src='/images/logo.png'>
+      <a href='/Blog-Hugo/'>
+        <img src='/Blog-Hugo/images/logo.png'>
       </a>
     </div>
     
@@ -59,7 +59,7 @@ Dependencies Resolved ==========================================================
     <h4 class='title widget-title'>Search</h4>
   </header>
 
-  <form action='/search' id='search-form' class='search-form'>
+  <form action='/Blog-Hugo/search' id='search-form' class='search-form'>
     <label>
       <span class='screen-reader-text'></span>
       <input id='search-term' class='search-term' type='search' name='q' placeholder='&hellip;'>
@@ -69,11 +69,11 @@ Dependencies Resolved ==========================================================
 <section class='widget widget-sidebar_menu sep-after'><nav id='sidebar-menu' class='menu sidebar-menu' aria-label='侧边菜单'>
     <div class='container'>
       <ul><li class='item'>
-  <a href='/'>Home</a></li><li class='item'>
-  <a href='/docs/'>Docs</a></li><li class='item'>
-  <a href='/menus/'>About</a></li><li class='item'>
-  <a href='/categories/'>categories</a></li><li class='item'>
-  <a href='/tags/'>Tags</a></li></ul>
+  <a href='/Blog-Hugo/'>Home</a></li><li class='item'>
+  <a href='/Blog-Hugo/docs/'>Docs</a></li><li class='item'>
+  <a href='/Blog-Hugo/menus/'>About</a></li><li class='item'>
+  <a href='/Blog-Hugo/categories/'>categories</a></li><li class='item'>
+  <a href='/Blog-Hugo/tags/'>Tags</a></li></ul>
     </div>
   </nav>
 
@@ -105,7 +105,7 @@ Dependencies Resolved ==========================================================
     <style>.widget-breadcrumbs li:after{content:'\2f '}</style>
   <section class='widget widget-breadcrumbs sep-after'>
     <nav id='breadcrumbs'>
-      <ol><li><a href='/'>Home</a></li><li><a href='/docs/'>Docs</a></li><li><span></span></li></ol>
+      <ol><li><a href='/Blog-Hugo/'>Home</a></li><li><a href='/Blog-Hugo/docs/'>Docs</a></li><li><span></span></li></ol>
     </nav>
   </section></div>
       </div>
@@ -338,7 +338,7 @@ php-config: /usr/bin/php-config /usr/share/man/man1/php-config.1.gz
 
 <nav class='entry-nav'>
   <div class='container'><div class='prev-entry sep-before'>
-      <a href='/docs/composer-tools/'>
+      <a href='/Blog-Hugo/docs/composer-tools/'>
         <span aria-hidden='true'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
   
   <line x1="20" y1="12" x2="4" y2="12"/>
@@ -348,7 +348,7 @@ php-config: /usr/bin/php-config /usr/share/man/man1/php-config.1.gz
  上一个</span>
         <span class='screen-reader-text'>上一篇文章: </span></a>
     </div><div class='next-entry sep-before'>
-      <a href='/docs/centos-delete-php/'>
+      <a href='/Blog-Hugo/docs/centos-delete-php/'>
         <span class='screen-reader-text'>下一篇文章: </span><span aria-hidden='true'>下一个 <svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
   
   <line x1="4" y1="12" x2="20" y2="12"/>
@@ -394,9 +394,9 @@ php-config: /usr/bin/php-config /usr/share/man/man1/php-config.1.gz
       </footer>
 
     </div>
-  </div><script>window.__public_path__='\/assets\/js\/'</script>
+  </div><script>window.__public_path__='\/Blog-Hugo\/assets\/js\/'</script>
 
-<script src='/assets/js/main.fae8ed32.js'></script><script src='/js/custom.js'></script>
+<script src='/Blog-Hugo/assets/js/main.fae8ed32.js'></script><script src='/Blog-Hugo/js/custom.js'></script>
 
 </body>
 

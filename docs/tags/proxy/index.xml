@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>proxy on Dray&#39;s Home</title>
-    <link>https://idc.wf/tags/proxy/</link>
+    <link>https://draychou.github.io/Blog-Hugo/tags/proxy/</link>
     <description>Recent content in proxy on Dray&#39;s Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Tue, 26 Apr 2011 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://idc.wf/tags/proxy/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://draychou.github.io/Blog-Hugo/tags/proxy/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Proxy Switchy! 可以打开https，打不开http的解决方法</title>
-      <link>https://idc.wf/docs/proxy-switchy-can-open-the-https-not-open-http-solution/</link>
+      <link>https://draychou.github.io/Blog-Hugo/docs/proxy-switchy-can-open-the-https-not-open-http-solution/</link>
       <pubDate>Tue, 26 Apr 2011 00:00:00 +0000</pubDate>
       
-      <guid>https://idc.wf/docs/proxy-switchy-can-open-the-https-not-open-http-solution/</guid>
+      <guid>https://draychou.github.io/Blog-Hugo/docs/proxy-switchy-can-open-the-https-not-open-http-solution/</guid>
       <description>之前的我Proxy Switchy!代理规则开启的时候，只能打开https的页面，比如https://www.google.com，但是打不开http的页面，比如：http://www.google.com。
 这让我很困惑！
 后来查了一些资料，自己做了一些测试发现了！
@@ -26,10 +26,10 @@
     
     <item>
       <title>php检测用户是否使用代理上网的方法</title>
-      <link>https://idc.wf/docs/php-jian-ce-yong-hu-shi-fou-shi-yong-dai-li-shang-wang-de-fang-fa/</link>
+      <link>https://draychou.github.io/Blog-Hugo/docs/php-jian-ce-yong-hu-shi-fou-shi-yong-dai-li-shang-wang-de-fang-fa/</link>
       <pubDate>Fri, 28 Jan 2011 00:00:00 +0000</pubDate>
       
-      <guid>https://idc.wf/docs/php-jian-ce-yong-hu-shi-fou-shi-yong-dai-li-shang-wang-de-fang-fa/</guid>
+      <guid>https://draychou.github.io/Blog-Hugo/docs/php-jian-ce-yong-hu-shi-fou-shi-yong-dai-li-shang-wang-de-fang-fa/</guid>
       <description>获取用户IP地址的三个属性的区别(HTTP_X_FORWARDED_FOR,HTTP_VIA,REMOTE_ADDR)
 一、没有使用代理服务器的情况： 实例：
  REMOTE_ADDR = 158.41.30.94 HTTP_VIA = 没数值或不显示 HTTP_X_FORWARDED_FOR = 没数值或不显示  二、使用透明代理服务器的情况：Transparent Proxies 下例中，实际IP=158.41.30.94，使用代理服务器IP=210.51.46.227

@@ -15,18 +15,18 @@ sudo apt-get install bison ed gawk gcc libc6-dev make python-setuptools python-d
 $ tar -C /usr/local -xzf go$VERSION.$OS-$ARCH.tar.gz  我一般是放在 /usr/local/go 目录下
 添加环境变量 #go config export GOROOT=/usr/local/go export GOARCH=amd64 export GOOS=linux export GOPATH=/srv/go_root export GOBIN=$GOROOT/bin export GOTOOLS=$GOROOT/pkg/tool/ export PATH=$PATH:$GOBIN:$GOTOOLS:$GOPATH/bin  其中 /usr/local/go 为 go 安装目录， /srv/go_root 为代码存放目录 把这些添加到 .bashrc 文件中，然后执行 source ~/.bashrc 刷新配置
 Supervisor 有时候需要 go 持续运行不间断，但是用 crontab 并不方便，自己编写脚本也太麻烦，于是就可以用 Supervisor 了。'>
-<meta property='og:url' content='https://idc.wf/docs/ubuntu-golang/'>
+<meta property='og:url' content='https://draychou.github.io/Blog-Hugo/docs/ubuntu-golang/'>
 <meta property='og:site_name' content='Dray&#39;s Home'>
 <meta property='og:type' content='article'><meta property='article:section' content='docs'><meta property='article:tag' content='golang'><meta property='article:published_time' content='2013-11-30T00:00:00Z'/><meta property='article:modified_time' content='2013-11-30T00:00:00Z'/><meta name='twitter:card' content='summary'>
 
 <meta name="generator" content="Hugo 0.53" />
 
   <title>ubuntu 下面配置 go 运行环境 • Dray&#39;s Home</title>
-  <link rel='canonical' href='https://idc.wf/docs/ubuntu-golang/'>
+  <link rel='canonical' href='https://draychou.github.io/Blog-Hugo/docs/ubuntu-golang/'>
   
   
-  <link rel='icon' href='/favicon.ico'>
-<link rel='stylesheet' href='/assets/css/main.4a10984a.css'><link rel='stylesheet' href='/css/custom.css'><style>
+  <link rel='icon' href='/Blog-Hugo/favicon.ico'>
+<link rel='stylesheet' href='/Blog-Hugo/assets/css/main.4a10984a.css'><link rel='stylesheet' href='/Blog-Hugo/css/custom.css'><style>
 :root{--color-accent:dodgerblue;}
 </style>
 
@@ -42,8 +42,8 @@ Supervisor 有时候需要 go 持续运行不间断，但是用 crontab 并不�
   <header>
     
     <div class='logo'>
-      <a href='/'>
-        <img src='/images/logo.png'>
+      <a href='/Blog-Hugo/'>
+        <img src='/Blog-Hugo/images/logo.png'>
       </a>
     </div>
     
@@ -61,7 +61,7 @@ Supervisor 有时候需要 go 持续运行不间断，但是用 crontab 并不�
     <h4 class='title widget-title'>Search</h4>
   </header>
 
-  <form action='/search' id='search-form' class='search-form'>
+  <form action='/Blog-Hugo/search' id='search-form' class='search-form'>
     <label>
       <span class='screen-reader-text'></span>
       <input id='search-term' class='search-term' type='search' name='q' placeholder='&hellip;'>
@@ -71,11 +71,11 @@ Supervisor 有时候需要 go 持续运行不间断，但是用 crontab 并不�
 <section class='widget widget-sidebar_menu sep-after'><nav id='sidebar-menu' class='menu sidebar-menu' aria-label='侧边菜单'>
     <div class='container'>
       <ul><li class='item'>
-  <a href='/'>Home</a></li><li class='item'>
-  <a href='/docs/'>Docs</a></li><li class='item'>
-  <a href='/menus/'>About</a></li><li class='item'>
-  <a href='/categories/'>categories</a></li><li class='item'>
-  <a href='/tags/'>Tags</a></li></ul>
+  <a href='/Blog-Hugo/'>Home</a></li><li class='item'>
+  <a href='/Blog-Hugo/docs/'>Docs</a></li><li class='item'>
+  <a href='/Blog-Hugo/menus/'>About</a></li><li class='item'>
+  <a href='/Blog-Hugo/categories/'>categories</a></li><li class='item'>
+  <a href='/Blog-Hugo/tags/'>Tags</a></li></ul>
     </div>
   </nav>
 
@@ -107,7 +107,7 @@ Supervisor 有时候需要 go 持续运行不间断，但是用 crontab 并不�
     <style>.widget-breadcrumbs li:after{content:'\2f '}</style>
   <section class='widget widget-breadcrumbs sep-after'>
     <nav id='breadcrumbs'>
-      <ol><li><a href='/'>Home</a></li><li><a href='/docs/'>Docs</a></li><li><span>ubuntu 下面配置 go 运行环境</span></li></ol>
+      <ol><li><a href='/Blog-Hugo/'>Home</a></li><li><a href='/Blog-Hugo/docs/'>Docs</a></li><li><span>ubuntu 下面配置 go 运行环境</span></li></ol>
     </nav>
   </section></div>
       </div>
@@ -338,14 +338,14 @@ supervisorctl restart all
   <path d="M22,19a2,2,0,0,1-2,2H4a2,2,0,0,1-2-2V5A2,2,0,0,1,4,3H9l2,3h9a2,2,0,0,1,2,2Z"/>
   
 </svg>
-<span class='screen-reader-text'>分类: </span><a class='category' href='/categories/linux/'>linux</a></div>
+<span class='screen-reader-text'>分类: </span><a class='category' href='/Blog-Hugo/categories/linux/'>linux</a></div>
 <div class='tags'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
   
   <path d="M20.59,13.41l-7.17,7.17a2,2,0,0,1-2.83,0L2,12V2H12l8.59,8.59A2,2,0,0,1,20.59,13.41Z"/>
   <line x1="7" y1="7" x2="7" y2="7"/>
   
 </svg>
-<span class='screen-reader-text'>标签: </span><a class='tag' href='/tags/golang/'>golang</a></div>
+<span class='screen-reader-text'>标签: </span><a class='tag' href='/Blog-Hugo/tags/golang/'>golang</a></div>
 
   </div>
 </footer>
@@ -355,7 +355,7 @@ supervisorctl restart all
 
 <nav class='entry-nav'>
   <div class='container'><div class='prev-entry sep-before'>
-      <a href='/docs/xampp-redis-mongodb-mariadb/'>
+      <a href='/Blog-Hugo/docs/xampp-redis-mongodb-mariadb/'>
         <span aria-hidden='true'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
   
   <line x1="20" y1="12" x2="4" y2="12"/>
@@ -365,7 +365,7 @@ supervisorctl restart all
  上一个</span>
         <span class='screen-reader-text'>上一篇文章: </span>在 Xampp 上配置 redis,mongodb,mariadb</a>
     </div><div class='next-entry sep-before'>
-      <a href='/docs/open-your-eyes/'>
+      <a href='/Blog-Hugo/docs/open-your-eyes/'>
         <span class='screen-reader-text'>下一篇文章: </span>开眼看世界之路<span aria-hidden='true'>下一个 <svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
   
   <line x1="4" y1="12" x2="20" y2="12"/>
@@ -411,9 +411,9 @@ supervisorctl restart all
       </footer>
 
     </div>
-  </div><script>window.__public_path__='\/assets\/js\/'</script>
+  </div><script>window.__public_path__='\/Blog-Hugo\/assets\/js\/'</script>
 
-<script src='/assets/js/main.fae8ed32.js'></script><script src='/js/custom.js'></script>
+<script src='/Blog-Hugo/assets/js/main.fae8ed32.js'></script><script src='/Blog-Hugo/js/custom.js'></script>
 
 </body>
 

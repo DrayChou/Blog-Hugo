@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>upload on Dray&#39;s Home</title>
-    <link>https://idc.wf/tags/upload/</link>
+    <link>https://draychou.github.io/Blog-Hugo/tags/upload/</link>
     <description>Recent content in upload on Dray&#39;s Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Fri, 17 Feb 2012 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://idc.wf/tags/upload/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://draychou.github.io/Blog-Hugo/tags/upload/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>上传文件夹</title>
-      <link>https://idc.wf/docs/upload-folders/</link>
+      <link>https://draychou.github.io/Blog-Hugo/docs/upload-folders/</link>
       <pubDate>Fri, 17 Feb 2012 00:00:00 +0000</pubDate>
       
-      <guid>https://idc.wf/docs/upload-folders/</guid>
+      <guid>https://draychou.github.io/Blog-Hugo/docs/upload-folders/</guid>
       <description>最近公司的产品要用到上传目录的功能，所以查了一些资料，现记录下来。
 现有的方案：
 http://www.cnblogs.com/xproer/archive/2010/10/24/1859895.html 国内的收费版本，支持大部分微软的脚本语言，实用 Activex 控件实现 http://slickupload.com/ 国外的，社区版免费，只支持最新版的浏览器，应该是html5的方式实现的  资料：

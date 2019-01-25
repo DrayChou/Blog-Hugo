@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>api on Dray&#39;s Home</title>
-    <link>https://idc.wf/tags/api/</link>
+    <link>https://draychou.github.io/Blog-Hugo/tags/api/</link>
     <description>Recent content in api on Dray&#39;s Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Fri, 11 Apr 2014 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://idc.wf/tags/api/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://draychou.github.io/Blog-Hugo/tags/api/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>关于通过 PushBullet API 推送信息的设想</title>
-      <link>https://idc.wf/docs/pushbullet-api/</link>
+      <link>https://draychou.github.io/Blog-Hugo/docs/pushbullet-api/</link>
       <pubDate>Fri, 11 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://idc.wf/docs/pushbullet-api/</guid>
+      <guid>https://draychou.github.io/Blog-Hugo/docs/pushbullet-api/</guid>
       <description> 坑 我不喜欢 twitter 官方客户端 ，感觉官方客户端里 Timeline 乱乱的，平常都是使用 twidere 来用的。 但是 twidere 目前不支持推送，要实现推送必须有自己的服务器，自己的 google 注册应用，略麻烦了点，于是想到了 PushBullet ,如果她有 API 多好，查了下，果然有，然后一个“坑”出现了。
 PushBullet PushBullet API 的官方介绍地址在这里 戳我 ,她的 API 太简单了，简直是我见过的最简单的 API 了。通篇上下只有2个接口，简单看下文档就会了，现说下注意事项。
 api key  这个每个注册帐号都有一个，不区分开发账户，也没有开发账户，查看地址在：登录后查看 查询的时候需要调用 http 默认的 BasicAuth 认证方式，用户名就是 api key ，密码为空。  然后 然后你就可以不停的推送了，如果要推送给别人，也需要先得到对方的 api key ，至于推送给好友， 可以通过 get 的方式得到对方的 ID。

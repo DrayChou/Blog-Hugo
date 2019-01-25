@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>sql on Dray&#39;s Home</title>
-    <link>https://idc.wf/tags/sql/</link>
+    <link>https://draychou.github.io/Blog-Hugo/tags/sql/</link>
     <description>Recent content in sql on Dray&#39;s Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Thu, 20 Jan 2011 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://idc.wf/tags/sql/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://draychou.github.io/Blog-Hugo/tags/sql/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>sql DISTINCT去掉重复的数据统计方法</title>
-      <link>https://idc.wf/docs/sql-distinct-qu-diao-zhong-fu-de-shu-ju-tong-ji-fang-fa/</link>
+      <link>https://draychou.github.io/Blog-Hugo/docs/sql-distinct-qu-diao-zhong-fu-de-shu-ju-tong-ji-fang-fa/</link>
       <pubDate>Thu, 20 Jan 2011 00:00:00 +0000</pubDate>
       
-      <guid>https://idc.wf/docs/sql-distinct-qu-diao-zhong-fu-de-shu-ju-tong-ji-fang-fa/</guid>
+      <guid>https://draychou.github.io/Blog-Hugo/docs/sql-distinct-qu-diao-zhong-fu-de-shu-ju-tong-ji-fang-fa/</guid>
       <description>sql DISTINCT去掉重复的数据统计方法(2009-01-13 15:05:43)转载 标签：sqldistinct杂谈 分类：sql SELECT指令让我们能够读取表格中一个或数个栏位的所有资料。这将把所有的资料都抓出，无论资料值有无重复。在资料处理中，我们会经常碰到需要找出表格内的不同资料值的情况。换句话说，我们需要知道这个表格/栏位内有哪些不同的值，而每个值出现的次数并不重要。这要如何达成呢？在sql中，这是很容易做到的。我们只要在SELECT后加上一个DISTINCT就可以了。 DISTINCT的语法如下： SELECT DISTINCT &amp;ldquo;栏位名&amp;rdquo; FROM &amp;ldquo;表格名&amp;rdquo; 举例来说，若要在以下的表格，Store_Information，找出所有不同的店名时，Store_Information 表格 store_name Sales Date 1 $1500 Jan-05-1999 2 $250 Jan-07-1999 1 $300 Jan-08-1999 3 $700 Jan-08-1999 我們就鍵入，
 SELECT DISTINCT store_name FROM Store_Information  結果: 1 2 3 DISTINCT 关键字可从 SELECT 语句的结果中除去重复的行。如果没有指定 DISTINCT，那么将返回所有行，包括重复的行。
 select count(distinct t.destaddr) from nbyd_send t where t.input_time &amp;gt; to_date(&#39;2007-2-1&#39;,&#39;yyyy-mm-dd&#39;) and t.input_time &amp;lt; to_date(&#39;2007-3-1&#39;,&#39;yyyy-mm-dd&#39;)  可以统计出一个月中的用户数量。 关于如何快速得知里面每一个号码重复的个数问题的解答: 利用分组函数的sql语句

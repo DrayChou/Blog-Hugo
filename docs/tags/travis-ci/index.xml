@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>travis-ci on Dray&#39;s Home</title>
-    <link>https://idc.wf/tags/travis-ci/</link>
+    <link>https://draychou.github.io/Blog-Hugo/tags/travis-ci/</link>
     <description>Recent content in travis-ci on Dray&#39;s Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Fri, 13 May 2016 20:05:00 +0000</lastBuildDate>
     
-	<atom:link href="https://idc.wf/tags/travis-ci/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://draychou.github.io/Blog-Hugo/tags/travis-ci/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>使用Travis CI自动部署Hexo</title>
-      <link>https://idc.wf/docs/travis-ci/</link>
+      <link>https://draychou.github.io/Blog-Hugo/docs/travis-ci/</link>
       <pubDate>Fri, 13 May 2016 20:05:00 +0000</pubDate>
       
-      <guid>https://idc.wf/docs/travis-ci/</guid>
+      <guid>https://draychou.github.io/Blog-Hugo/docs/travis-ci/</guid>
       <description>前言 之前换过很多的静态博客系统，但是每个系统都需要本地做一定的部署，这点很麻烦。 Gor 倒是有可执行文件，但是本地部署的时候还是需要合并提交代码，还是略不爽。 今天在查 CI 系统的时候发现了 Travis CI ,于是，一切都很开心了。
 关于 Travis CI 这是一个通过脚本来进行自动部署的系统，本身与 Github 高度集成，目前对于公开的项目免费支持。
 开启travis-ci 首先去 Travis CI 官网，点击右上角Sign in with GitHub通过github授权登录。然后去到个人信息页面，开启需要使用 travis 的项目，在我这里就是 DrayChou/Blog-Hexo 。

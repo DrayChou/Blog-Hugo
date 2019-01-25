@@ -2,47 +2,47 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Pages on Dray&#39;s Home</title>
-    <link>https://idc.wf/page/</link>
+    <link>https://draychou.github.io/Blog-Hugo/page/</link>
     <description>Recent content in Pages on Dray&#39;s Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Wed, 30 Dec 2015 23:35:29 +0000</lastBuildDate>
     
-	<atom:link href="https://idc.wf/page/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://draychou.github.io/Blog-Hugo/page/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>About</title>
-      <link>https://idc.wf/menus/</link>
+      <link>https://draychou.github.io/Blog-Hugo/menus/</link>
       <pubDate>Wed, 30 Dec 2015 23:35:29 +0000</pubDate>
       
-      <guid>https://idc.wf/menus/</guid>
+      <guid>https://draychou.github.io/Blog-Hugo/menus/</guid>
       <description> 人生乐趣  看书 看 RSS 看人 看世界  </description>
     </item>
     
     <item>
       <title>categories</title>
-      <link>https://idc.wf/categories/</link>
+      <link>https://draychou.github.io/Blog-Hugo/categories/</link>
       <pubDate>Wed, 21 Jun 2017 13:30:50 +0000</pubDate>
       
-      <guid>https://idc.wf/categories/</guid>
+      <guid>https://draychou.github.io/Blog-Hugo/categories/</guid>
       <description></description>
     </item>
     
     <item>
       <title>tags</title>
-      <link>https://idc.wf/tags/</link>
+      <link>https://draychou.github.io/Blog-Hugo/tags/</link>
       <pubDate>Wed, 30 Dec 2015 23:35:35 +0000</pubDate>
       
-      <guid>https://idc.wf/tags/</guid>
+      <guid>https://draychou.github.io/Blog-Hugo/tags/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Search</title>
-      <link>https://idc.wf/search/</link>
+      <link>https://draychou.github.io/Blog-Hugo/search/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://idc.wf/search/</guid>
+      <guid>https://draychou.github.io/Blog-Hugo/search/</guid>
       <description></description>
     </item>
     

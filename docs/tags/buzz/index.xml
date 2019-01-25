@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>buzz on Dray&#39;s Home</title>
-    <link>https://idc.wf/tags/buzz/</link>
+    <link>https://draychou.github.io/Blog-Hugo/tags/buzz/</link>
     <description>Recent content in buzz on Dray&#39;s Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Sat, 12 Mar 2011 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://idc.wf/tags/buzz/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://draychou.github.io/Blog-Hugo/tags/buzz/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Google Buzz实时同步Twitter的方法</title>
-      <link>https://idc.wf/docs/google-buzz-real-time-synchronization-method-of-twitter/</link>
+      <link>https://draychou.github.io/Blog-Hugo/docs/google-buzz-real-time-synchronization-method-of-twitter/</link>
       <pubDate>Sat, 12 Mar 2011 00:00:00 +0000</pubDate>
       
-      <guid>https://idc.wf/docs/google-buzz-real-time-synchronization-method-of-twitter/</guid>
+      <guid>https://draychou.github.io/Blog-Hugo/docs/google-buzz-real-time-synchronization-method-of-twitter/</guid>
       <description> 相比Twitter而说，Buzz目前还可以从国内访问，因此昨天我那篇文章的后面就有人咨询，是否能实现Buzz的微博同步到Twitter上，经过我的研究发现，这是可以实现的，而且同步几乎是实时的。
 这主要归功于PubSubHubBub，可以实现RSS Feed的实时更新，而Google Buzz的RSS Feed和Google Reader一样，从一开始就支持PubSubHubBub，这使得Buzz的Feed变成实时的Feed，而恰好Google的另一个产品FeedBurner也支持PubSubHubBub的Feed，因此就可以通过这个来实现微博的实时同步。
 具体同步Google Buzz到Twitter的方法是：在个人Profile页面找到自己Buzz的Feed，通常使用IE或Firefox进入 https://www.google.com/profiles/me 后，会看到地址栏的RSS图标，点击后可看见RSS地址，这个地址格式类似：http://buzz.googleapis.com/feeds/112646999948608559077/public/posted 。

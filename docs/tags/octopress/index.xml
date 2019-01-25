@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Octopress on Dray&#39;s Home</title>
-    <link>https://idc.wf/tags/octopress/</link>
+    <link>https://draychou.github.io/Blog-Hugo/tags/octopress/</link>
     <description>Recent content in Octopress on Dray&#39;s Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Mon, 06 Feb 2012 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://idc.wf/tags/octopress/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://draychou.github.io/Blog-Hugo/tags/octopress/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Hello Octopress</title>
-      <link>https://idc.wf/docs/hello-octopress/</link>
+      <link>https://draychou.github.io/Blog-Hugo/docs/hello-octopress/</link>
       <pubDate>Mon, 06 Feb 2012 00:00:00 +0000</pubDate>
       
-      <guid>https://idc.wf/docs/hello-octopress/</guid>
+      <guid>https://draychou.github.io/Blog-Hugo/docs/hello-octopress/</guid>
       <description>Octopress 是一个很不错的 blog 程序，好处我就不说了，自己查文档，现在把我安装时碰到的问题记录下来，供后来的朋友参考。
 从wordpress导出数据 我参考前面诸位写出来的ruby代码：wordpress2Markdown
 这个ruby脚本的功能：

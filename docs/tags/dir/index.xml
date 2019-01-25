@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>dir on Dray&#39;s Home</title>
-    <link>https://idc.wf/tags/dir/</link>
+    <link>https://draychou.github.io/Blog-Hugo/tags/dir/</link>
     <description>Recent content in dir on Dray&#39;s Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Mon, 14 Feb 2011 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://idc.wf/tags/dir/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://draychou.github.io/Blog-Hugo/tags/dir/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>php列出目录下的所有文件</title>
-      <link>https://idc.wf/docs/php-directory-listing-all-the-files/</link>
+      <link>https://draychou.github.io/Blog-Hugo/docs/php-directory-listing-all-the-files/</link>
       <pubDate>Mon, 14 Feb 2011 00:00:00 +0000</pubDate>
       
-      <guid>https://idc.wf/docs/php-directory-listing-all-the-files/</guid>
+      <guid>https://draychou.github.io/Blog-Hugo/docs/php-directory-listing-all-the-files/</guid>
       <description>function myDir($dir = __file__) { // 定于需要列出的目录地址 //$dir = dirname(__file__); // 用 opendir() 打开目录，失败则中止程序 $handle = @opendir($dir) or die(&amp;quot;Cannot open &amp;quot; . $dir); echo &amp;quot;&amp;lt;b&amp;gt;Files in &amp;quot; . $dir . &amp;quot;:&amp;lt;/b&amp;gt;&amp;lt;br&amp;gt;&amp;quot;; // 用 readdir 读出文件列表 while ($file = readdir($handle)) { // 将 &amp;quot;.&amp;quot; 及 &amp;quot;..&amp;quot; 排除不显示 if ($file != &amp;quot;.&amp;quot; &amp;amp;&amp;amp; $file != &amp;quot;..&amp;quot;) { echo &amp;quot;$file&amp;lt;br&amp;gt;&amp;quot;; } } // 关闭目录读取 closedir($handle); }  </description>
     </item>
     

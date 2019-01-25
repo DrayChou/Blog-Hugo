@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>twitter on Dray&#39;s Home</title>
-    <link>https://idc.wf/tags/twitter/</link>
+    <link>https://draychou.github.io/Blog-Hugo/tags/twitter/</link>
     <description>Recent content in twitter on Dray&#39;s Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Mon, 28 Jul 2014 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://idc.wf/tags/twitter/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://draychou.github.io/Blog-Hugo/tags/twitter/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>P2P 微薄</title>
-      <link>https://idc.wf/docs/twister/</link>
+      <link>https://draychou.github.io/Blog-Hugo/docs/twister/</link>
       <pubDate>Mon, 28 Jul 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://idc.wf/docs/twister/</guid>
+      <guid>https://draychou.github.io/Blog-Hugo/docs/twister/</guid>
       <description>twister 是
 twister 本质上是一个不需要中心服务器的 twitter。 twister 不需要中心服务器，它使用基于比特币与 bt 下载的技术来构建一个 p2p 的网络，你的消息存放在这个 p2p 网络中，只要你在任何有互联网接入的地方，理论上都可以连入 twister 网络，使用全部功能。 twister 网络上没有任何管理员对你的言论进行审查与过滤！ 使用 twister 不需要翻墙。你的消息一经发表，无法删除！  所以，来愉快的玩耍吧。
 官方地址 官方wiki
@@ -25,10 +25,10 @@ twister 本质上是一个不需要中心服务器的 twitter。 twister 不需�
     
     <item>
       <title>关于通过 PushBullet API 推送信息的设想</title>
-      <link>https://idc.wf/docs/pushbullet-api/</link>
+      <link>https://draychou.github.io/Blog-Hugo/docs/pushbullet-api/</link>
       <pubDate>Fri, 11 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://idc.wf/docs/pushbullet-api/</guid>
+      <guid>https://draychou.github.io/Blog-Hugo/docs/pushbullet-api/</guid>
       <description> 坑 我不喜欢 twitter 官方客户端 ，感觉官方客户端里 Timeline 乱乱的，平常都是使用 twidere 来用的。 但是 twidere 目前不支持推送，要实现推送必须有自己的服务器，自己的 google 注册应用，略麻烦了点，于是想到了 PushBullet ,如果她有 API 多好，查了下，果然有，然后一个“坑”出现了。
 PushBullet PushBullet API 的官方介绍地址在这里 戳我 ,她的 API 太简单了，简直是我见过的最简单的 API 了。通篇上下只有2个接口，简单看下文档就会了，现说下注意事项。
 api key  这个每个注册帐号都有一个，不区分开发账户，也没有开发账户，查看地址在：登录后查看 查询的时候需要调用 http 默认的 BasicAuth 认证方式，用户名就是 api key ，密码为空。  然后 然后你就可以不停的推送了，如果要推送给别人，也需要先得到对方的 api key ，至于推送给好友， 可以通过 get 的方式得到对方的 ID。
@@ -37,19 +37,19 @@ GO  https://www.pushbullet.com/api http://stackoverflow.com/questions/11361431/a
     
     <item>
       <title>twitter官方的同步到facebook的服务：http://apps.facebook.com/twitter/</title>
-      <link>https://idc.wf/docs/synchronized-to-the-official-facebook-twitter-services-httpapps-facebook-comtwitter/</link>
+      <link>https://draychou.github.io/Blog-Hugo/docs/synchronized-to-the-official-facebook-twitter-services-httpapps-facebook-comtwitter/</link>
       <pubDate>Wed, 27 Apr 2011 00:00:00 +0000</pubDate>
       
-      <guid>https://idc.wf/docs/synchronized-to-the-official-facebook-twitter-services-httpapps-facebook-comtwitter/</guid>
+      <guid>https://draychou.github.io/Blog-Hugo/docs/synchronized-to-the-official-facebook-twitter-services-httpapps-facebook-comtwitter/</guid>
       <description>访问这个网站(需翻墙):http://apps.facebook.com/twitter/，按步骤来就可以了！</description>
     </item>
     
     <item>
       <title>共享google reader 内容到twitter,facebook</title>
-      <link>https://idc.wf/docs/shared-google-reader-content-to-twitter-facebook/</link>
+      <link>https://draychou.github.io/Blog-Hugo/docs/shared-google-reader-content-to-twitter-facebook/</link>
       <pubDate>Wed, 27 Apr 2011 00:00:00 +0000</pubDate>
       
-      <guid>https://idc.wf/docs/shared-google-reader-content-to-twitter-facebook/</guid>
+      <guid>https://draychou.github.io/Blog-Hugo/docs/shared-google-reader-content-to-twitter-facebook/</guid>
       <description>今天听人说 googlereader2twitter,遂google之,得到以下答案:
 1.Twitterfeed
 打开这个网站,注册或直接用OpenID的方式登录(google,yahoo,openid,wordpress&amp;hellip;),按教程(3步)走,就可以了,支持同步greafer到Facebook,Twitter,Statusnet,Hellotxt.
@@ -62,10 +62,10 @@ googlereader rss 地址:http://www.google.com/reader/shared/hnzksq 把后面的h
     
     <item>
       <title>2款 从 twitter 同步到 wordpress 的插件</title>
-      <link>https://idc.wf/docs/2-sync-from-the-twitter-plugin-wordpress/</link>
+      <link>https://draychou.github.io/Blog-Hugo/docs/2-sync-from-the-twitter-plugin-wordpress/</link>
       <pubDate>Fri, 28 Jan 2011 00:00:00 +0000</pubDate>
       
-      <guid>https://idc.wf/docs/2-sync-from-the-twitter-plugin-wordpress/</guid>
+      <guid>https://draychou.github.io/Blog-Hugo/docs/2-sync-from-the-twitter-plugin-wordpress/</guid>
       <description>Twitter Tools 此插件能让你的 Twitter 和 WordPress 完全连在一起，你可选择当在 WordPress 发布新文章时，同时向 Twitter 发布一条关于你文章的消息。或者是当你在 Twitter 发布一条新的消息，同时在你的博客创建一篇新的文章，同时可指定文章的分类和标签。当然也能在博客侧边栏上显示你最新的 Twitter 消息。 下载 Twitter Tools
 Thread Twitter 那就是将自己在 Twitter 上的所有会话输出到 WordPress 博客中，是回复的话会追溯父条目，而且会通过 Twitter Search 查找含有 @自己 的条目，即使它不是一个明确的回复。访问者在查看输出页面的时候，可以直接点击右侧的回复链接转到 Twitter 加入讨论。  下载 Thread Twitter  详见： http://fis.io/twitter</description>
     </item>

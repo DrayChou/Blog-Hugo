@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>archlinux on Dray&#39;s Home</title>
-    <link>https://idc.wf/tags/archlinux/</link>
+    <link>https://draychou.github.io/Blog-Hugo/tags/archlinux/</link>
     <description>Recent content in archlinux on Dray&#39;s Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Sat, 30 Apr 2011 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://idc.wf/tags/archlinux/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://draychou.github.io/Blog-Hugo/tags/archlinux/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>archlinux 的一些资料</title>
-      <link>https://idc.wf/docs/archlinux-some-of-the-information/</link>
+      <link>https://draychou.github.io/Blog-Hugo/docs/archlinux-some-of-the-information/</link>
       <pubDate>Sat, 30 Apr 2011 00:00:00 +0000</pubDate>
       
-      <guid>https://idc.wf/docs/archlinux-some-of-the-information/</guid>
+      <guid>https://draychou.github.io/Blog-Hugo/docs/archlinux-some-of-the-information/</guid>
       <description>下载地址：http://mirrors.163.com/archlinux/iso/latest/
 中文wiki：https://wiki.archlinux.org/index.php/Archlinux_%E6%96%B0%E6%89%8B%E6%8C%87%E5%8D%97_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)#.E5.AE.89.E8.A3.85Arch_linux
 一些其他朋友的blog

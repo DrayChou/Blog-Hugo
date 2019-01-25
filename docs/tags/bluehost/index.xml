@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>bluehost on Dray&#39;s Home</title>
-    <link>https://idc.wf/tags/bluehost/</link>
+    <link>https://draychou.github.io/Blog-Hugo/tags/bluehost/</link>
     <description>Recent content in bluehost on Dray&#39;s Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Sat, 08 Jan 2011 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://idc.wf/tags/bluehost/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://draychou.github.io/Blog-Hugo/tags/bluehost/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>bluehost下主域名和附加域目录路径的自定义</title>
-      <link>https://idc.wf/docs/bluehost-xia-zhu-yu-ming-he-fu-jia-yu-mu-lu-lu-jing-de-zi-ding-yi/</link>
+      <link>https://draychou.github.io/Blog-Hugo/docs/bluehost-xia-zhu-yu-ming-he-fu-jia-yu-mu-lu-lu-jing-de-zi-ding-yi/</link>
       <pubDate>Sat, 08 Jan 2011 00:00:00 +0000</pubDate>
       
-      <guid>https://idc.wf/docs/bluehost-xia-zhu-yu-ming-he-fu-jia-yu-mu-lu-lu-jing-de-zi-ding-yi/</guid>
+      <guid>https://draychou.github.io/Blog-Hugo/docs/bluehost-xia-zhu-yu-ming-he-fu-jia-yu-mu-lu-lu-jing-de-zi-ding-yi/</guid>
       <description>&lt;p&gt;&lt;span style=&#34;line-height: 18px;&#34;&gt;bluehost在默认情况下，主域名和附加域目录路径如下：&lt;br style=&#34;line-height: normal;&#34;&gt;&lt;br style=&#34;line-height: normal;&#34;&gt;/home/youraccount/public_html/ (主域名对应目录)&lt;br style=&#34;line-height: normal;&#34;&gt;/home/youraccount/public_html/subfolderB (附加域名B)&lt;br style=&#34;line-height: normal;&#34;&gt;/home/youraccount/public_html/subfolderC (附加域名C)&lt;br style=&#34;line-height: normal;&#34;&gt;&lt;br style=&#34;line-height: normal;&#34;&gt;从上面的路径结构可以看出：主域名所对应的目录/public_html中包含有“附加域名B”和“附加域名C”这两个文件夹，如果你希望让上述三者成为并列关系，可以使用.htaccess命令来灵活定制。&lt;br style=&#34;line-height: normal;&#34;&gt;&lt;br style=&#34;line-height: normal;&#34;&gt;例如实现这种目录结构：&lt;br style=&#34;line-height: normal;&#34;&gt;&lt;br style=&#34;line-height: normal;&#34;&gt;/home/youraccount/public_html/subfolderA (主域名对应目录)&lt;br style=&#34;line-height: normal;&#34;&gt;/home/youraccount/public_html/subfolderB (附加域名B对应目录)&lt;br style=&#34;line-height: normal;&#34;&gt;/home/youraccount/public_html/subfolderC (附加域名C对应目录)&lt;br style=&#34;line-height: normal;&#34;&gt;用文本编辑器编辑.htaccess文件，内容修改和参照下面的代码：&lt;/p&gt;</description>
     </item>
     

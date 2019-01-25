@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>it on Dray&#39;s Home</title>
-    <link>https://idc.wf/tags/it/</link>
+    <link>https://draychou.github.io/Blog-Hugo/tags/it/</link>
     <description>Recent content in it on Dray&#39;s Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Sat, 15 Jan 2011 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://idc.wf/tags/it/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://draychou.github.io/Blog-Hugo/tags/it/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>程序员三大法则</title>
-      <link>https://idc.wf/docs/three-rules-programmers/</link>
+      <link>https://draychou.github.io/Blog-Hugo/docs/three-rules-programmers/</link>
       <pubDate>Sat, 15 Jan 2011 00:00:00 +0000</pubDate>
       
-      <guid>https://idc.wf/docs/three-rules-programmers/</guid>
+      <guid>https://draychou.github.io/Blog-Hugo/docs/three-rules-programmers/</guid>
       <description>第一法则
 程序员不得损害产品质量，或袖手旁观产品质量受到损害。
 第二法则

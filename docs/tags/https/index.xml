@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>https on Dray&#39;s Home</title>
-    <link>https://idc.wf/tags/https/</link>
+    <link>https://draychou.github.io/Blog-Hugo/tags/https/</link>
     <description>Recent content in https on Dray&#39;s Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Tue, 15 Feb 2011 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://idc.wf/tags/https/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://draychou.github.io/Blog-Hugo/tags/https/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>HTTPS的七个误解</title>
-      <link>https://idc.wf/docs/seven-misconceptions-https/</link>
+      <link>https://draychou.github.io/Blog-Hugo/docs/seven-misconceptions-https/</link>
       <pubDate>Tue, 15 Feb 2011 00:00:00 +0000</pubDate>
       
-      <guid>https://idc.wf/docs/seven-misconceptions-https/</guid>
+      <guid>https://draychou.github.io/Blog-Hugo/docs/seven-misconceptions-https/</guid>
       <description>&lt;p&gt;&lt;strong&gt;HTTPS的七个误解&lt;/strong&gt;  原文网址：&lt;a href=&#34;http://blog.httpwatch.com/2011/01/28/top-7-myths-about-https/&#34;&gt;http://blog.httpwatch.com/2011/01/28/top-7-myths-about-https/&lt;/a&gt;  译者：阮一峰  &lt;img src=&#34;http://image.beekka.com/blog/201102/bg2011021311.jpg&#34;&gt;  &lt;strong&gt;误解七：HTTPS无法缓存&lt;/strong&gt;  许多人以为，出于安全考虑，浏览器不会在本地保存HTTPS缓存。实际上，只要在HTTP头中使用特定命令，HTTPS是可以缓存的。&lt;/p&gt;</description>
     </item>
     

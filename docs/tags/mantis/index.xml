@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>mantis on Dray&#39;s Home</title>
-    <link>https://idc.wf/tags/mantis/</link>
+    <link>https://draychou.github.io/Blog-Hugo/tags/mantis/</link>
     <description>Recent content in mantis on Dray&#39;s Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Sat, 08 Jan 2011 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://idc.wf/tags/mantis/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://draychou.github.io/Blog-Hugo/tags/mantis/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>mantis汉化方法</title>
-      <link>https://idc.wf/docs/mantis-han-hua-fang-fa/</link>
+      <link>https://draychou.github.io/Blog-Hugo/docs/mantis-han-hua-fang-fa/</link>
       <pubDate>Sat, 08 Jan 2011 00:00:00 +0000</pubDate>
       
-      <guid>https://idc.wf/docs/mantis-han-hua-fang-fa/</guid>
+      <guid>https://draychou.github.io/Blog-Hugo/docs/mantis-han-hua-fang-fa/</guid>
       <description>在mantisbt目录里找到config_defaults_inc.php这个文件,在这个文件里找到$g_default_language = &amp;lsquo;english&amp;rsquo;; ，修改为$g_default_language = &amp;lsquo;chinese_simplified&amp;rsquo;;</description>
     </item>
     

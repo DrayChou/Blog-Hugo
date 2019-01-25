@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>windows on Dray&#39;s Home</title>
-    <link>https://idc.wf/categories/windows/</link>
+    <link>https://draychou.github.io/Blog-Hugo/categories/windows/</link>
     <description>Recent content in windows on Dray&#39;s Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Thu, 29 Aug 2013 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://idc.wf/categories/windows/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://draychou.github.io/Blog-Hugo/categories/windows/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>在 Xampp 上配置 redis,mongodb,mariadb</title>
-      <link>https://idc.wf/docs/xampp-redis-mongodb-mariadb/</link>
+      <link>https://draychou.github.io/Blog-Hugo/docs/xampp-redis-mongodb-mariadb/</link>
       <pubDate>Thu, 29 Aug 2013 00:00:00 +0000</pubDate>
       
-      <guid>https://idc.wf/docs/xampp-redis-mongodb-mariadb/</guid>
+      <guid>https://draychou.github.io/Blog-Hugo/docs/xampp-redis-mongodb-mariadb/</guid>
       <description>之前为了在本地调试方便，配置了这几个客户端在 xampp 下面的环境。现记录下
 ##程序
 可以去官网下载，也可以用我分享出来的地址 [http://goo.gl/zOGQ9m](百度网盘)  ##安装
@@ -26,10 +26,10 @@
     
     <item>
       <title>Windows 下的 Nodejs</title>
-      <link>https://idc.wf/docs/under-windows-nodejs/</link>
+      <link>https://draychou.github.io/Blog-Hugo/docs/under-windows-nodejs/</link>
       <pubDate>Mon, 26 Dec 2011 00:00:00 +0000</pubDate>
       
-      <guid>https://idc.wf/docs/under-windows-nodejs/</guid>
+      <guid>https://draychou.github.io/Blog-Hugo/docs/under-windows-nodejs/</guid>
       <description>&lt;p&gt;&lt;h2&gt;为什么搞这个？&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;公司电脑的权限管理比较严，不能安装软件，不能常驻系统进程等，所以像 xampp 之类的都不能正常执行&lt;/li&gt;
@@ -39,10 +39,10 @@
     
     <item>
       <title>修改 vs2010 默认浏览器</title>
-      <link>https://idc.wf/docs/xiu-gai-vs2010-mo-ren-liu-lan-qi/</link>
+      <link>https://draychou.github.io/Blog-Hugo/docs/xiu-gai-vs2010-mo-ren-liu-lan-qi/</link>
       <pubDate>Tue, 06 Dec 2011 00:00:00 +0000</pubDate>
       
-      <guid>https://idc.wf/docs/xiu-gai-vs2010-mo-ren-liu-lan-qi/</guid>
+      <guid>https://draychou.github.io/Blog-Hugo/docs/xiu-gai-vs2010-mo-ren-liu-lan-qi/</guid>
       <description>修改该目录里的配置文件
 C:\users\[登陆账户ID]\AppData\Local\Microsoft\VisualStudio\10.0\browsers.xml  修改为
 &amp;lt;?xml version=&amp;quot;1.0&amp;quot;?&amp;gt;&amp;lt;browserinfo&amp;gt;&amp;lt;browser&amp;gt;&amp;lt;name&amp;gt;Mozilla Firefox&amp;lt;/name&amp;gt;&amp;lt;path&amp;gt;&amp;quot;C:\Program Files (x86)\Mozilla Firefox\firefox.exe&amp;quot;&amp;lt;/path&amp;gt;&amp;lt;resolution&amp;gt;0&amp;lt;/resolution&amp;gt;&amp;lt;isdefault&amp;gt;True&amp;lt;/isdefault&amp;gt;&amp;lt;/browser&amp;gt;&amp;lt;browser&amp;gt;&amp;lt;name&amp;gt;Internet Explorer&amp;lt;/name&amp;gt;&amp;lt;path&amp;gt;&amp;quot;C:\Program Files (x86)\Internet Explorer\iexplore.exe&amp;quot;&amp;lt;/path&amp;gt;&amp;lt;resolution&amp;gt;0&amp;lt;/resolution&amp;gt;&amp;lt;isdefault&amp;gt;False&amp;lt;/isdefault&amp;gt;&amp;lt;dde&amp;gt;&amp;lt;service&amp;gt;IExplore&amp;lt;/service&amp;gt;&amp;lt;topicopenurl&amp;gt;WWW_OpenURL&amp;lt;/topicopenurl&amp;gt;&amp;lt;itemopenurl&amp;gt;&amp;quot;%s&amp;quot;,,0xffffffff,3,,,,&amp;lt;/itemopenurl&amp;gt;&amp;lt;topicactivate&amp;gt;WWW_Activate&amp;lt;/topicactivate&amp;gt;&amp;lt;itemactivate&amp;gt;0xffffffff,0&amp;lt;/itemactivate&amp;gt;&amp;lt;/dde&amp;gt;&amp;lt;/browser&amp;gt;&amp;lt;/browserinfo&amp;gt;  然后保存为只读，Ok了</description>

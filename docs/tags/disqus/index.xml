@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>disqus on Dray&#39;s Home</title>
-    <link>https://idc.wf/tags/disqus/</link>
+    <link>https://draychou.github.io/Blog-Hugo/tags/disqus/</link>
     <description>Recent content in disqus on Dray&#39;s Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Thu, 28 Apr 2011 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://idc.wf/tags/disqus/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://draychou.github.io/Blog-Hugo/tags/disqus/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>推荐一个公共的评论系统disqus</title>
-      <link>https://idc.wf/docs/recommended-a-public-comment-system-disqus/</link>
+      <link>https://draychou.github.io/Blog-Hugo/docs/recommended-a-public-comment-system-disqus/</link>
       <pubDate>Thu, 28 Apr 2011 00:00:00 +0000</pubDate>
       
-      <guid>https://idc.wf/docs/recommended-a-public-comment-system-disqus/</guid>
+      <guid>https://draychou.github.io/Blog-Hugo/docs/recommended-a-public-comment-system-disqus/</guid>
       <description>这是个很有意思的公共评论系统，使用他可以让用户使用不同的帐号登录并评论，比如说，twitter,facebook,google等，一部到位，不错！
 网站：http://disqus.com/
 效果参看本站</description>

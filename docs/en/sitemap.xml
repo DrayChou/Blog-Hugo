@@ -3,47 +3,47 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://idc.wf/en/categories/</loc>
+    <loc>https://draychou.github.io/Blog-Hugo/en/categories/</loc>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://idc.wf/categories/"
+                href="https://draychou.github.io/Blog-Hugo/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://idc.wf/en/categories/"
+                href="https://draychou.github.io/Blog-Hugo/en/categories/"
                 />
   </url>
   
   <url>
-    <loc>https://idc.wf/en/</loc>
+    <loc>https://draychou.github.io/Blog-Hugo/en/</loc>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://idc.wf/"
+                href="https://draychou.github.io/Blog-Hugo/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://idc.wf/en/"
+                href="https://draychou.github.io/Blog-Hugo/en/"
                 />
   </url>
   
   <url>
-    <loc>https://idc.wf/en/tags/</loc>
+    <loc>https://draychou.github.io/Blog-Hugo/en/tags/</loc>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://idc.wf/tags/"
+                href="https://draychou.github.io/Blog-Hugo/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://idc.wf/en/tags/"
+                href="https://draychou.github.io/Blog-Hugo/en/tags/"
                 />
   </url>
   

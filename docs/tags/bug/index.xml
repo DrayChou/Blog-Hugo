@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>bug on Dray&#39;s Home</title>
-    <link>https://idc.wf/tags/bug/</link>
+    <link>https://draychou.github.io/Blog-Hugo/tags/bug/</link>
     <description>Recent content in bug on Dray&#39;s Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Fri, 20 May 2011 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://idc.wf/tags/bug/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://draychou.github.io/Blog-Hugo/tags/bug/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>彻底解决sysfader: IEXPLORE.EXE应用程序错误</title>
-      <link>https://idc.wf/docs/solve-sysfader-iexplore-exe-application-error/</link>
+      <link>https://draychou.github.io/Blog-Hugo/docs/solve-sysfader-iexplore-exe-application-error/</link>
       <pubDate>Fri, 20 May 2011 00:00:00 +0000</pubDate>
       
-      <guid>https://idc.wf/docs/solve-sysfader-iexplore-exe-application-error/</guid>
+      <guid>https://draychou.github.io/Blog-Hugo/docs/solve-sysfader-iexplore-exe-application-error/</guid>
       <description>今天碰到一个用户出现 sysfader: IEXPLORE.EXE应用程序错误， 这个用户的浏览器是IE8，这个错误只在IE8下出现，换了别的浏览器或者兼容模式都没问题，老大提醒说是JS有问题，但是。。。 我检查了一下代码，别的用户怎么没这个问题，要知道JS都一样的啊，而且用户也没有自己引用JS啊【我们的产品允许用户用html代码编辑自己的主页】。。。
 笨方法：一段一段删掉，看看还会不会报错，最后锁定了这段代码：
 奇怪为什么单单IE8过滤不了这个，看来IE8也不咋地啊，对微软的产品真是印象很差啊。。。 看网上好多用户怎么怎么折腾的方法，其实这个问题还是要问网站的，要是网站代码写的很规范的话就不会出这个问题啦。。。

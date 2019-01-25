@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>js on Dray&#39;s Home</title>
-    <link>https://idc.wf/tags/js/</link>
+    <link>https://draychou.github.io/Blog-Hugo/tags/js/</link>
     <description>Recent content in js on Dray&#39;s Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Thu, 06 Mar 2014 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://idc.wf/tags/js/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://draychou.github.io/Blog-Hugo/tags/js/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>动弹一下 - 我的第一个 Chrome 应用</title>
-      <link>https://idc.wf/docs/oschina_tweet/</link>
+      <link>https://draychou.github.io/Blog-Hugo/docs/oschina_tweet/</link>
       <pubDate>Thu, 06 Mar 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://idc.wf/docs/oschina_tweet/</guid>
+      <guid>https://draychou.github.io/Blog-Hugo/docs/oschina_tweet/</guid>
       <description> 之前不小心买了 Google 的开发者凭证，于是晋级为了开发者。但是，我完全不知道要拿来做什么。 最近比较关注的 oschina 开放了他的 api ，然后他们的 tweet[动弹] 我也有在用，发现还没有它的 Chrome 应用。于是，做点啥吧，就当练手了，不能白瞎了咱的开发者身份。
 项目地址：  github:https://github.com/DrayChou/oschina_tweet oschina:http://git.oschina.net/drayc/oschina_tweet 应用地址：http://goo.gl/gsK4x3  项目介绍 项目目前实现了下面四个功能。
  最新动弹 热门动弹 我的动弹 动弹一下  其他的功能，在我发现 tweet 完全没有好友概念之后，就算了。反正拿出来的肯定是最新的，好友关系可有可无。 另：界面实在很简陋，等我有空再细细雕琢。
@@ -24,10 +24,10 @@
     
     <item>
       <title>webqq中自适应宽度的JS代码和隐藏页面横向滚动条的css样式</title>
-      <link>https://idc.wf/docs/webqq-js-code-in-the-adaptive-width/</link>
+      <link>https://draychou.github.io/Blog-Hugo/docs/webqq-js-code-in-the-adaptive-width/</link>
       <pubDate>Thu, 12 May 2011 00:00:00 +0000</pubDate>
       
-      <guid>https://idc.wf/docs/webqq-js-code-in-the-adaptive-width/</guid>
+      <guid>https://draychou.github.io/Blog-Hugo/docs/webqq-js-code-in-the-adaptive-width/</guid>
       <description>webqq 中 自适应宽度的JS代码
 &amp;lt;script src=&amp;quot;http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;&amp;lt;script src=&amp;quot;http://web.qstatic.com/jsapi/alloy.api.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;&amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt; try { alloy.onReady(function(){ if($(window).width()&amp;lt;1026){ alloy.window.setBodySize({width: 1026,height: $(window).height()}) }; }); }catch(e){ } $(window).resize(function(){ var w = $(window).width(); var h = $(window).height(); $(&amp;quot;#iyaya_iframe&amp;quot;).css({ width: w&amp;gt;1026?w-16:1016, height: h, }); }); &amp;lt;/script&amp;gt;  隐藏横向滚动条的方法：
 &amp;lt;span style=&amp;quot;color: #ff0000;&amp;quot;&amp;gt;给 html 设置 overflow-x: hidden&amp;lt;/span&amp;gt;   </description>
@@ -35,20 +35,20 @@
     
     <item>
       <title>php去掉 HTML标记、javascript 代码、空白字符等</title>
-      <link>https://idc.wf/docs/php-remove-html-tags-javascript-code-blank-characters-etc/</link>
+      <link>https://draychou.github.io/Blog-Hugo/docs/php-remove-html-tags-javascript-code-blank-characters-etc/</link>
       <pubDate>Sat, 12 Feb 2011 00:00:00 +0000</pubDate>
       
-      <guid>https://idc.wf/docs/php-remove-html-tags-javascript-code-blank-characters-etc/</guid>
+      <guid>https://draychou.github.io/Blog-Hugo/docs/php-remove-html-tags-javascript-code-blank-characters-etc/</guid>
       <description>代码：
 preg_replace(&amp;quot;&#39;([\r\n])[\s]+&#39;&amp;quot;, &amp;quot;&amp;quot;, $content) //去除回车换行符 // $document 应包含一个 HTML 文档。 // 本例将去掉 HTML 标记，javascript 代码 // 和空白字符。还会将一些通用的 // HTML 实体转换成相应的文本。 $search = array (&amp;quot;&#39;&amp;lt;script&amp;gt;]*?&amp;gt;.*?&amp;lt;/script&amp;gt;&#39;si&amp;quot;, // 去掉 javascript &amp;quot;&#39;]*?&amp;gt;&#39;si&amp;quot;, // 去掉 HTML 标记 &amp;quot;&#39;([\r\n])[\s]+&#39;&amp;quot;, // 去掉空白字符 &amp;quot;&#39;&amp;amp;(quot|#34);&#39;i&amp;quot;, // 替换 HTML 实体 &amp;quot;&#39;&amp;amp;(amp|#38);&#39;i&amp;quot;, &amp;quot;&#39;&amp;amp;(lt|#60);&#39;i&amp;quot;, &amp;quot;&#39;&amp;amp;(gt|#62);&#39;i&amp;quot;, &amp;quot;&#39;&amp;amp;(nbsp|#160);&#39;i&amp;quot;, &amp;quot;&#39;&amp;amp;(iexcl|#161);&#39;i&amp;quot;, &amp;quot;&#39;&amp;amp;(cent|#162);&#39;i&amp;quot;, &amp;quot;&#39;&amp;amp;(pound|#163);&#39;i&amp;quot;, &amp;quot;&#39;&amp;amp;(copy|#169);&#39;i&amp;quot;, &amp;quot;&#39;(\d+);&#39;e&amp;quot;); // 作为 php 代码运行 $replace = array (&amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot; // $document 应包含一个 HTML 文档。 // 本例将去掉 HTML 标记，javascript 代码 // 和空白字符。还会将一些通用的 // HTML 实体转换成相应的文本。 $search = array (&amp;quot;&#39;&amp;lt;script&amp;gt;]*?</description>
     </item>
     
     <item>
       <title>firefox中用js提交表单</title>
-      <link>https://idc.wf/docs/firefox-zhong-yong-js-ti-jiao-biao-dan/</link>
+      <link>https://draychou.github.io/Blog-Hugo/docs/firefox-zhong-yong-js-ti-jiao-biao-dan/</link>
       <pubDate>Thu, 20 Jan 2011 00:00:00 +0000</pubDate>
       
-      <guid>https://idc.wf/docs/firefox-zhong-yong-js-ti-jiao-biao-dan/</guid>
+      <guid>https://draychou.github.io/Blog-Hugo/docs/firefox-zhong-yong-js-ti-jiao-biao-dan/</guid>
       <description>&lt;div class=&#34;postcontent&#34;&gt;
     &lt;span class=&#34;Apple-style-span&#34;&gt;
         1.document.forms.from.submit();</description>
@@ -56,10 +56,10 @@ preg_replace(&amp;quot;&#39;([\r\n])[\s]+&#39;&amp;quot;, &amp;quot;&amp;quot;, 
     
     <item>
       <title>javascript 检查字符串是否是数字的几种方法</title>
-      <link>https://idc.wf/docs/javascript-jian-cha-zi-fu-chuan-shi-fou-shi-shu-zi-de-ji-zhong-fang-fa/</link>
+      <link>https://draychou.github.io/Blog-Hugo/docs/javascript-jian-cha-zi-fu-chuan-shi-fou-shi-shu-zi-de-ji-zhong-fang-fa/</link>
       <pubDate>Mon, 10 Jan 2011 00:00:00 +0000</pubDate>
       
-      <guid>https://idc.wf/docs/javascript-jian-cha-zi-fu-chuan-shi-fou-shi-shu-zi-de-ji-zhong-fang-fa/</guid>
+      <guid>https://draychou.github.io/Blog-Hugo/docs/javascript-jian-cha-zi-fu-chuan-shi-fou-shi-shu-zi-de-ji-zhong-fang-fa/</guid>
       <description>代码：
 //判断是否是正整数 function IsNum(s) { if(s!=null){ var r,re; re = /\d*/i; //\d表示数字,*表示匹配多个数字 r = s.match(re); return (r==s)?true:false; } return false; } //判断是否为数字 function IsNum(s) { if (s!=null &amp;amp;&amp;amp; s!=&amp;quot;&amp;quot;) { return !isNaN(s); } return false; }  </description>
     </item>

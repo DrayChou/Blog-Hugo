@@ -39,18 +39,18 @@ chmod &#43;x server  执行./server start就可以启动uWSGI，同理，执行.
 光有uWSGI是不能够运行Flask-Twip的，我们还需要Nginx作为Web Server，只需要修改Nginx的配置文件，增加一个server，如下所示：
 server { listen 80; server_name www.example.com; location / { include uwsgi_params; uwsgi_pass unix:/tmp/uwsgi-twip.sock; } location ^~ /twip/static/ { alias /home/www/twip/static/; } }  重启Nginx，如果一切顺利的话，就可以在 http://www.example.com/twip/ 看到熟悉的Twip界面了～
 ps:之前的 server 文件有误，修改 -C 666 为 &ndash;chmod-socket=666'>
-<meta property='og:url' content='https://idc.wf/docs/uwsginginx-run-flask-twip/'>
+<meta property='og:url' content='https://draychou.github.io/Blog-Hugo/docs/uwsginginx-run-flask-twip/'>
 <meta property='og:site_name' content='Dray&#39;s Home'>
 <meta property='og:type' content='article'><meta property='article:section' content='docs'><meta property='article:tag' content='vps'><meta property='article:published_time' content='2013-06-16T00:00:00Z'/><meta property='article:modified_time' content='2013-06-16T00:00:00Z'/><meta name='twitter:card' content='summary'>
 
 <meta name="generator" content="Hugo 0.53" />
 
   <title>uWSGI&#43;Nginx run flask twip • Dray&#39;s Home</title>
-  <link rel='canonical' href='https://idc.wf/docs/uwsginginx-run-flask-twip/'>
+  <link rel='canonical' href='https://draychou.github.io/Blog-Hugo/docs/uwsginginx-run-flask-twip/'>
   
   
-  <link rel='icon' href='/favicon.ico'>
-<link rel='stylesheet' href='/assets/css/main.4a10984a.css'><link rel='stylesheet' href='/css/custom.css'><style>
+  <link rel='icon' href='/Blog-Hugo/favicon.ico'>
+<link rel='stylesheet' href='/Blog-Hugo/assets/css/main.4a10984a.css'><link rel='stylesheet' href='/Blog-Hugo/css/custom.css'><style>
 :root{--color-accent:dodgerblue;}
 </style>
 
@@ -66,8 +66,8 @@ ps:之前的 server 文件有误，修改 -C 666 为 &ndash;chmod-socket=666'>
   <header>
     
     <div class='logo'>
-      <a href='/'>
-        <img src='/images/logo.png'>
+      <a href='/Blog-Hugo/'>
+        <img src='/Blog-Hugo/images/logo.png'>
       </a>
     </div>
     
@@ -85,7 +85,7 @@ ps:之前的 server 文件有误，修改 -C 666 为 &ndash;chmod-socket=666'>
     <h4 class='title widget-title'>Search</h4>
   </header>
 
-  <form action='/search' id='search-form' class='search-form'>
+  <form action='/Blog-Hugo/search' id='search-form' class='search-form'>
     <label>
       <span class='screen-reader-text'></span>
       <input id='search-term' class='search-term' type='search' name='q' placeholder='&hellip;'>
@@ -95,11 +95,11 @@ ps:之前的 server 文件有误，修改 -C 666 为 &ndash;chmod-socket=666'>
 <section class='widget widget-sidebar_menu sep-after'><nav id='sidebar-menu' class='menu sidebar-menu' aria-label='侧边菜单'>
     <div class='container'>
       <ul><li class='item'>
-  <a href='/'>Home</a></li><li class='item'>
-  <a href='/docs/'>Docs</a></li><li class='item'>
-  <a href='/menus/'>About</a></li><li class='item'>
-  <a href='/categories/'>categories</a></li><li class='item'>
-  <a href='/tags/'>Tags</a></li></ul>
+  <a href='/Blog-Hugo/'>Home</a></li><li class='item'>
+  <a href='/Blog-Hugo/docs/'>Docs</a></li><li class='item'>
+  <a href='/Blog-Hugo/menus/'>About</a></li><li class='item'>
+  <a href='/Blog-Hugo/categories/'>categories</a></li><li class='item'>
+  <a href='/Blog-Hugo/tags/'>Tags</a></li></ul>
     </div>
   </nav>
 
@@ -131,7 +131,7 @@ ps:之前的 server 文件有误，修改 -C 666 为 &ndash;chmod-socket=666'>
     <style>.widget-breadcrumbs li:after{content:'\2f '}</style>
   <section class='widget widget-breadcrumbs sep-after'>
     <nav id='breadcrumbs'>
-      <ol><li><a href='/'>Home</a></li><li><a href='/docs/'>Docs</a></li><li><span>uWSGI&#43;Nginx run flask twip</span></li></ol>
+      <ol><li><a href='/Blog-Hugo/'>Home</a></li><li><a href='/Blog-Hugo/docs/'>Docs</a></li><li><span>uWSGI&#43;Nginx run flask twip</span></li></ol>
     </nav>
   </section></div>
       </div>
@@ -262,14 +262,14 @@ ps:之前的 server 文件有误，修改 -C 666 为 &ndash;chmod-socket=666'>
   <path d="M22,19a2,2,0,0,1-2,2H4a2,2,0,0,1-2-2V5A2,2,0,0,1,4,3H9l2,3h9a2,2,0,0,1,2,2Z"/>
   
 </svg>
-<span class='screen-reader-text'>分类: </span><a class='category' href='/categories/linux/'>linux</a></div>
+<span class='screen-reader-text'>分类: </span><a class='category' href='/Blog-Hugo/categories/linux/'>linux</a></div>
 <div class='tags'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
   
   <path d="M20.59,13.41l-7.17,7.17a2,2,0,0,1-2.83,0L2,12V2H12l8.59,8.59A2,2,0,0,1,20.59,13.41Z"/>
   <line x1="7" y1="7" x2="7" y2="7"/>
   
 </svg>
-<span class='screen-reader-text'>标签: </span><a class='tag' href='/tags/vps/'>vps</a></div>
+<span class='screen-reader-text'>标签: </span><a class='tag' href='/Blog-Hugo/tags/vps/'>vps</a></div>
 
   </div>
 </footer>
@@ -279,7 +279,7 @@ ps:之前的 server 文件有误，修改 -C 666 为 &ndash;chmod-socket=666'>
 
 <nav class='entry-nav'>
   <div class='container'><div class='prev-entry sep-before'>
-      <a href='/docs/ubuntu-nginx-php-shell/'>
+      <a href='/Blog-Hugo/docs/ubuntu-nginx-php-shell/'>
         <span aria-hidden='true'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
   
   <line x1="20" y1="12" x2="4" y2="12"/>
@@ -289,7 +289,7 @@ ps:之前的 server 文件有误，修改 -C 666 为 &ndash;chmod-socket=666'>
  上一个</span>
         <span class='screen-reader-text'>上一篇文章: </span>ubuntu nginx php shell</a>
     </div><div class='next-entry sep-before'>
-      <a href='/docs/pi-webcam/'>
+      <a href='/Blog-Hugo/docs/pi-webcam/'>
         <span class='screen-reader-text'>下一篇文章: </span>樹莓派加裝攝像頭<span aria-hidden='true'>下一个 <svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
   
   <line x1="4" y1="12" x2="20" y2="12"/>
@@ -335,9 +335,9 @@ ps:之前的 server 文件有误，修改 -C 666 为 &ndash;chmod-socket=666'>
       </footer>
 
     </div>
-  </div><script>window.__public_path__='\/assets\/js\/'</script>
+  </div><script>window.__public_path__='\/Blog-Hugo\/assets\/js\/'</script>
 
-<script src='/assets/js/main.fae8ed32.js'></script><script src='/js/custom.js'></script>
+<script src='/Blog-Hugo/assets/js/main.fae8ed32.js'></script><script src='/Blog-Hugo/js/custom.js'></script>
 
 </body>
 

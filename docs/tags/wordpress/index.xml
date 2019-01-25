@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>wordpress on Dray&#39;s Home</title>
-    <link>https://idc.wf/tags/wordpress/</link>
+    <link>https://draychou.github.io/Blog-Hugo/tags/wordpress/</link>
     <description>Recent content in wordpress on Dray&#39;s Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Fri, 28 Jan 2011 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://idc.wf/tags/wordpress/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://draychou.github.io/Blog-Hugo/tags/wordpress/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>2款 从 twitter 同步到 wordpress 的插件</title>
-      <link>https://idc.wf/docs/2-sync-from-the-twitter-plugin-wordpress/</link>
+      <link>https://draychou.github.io/Blog-Hugo/docs/2-sync-from-the-twitter-plugin-wordpress/</link>
       <pubDate>Fri, 28 Jan 2011 00:00:00 +0000</pubDate>
       
-      <guid>https://idc.wf/docs/2-sync-from-the-twitter-plugin-wordpress/</guid>
+      <guid>https://draychou.github.io/Blog-Hugo/docs/2-sync-from-the-twitter-plugin-wordpress/</guid>
       <description>Twitter Tools 此插件能让你的 Twitter 和 WordPress 完全连在一起，你可选择当在 WordPress 发布新文章时，同时向 Twitter 发布一条关于你文章的消息。或者是当你在 Twitter 发布一条新的消息，同时在你的博客创建一篇新的文章，同时可指定文章的分类和标签。当然也能在博客侧边栏上显示你最新的 Twitter 消息。 下载 Twitter Tools
 Thread Twitter 那就是将自己在 Twitter 上的所有会话输出到 WordPress 博客中，是回复的话会追溯父条目，而且会通过 Twitter Search 查找含有 @自己 的条目，即使它不是一个明确的回复。访问者在查看输出页面的时候，可以直接点击右侧的回复链接转到 Twitter 加入讨论。  下载 Thread Twitter  详见： http://fis.io/twitter</description>
     </item>
     
     <item>
       <title>找到2个wordpress 分享音乐相关的插件，不错哦～</title>
-      <link>https://idc.wf/docs/found-2-wordpress-plugin-share-music-related-oh-well/</link>
+      <link>https://draychou.github.io/Blog-Hugo/docs/found-2-wordpress-plugin-share-music-related-oh-well/</link>
       <pubDate>Fri, 28 Jan 2011 00:00:00 +0000</pubDate>
       
-      <guid>https://idc.wf/docs/found-2-wordpress-plugin-share-music-related-oh-well/</guid>
+      <guid>https://draychou.github.io/Blog-Hugo/docs/found-2-wordpress-plugin-share-music-related-oh-well/</guid>
       <description>WordPress播放插件
 作者：亦歌
 使用WordPress搭建的博客，安装此插件后，可在侧边栏中滚动歌词、控制亦歌播放。

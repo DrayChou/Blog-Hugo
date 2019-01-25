@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>file on Dray&#39;s Home</title>
-    <link>https://idc.wf/tags/file/</link>
+    <link>https://draychou.github.io/Blog-Hugo/tags/file/</link>
     <description>Recent content in file on Dray&#39;s Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Fri, 18 Feb 2011 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://idc.wf/tags/file/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://draychou.github.io/Blog-Hugo/tags/file/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>php 超大文件下载类 支持2g以上文件 支持断点续传</title>
-      <link>https://idc.wf/docs/php-file-download-large-file-support-class-supports-http-over-2g/</link>
+      <link>https://draychou.github.io/Blog-Hugo/docs/php-file-download-large-file-support-class-supports-http-over-2g/</link>
       <pubDate>Fri, 18 Feb 2011 00:00:00 +0000</pubDate>
       
-      <guid>https://idc.wf/docs/php-file-download-large-file-support-class-supports-http-over-2g/</guid>
+      <guid>https://draychou.github.io/Blog-Hugo/docs/php-file-download-large-file-support-class-supports-http-over-2g/</guid>
       <description>&amp;lt;?php ** * &amp;lt;SPAN class=t_tag onclick=tagshow(event) href=&amp;quot;tag.php?name=%CE%C4%BC%FE&amp;quot;&amp;gt;文件&amp;lt;/SPAN&amp;gt;传输，支持断点续传。 * 2g以上超大文件也有效 * @author MoXie */ class Transfer { ** * 缓冲单元 */ const BUFF_SIZE = 5120; / 1024 * 5 ** * 文件地址 * @var &amp;lt;String&amp;gt; */ private $filePath; ** * 文件大小 * @var &amp;lt;String&amp;gt; php超大数字 &amp;lt;SPAN class=t_tag onclick=tagshow(event) href=&amp;quot;tag.php?name=%D7%D6%B7%FB&amp;quot;&amp;gt;字符&amp;lt;/SPAN&amp;gt;串形式描述 */ private $fileSize; ** * 文件类型 * @var &amp;lt;String&amp;gt; */ private $mimeType; ** * 请求区域（范围） * @var &amp;lt;String&amp;gt; */ private $range; ** * 是否写入日志 * @var &amp;lt;Boolean&amp;gt; */ private $isLog = false; ** * * @param &amp;lt;String&amp;gt; $filePath 文件路径 * @param &amp;lt;String&amp;gt; $mimeType 文件类型 * @param &amp;lt;String&amp;gt; $range 请求区域（范围） */ function __construct($filePath, $mimeType = null , $range = null) { $this-&amp;gt;filePath = $filePath; $this-&amp;gt;fileSize = sprintf(&#39;%u&#39;,filesize($filePath)); $this-&amp;gt;mimeType = ($mimeType !</description>
     </item>
     

@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>bmp on Dray&#39;s Home</title>
-    <link>https://idc.wf/tags/bmp/</link>
+    <link>https://draychou.github.io/Blog-Hugo/tags/bmp/</link>
     <description>Recent content in bmp on Dray&#39;s Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Fri, 18 Feb 2011 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://idc.wf/tags/bmp/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://draychou.github.io/Blog-Hugo/tags/bmp/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>php bmp格式图片转换成jpg格式程序</title>
-      <link>https://idc.wf/docs/php-bmp-format-image-into-jpg-format-program/</link>
+      <link>https://draychou.github.io/Blog-Hugo/docs/php-bmp-format-image-into-jpg-format-program/</link>
       <pubDate>Fri, 18 Feb 2011 00:00:00 +0000</pubDate>
       
-      <guid>https://idc.wf/docs/php-bmp-format-image-into-jpg-format-program/</guid>
+      <guid>https://draychou.github.io/Blog-Hugo/docs/php-bmp-format-image-into-jpg-format-program/</guid>
       <description>&amp;lt;?php /* * To change this template, choose Tools | Templates * and open the template in the editor. */ //php教程将bmp格式图片转换成jpg格式程序 function imagebmp($img,$file=&amp;quot;&amp;quot;,$rle=0) { $colorcount=imagecolorstotal($img); $transparent=imagecolortransparent($img); $istransparent=$transparent!=-1; if($istransparent) $colorcount--; if($colorcount==0) { $colorcount=0; $bitcount=24; }; if(($colorcount&amp;gt;0)and($colorcount&amp;lt;=2)) { $colorcount=2; $bitcount=1; }; if(($colorcount&amp;gt;2)and($colorcount&amp;lt;=16)) { $colorcount=16; $bitcount=4; }; if(($colorcount&amp;gt;16)and($colorcount&amp;lt;=256)) { $colorcount=0; $bitcount=8; }; $width=imagesx($img); $height=imagesy($img); $zbytek=(4-($width/(8/$bitcount))%4)%4; if($bitcount&amp;lt;24) $palsize=pow(2,$bitcount)*4; $size=(floor($width/(8/$bitcount))+$zbytek)*$height+54; $size+=$palsize; $offset=54+$palsize; // bitmap file header $ret = &#39;bm&#39;; // header (2b) $ret .= int_to_dword($size); // size of file (4b) $ret .</description>
     </item>
     

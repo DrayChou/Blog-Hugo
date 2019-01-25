@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>unlink on Dray&#39;s Home</title>
-    <link>https://idc.wf/tags/unlink/</link>
+    <link>https://draychou.github.io/Blog-Hugo/tags/unlink/</link>
     <description>Recent content in unlink on Dray&#39;s Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Fri, 28 Jan 2011 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://idc.wf/tags/unlink/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://draychou.github.io/Blog-Hugo/tags/unlink/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>php删除文件unlink</title>
-      <link>https://idc.wf/docs/php-shan-chu-wen-jian-unlink/</link>
+      <link>https://draychou.github.io/Blog-Hugo/docs/php-shan-chu-wen-jian-unlink/</link>
       <pubDate>Fri, 28 Jan 2011 00:00:00 +0000</pubDate>
       
-      <guid>https://idc.wf/docs/php-shan-chu-wen-jian-unlink/</guid>
+      <guid>https://draychou.github.io/Blog-Hugo/docs/php-shan-chu-wen-jian-unlink/</guid>
       <description>本文章来讲讲用php的unlink函数来删除文件和文件夹吧,下面来看看unlink的实例教程你知道如何建立一个档案。您知道如何打开一个文件中各种各样的方式不同。你甚至不知道如何读取和写入数据从一个文件！ 现在是时候了解如何摧毁（删除）文件。在php中删除的文件通过调用中断功能。 php的-文件unlink 当您查看的内容目录，您可以看到所有的档案，存在于该目录，因为作业系统或应用程序，您使用的是显示一个列表文件名。你可以把这些文件名作为链接，加入档案的目录您正在浏览。 如果您断开的文件，你是有效的制度造成忘记它或删除它！ 在您可以删除（断开）的文件，你首先必须确保它无法打开您的程序。使用fclose函数关闭一个开放的档案。 php的-文件unlink 请记住从php文件创建的教训，我们创建了一个文件，名为testFile.txt 。
 $myFile = &amp;quot;testFile.txt&amp;quot;; $fh = fopen($myFile, &#39;w&#39;) or die(&amp;quot;can&#39;t open file&amp;quot;); fclose($fh);  判断是否删除了.
 $myFile = &amp;quot;testFile.txt&amp;quot;; unlink($myFile);  删除文件.注明,删除文件夹在php里面只有文件夹为空时才能用unlink 进行删除操作.</description>

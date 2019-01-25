@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>lamp on Dray&#39;s Home</title>
-    <link>https://idc.wf/tags/lamp/</link>
+    <link>https://draychou.github.io/Blog-Hugo/tags/lamp/</link>
     <description>Recent content in lamp on Dray&#39;s Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Sun, 25 Sep 2011 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://idc.wf/tags/lamp/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://draychou.github.io/Blog-Hugo/tags/lamp/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Ubuntu 上安装 LAMP 服务器</title>
-      <link>https://idc.wf/docs/ubuntu-shang-an-zhuang-lamp-fu-wu-qi/</link>
+      <link>https://draychou.github.io/Blog-Hugo/docs/ubuntu-shang-an-zhuang-lamp-fu-wu-qi/</link>
       <pubDate>Sun, 25 Sep 2011 00:00:00 +0000</pubDate>
       
-      <guid>https://idc.wf/docs/ubuntu-shang-an-zhuang-lamp-fu-wu-qi/</guid>
+      <guid>https://draychou.github.io/Blog-Hugo/docs/ubuntu-shang-an-zhuang-lamp-fu-wu-qi/</guid>
       <description>sudo tasksel  直接从列表中选择LAMP套件，重启自动完成</description>
     </item>
     

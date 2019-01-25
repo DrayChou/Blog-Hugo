@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>ie on Dray&#39;s Home</title>
-    <link>https://idc.wf/tags/ie/</link>
+    <link>https://draychou.github.io/Blog-Hugo/tags/ie/</link>
     <description>Recent content in ie on Dray&#39;s Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Fri, 25 Feb 2011 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://idc.wf/tags/ie/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://draychou.github.io/Blog-Hugo/tags/ie/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>IE中出现 &#34;Stack overflow at line&#34; 错误的解决方法</title>
-      <link>https://idc.wf/docs/ie-there-stack-overflow-at-line-wrong-solution/</link>
+      <link>https://draychou.github.io/Blog-Hugo/docs/ie-there-stack-overflow-at-line-wrong-solution/</link>
       <pubDate>Fri, 25 Feb 2011 00:00:00 +0000</pubDate>
       
-      <guid>https://idc.wf/docs/ie-there-stack-overflow-at-line-wrong-solution/</guid>
+      <guid>https://draychou.github.io/Blog-Hugo/docs/ie-there-stack-overflow-at-line-wrong-solution/</guid>
       <description>出现该错误提示，主要有两种原因：
  使用系统的事件名称作为自定义函数名如：  onclick / onsubmit &amp;hellip; 都是系统保留的事件名称，不允许作为重定义函数名称。
  出现死循环 ：  如：在图片对象定义了 onerror 事件的循环处理、

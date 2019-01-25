@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>supervisor on Dray&#39;s Home</title>
-    <link>https://idc.wf/tags/supervisor/</link>
+    <link>https://draychou.github.io/Blog-Hugo/tags/supervisor/</link>
     <description>Recent content in supervisor on Dray&#39;s Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Wed, 14 Jan 2015 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://idc.wf/tags/supervisor/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://draychou.github.io/Blog-Hugo/tags/supervisor/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>python 版本 shadowsocks</title>
-      <link>https://idc.wf/docs/pip-ss/</link>
+      <link>https://draychou.github.io/Blog-Hugo/docs/pip-ss/</link>
       <pubDate>Wed, 14 Jan 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://idc.wf/docs/pip-ss/</guid>
+      <guid>https://draychou.github.io/Blog-Hugo/docs/pip-ss/</guid>
       <description>因为墙更高了， fqrouter 都用不了了，没办法，只能把之前的 ss 拿起来用了。 这次重新使用 python 版本的 ss。
 首先，安装
 apt-get update apt-get install python-pip python-m2crypto supervisor pip install shadowsocks  执行

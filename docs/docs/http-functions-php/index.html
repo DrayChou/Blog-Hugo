@@ -9,18 +9,18 @@
 <meta property='og:title' content='php 断点续传功能 • Dray&#39;s Home'>
 <meta property='og:description' content='断点续传指的是在上传时，将上传任务（一个文件或一个压缩包）人为的划分为几个部分，每一个部分采用一个线程进行上传，下面我们来看看php 断点续传功能的实现方法吧。
 &lt;?php /** * 作者 于恩水&lt;yuenshui@126.com&gt; * 支持断点续传下载 * 实例代码： * $down = new SD_DownLoad(); * $down-&gt;Down(&#39;E:/iso/MS.Office2003SP1.CHS.iso&#39;); **/ SD_DownLoad { /** * 下载的开始点 * * @access private * @var integer */ private $mDownStart; /** * 文件大小 * * @access private * @var integer */ private $mFileSize; /** * 文件句柄 * * @access private * @var integer */ private $mFileHandle; /** * 文件全路径 * * @access private * @var string */ private $mFilePath; /** * 文件下载时显示的文件名 * * @access private * @var string */ private $mFileName; /** * 构造函数 * * @access public * @return void **/ public function __construct() { } /** * 下载 * * @param string $pFilePath 文件全路径 * @param string pFileName 文件下载时显示的文件名，缺省为实际文件名 * @access public * @return void **/ public function Down($pFilePath, $pFileName = &#39;&#39;) { $this-&gt;mFilePath = $pFilePath; if(!'>
-<meta property='og:url' content='https://idc.wf/docs/http-functions-php/'>
+<meta property='og:url' content='https://draychou.github.io/Blog-Hugo/docs/http-functions-php/'>
 <meta property='og:site_name' content='Dray&#39;s Home'>
 <meta property='og:type' content='article'><meta property='article:section' content='docs'><meta property='article:tag' content='download'><meta property='article:published_time' content='2011-02-18T00:00:00Z'/><meta property='article:modified_time' content='2011-02-18T00:00:00Z'/><meta name='twitter:card' content='summary'>
 
 <meta name="generator" content="Hugo 0.53" />
 
   <title>php 断点续传功能 • Dray&#39;s Home</title>
-  <link rel='canonical' href='https://idc.wf/docs/http-functions-php/'>
+  <link rel='canonical' href='https://draychou.github.io/Blog-Hugo/docs/http-functions-php/'>
   
   
-  <link rel='icon' href='/favicon.ico'>
-<link rel='stylesheet' href='/assets/css/main.4a10984a.css'><link rel='stylesheet' href='/css/custom.css'><style>
+  <link rel='icon' href='/Blog-Hugo/favicon.ico'>
+<link rel='stylesheet' href='/Blog-Hugo/assets/css/main.4a10984a.css'><link rel='stylesheet' href='/Blog-Hugo/css/custom.css'><style>
 :root{--color-accent:dodgerblue;}
 </style>
 
@@ -36,8 +36,8 @@
   <header>
     
     <div class='logo'>
-      <a href='/'>
-        <img src='/images/logo.png'>
+      <a href='/Blog-Hugo/'>
+        <img src='/Blog-Hugo/images/logo.png'>
       </a>
     </div>
     
@@ -55,7 +55,7 @@
     <h4 class='title widget-title'>Search</h4>
   </header>
 
-  <form action='/search' id='search-form' class='search-form'>
+  <form action='/Blog-Hugo/search' id='search-form' class='search-form'>
     <label>
       <span class='screen-reader-text'></span>
       <input id='search-term' class='search-term' type='search' name='q' placeholder='&hellip;'>
@@ -65,11 +65,11 @@
 <section class='widget widget-sidebar_menu sep-after'><nav id='sidebar-menu' class='menu sidebar-menu' aria-label='侧边菜单'>
     <div class='container'>
       <ul><li class='item'>
-  <a href='/'>Home</a></li><li class='item'>
-  <a href='/docs/'>Docs</a></li><li class='item'>
-  <a href='/menus/'>About</a></li><li class='item'>
-  <a href='/categories/'>categories</a></li><li class='item'>
-  <a href='/tags/'>Tags</a></li></ul>
+  <a href='/Blog-Hugo/'>Home</a></li><li class='item'>
+  <a href='/Blog-Hugo/docs/'>Docs</a></li><li class='item'>
+  <a href='/Blog-Hugo/menus/'>About</a></li><li class='item'>
+  <a href='/Blog-Hugo/categories/'>categories</a></li><li class='item'>
+  <a href='/Blog-Hugo/tags/'>Tags</a></li></ul>
     </div>
   </nav>
 
@@ -101,7 +101,7 @@
     <style>.widget-breadcrumbs li:after{content:'\2f '}</style>
   <section class='widget widget-breadcrumbs sep-after'>
     <nav id='breadcrumbs'>
-      <ol><li><a href='/'>Home</a></li><li><a href='/docs/'>Docs</a></li><li><span>php 断点续传功能</span></li></ol>
+      <ol><li><a href='/Blog-Hugo/'>Home</a></li><li><a href='/Blog-Hugo/docs/'>Docs</a></li><li><span>php 断点续传功能</span></li></ol>
     </nav>
   </section></div>
       </div>
@@ -333,14 +333,14 @@
   <path d="M22,19a2,2,0,0,1-2,2H4a2,2,0,0,1-2-2V5A2,2,0,0,1,4,3H9l2,3h9a2,2,0,0,1,2,2Z"/>
   
 </svg>
-<span class='screen-reader-text'>分类: </span><a class='category' href='/categories/web/'>web</a></div>
+<span class='screen-reader-text'>分类: </span><a class='category' href='/Blog-Hugo/categories/web/'>web</a></div>
 <div class='tags'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
   
   <path d="M20.59,13.41l-7.17,7.17a2,2,0,0,1-2.83,0L2,12V2H12l8.59,8.59A2,2,0,0,1,20.59,13.41Z"/>
   <line x1="7" y1="7" x2="7" y2="7"/>
   
 </svg>
-<span class='screen-reader-text'>标签: </span><a class='tag' href='/tags/download/'>download</a></div>
+<span class='screen-reader-text'>标签: </span><a class='tag' href='/Blog-Hugo/tags/download/'>download</a></div>
 
   </div>
 </footer>
@@ -350,7 +350,7 @@
 
 <nav class='entry-nav'>
   <div class='container'><div class='prev-entry sep-before'>
-      <a href='/docs/php-file-download-large-file-support-class-supports-http-over-2g/'>
+      <a href='/Blog-Hugo/docs/php-file-download-large-file-support-class-supports-http-over-2g/'>
         <span aria-hidden='true'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
   
   <line x1="20" y1="12" x2="4" y2="12"/>
@@ -360,7 +360,7 @@
  上一个</span>
         <span class='screen-reader-text'>上一篇文章: </span>php 超大文件下载类 支持2g以上文件 支持断点续传</a>
     </div><div class='next-entry sep-before'>
-      <a href='/docs/php-bmp-format-image-into-jpg-format-program/'>
+      <a href='/Blog-Hugo/docs/php-bmp-format-image-into-jpg-format-program/'>
         <span class='screen-reader-text'>下一篇文章: </span>php bmp格式图片转换成jpg格式程序<span aria-hidden='true'>下一个 <svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
   
   <line x1="4" y1="12" x2="20" y2="12"/>
@@ -406,9 +406,9 @@
       </footer>
 
     </div>
-  </div><script>window.__public_path__='\/assets\/js\/'</script>
+  </div><script>window.__public_path__='\/Blog-Hugo\/assets\/js\/'</script>
 
-<script src='/assets/js/main.fae8ed32.js'></script><script src='/js/custom.js'></script>
+<script src='/Blog-Hugo/assets/js/main.fae8ed32.js'></script><script src='/Blog-Hugo/js/custom.js'></script>
 
 </body>
 

@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>bash on Dray&#39;s Home</title>
-    <link>https://idc.wf/tags/bash/</link>
+    <link>https://draychou.github.io/Blog-Hugo/tags/bash/</link>
     <description>Recent content in bash on Dray&#39;s Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Thu, 15 May 2014 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://idc.wf/tags/bash/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://draychou.github.io/Blog-Hugo/tags/bash/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>ubuntu 安装命令行自动补全</title>
-      <link>https://idc.wf/docs/ubuntu-bash-completion/</link>
+      <link>https://draychou.github.io/Blog-Hugo/docs/ubuntu-bash-completion/</link>
       <pubDate>Thu, 15 May 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://idc.wf/docs/ubuntu-bash-completion/</guid>
+      <guid>https://draychou.github.io/Blog-Hugo/docs/ubuntu-bash-completion/</guid>
       <description>ubuntu 安装命令行自动补全 ~# apt-get install bash-completion ~# source /etc/bash_completion  编辑/etc/bash.bashrc，在最后加入如下代码
 [plain] if [ -f /etc/bash_completion ]; then /etc/bash_completion fi  重新登录</description>
     </item>

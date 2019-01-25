@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>seo on Dray&#39;s Home</title>
-    <link>https://idc.wf/tags/seo/</link>
+    <link>https://draychou.github.io/Blog-Hugo/tags/seo/</link>
     <description>Recent content in seo on Dray&#39;s Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Thu, 14 Apr 2011 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://idc.wf/tags/seo/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://draychou.github.io/Blog-Hugo/tags/seo/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>搜索引擎配置优化笔记 - 老板的讲课</title>
-      <link>https://idc.wf/docs/search-engine-configuration-optimization-notes-the-bosss-lecture/</link>
+      <link>https://draychou.github.io/Blog-Hugo/docs/search-engine-configuration-optimization-notes-the-bosss-lecture/</link>
       <pubDate>Thu, 14 Apr 2011 00:00:00 +0000</pubDate>
       
-      <guid>https://idc.wf/docs/search-engine-configuration-optimization-notes-the-bosss-lecture/</guid>
+      <guid>https://draychou.github.io/Blog-Hugo/docs/search-engine-configuration-optimization-notes-the-bosss-lecture/</guid>
       <description>搜索引擎优化 并不是 只seo 而是只自建搜索引擎的配置优化
 使用了两个开源的软件：sphinx 和 redis
 开源搜索引擎

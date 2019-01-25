@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>float on Dray&#39;s Home</title>
-    <link>https://idc.wf/tags/float/</link>
+    <link>https://draychou.github.io/Blog-Hugo/tags/float/</link>
     <description>Recent content in float on Dray&#39;s Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Wed, 16 Feb 2011 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://idc.wf/tags/float/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://draychou.github.io/Blog-Hugo/tags/float/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>跨浏览器实现float:center</title>
-      <link>https://idc.wf/docs/to-achieve-cross-browser-float-center/</link>
+      <link>https://draychou.github.io/Blog-Hugo/docs/to-achieve-cross-browser-float-center/</link>
       <pubDate>Wed, 16 Feb 2011 00:00:00 +0000</pubDate>
       
-      <guid>https://idc.wf/docs/to-achieve-cross-browser-float-center/</guid>
+      <guid>https://draychou.github.io/Blog-Hugo/docs/to-achieve-cross-browser-float-center/</guid>
       <description>&lt;p&gt;我们都知道float:left和float:right，但是否想过float:center呢？居中浮动。。。  &lt;div&gt;&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;&amp;lt;div id=&amp;quot;&amp;lt;span style=&amp;quot;color: #8b0000&amp;quot;&amp;gt;macji&amp;lt;/span&amp;gt;&amp;quot;&amp;gt;

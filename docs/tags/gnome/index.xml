@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>gnome on Dray&#39;s Home</title>
-    <link>https://idc.wf/tags/gnome/</link>
+    <link>https://draychou.github.io/Blog-Hugo/tags/gnome/</link>
     <description>Recent content in gnome on Dray&#39;s Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Fri, 23 Sep 2011 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://idc.wf/tags/gnome/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://draychou.github.io/Blog-Hugo/tags/gnome/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Ubuntu 删除已安装的桌面</title>
-      <link>https://idc.wf/docs/delete-ubuntu-desktop/</link>
+      <link>https://draychou.github.io/Blog-Hugo/docs/delete-ubuntu-desktop/</link>
       <pubDate>Fri, 23 Sep 2011 00:00:00 +0000</pubDate>
       
-      <guid>https://idc.wf/docs/delete-ubuntu-desktop/</guid>
+      <guid>https://draychou.github.io/Blog-Hugo/docs/delete-ubuntu-desktop/</guid>
       <description>##Remove Kubuntu Paste this command into the terminal:
 sudo apt-get remove akonadi-server akregator amarok amarok-common amarok-utils appmenu-qt apport-kde apturl-kde ark bluedevil cdparanoia cdrdao docbook-xsl dolphin dragonplayer freespacenotifier gdebi-core gdebi-kde gnupg-agent gnupg2 gpgsm gtk2-engines-oxygen gwenview ibus-qt4 icoutils jockey-kde k3b k3b-data kaddressbook kamera kate kcalc kde-config-gtk kde-config-touchpad kde-window-manager kde-zeroconf kdebase-bin kdebase-data kdebase-runtime kdebase-runtime-data kdebase-workspace kdebase-workspace-bin kdebase-workspace-data kdebase-workspace-kgreet-plugins kdegames-card-data kdegraphics-libs-data kdegraphics-strigi-plugins kdelibs-bin kdelibs5-data kdelibs5-plugins kdemultimedia-kio-plugins kdenetwork-filesharing kdepasswd kdepim-groupware kdepim-kresources kdepim-runtime kdepim-strigi-plugins kdepim-wizards kdepimlibs-kio-plugins kdesudo kdm kdoctools kfind khelpcenter4 kinfocenter klipper kmag kmail kmix kmousetool knm-runtime knotes konsole kontact kopete kopete-message-indicator korganizer kpackagekit kpat kppp krdc krfb krosspython ksnapshot ksysguard ksysguardd ksystemlog ktimetracker ktorrent ktorrent-data kubuntu-debug-installer kubuntu-default-settings kubuntu-desktop kubuntu-docs kubuntu-firefox-installer kubuntu-konqueror-shortcuts kubuntu-netbook-default-settings kubuntu-notification-helper kvkbd kwalletmanager language-selector-kde libakonadi-contact4 libakonadi-kabc4 libakonadi-kcal4 libakonadi-kde4 libakonadi-kmime4 libakonadiprotocolinternals1 libao-common libao4 libasyncns0 libattica0 libaudio2 libbluedevil1 libboost-program-options1.</description>
     </item>

@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>ruby on Dray&#39;s Home</title>
-    <link>https://idc.wf/tags/ruby/</link>
+    <link>https://draychou.github.io/Blog-Hugo/tags/ruby/</link>
     <description>Recent content in ruby on Dray&#39;s Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Mon, 15 Apr 2013 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://idc.wf/tags/ruby/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://draychou.github.io/Blog-Hugo/tags/ruby/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>ubuntu 安装 Ruby, Rails 运行环境</title>
-      <link>https://idc.wf/docs/ubuntu-ruby/</link>
+      <link>https://draychou.github.io/Blog-Hugo/docs/ubuntu-ruby/</link>
       <pubDate>Mon, 15 Apr 2013 00:00:00 +0000</pubDate>
       
-      <guid>https://idc.wf/docs/ubuntu-ruby/</guid>
+      <guid>https://draychou.github.io/Blog-Hugo/docs/ubuntu-ruby/</guid>
       <description>步骤0 － 安装系统需要的包
 Ubuntu 请安装
 $ sudo apt-get install -y build-essential openssl curl libcurl3-dev libreadline6 libreadline6-dev git zlib1g zlib1g-dev libssl-dev libyaml-dev libxml2-dev libxslt-dev autoconf automake libtool imagemagick libmagickwand-dev libpcre3-dev libsqlite3-dev libmysql-ruby libmysqlclient-dev  步骤1 － 安装 RVM
@@ -28,10 +28,10 @@ $ rvm -v rvm 1.17.3 (stable) by Wayne E. Seguin &amp;lt;wayneeseguin@gmail.</des
     
     <item>
       <title>在 ubuntu 11.10 下安装 Ruby on Rails</title>
-      <link>https://idc.wf/docs/insert-ruby-on-rails-in-ubuntu-11-dot-10/</link>
+      <link>https://draychou.github.io/Blog-Hugo/docs/insert-ruby-on-rails-in-ubuntu-11-dot-10/</link>
       <pubDate>Wed, 29 Feb 2012 00:00:00 +0000</pubDate>
       
-      <guid>https://idc.wf/docs/insert-ruby-on-rails-in-ubuntu-11-dot-10/</guid>
+      <guid>https://draychou.github.io/Blog-Hugo/docs/insert-ruby-on-rails-in-ubuntu-11-dot-10/</guid>
       <description>安装常用到组件
 sudo apt-get install git curl  安装 rvm
 1.配置

@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>litespeed on Dray&#39;s Home</title>
-    <link>https://idc.wf/tags/litespeed/</link>
+    <link>https://draychou.github.io/Blog-Hugo/tags/litespeed/</link>
     <description>Recent content in litespeed on Dray&#39;s Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Fri, 11 Feb 2011 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://idc.wf/tags/litespeed/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://draychou.github.io/Blog-Hugo/tags/litespeed/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>litespeed_数据库备份工具</title>
-      <link>https://idc.wf/docs/litespeed_-baidu-encyclopedia/</link>
+      <link>https://draychou.github.io/Blog-Hugo/docs/litespeed_-baidu-encyclopedia/</link>
       <pubDate>Fri, 11 Feb 2011 00:00:00 +0000</pubDate>
       
-      <guid>https://idc.wf/docs/litespeed_-baidu-encyclopedia/</guid>
+      <guid>https://draychou.github.io/Blog-Hugo/docs/litespeed_-baidu-encyclopedia/</guid>
       <description>litespeed是一个革命性的备份sql Server数据库的产品。拥有最新的加密和压缩算法可以快速、安全地备份所有的数据。
 数据库失败和各种原因引起的宕机都是当前DBA面临的严酷现实。但是，通过litespeed，数据库的恢复时间和宕机时间都可以达到最小化。
 litespeed可以实现所有sql Server自身的备份功能，包括数据库备份、差异备份、事务日志备份、文件备份、作业等，并且有自己独特的功能。

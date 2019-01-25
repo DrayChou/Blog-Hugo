@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>android on Dray&#39;s Home</title>
-    <link>https://idc.wf/tags/android/</link>
+    <link>https://draychou.github.io/Blog-Hugo/tags/android/</link>
     <description>Recent content in android on Dray&#39;s Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Wed, 18 May 2016 15:18:00 +0000</lastBuildDate>
     
-	<atom:link href="https://idc.wf/tags/android/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://draychou.github.io/Blog-Hugo/tags/android/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Babyun 平板刷机</title>
-      <link>https://idc.wf/docs/babyun-pad/</link>
+      <link>https://draychou.github.io/Blog-Hugo/docs/babyun-pad/</link>
       <pubDate>Wed, 18 May 2016 15:18:00 +0000</pubDate>
       
-      <guid>https://idc.wf/docs/babyun-pad/</guid>
+      <guid>https://draychou.github.io/Blog-Hugo/docs/babyun-pad/</guid>
       <description>事由 120 块钱在 v2ex 上买了一个平板，至于买来干嘛？没想多。 于是，这里记录下刷机过程，省得之后再找。
 引用 感谢 @mimzy
 @mimzy : @slitaz 官方固件和刷机工具，找 M80 ，我用的是 AZ 批次： http://www.yuandaocn.com/fwzc_detail/&amp;amp;i=15&amp;amp;comContentId=15.html 改大分区教程： http://tieba.baidu.com/p/3324227239 为了确保驱动兼容性可能需要 Windows XP 系统，如果 SP Flash Tool 报错「由于应用程序配置不正确，应用程序未能启动」需要装 Microsoft Visual C++ 2008 Redistributable ， root 什么的感觉没必要折腾就没弄。  下载地址： 刷机工具和分区调整补丁： 百度云

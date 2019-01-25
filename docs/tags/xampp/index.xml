@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>xampp on Dray&#39;s Home</title>
-    <link>https://idc.wf/tags/xampp/</link>
+    <link>https://draychou.github.io/Blog-Hugo/tags/xampp/</link>
     <description>Recent content in xampp on Dray&#39;s Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Thu, 29 Aug 2013 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://idc.wf/tags/xampp/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://draychou.github.io/Blog-Hugo/tags/xampp/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>在 Xampp 上配置 redis,mongodb,mariadb</title>
-      <link>https://idc.wf/docs/xampp-redis-mongodb-mariadb/</link>
+      <link>https://draychou.github.io/Blog-Hugo/docs/xampp-redis-mongodb-mariadb/</link>
       <pubDate>Thu, 29 Aug 2013 00:00:00 +0000</pubDate>
       
-      <guid>https://idc.wf/docs/xampp-redis-mongodb-mariadb/</guid>
+      <guid>https://draychou.github.io/Blog-Hugo/docs/xampp-redis-mongodb-mariadb/</guid>
       <description>之前为了在本地调试方便，配置了这几个客户端在 xampp 下面的环境。现记录下
 ##程序
 可以去官网下载，也可以用我分享出来的地址 [http://goo.gl/zOGQ9m](百度网盘)  ##安装

@@ -13,18 +13,18 @@
 - linux ##　导出数据库用mysqldump命令（注意mysql的安装路径，即此命令的路径）：
 导出数据和表结构： mysqldump -u用户名 -p密码 数据库名 &gt; 数据库名.sql #/usr/local/mysql/bin/ mysqldump -uroot -p abc &gt; abc.sql 敲回车后会提示输入密码  只导出表结构 mysqldump -u用户名 -p密码 -d 数据库名 &gt; 数据库名.sql #/usr/local/mysql/bin/ mysqldump -uroot -p -d abc &gt; abc.sql  注：/usr/local/mysql/bin/ &mdash;&gt; mysql的data目录
 导入数据库 首先建空数据库 mysql&gt;create database abc;  导入数据库 方法一：  选择数据库 mysql&gt;use abc; 设置数据库编码 mysql&gt;set names utf8; 导入数据（注意sql文件的路径） mysql&gt;source /home/abc/abc.'>
-<meta property='og:url' content='https://idc.wf/docs/mysqldump/'>
+<meta property='og:url' content='https://draychou.github.io/Blog-Hugo/docs/mysqldump/'>
 <meta property='og:site_name' content='Dray&#39;s Home'>
 <meta property='og:type' content='article'><meta property='article:section' content='docs'><meta name='twitter:card' content='summary'>
 
 <meta name="generator" content="Hugo 0.53" />
 
   <title> • Dray&#39;s Home</title>
-  <link rel='canonical' href='https://idc.wf/docs/mysqldump/'>
+  <link rel='canonical' href='https://draychou.github.io/Blog-Hugo/docs/mysqldump/'>
   
   
-  <link rel='icon' href='/favicon.ico'>
-<link rel='stylesheet' href='/assets/css/main.4a10984a.css'><link rel='stylesheet' href='/css/custom.css'><style>
+  <link rel='icon' href='/Blog-Hugo/favicon.ico'>
+<link rel='stylesheet' href='/Blog-Hugo/assets/css/main.4a10984a.css'><link rel='stylesheet' href='/Blog-Hugo/css/custom.css'><style>
 :root{--color-accent:dodgerblue;}
 </style>
 
@@ -40,8 +40,8 @@
   <header>
     
     <div class='logo'>
-      <a href='/'>
-        <img src='/images/logo.png'>
+      <a href='/Blog-Hugo/'>
+        <img src='/Blog-Hugo/images/logo.png'>
       </a>
     </div>
     
@@ -59,7 +59,7 @@
     <h4 class='title widget-title'>Search</h4>
   </header>
 
-  <form action='/search' id='search-form' class='search-form'>
+  <form action='/Blog-Hugo/search' id='search-form' class='search-form'>
     <label>
       <span class='screen-reader-text'></span>
       <input id='search-term' class='search-term' type='search' name='q' placeholder='&hellip;'>
@@ -69,11 +69,11 @@
 <section class='widget widget-sidebar_menu sep-after'><nav id='sidebar-menu' class='menu sidebar-menu' aria-label='侧边菜单'>
     <div class='container'>
       <ul><li class='item'>
-  <a href='/'>Home</a></li><li class='item'>
-  <a href='/docs/'>Docs</a></li><li class='item'>
-  <a href='/menus/'>About</a></li><li class='item'>
-  <a href='/categories/'>categories</a></li><li class='item'>
-  <a href='/tags/'>Tags</a></li></ul>
+  <a href='/Blog-Hugo/'>Home</a></li><li class='item'>
+  <a href='/Blog-Hugo/docs/'>Docs</a></li><li class='item'>
+  <a href='/Blog-Hugo/menus/'>About</a></li><li class='item'>
+  <a href='/Blog-Hugo/categories/'>categories</a></li><li class='item'>
+  <a href='/Blog-Hugo/tags/'>Tags</a></li></ul>
     </div>
   </nav>
 
@@ -105,7 +105,7 @@
     <style>.widget-breadcrumbs li:after{content:'\2f '}</style>
   <section class='widget widget-breadcrumbs sep-after'>
     <nav id='breadcrumbs'>
-      <ol><li><a href='/'>Home</a></li><li><a href='/docs/'>Docs</a></li><li><span></span></li></ol>
+      <ol><li><a href='/Blog-Hugo/'>Home</a></li><li><a href='/Blog-Hugo/docs/'>Docs</a></li><li><span></span></li></ol>
     </nav>
   </section></div>
       </div>
@@ -231,7 +231,7 @@ mysql&gt;source /home/abc/abc.sql;</p>
 
 <nav class='entry-nav'>
   <div class='container'><div class='prev-entry sep-before'>
-      <a href='/docs/root-google-now/'>
+      <a href='/Blog-Hugo/docs/root-google-now/'>
         <span aria-hidden='true'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
   
   <line x1="20" y1="12" x2="4" y2="12"/>
@@ -241,7 +241,7 @@ mysql&gt;source /home/abc/abc.sql;</p>
  上一个</span>
         <span class='screen-reader-text'>上一篇文章: </span></a>
     </div><div class='next-entry sep-before'>
-      <a href='/docs/composer-tools/'>
+      <a href='/Blog-Hugo/docs/composer-tools/'>
         <span class='screen-reader-text'>下一篇文章: </span><span aria-hidden='true'>下一个 <svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
   
   <line x1="4" y1="12" x2="20" y2="12"/>
@@ -287,9 +287,9 @@ mysql&gt;source /home/abc/abc.sql;</p>
       </footer>
 
     </div>
-  </div><script>window.__public_path__='\/assets\/js\/'</script>
+  </div><script>window.__public_path__='\/Blog-Hugo\/assets\/js\/'</script>
 
-<script src='/assets/js/main.fae8ed32.js'></script><script src='/js/custom.js'></script>
+<script src='/Blog-Hugo/assets/js/main.fae8ed32.js'></script><script src='/Blog-Hugo/js/custom.js'></script>
 
 </body>
 

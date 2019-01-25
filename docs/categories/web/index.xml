@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>web on Dray&#39;s Home</title>
-    <link>https://idc.wf/categories/web/</link>
+    <link>https://draychou.github.io/Blog-Hugo/categories/web/</link>
     <description>Recent content in web on Dray&#39;s Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Fri, 13 May 2016 20:05:00 +0000</lastBuildDate>
     
-	<atom:link href="https://idc.wf/categories/web/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://draychou.github.io/Blog-Hugo/categories/web/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>使用Travis CI自动部署Hexo</title>
-      <link>https://idc.wf/docs/travis-ci/</link>
+      <link>https://draychou.github.io/Blog-Hugo/docs/travis-ci/</link>
       <pubDate>Fri, 13 May 2016 20:05:00 +0000</pubDate>
       
-      <guid>https://idc.wf/docs/travis-ci/</guid>
+      <guid>https://draychou.github.io/Blog-Hugo/docs/travis-ci/</guid>
       <description>前言 之前换过很多的静态博客系统，但是每个系统都需要本地做一定的部署，这点很麻烦。 Gor 倒是有可执行文件，但是本地部署的时候还是需要合并提交代码，还是略不爽。 今天在查 CI 系统的时候发现了 Travis CI ,于是，一切都很开心了。
 关于 Travis CI 这是一个通过脚本来进行自动部署的系统，本身与 Github 高度集成，目前对于公开的项目免费支持。
 开启travis-ci 首先去 Travis CI 官网，点击右上角Sign in with GitHub通过github授权登录。然后去到个人信息页面，开启需要使用 travis 的项目，在我这里就是 DrayChou/Blog-Hexo 。
@@ -26,10 +26,10 @@ $ travis init detected repository as DrayChou/Blog-Pugo Main programming languag
     
     <item>
       <title>让域名邮箱支持通配符</title>
-      <link>https://idc.wf/docs/mailgun/</link>
+      <link>https://draychou.github.io/Blog-Hugo/docs/mailgun/</link>
       <pubDate>Mon, 03 Aug 2015 15:30:00 +0000</pubDate>
       
-      <guid>https://idc.wf/docs/mailgun/</guid>
+      <guid>https://draychou.github.io/Blog-Hugo/docs/mailgun/</guid>
       <description>目前手贱收了一个域名，想配置成支持泛域名解析的邮箱地址，即随便写名称都可以寄到的邮件。
 之前有用 QQ 企业邮箱做过一个泛解析的域名，规则是错误的邮箱地址都转发到一个固定地址，参见地址 什么是错误地址转发功能？。
 后来 Google Domails 推出后，推出了域名 EMAIL 服务，支持 * 通配符，于是开心了，参见地址About wildcard email forwarding。
@@ -43,10 +43,10 @@ $ travis init detected repository as DrayChou/Blog-Pugo Main programming languag
     
     <item>
       <title>laravel 部署</title>
-      <link>https://idc.wf/docs/laravel/</link>
+      <link>https://draychou.github.io/Blog-Hugo/docs/laravel/</link>
       <pubDate>Fri, 30 Jan 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://idc.wf/docs/laravel/</guid>
+      <guid>https://draychou.github.io/Blog-Hugo/docs/laravel/</guid>
       <description>看最近 laravel 好像蛮流行的，部署一个玩玩。
 基础环境 composer $ curl -sS https://getcomposer.org/installer | php $ mv composer.phar /usr/local/bin/composer  这个就是传说中的 php 的包管理器了，之前没怎么用过。
 PEAR Download PEAR
@@ -62,10 +62,10 @@ You should be able to type:</description>
     
     <item>
       <title>python 版本 shadowsocks</title>
-      <link>https://idc.wf/docs/pip-ss/</link>
+      <link>https://draychou.github.io/Blog-Hugo/docs/pip-ss/</link>
       <pubDate>Wed, 14 Jan 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://idc.wf/docs/pip-ss/</guid>
+      <guid>https://draychou.github.io/Blog-Hugo/docs/pip-ss/</guid>
       <description>因为墙更高了， fqrouter 都用不了了，没办法，只能把之前的 ss 拿起来用了。 这次重新使用 python 版本的 ss。
 首先，安装
 apt-get update apt-get install python-pip python-m2crypto supervisor pip install shadowsocks  执行
@@ -78,10 +78,10 @@ ssserver -c /etc/shadowsocks.json -d start ssserver -c /etc/shadowsocks.json -d 
     
     <item>
       <title>P2P 微薄</title>
-      <link>https://idc.wf/docs/twister/</link>
+      <link>https://draychou.github.io/Blog-Hugo/docs/twister/</link>
       <pubDate>Mon, 28 Jul 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://idc.wf/docs/twister/</guid>
+      <guid>https://draychou.github.io/Blog-Hugo/docs/twister/</guid>
       <description>twister 是
 twister 本质上是一个不需要中心服务器的 twitter。 twister 不需要中心服务器，它使用基于比特币与 bt 下载的技术来构建一个 p2p 的网络，你的消息存放在这个 p2p 网络中，只要你在任何有互联网接入的地方，理论上都可以连入 twister 网络，使用全部功能。 twister 网络上没有任何管理员对你的言论进行审查与过滤！ 使用 twister 不需要翻墙。你的消息一经发表，无法删除！  所以，来愉快的玩耍吧。
 官方地址 官方wiki
@@ -91,10 +91,10 @@ twister 本质上是一个不需要中心服务器的 twitter。 twister 不需�
     
     <item>
       <title>关于通过 PushBullet API 推送信息的设想</title>
-      <link>https://idc.wf/docs/pushbullet-api/</link>
+      <link>https://draychou.github.io/Blog-Hugo/docs/pushbullet-api/</link>
       <pubDate>Fri, 11 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://idc.wf/docs/pushbullet-api/</guid>
+      <guid>https://draychou.github.io/Blog-Hugo/docs/pushbullet-api/</guid>
       <description> 坑 我不喜欢 twitter 官方客户端 ，感觉官方客户端里 Timeline 乱乱的，平常都是使用 twidere 来用的。 但是 twidere 目前不支持推送，要实现推送必须有自己的服务器，自己的 google 注册应用，略麻烦了点，于是想到了 PushBullet ,如果她有 API 多好，查了下，果然有，然后一个“坑”出现了。
 PushBullet PushBullet API 的官方介绍地址在这里 戳我 ,她的 API 太简单了，简直是我见过的最简单的 API 了。通篇上下只有2个接口，简单看下文档就会了，现说下注意事项。
 api key  这个每个注册帐号都有一个，不区分开发账户，也没有开发账户，查看地址在：登录后查看 查询的时候需要调用 http 默认的 BasicAuth 认证方式，用户名就是 api key ，密码为空。  然后 然后你就可以不停的推送了，如果要推送给别人，也需要先得到对方的 api key ，至于推送给好友， 可以通过 get 的方式得到对方的 ID。
@@ -103,20 +103,20 @@ GO  https://www.pushbullet.com/api http://stackoverflow.com/questions/11361431/a
     
     <item>
       <title>记一次 wsdl 服务的调用</title>
-      <link>https://idc.wf/docs/php-soap-and-net-soap/</link>
+      <link>https://draychou.github.io/Blog-Hugo/docs/php-soap-and-net-soap/</link>
       <pubDate>Fri, 11 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://idc.wf/docs/php-soap-and-net-soap/</guid>
+      <guid>https://draychou.github.io/Blog-Hugo/docs/php-soap-and-net-soap/</guid>
       <description>公司业务要用到某 wsdl 的服务，使用 php5 自带的 soapclient 进行链接，屡次连不上，然后换 nusoap 包进行测试，还是不行，最后找到修改官方包 namespace 的方法才通过，记录下经验吧。
 soapclient  官方推荐的调用对方函数的方法 _soapCall 函数调用如果失败，完全不输出任何信息。 这个包无法查看对方返回的 http 状态。 封装好的数据对方无法解析，直接报解析错误，需要继承并修改官方包，代码如下:   class MSSoapClient extends SoapClient { function __doRequest($request, $location, $action, $version) { $namespace = &amp;quot;http://adc.ecinterface/&amp;quot;; $request = preg_replace(&#39;/ $request = preg_replace(&#39;/ $request = str_replace(array(&#39;/ns1:&#39;, &#39;xmlns:ns1=&amp;quot;&#39; . $namespace . &#39;&amp;quot;&#39;), array(&#39;/&#39;, &#39;&#39;), $request); // parent call return parent::__doRequest($request, $location, $action, $version); } }  nusoap  发出去的数据因为不是系统级的封装，所以数据前会带上不少的噪音，对方完全无法识别。  总结  对于不了解的还是要多祭拜谷歌大神。 还是要多试。  参考地址 http://stackoverflow.</description>
     </item>
     
     <item>
       <title>动弹一下 - 我的第一个 Chrome 应用</title>
-      <link>https://idc.wf/docs/oschina_tweet/</link>
+      <link>https://draychou.github.io/Blog-Hugo/docs/oschina_tweet/</link>
       <pubDate>Thu, 06 Mar 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://idc.wf/docs/oschina_tweet/</guid>
+      <guid>https://draychou.github.io/Blog-Hugo/docs/oschina_tweet/</guid>
       <description> 之前不小心买了 Google 的开发者凭证，于是晋级为了开发者。但是，我完全不知道要拿来做什么。 最近比较关注的 oschina 开放了他的 api ，然后他们的 tweet[动弹] 我也有在用，发现还没有它的 Chrome 应用。于是，做点啥吧，就当练手了，不能白瞎了咱的开发者身份。
 项目地址：  github:https://github.com/DrayChou/oschina_tweet oschina:http://git.oschina.net/drayc/oschina_tweet 应用地址：http://goo.gl/gsK4x3  项目介绍 项目目前实现了下面四个功能。
  最新动弹 热门动弹 我的动弹 动弹一下  其他的功能，在我发现 tweet 完全没有好友概念之后，就算了。反正拿出来的肯定是最新的，好友关系可有可无。 另：界面实在很简陋，等我有空再细细雕琢。
@@ -125,10 +125,10 @@ soapclient  官方推荐的调用对方函数的方法 _soapCall 函数调用如
     
     <item>
       <title>开眼看世界之路</title>
-      <link>https://idc.wf/docs/open-your-eyes/</link>
+      <link>https://draychou.github.io/Blog-Hugo/docs/open-your-eyes/</link>
       <pubDate>Fri, 27 Dec 2013 00:00:00 +0000</pubDate>
       
-      <guid>https://idc.wf/docs/open-your-eyes/</guid>
+      <guid>https://draychou.github.io/Blog-Hugo/docs/open-your-eyes/</guid>
       <description>开眼看世界 早百年前就有人说过要 开眼看世界 ，但是过了那么多年，我们还是看不到外面的东西，此文章就是收集这些能帮你看到外面世界的工具。
 新手装备 所谓新手装备，就是只要打开就能用的，不需要技术含量的东西。
  greatagent  官网：https://code.google.com/p/greatagent/ 官网有教程，解压后运行 greatagent.bat 就会自动启动代理服务和浏览器，自动翻墙  firefox-goagent  官网：https://code.google.com/p/firefox-goagent/  chromeplus  官网：https://code.google.com/p/chromeplus/  fqrouter  官网：http://fqrouter.com/ android 下的利器 新手可通过 豌豆荚 等工具安装   我会折腾  GoAgent  官网：https://code.google.com/p/goagent/ 其实上面几款 windows 下面的应用都已经包含了 goagent ，会折腾的可以直接拆上面的集成包来用。   我有服务器  shadowsocks  官网：https://github.com/clowwindy/shadowsocks/wiki/Ports-and-Clients 本身包含 lib,go,python,nodejs&amp;hellip; 等服务器版本，搭配对应的客户端版本可以做到全终端覆盖。  ssh  直接使用 ssh 进行代理也是可以的 详细代理方法请自行谷歌  vpn  该法请自行谷歌搭建方法   我有钱 有钱的亲可以搜索购买下面对应的代理产品
@@ -137,10 +137,10 @@ soapclient  官方推荐的调用对方函数的方法 _soapCall 函数调用如
     
     <item>
       <title>设置 google chrome protable 为默认浏览器</title>
-      <link>https://idc.wf/docs/google-chrome-as-system-default-browse/</link>
+      <link>https://draychou.github.io/Blog-Hugo/docs/google-chrome-as-system-default-browse/</link>
       <pubDate>Sat, 16 Jun 2012 00:00:00 +0000</pubDate>
       
-      <guid>https://idc.wf/docs/google-chrome-as-system-default-browse/</guid>
+      <guid>https://draychou.github.io/Blog-Hugo/docs/google-chrome-as-system-default-browse/</guid>
       <description>以下是 win7 下设置 google chrome protable 为默认浏览器的 注册表文件
 1) chrome.reg:
 Windows Registry Editor Version 5.00 [HKEY_LOCAL_macHINE\SOFTWARE\RegisteredApplications] &amp;quot;chrome Portable&amp;quot;=&amp;quot;Software\\Clients\\StartMenuInternet\\GooglechromePortable\\Capabilities&amp;quot; [HKEY_LOCAL_macHINE\SOFTWARE\Clients\StartMenuInternet\GooglechromePortable\Capabilities] &amp;quot;ApplicationName&amp;quot;=&amp;quot;Google chrome Portable&amp;quot; &amp;quot;ApplicationDescription&amp;quot;=&amp;quot;Google chrome Portable is a web browser that runs web pages and applications with lightning speed. It&#39;s designed to be simple and stylish. It&#39;s packaged as a portable app, so you can take your browsing experience with you.&amp;quot; &amp;quot;ApplicationIcon&amp;quot;=&amp;quot;\&amp;quot;D:\\Softwares\\Portable\\Extracted\\GooglechromePortable\\GooglechromePortable.exe\&amp;quot;,0&amp;quot; &amp;quot;Hidden&amp;quot;=dword:00000000 [HKEY_LOCAL_macHINE\SOFTWARE\Clients\StartMenuInternet\GooglechromePortable\Capabilities\FileAssociations] &amp;quot;.htm&amp;quot;=&amp;quot;GooglechromePortableHTML&amp;quot; &amp;quot;.html&amp;quot;=&amp;quot;GooglechromePortableHTML&amp;quot; &amp;quot;.shtml&amp;quot;=&amp;quot;GooglechromePortableHTML&amp;quot; &amp;quot;.xht&amp;quot;=&amp;quot;GooglechromePortableHTML&amp;quot; &amp;quot;.xhtml&amp;quot;=&amp;quot;GooglechromePortableHTML&amp;quot; [HKEY_LOCAL_macHINE\SOFTWARE\Clients\StartMenuInternet\GooglechromePortable\Capabilities\StartMenu] &amp;quot;StartMenuInternet&amp;quot;=&amp;quot;GooglechromePortable&amp;quot; [HKEY_LOCAL_macHINE\SOFTWARE\Clients\StartMenuInternet\GooglechromePortable\Capabilities\URLAssociations] &amp;quot;http&amp;quot;=&amp;quot;GooglechromePortableURL&amp;quot; &amp;quot;https&amp;quot;=&amp;quot;GooglechromePortableURL&amp;quot; &amp;quot;ftp&amp;quot;=&amp;quot;GooglechromePortableURL&amp;quot; [HKEY_LOCAL_macHINE\SOFTWARE\Clients\StartMenuInternet\GooglechromePortable] &amp;quot;LocalizedString&amp;quot;=&amp;quot;Google chrome Portable&amp;quot; &amp;quot;&amp;quot;=&amp;quot;Google chrome Portable&amp;quot; [HKEY_LOCAL_macHINE\SOFTWARE\Clients\StartMenuInternet\GooglechromePortable\DefaultIcon] &amp;quot;&amp;quot;=&amp;quot;\&amp;quot;D:\\Softwares\\Portable\\Extracted\\GooglechromePortable\\GooglechromePortable.</description>
@@ -148,10 +148,10 @@ Windows Registry Editor Version 5.00 [HKEY_LOCAL_macHINE\SOFTWARE\RegisteredAppl
     
     <item>
       <title>上传文件夹</title>
-      <link>https://idc.wf/docs/upload-folders/</link>
+      <link>https://draychou.github.io/Blog-Hugo/docs/upload-folders/</link>
       <pubDate>Fri, 17 Feb 2012 00:00:00 +0000</pubDate>
       
-      <guid>https://idc.wf/docs/upload-folders/</guid>
+      <guid>https://draychou.github.io/Blog-Hugo/docs/upload-folders/</guid>
       <description>最近公司的产品要用到上传目录的功能，所以查了一些资料，现记录下来。
 现有的方案：
 http://www.cnblogs.com/xproer/archive/2010/10/24/1859895.html 国内的收费版本，支持大部分微软的脚本语言，实用 Activex 控件实现 http://slickupload.com/ 国外的，社区版免费，只支持最新版的浏览器，应该是html5的方式实现的  资料：
@@ -161,10 +161,10 @@ http://blog.sina.com.cn/s/blog_4c6e822d0102dsma.html 遍历上传目录的 asp.n
     
     <item>
       <title>Hello Octopress</title>
-      <link>https://idc.wf/docs/hello-octopress/</link>
+      <link>https://draychou.github.io/Blog-Hugo/docs/hello-octopress/</link>
       <pubDate>Mon, 06 Feb 2012 00:00:00 +0000</pubDate>
       
-      <guid>https://idc.wf/docs/hello-octopress/</guid>
+      <guid>https://draychou.github.io/Blog-Hugo/docs/hello-octopress/</guid>
       <description>Octopress 是一个很不错的 blog 程序，好处我就不说了，自己查文档，现在把我安装时碰到的问题记录下来，供后来的朋友参考。
 从wordpress导出数据 我参考前面诸位写出来的ruby代码：wordpress2Markdown
 这个ruby脚本的功能：
@@ -177,10 +177,10 @@ bundle exec rake  用上面的语句替代 rake 执行命令
     
     <item>
       <title>彻底解决sysfader: IEXPLORE.EXE应用程序错误</title>
-      <link>https://idc.wf/docs/solve-sysfader-iexplore-exe-application-error/</link>
+      <link>https://draychou.github.io/Blog-Hugo/docs/solve-sysfader-iexplore-exe-application-error/</link>
       <pubDate>Fri, 20 May 2011 00:00:00 +0000</pubDate>
       
-      <guid>https://idc.wf/docs/solve-sysfader-iexplore-exe-application-error/</guid>
+      <guid>https://draychou.github.io/Blog-Hugo/docs/solve-sysfader-iexplore-exe-application-error/</guid>
       <description>今天碰到一个用户出现 sysfader: IEXPLORE.EXE应用程序错误， 这个用户的浏览器是IE8，这个错误只在IE8下出现，换了别的浏览器或者兼容模式都没问题，老大提醒说是JS有问题，但是。。。 我检查了一下代码，别的用户怎么没这个问题，要知道JS都一样的啊，而且用户也没有自己引用JS啊【我们的产品允许用户用html代码编辑自己的主页】。。。
 笨方法：一段一段删掉，看看还会不会报错，最后锁定了这段代码：
 奇怪为什么单单IE8过滤不了这个，看来IE8也不咋地啊，对微软的产品真是印象很差啊。。。 看网上好多用户怎么怎么折腾的方法，其实这个问题还是要问网站的，要是网站代码写的很规范的话就不会出这个问题啦。。。
@@ -191,10 +191,10 @@ bundle exec rake  用上面的语句替代 rake 执行命令
     
     <item>
       <title>利用jquery自动生成导航目录</title>
-      <link>https://idc.wf/docs/automatically-generated-navigation-menu-using-jquery/</link>
+      <link>https://draychou.github.io/Blog-Hugo/docs/automatically-generated-navigation-menu-using-jquery/</link>
       <pubDate>Tue, 17 May 2011 00:00:00 +0000</pubDate>
       
-      <guid>https://idc.wf/docs/automatically-generated-navigation-menu-using-jquery/</guid>
+      <guid>https://draychou.github.io/Blog-Hugo/docs/automatically-generated-navigation-menu-using-jquery/</guid>
       <description>翻译自：http://www.jankoatwarpspeed.com/post/2009/08/20/Table-of-contents-using-jQuery.aspx 原文提供了3种样式，但是基本思想都是一样，那就是利用jquery选择器找到文章中的h1,h2,h3标签，修改这个标签的ID并生成对应的锚点链接地址。
 第一种：
 文章内容应该类似这样，由h1,h2,h3等标签分隔：
@@ -205,10 +205,10 @@ $(&amp;quot;#toc&amp;quot;).append(&#39;In this article:&#39;) $(&amp;quot;h1, h
     
     <item>
       <title>webqq中自适应宽度的JS代码和隐藏页面横向滚动条的css样式</title>
-      <link>https://idc.wf/docs/webqq-js-code-in-the-adaptive-width/</link>
+      <link>https://draychou.github.io/Blog-Hugo/docs/webqq-js-code-in-the-adaptive-width/</link>
       <pubDate>Thu, 12 May 2011 00:00:00 +0000</pubDate>
       
-      <guid>https://idc.wf/docs/webqq-js-code-in-the-adaptive-width/</guid>
+      <guid>https://draychou.github.io/Blog-Hugo/docs/webqq-js-code-in-the-adaptive-width/</guid>
       <description>webqq 中 自适应宽度的JS代码
 &amp;lt;script src=&amp;quot;http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;&amp;lt;script src=&amp;quot;http://web.qstatic.com/jsapi/alloy.api.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;&amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt; try { alloy.onReady(function(){ if($(window).width()&amp;lt;1026){ alloy.window.setBodySize({width: 1026,height: $(window).height()}) }; }); }catch(e){ } $(window).resize(function(){ var w = $(window).width(); var h = $(window).height(); $(&amp;quot;#iyaya_iframe&amp;quot;).css({ width: w&amp;gt;1026?w-16:1016, height: h, }); }); &amp;lt;/script&amp;gt;  隐藏横向滚动条的方法：
 &amp;lt;span style=&amp;quot;color: #ff0000;&amp;quot;&amp;gt;给 html 设置 overflow-x: hidden&amp;lt;/span&amp;gt;   </description>
@@ -216,10 +216,10 @@ $(&amp;quot;#toc&amp;quot;).append(&#39;In this article:&#39;) $(&amp;quot;h1, h
     
     <item>
       <title>我家里的网络与几个服务器的连通状况</title>
-      <link>https://idc.wf/docs/my-home-network-and-the-connectivity-of-several-servers/</link>
+      <link>https://draychou.github.io/Blog-Hugo/docs/my-home-network-and-the-connectivity-of-several-servers/</link>
       <pubDate>Wed, 04 May 2011 00:00:00 +0000</pubDate>
       
-      <guid>https://idc.wf/docs/my-home-network-and-the-connectivity-of-several-servers/</guid>
+      <guid>https://draychou.github.io/Blog-Hugo/docs/my-home-network-and-the-connectivity-of-several-servers/</guid>
       <description>这是从我家ping几台服务器结果的截图，悲剧啊，这TM的就是杯具。。。。
 173.252.207.120
 Ping:
@@ -239,10 +239,10 @@ Tracert</description>
     
     <item>
       <title>清除页面中多余的css样式</title>
-      <link>https://idc.wf/docs/remove-the-extra-css-style-page/</link>
+      <link>https://draychou.github.io/Blog-Hugo/docs/remove-the-extra-css-style-page/</link>
       <pubDate>Wed, 04 May 2011 00:00:00 +0000</pubDate>
       
-      <guid>https://idc.wf/docs/remove-the-extra-css-style-page/</guid>
+      <guid>https://draychou.github.io/Blog-Hugo/docs/remove-the-extra-css-style-page/</guid>
       <description>一、Dust-Me selectors
 Dust-Me是一个很有用也很好用的Firefox插件，它可以分析到你的页面中调用的所有css文件并分析那些在页面中没有被用到。
  支持本地和远程样式文件，包括使用&amp;lt;link&amp;gt;标签、&amp;lt;?xml-stylesheet?&amp;gt;处理指令、@import语句等方式引入的样式文件；(但是不支持页面中的&amp;lt;style&amp;gt;块和内联样式)
@@ -260,10 +260,10 @@ Page Speed是Google提供的一个前端性能分析工具，有些类似于YSlo
     
     <item>
       <title>php日志系统——plog</title>
-      <link>https://idc.wf/docs/php-log-system-plog/</link>
+      <link>https://draychou.github.io/Blog-Hugo/docs/php-log-system-plog/</link>
       <pubDate>Thu, 28 Apr 2011 00:00:00 +0000</pubDate>
       
-      <guid>https://idc.wf/docs/php-log-system-plog/</guid>
+      <guid>https://draychou.github.io/Blog-Hugo/docs/php-log-system-plog/</guid>
       <description>我在使用的时候发现了一个问题，就是要想在不同的文件夹下面记录不同的状况，例如： 在/logs/debug/ 下面记录debug 的日志， 在/logs/error/ 下面记录error的日志 就需要分别建立filedebug.php 和 fileerror.php 作为写入的引擎，事实上这两个类在类内部的代码里面是完全一模一样的。 好吧，这不算什么致命的问题，重新集成一次file.php就可以了。 总的来说，这个日志系统还是不错的。 plog的介绍： 日志是一个应用程序的重要组成部分，今天在看pylons对日志的处理时，受到启发，于是plog就诞生了。 很多php框架都忽略了日志的重要性(如kohana)，往往只是能用，自定义和可扩展性不够，等到程序出了问题，再想找原因时就比较麻烦了。 plog简介
 plog是一款轻量级，易定制，易使用，易扩展的php日志系统。可以很方便地添加日志处理工具、自定义输出格式、自定义日志类型等等。 plog使用
 使用plog很简单，在每个要加日志的文件里，输入以下代码 debug(&amp;lsquo;this is debug message&amp;rsquo;); $log-&amp;gt;info(&amp;lsquo;this is info message&amp;rsquo;); plog的配置
@@ -275,10 +275,10 @@ https://github.com/lzyy/plog &amp;ndash;EOF&amp;ndash;若无特别说明，本�
     
     <item>
       <title>推荐一个公共的评论系统disqus</title>
-      <link>https://idc.wf/docs/recommended-a-public-comment-system-disqus/</link>
+      <link>https://draychou.github.io/Blog-Hugo/docs/recommended-a-public-comment-system-disqus/</link>
       <pubDate>Thu, 28 Apr 2011 00:00:00 +0000</pubDate>
       
-      <guid>https://idc.wf/docs/recommended-a-public-comment-system-disqus/</guid>
+      <guid>https://draychou.github.io/Blog-Hugo/docs/recommended-a-public-comment-system-disqus/</guid>
       <description>这是个很有意思的公共评论系统，使用他可以让用户使用不同的帐号登录并评论，比如说，twitter,facebook,google等，一部到位，不错！
 网站：http://disqus.com/
 效果参看本站</description>
@@ -286,19 +286,19 @@ https://github.com/lzyy/plog &amp;ndash;EOF&amp;ndash;若无特别说明，本�
     
     <item>
       <title>twitter官方的同步到facebook的服务：http://apps.facebook.com/twitter/</title>
-      <link>https://idc.wf/docs/synchronized-to-the-official-facebook-twitter-services-httpapps-facebook-comtwitter/</link>
+      <link>https://draychou.github.io/Blog-Hugo/docs/synchronized-to-the-official-facebook-twitter-services-httpapps-facebook-comtwitter/</link>
       <pubDate>Wed, 27 Apr 2011 00:00:00 +0000</pubDate>
       
-      <guid>https://idc.wf/docs/synchronized-to-the-official-facebook-twitter-services-httpapps-facebook-comtwitter/</guid>
+      <guid>https://draychou.github.io/Blog-Hugo/docs/synchronized-to-the-official-facebook-twitter-services-httpapps-facebook-comtwitter/</guid>
       <description>访问这个网站(需翻墙):http://apps.facebook.com/twitter/，按步骤来就可以了！</description>
     </item>
     
     <item>
       <title>共享google reader 内容到twitter,facebook</title>
-      <link>https://idc.wf/docs/shared-google-reader-content-to-twitter-facebook/</link>
+      <link>https://draychou.github.io/Blog-Hugo/docs/shared-google-reader-content-to-twitter-facebook/</link>
       <pubDate>Wed, 27 Apr 2011 00:00:00 +0000</pubDate>
       
-      <guid>https://idc.wf/docs/shared-google-reader-content-to-twitter-facebook/</guid>
+      <guid>https://draychou.github.io/Blog-Hugo/docs/shared-google-reader-content-to-twitter-facebook/</guid>
       <description>今天听人说 googlereader2twitter,遂google之,得到以下答案:
 1.Twitterfeed
 打开这个网站,注册或直接用OpenID的方式登录(google,yahoo,openid,wordpress&amp;hellip;),按教程(3步)走,就可以了,支持同步greafer到Facebook,Twitter,Statusnet,Hellotxt.
@@ -311,10 +311,10 @@ googlereader rss 地址:http://www.google.com/reader/shared/hnzksq 把后面的h
     
     <item>
       <title>Proxy Switchy! 可以打开https，打不开http的解决方法</title>
-      <link>https://idc.wf/docs/proxy-switchy-can-open-the-https-not-open-http-solution/</link>
+      <link>https://draychou.github.io/Blog-Hugo/docs/proxy-switchy-can-open-the-https-not-open-http-solution/</link>
       <pubDate>Tue, 26 Apr 2011 00:00:00 +0000</pubDate>
       
-      <guid>https://idc.wf/docs/proxy-switchy-can-open-the-https-not-open-http-solution/</guid>
+      <guid>https://draychou.github.io/Blog-Hugo/docs/proxy-switchy-can-open-the-https-not-open-http-solution/</guid>
       <description>之前的我Proxy Switchy!代理规则开启的时候，只能打开https的页面，比如https://www.google.com，但是打不开http的页面，比如：http://www.google.com。
 这让我很困惑！
 后来查了一些资料，自己做了一些测试发现了！
@@ -325,10 +325,10 @@ googlereader rss 地址:http://www.google.com/reader/shared/hnzksq 把后面的h
     
     <item>
       <title>一个IE6的div 高度bug</title>
-      <link>https://idc.wf/docs/bug-ie6-the-div-a-height-of/</link>
+      <link>https://draychou.github.io/Blog-Hugo/docs/bug-ie6-the-div-a-height-of/</link>
       <pubDate>Mon, 25 Apr 2011 00:00:00 +0000</pubDate>
       
-      <guid>https://idc.wf/docs/bug-ie6-the-div-a-height-of/</guid>
+      <guid>https://draychou.github.io/Blog-Hugo/docs/bug-ie6-the-div-a-height-of/</guid>
       <description>我也不想管IE6的，但是这里毕竟是中国，使用IE6的人还是很多地！
 今天做项目的时候发现了一个IE6的bug
 bug表现：
@@ -340,10 +340,10 @@ div 的height 明明设为1px了，但是在IE6下显示出来高度是10px。
     
     <item>
       <title>原来mysql_insert_id()也不安全啊，不知道有没有其他方法可以用来得到插入的自增ID</title>
-      <link>https://idc.wf/docs/original-mysql_insert_id-is-not-safe-ah-do-not-know-any-other-ways-to-get-into-the-self-by-id/</link>
+      <link>https://draychou.github.io/Blog-Hugo/docs/original-mysql_insert_id-is-not-safe-ah-do-not-know-any-other-ways-to-get-into-the-self-by-id/</link>
       <pubDate>Fri, 15 Apr 2011 00:00:00 +0000</pubDate>
       
-      <guid>https://idc.wf/docs/original-mysql_insert_id-is-not-safe-ah-do-not-know-any-other-ways-to-get-into-the-self-by-id/</guid>
+      <guid>https://draychou.github.io/Blog-Hugo/docs/original-mysql_insert_id-is-not-safe-ah-do-not-know-any-other-ways-to-get-into-the-self-by-id/</guid>
       <description>今天我负责的一个项目出了问题，插入数据之后调用mysql_insert_id()拿取插入的自增ID的时候一直返回0，试了一下在本地是可以拿到的，但是放到线上就不可以了。
 无奈，只好插入完毕之后再通过插入的值来查询一遍得到insert_id。
 后来发现，mysql_insert_id() 带上数据量连接ID之后成功率倒是上升了很多，但是高并发下还是有可能会出现得到mysql_insert_id()返回0的现象。
@@ -353,10 +353,10 @@ div 的height 明明设为1px了，但是在IE6下显示出来高度是10px。
     
     <item>
       <title>Mysql 数据库引入 memcached，支持 Nosql</title>
-      <link>https://idc.wf/docs/mysql-database-into-memcached-support-nosql/</link>
+      <link>https://draychou.github.io/Blog-Hugo/docs/mysql-database-into-memcached-support-nosql/</link>
       <pubDate>Thu, 14 Apr 2011 00:00:00 +0000</pubDate>
       
-      <guid>https://idc.wf/docs/mysql-database-into-memcached-support-nosql/</guid>
+      <guid>https://draychou.github.io/Blog-Hugo/docs/mysql-database-into-memcached-support-nosql/</guid>
       <description>mysql 也开始支持Nosql了，这样一来如果可以直接用sql语句进行检索查询的话无疑会把原先的Memcache等给排挤出去，如果效率方面又很高的话，那么memcache还活什么啊？
 嗯。。。期待。。。
 Oracle 前天在 2011 Mysql user conference and expo 大会上发布的 Mysql 5.6.2 测试版本，详情请看这里。
@@ -368,10 +368,10 @@ Oracle 前天在 2011 Mysql user conference and expo 大会上发布的 Mysql 5
     
     <item>
       <title>搜索引擎配置优化笔记 - 老板的讲课</title>
-      <link>https://idc.wf/docs/search-engine-configuration-optimization-notes-the-bosss-lecture/</link>
+      <link>https://draychou.github.io/Blog-Hugo/docs/search-engine-configuration-optimization-notes-the-bosss-lecture/</link>
       <pubDate>Thu, 14 Apr 2011 00:00:00 +0000</pubDate>
       
-      <guid>https://idc.wf/docs/search-engine-configuration-optimization-notes-the-bosss-lecture/</guid>
+      <guid>https://draychou.github.io/Blog-Hugo/docs/search-engine-configuration-optimization-notes-the-bosss-lecture/</guid>
       <description>搜索引擎优化 并不是 只seo 而是只自建搜索引擎的配置优化
 使用了两个开源的软件：sphinx 和 redis
 开源搜索引擎
@@ -405,10 +405,10 @@ Sphinx 汉字自动单词分词 一元分词法
     
     <item>
       <title>记mysql读写分离</title>
-      <link>https://idc.wf/docs/separation-of-mind-to-read-and-write-mysql/</link>
+      <link>https://draychou.github.io/Blog-Hugo/docs/separation-of-mind-to-read-and-write-mysql/</link>
       <pubDate>Thu, 14 Apr 2011 00:00:00 +0000</pubDate>
       
-      <guid>https://idc.wf/docs/separation-of-mind-to-read-and-write-mysql/</guid>
+      <guid>https://draychou.github.io/Blog-Hugo/docs/separation-of-mind-to-read-and-write-mysql/</guid>
       <description>我们公司的网站做项目使用的是自己封装的Mysql查询函数（注意，是函数，不是过程），没有使用框架，使用的模板也是老板自己写的，所以做读写分离是件比较麻烦的事情。
 一般来说，读写分离有2中方法：
  1.代码端 在代码段数据库访问部分进行修改，这点如果项目本身采用框架，或者封装了访问过程，又保证没有直接通过mysql_query()函数来进行查询的话是很简单的一个方法，很多框架默认都是直接读写分离的，只要稍微修改一下配置文件即可。 但这样做有几个缺点： - 1.如果数据库服务器做分布式，比如说有2台进行写操作，2台进行读操作，那么读写数据库时的权重是个很麻烦的问题。 - 2.如果需要添加数据库服务器，那么需要修改配置文件和权重分配，又是一个麻烦的事情。 - 3.一旦其中一台数据库挂掉，单纯的改配置显然是应付不了的。 2.数据库访问代理 就是说在数据库和网络之间增加一层访问代理。这层代理是透明的，外界几乎看不出来区别，所以对于程序员来说，几乎不需要做任何事，只要把端口改成代理的端口就可以了，代码什么的，原封不动。 - 而且代理服务器的另一个好处是，权重和负载均衡，就算有一台服务器挂掉了，也不影响数据库访问。 - 另一个优点是，代理支持水平垂直分表分库，只要做好相应的规则，那么外界访问的时候就不需要管数据库的分表问题。比如说，我要查询用户的信息，只需要select * from user where user_id = ?,不需要再先计算用户属于哪个库那个表之类的，方便啊～，但是要做到这个，就需要对以前的代码做大范围的修改，所以这步我们暂且不做。  两个比较有名的开源数据库代理软件：
@@ -419,10 +419,10 @@ Sphinx 汉字自动单词分词 一元分词法
     
     <item>
       <title>Xmarks – 浏览器收藏夹同步工具 (支持IE9、chrome、Firefox、IESafari)</title>
-      <link>https://idc.wf/docs/xmarks-browser-favorites-sync-tools-support-ie9-chrome-firefox-iesafari/</link>
+      <link>https://draychou.github.io/Blog-Hugo/docs/xmarks-browser-favorites-sync-tools-support-ie9-chrome-firefox-iesafari/</link>
       <pubDate>Thu, 24 Mar 2011 00:00:00 +0000</pubDate>
       
-      <guid>https://idc.wf/docs/xmarks-browser-favorites-sync-tools-support-ie9-chrome-firefox-iesafari/</guid>
+      <guid>https://draychou.github.io/Blog-Hugo/docs/xmarks-browser-favorites-sync-tools-support-ie9-chrome-firefox-iesafari/</guid>
       <description>Xmarks 一款支持实现跨平台 (Windows，linux，mac) 同步书签、密码、打开网页等信息的软件，Xmarks 支持将 IE (Internet Explorer 9）、Firefox 火狐、chrome、Safari 浏览器 的收藏夹同步到 Xmarks 的服务器上，这样您就可以随时随地在任何一台电脑上访问书签中的网页了。 Xmarks使用： 到 Xmarks官方 下载你浏览器对应的版本，例如：Internet Explorer 9 ， 使用 Xmarks，你首先需要创建一个 Xmarks 帐号，之后它马上会将你的书签同步到服务器上。以后当你的书签有增加会减少时，Xmarks 会根据你设定的规则进行同步，自动同步或关闭浏览器时同步。
 Xmarks下载： Xmarks官方：http://www.xmarks.com/
 Xmarks版本：支持IE、chrome、Firefox、IESafari</description>
@@ -430,19 +430,19 @@ Xmarks版本：支持IE、chrome、Firefox、IESafari</description>
     
     <item>
       <title>用UnixBench测试是遨游VPS结果</title>
-      <link>https://idc.wf/docs/vps-travel-with-unixbench-test-results/</link>
+      <link>https://draychou.github.io/Blog-Hugo/docs/vps-travel-with-unixbench-test-results/</link>
       <pubDate>Sat, 19 Mar 2011 00:00:00 +0000</pubDate>
       
-      <guid>https://idc.wf/docs/vps-travel-with-unixbench-test-results/</guid>
+      <guid>https://draychou.github.io/Blog-Hugo/docs/vps-travel-with-unixbench-test-results/</guid>
       <description>&lt;p&gt;   #    #  #    #  #  #    #          #####   ######  #    #   ####   #    #   &lt;br&gt;   #    #  ##   #  #   #  #           #    #  #       ##   #  #    #  #    #    &lt;br&gt;   #    #  # #  #  #    ##            #####   #####   # #  #  #       ######    &lt;br&gt;   #    #  #  # #  #    ##            #    #  #       #  # #  #       #    #    &lt;br&gt;   #    #  #   ##  #   #  #           #    #  #       #   ##  #    #  #    #    &lt;br&gt;    ####   #    #  #  #    #          #####   ######  #    #   ####   #    #&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>用刚买的VPS主机做了一个镜像站</title>
-      <link>https://idc.wf/docs/vps-hosting-to-do-with-just-bought-a-mirror/</link>
+      <link>https://draychou.github.io/Blog-Hugo/docs/vps-hosting-to-do-with-just-bought-a-mirror/</link>
       <pubDate>Sat, 19 Mar 2011 00:00:00 +0000</pubDate>
       
-      <guid>https://idc.wf/docs/vps-hosting-to-do-with-just-bought-a-mirror/</guid>
+      <guid>https://draychou.github.io/Blog-Hugo/docs/vps-hosting-to-do-with-just-bought-a-mirror/</guid>
       <description>前天在 vpsyou 买了一个虚拟主机VPS，但是因为在家里的连接速度不佳被我退了，昨天又买了遨游的虚拟主机，速度还可以。 以下是安装过程：
 1.首先，交钱，拿到自己的VPS的IP
 2.用拿到的账户名+密码使用SSH登录VPS
@@ -458,10 +458,10 @@ ps:格式明天有空再搞，好困，4点了。</description>
     
     <item>
       <title>Google Buzz实时同步Twitter的方法</title>
-      <link>https://idc.wf/docs/google-buzz-real-time-synchronization-method-of-twitter/</link>
+      <link>https://draychou.github.io/Blog-Hugo/docs/google-buzz-real-time-synchronization-method-of-twitter/</link>
       <pubDate>Sat, 12 Mar 2011 00:00:00 +0000</pubDate>
       
-      <guid>https://idc.wf/docs/google-buzz-real-time-synchronization-method-of-twitter/</guid>
+      <guid>https://draychou.github.io/Blog-Hugo/docs/google-buzz-real-time-synchronization-method-of-twitter/</guid>
       <description> 相比Twitter而说，Buzz目前还可以从国内访问，因此昨天我那篇文章的后面就有人咨询，是否能实现Buzz的微博同步到Twitter上，经过我的研究发现，这是可以实现的，而且同步几乎是实时的。
 这主要归功于PubSubHubBub，可以实现RSS Feed的实时更新，而Google Buzz的RSS Feed和Google Reader一样，从一开始就支持PubSubHubBub，这使得Buzz的Feed变成实时的Feed，而恰好Google的另一个产品FeedBurner也支持PubSubHubBub的Feed，因此就可以通过这个来实现微博的实时同步。
 具体同步Google Buzz到Twitter的方法是：在个人Profile页面找到自己Buzz的Feed，通常使用IE或Firefox进入 https://www.google.com/profiles/me 后，会看到地址栏的RSS图标，点击后可看见RSS地址，这个地址格式类似：http://buzz.googleapis.com/feeds/112646999948608559077/public/posted 。
@@ -477,19 +477,19 @@ ps:格式明天有空再搞，好困，4点了。</description>
     
     <item>
       <title>太神奇了，原来URL锚点...</title>
-      <link>https://idc.wf/docs/tai-shen-qi-le-yuan-lai-url-mao-dian/</link>
+      <link>https://draychou.github.io/Blog-Hugo/docs/tai-shen-qi-le-yuan-lai-url-mao-dian/</link>
       <pubDate>Wed, 09 Mar 2011 00:00:00 +0000</pubDate>
       
-      <guid>https://idc.wf/docs/tai-shen-qi-le-yuan-lai-url-mao-dian/</guid>
+      <guid>https://draychou.github.io/Blog-Hugo/docs/tai-shen-qi-le-yuan-lai-url-mao-dian/</guid>
       <description>太神奇了，原来URL锚点还能做成这样，学习了～http://probablyinteractive.com/url-hunter</description>
     </item>
     
     <item>
       <title>IE中出现 &#34;Stack overflow at line&#34; 错误的解决方法</title>
-      <link>https://idc.wf/docs/ie-there-stack-overflow-at-line-wrong-solution/</link>
+      <link>https://draychou.github.io/Blog-Hugo/docs/ie-there-stack-overflow-at-line-wrong-solution/</link>
       <pubDate>Fri, 25 Feb 2011 00:00:00 +0000</pubDate>
       
-      <guid>https://idc.wf/docs/ie-there-stack-overflow-at-line-wrong-solution/</guid>
+      <guid>https://draychou.github.io/Blog-Hugo/docs/ie-there-stack-overflow-at-line-wrong-solution/</guid>
       <description>出现该错误提示，主要有两种原因：
  使用系统的事件名称作为自定义函数名如：  onclick / onsubmit &amp;hellip; 都是系统保留的事件名称，不允许作为重定义函数名称。
  出现死循环 ：  如：在图片对象定义了 onerror 事件的循环处理、
@@ -501,19 +501,19 @@ ps:格式明天有空再搞，好困，4点了。</description>
     
     <item>
       <title>被冤枉的file_exists</title>
-      <link>https://idc.wf/docs/being-wronged-file_exists/</link>
+      <link>https://draychou.github.io/Blog-Hugo/docs/being-wronged-file_exists/</link>
       <pubDate>Thu, 24 Feb 2011 00:00:00 +0000</pubDate>
       
-      <guid>https://idc.wf/docs/being-wronged-file_exists/</guid>
+      <guid>https://draychou.github.io/Blog-Hugo/docs/being-wronged-file_exists/</guid>
       <description>我在做项目的时候需要把图片进行压缩，当然进行压缩之前要先检查一下原图在不在，压缩完后也要检查一下新图有没有被压缩出来，但是我使用 file_exists 进行检查的时候却一直给我false。 代码如下： if (file_exists($desimage)) { $ok_num += 1; } else { $fail_num += 1; }  仔细检查了一下才发现，我拿到的图片url中包含 汉字 ，例如：if (file_exists($desimage)) { $ok_num += 1; } else { $fail_num += 1; }  而这些汉字在拿到的时候都会转变成 已编码的 URL 字符串，如：if (file_exists($desimage)) { $ok_num += 1; } else { $fail_num += 1; }  那么很明显我通过 已编码的 URL 字符串 去到服务器中找这个文件是肯定找不到的。唉，郁闷了。。解决方法很简单:if (file_exists($desimage)) { $ok_num += 1; } else { $fail_num += 1; }  记下以示警示！</description>
     </item>
     
     <item>
       <title>Notepad&#43;&#43;去除代码行号的几种方法</title>
-      <link>https://idc.wf/docs/notepad-to-remove-the-code-line-number-of-the-several-methods/</link>
+      <link>https://draychou.github.io/Blog-Hugo/docs/notepad-to-remove-the-code-line-number-of-the-several-methods/</link>
       <pubDate>Fri, 18 Feb 2011 00:00:00 +0000</pubDate>
       
-      <guid>https://idc.wf/docs/notepad-to-remove-the-code-line-number-of-the-several-methods/</guid>
+      <guid>https://draychou.github.io/Blog-Hugo/docs/notepad-to-remove-the-code-line-number-of-the-several-methods/</guid>
       <description>&lt;p&gt;&lt;strong&gt;问：&lt;/strong&gt;在网页中复制代码时，常常遇到高亮程序自动给代码加上行号或字符“#”，如何格式化？如下：&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;#1 //去除首字符或行号
@@ -525,56 +525,56 @@ ps:格式明天有空再搞，好困，4点了。</description>
     
     <item>
       <title>jQuery.live()与Event Delegation</title>
-      <link>https://idc.wf/docs/jquery-live-and-event-delegation/</link>
+      <link>https://draychou.github.io/Blog-Hugo/docs/jquery-live-and-event-delegation/</link>
       <pubDate>Fri, 18 Feb 2011 00:00:00 +0000</pubDate>
       
-      <guid>https://idc.wf/docs/jquery-live-and-event-delegation/</guid>
+      <guid>https://draychou.github.io/Blog-Hugo/docs/jquery-live-and-event-delegation/</guid>
       <description>&lt;p&gt;网友Ark刚好问到live()，不知道大家有没有觉得jQuery. live()具有为&amp;rdquo;未来元素&amp;rdquo;设定事件的未卜先知能力很神奇?至少在乍听之余，我觉得很不可思议，莫非它要拦截所有建立元素的过程? 不对，难度很高、没效率、漏洞也很多，那么又是怎么做到的呢?  本草網目官方文件上有詳細的解釋，關鍵在Event Delegation 。 本草网目官方文件上有详细的解释，关键在Event Delegation 。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>php bmp格式图片转换成jpg格式程序</title>
-      <link>https://idc.wf/docs/php-bmp-format-image-into-jpg-format-program/</link>
+      <link>https://draychou.github.io/Blog-Hugo/docs/php-bmp-format-image-into-jpg-format-program/</link>
       <pubDate>Fri, 18 Feb 2011 00:00:00 +0000</pubDate>
       
-      <guid>https://idc.wf/docs/php-bmp-format-image-into-jpg-format-program/</guid>
+      <guid>https://draychou.github.io/Blog-Hugo/docs/php-bmp-format-image-into-jpg-format-program/</guid>
       <description>&amp;lt;?php /* * To change this template, choose Tools | Templates * and open the template in the editor. */ //php教程将bmp格式图片转换成jpg格式程序 function imagebmp($img,$file=&amp;quot;&amp;quot;,$rle=0) { $colorcount=imagecolorstotal($img); $transparent=imagecolortransparent($img); $istransparent=$transparent!=-1; if($istransparent) $colorcount--; if($colorcount==0) { $colorcount=0; $bitcount=24; }; if(($colorcount&amp;gt;0)and($colorcount&amp;lt;=2)) { $colorcount=2; $bitcount=1; }; if(($colorcount&amp;gt;2)and($colorcount&amp;lt;=16)) { $colorcount=16; $bitcount=4; }; if(($colorcount&amp;gt;16)and($colorcount&amp;lt;=256)) { $colorcount=0; $bitcount=8; }; $width=imagesx($img); $height=imagesy($img); $zbytek=(4-($width/(8/$bitcount))%4)%4; if($bitcount&amp;lt;24) $palsize=pow(2,$bitcount)*4; $size=(floor($width/(8/$bitcount))+$zbytek)*$height+54; $size+=$palsize; $offset=54+$palsize; // bitmap file header $ret = &#39;bm&#39;; // header (2b) $ret .= int_to_dword($size); // size of file (4b) $ret .</description>
     </item>
     
     <item>
       <title>php 断点续传功能</title>
-      <link>https://idc.wf/docs/http-functions-php/</link>
+      <link>https://draychou.github.io/Blog-Hugo/docs/http-functions-php/</link>
       <pubDate>Fri, 18 Feb 2011 00:00:00 +0000</pubDate>
       
-      <guid>https://idc.wf/docs/http-functions-php/</guid>
+      <guid>https://draychou.github.io/Blog-Hugo/docs/http-functions-php/</guid>
       <description>断点续传指的是在上传时，将上传任务（一个文件或一个压缩包）人为的划分为几个部分，每一个部分采用一个线程进行上传，下面我们来看看php 断点续传功能的实现方法吧。
 &amp;lt;?php /** * 作者 于恩水&amp;lt;yuenshui@126.com&amp;gt; * 支持断点续传下载 * 实例代码： * $down = new SD_DownLoad(); * $down-&amp;gt;Down(&#39;E:/iso/MS.Office2003SP1.CHS.iso&#39;); **/ SD_DownLoad { /** * 下载的开始点 * * @access private * @var integer */ private $mDownStart; /** * 文件大小 * * @access private * @var integer */ private $mFileSize; /** * 文件句柄 * * @access private * @var integer */ private $mFileHandle; /** * 文件全路径 * * @access private * @var string */ private $mFilePath; /** * 文件下载时显示的文件名 * * @access private * @var string */ private $mFileName; /** * 构造函数 * * @access public * @return void **/ public function __construct() { } /** * 下载 * * @param string $pFilePath 文件全路径 * @param string pFileName 文件下载时显示的文件名，缺省为实际文件名 * @access public * @return void **/ public function Down($pFilePath, $pFileName = &#39;&#39;) { $this-&amp;gt;mFilePath = $pFilePath; if(!</description>
     </item>
     
     <item>
       <title>php 超大文件下载类 支持2g以上文件 支持断点续传</title>
-      <link>https://idc.wf/docs/php-file-download-large-file-support-class-supports-http-over-2g/</link>
+      <link>https://draychou.github.io/Blog-Hugo/docs/php-file-download-large-file-support-class-supports-http-over-2g/</link>
       <pubDate>Fri, 18 Feb 2011 00:00:00 +0000</pubDate>
       
-      <guid>https://idc.wf/docs/php-file-download-large-file-support-class-supports-http-over-2g/</guid>
+      <guid>https://draychou.github.io/Blog-Hugo/docs/php-file-download-large-file-support-class-supports-http-over-2g/</guid>
       <description>&amp;lt;?php ** * &amp;lt;SPAN class=t_tag onclick=tagshow(event) href=&amp;quot;tag.php?name=%CE%C4%BC%FE&amp;quot;&amp;gt;文件&amp;lt;/SPAN&amp;gt;传输，支持断点续传。 * 2g以上超大文件也有效 * @author MoXie */ class Transfer { ** * 缓冲单元 */ const BUFF_SIZE = 5120; / 1024 * 5 ** * 文件地址 * @var &amp;lt;String&amp;gt; */ private $filePath; ** * 文件大小 * @var &amp;lt;String&amp;gt; php超大数字 &amp;lt;SPAN class=t_tag onclick=tagshow(event) href=&amp;quot;tag.php?name=%D7%D6%B7%FB&amp;quot;&amp;gt;字符&amp;lt;/SPAN&amp;gt;串形式描述 */ private $fileSize; ** * 文件类型 * @var &amp;lt;String&amp;gt; */ private $mimeType; ** * 请求区域（范围） * @var &amp;lt;String&amp;gt; */ private $range; ** * 是否写入日志 * @var &amp;lt;Boolean&amp;gt; */ private $isLog = false; ** * * @param &amp;lt;String&amp;gt; $filePath 文件路径 * @param &amp;lt;String&amp;gt; $mimeType 文件类型 * @param &amp;lt;String&amp;gt; $range 请求区域（范围） */ function __construct($filePath, $mimeType = null , $range = null) { $this-&amp;gt;filePath = $filePath; $this-&amp;gt;fileSize = sprintf(&#39;%u&#39;,filesize($filePath)); $this-&amp;gt;mimeType = ($mimeType !</description>
     </item>
     
     <item>
       <title>几个比较好的免费资源</title>
-      <link>https://idc.wf/docs/a-few-good-free-resources/</link>
+      <link>https://draychou.github.io/Blog-Hugo/docs/a-few-good-free-resources/</link>
       <pubDate>Fri, 18 Feb 2011 00:00:00 +0000</pubDate>
       
-      <guid>https://idc.wf/docs/a-few-good-free-resources/</guid>
+      <guid>https://draychou.github.io/Blog-Hugo/docs/a-few-good-free-resources/</guid>
       <description>2010年最新的100个免费HTML模板 108个漂亮而简约的免费图标 15个最佳jQuery幻灯插件和教程 国外30多个设计精良的电子商务网站 20个高质量的免费css模板 9款有用的javascript代码高亮脚本 10款有趣的免费字体 </description>
     </item>
     
     <item>
       <title>php模板引擎smarty缓存应用</title>
-      <link>https://idc.wf/docs/php-smarty-caching-application-template-engine/</link>
+      <link>https://draychou.github.io/Blog-Hugo/docs/php-smarty-caching-application-template-engine/</link>
       <pubDate>Thu, 17 Feb 2011 00:00:00 +0000</pubDate>
       
-      <guid>https://idc.wf/docs/php-smarty-caching-application-template-engine/</guid>
+      <guid>https://draychou.github.io/Blog-Hugo/docs/php-smarty-caching-application-template-engine/</guid>
       <description>&lt;p&gt;1：smarty 缓存的配置  php代码&lt;a href=&#34;http://writeblog.csdn.net/#&#34;&gt;&lt;/a&gt;  2:smarty缓存的使用和清除  php代码&lt;a href=&#34;http://writeblog.csdn.net/#&#34;&gt;&lt;/a&gt;  &lt;div&gt;&lt;/p&gt;
 
 &lt;p&gt;$&lt;span style=&#34;color: #800000&#34;&gt;smarty-&lt;/span&gt;&amp;gt;&lt;span style=&#34;color: #800000&#34;&gt;display&lt;/span&gt;(&amp;rsquo;&lt;span style=&#34;color: #800000&#34;&gt;cache&lt;/span&gt;.&lt;span style=&#34;color: #800000&#34;&gt;tpl&lt;/span&gt;&amp;rsquo;, &lt;span style=&#34;color: #800000&#34;&gt;cache&lt;/span&gt;&lt;em&gt;&lt;span style=&#34;color: #800000&#34;&gt;id&lt;/span&gt;);  //&lt;span style=&#34;color: #800000&#34;&gt;创建带ID的缓存&lt;/span&gt;,&lt;span style=&#34;color: #800000&#34;&gt;cache&lt;/span&gt;.&lt;span style=&#34;color: #800000&#34;&gt;tpl&lt;/span&gt;  &lt;span style=&#34;color: #800000&#34;&gt;模板文件&lt;/span&gt;
@@ -587,28 +587,28 @@ $&lt;span style=&#34;color: #800000&#34;&gt;smarty-&lt;/span&gt;&amp;gt;&lt;span
     
     <item>
       <title>php,smarty 缓存操作</title>
-      <link>https://idc.wf/docs/php-smarty-cache-operation/</link>
+      <link>https://draychou.github.io/Blog-Hugo/docs/php-smarty-cache-operation/</link>
       <pubDate>Wed, 16 Feb 2011 00:00:00 +0000</pubDate>
       
-      <guid>https://idc.wf/docs/php-smarty-cache-operation/</guid>
+      <guid>https://draychou.github.io/Blog-Hugo/docs/php-smarty-cache-operation/</guid>
       <description>&lt;p&gt;一、使用缓存   &lt;br&gt;要开启smarty的缓存,只需将caching设为true,并指定cache_dir即可.    &lt;br&gt;使用cache_lefetime指定缓存生存时间,单位为秒    &lt;br&gt;要对相同页面生成多个不同的缓存,在display或fetch中加入第二参数cache_id,如$smarty-&amp;gt;display(&amp;lsquo;index.tpl&amp;rsquo;,$my_cache_id);此特性可用于对不同的$_GET进行不同的缓存    &lt;br&gt;二、清除缓存  clear_all_cache();//清除所有缓存   &lt;br&gt;clear_cache(&amp;lsquo;index.tpl&amp;rsquo;);//清除index.tpl的缓存    &lt;br&gt;clear_cache(&amp;lsquo;index.tpl&amp;rsquo;,cache_id);//清除指定id的缓存  三、使用自定义缓存方式  设置cache_handler_func使用自定义的函数处理缓存   &lt;br&gt;如:    &lt;br&gt;$smarty-&amp;gt;cache_handler_func = &amp;ldquo;myCache&amp;rdquo;;    &lt;br&gt;function myCache($action, &amp;amp;$smarty_obj, &amp;amp;$cache_content, $tpl_file=null, $cache_id=null, $compile_id=null){    &lt;br&gt;}    &lt;br&gt;该函数的一般是根椐$action来判断缓存当前操作:    &lt;br&gt;switch($action){    &lt;br&gt;case &amp;ldquo;read&amp;rdquo;://读取缓存内容    &lt;br&gt;case &amp;ldquo;write&amp;rdquo;://写入缓存    &lt;br&gt;case &amp;ldquo;clear&amp;rdquo;://清空    &lt;br&gt;}    &lt;br&gt;一般使用md5($tpl_file.$cache_id.$compile_id)作为唯一的cache_id    &lt;br&gt;如果需要,可使用gzcompress和gzuncompress来压缩和解压&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>如何判断一个网站是否被墙</title>
-      <link>https://idc.wf/docs/how-to-determine-whether-a-site-is-the-wall/</link>
+      <link>https://draychou.github.io/Blog-Hugo/docs/how-to-determine-whether-a-site-is-the-wall/</link>
       <pubDate>Wed, 16 Feb 2011 00:00:00 +0000</pubDate>
       
-      <guid>https://idc.wf/docs/how-to-determine-whether-a-site-is-the-wall/</guid>
+      <guid>https://draychou.github.io/Blog-Hugo/docs/how-to-determine-whether-a-site-is-the-wall/</guid>
       <description>&lt;p&gt;大家都知道GFW 平日作恶多端，一旦有网站不能访问，很多人都把矛头直指它了…. 虽然一般都是它干的，但实际上也不排除一些人别有用心…. 那么下面就来简单判断一下吧…  方法是用windows的tracert（&lt;strong&gt;打开命令提示符，输入tracert 域名&lt;/strong&gt;）命令追踪路由，也可以直接用&lt;a href=&#34;http://tool.chinaz.com/Tracert/&#34;&gt;http://tool.chinaz.com/Tracert/&lt;/a&gt;， 这个能显示ip所在地理位置，比windows自带的好。一般来说，无论是被GFW屏蔽的还是网站封IP的，我们总是能查到这个网站的IP地址，比如 Facebook，因为域名指向的ip是域名注册机构的dns服务器保留的，一般不会被封，所以，使用tracert命令就可以追踪路由了。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>跨浏览器实现float:center</title>
-      <link>https://idc.wf/docs/to-achieve-cross-browser-float-center/</link>
+      <link>https://draychou.github.io/Blog-Hugo/docs/to-achieve-cross-browser-float-center/</link>
       <pubDate>Wed, 16 Feb 2011 00:00:00 +0000</pubDate>
       
-      <guid>https://idc.wf/docs/to-achieve-cross-browser-float-center/</guid>
+      <guid>https://draychou.github.io/Blog-Hugo/docs/to-achieve-cross-browser-float-center/</guid>
       <description>&lt;p&gt;我们都知道float:left和float:right，但是否想过float:center呢？居中浮动。。。  &lt;div&gt;&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;&amp;lt;div id=&amp;quot;&amp;lt;span style=&amp;quot;color: #8b0000&amp;quot;&amp;gt;macji&amp;lt;/span&amp;gt;&amp;quot;&amp;gt;
@@ -627,47 +627,47 @@ $&lt;span style=&#34;color: #800000&#34;&gt;smarty-&lt;/span&gt;&amp;gt;&lt;span
     
     <item>
       <title>HTTPS的七个误解</title>
-      <link>https://idc.wf/docs/seven-misconceptions-https/</link>
+      <link>https://draychou.github.io/Blog-Hugo/docs/seven-misconceptions-https/</link>
       <pubDate>Tue, 15 Feb 2011 00:00:00 +0000</pubDate>
       
-      <guid>https://idc.wf/docs/seven-misconceptions-https/</guid>
+      <guid>https://draychou.github.io/Blog-Hugo/docs/seven-misconceptions-https/</guid>
       <description>&lt;p&gt;&lt;strong&gt;HTTPS的七个误解&lt;/strong&gt;  原文网址：&lt;a href=&#34;http://blog.httpwatch.com/2011/01/28/top-7-myths-about-https/&#34;&gt;http://blog.httpwatch.com/2011/01/28/top-7-myths-about-https/&lt;/a&gt;  译者：阮一峰  &lt;img src=&#34;http://image.beekka.com/blog/201102/bg2011021311.jpg&#34;&gt;  &lt;strong&gt;误解七：HTTPS无法缓存&lt;/strong&gt;  许多人以为，出于安全考虑，浏览器不会在本地保存HTTPS缓存。实际上，只要在HTTP头中使用特定命令，HTTPS是可以缓存的。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>php列出目录下的所有文件</title>
-      <link>https://idc.wf/docs/php-directory-listing-all-the-files/</link>
+      <link>https://draychou.github.io/Blog-Hugo/docs/php-directory-listing-all-the-files/</link>
       <pubDate>Mon, 14 Feb 2011 00:00:00 +0000</pubDate>
       
-      <guid>https://idc.wf/docs/php-directory-listing-all-the-files/</guid>
+      <guid>https://draychou.github.io/Blog-Hugo/docs/php-directory-listing-all-the-files/</guid>
       <description>function myDir($dir = __file__) { // 定于需要列出的目录地址 //$dir = dirname(__file__); // 用 opendir() 打开目录，失败则中止程序 $handle = @opendir($dir) or die(&amp;quot;Cannot open &amp;quot; . $dir); echo &amp;quot;&amp;lt;b&amp;gt;Files in &amp;quot; . $dir . &amp;quot;:&amp;lt;/b&amp;gt;&amp;lt;br&amp;gt;&amp;quot;; // 用 readdir 读出文件列表 while ($file = readdir($handle)) { // 将 &amp;quot;.&amp;quot; 及 &amp;quot;..&amp;quot; 排除不显示 if ($file != &amp;quot;.&amp;quot; &amp;amp;&amp;amp; $file != &amp;quot;..&amp;quot;) { echo &amp;quot;$file&amp;lt;br&amp;gt;&amp;quot;; } } // 关闭目录读取 closedir($handle); }  </description>
     </item>
     
     <item>
       <title>php去掉 HTML标记、javascript 代码、空白字符等</title>
-      <link>https://idc.wf/docs/php-remove-html-tags-javascript-code-blank-characters-etc/</link>
+      <link>https://draychou.github.io/Blog-Hugo/docs/php-remove-html-tags-javascript-code-blank-characters-etc/</link>
       <pubDate>Sat, 12 Feb 2011 00:00:00 +0000</pubDate>
       
-      <guid>https://idc.wf/docs/php-remove-html-tags-javascript-code-blank-characters-etc/</guid>
+      <guid>https://draychou.github.io/Blog-Hugo/docs/php-remove-html-tags-javascript-code-blank-characters-etc/</guid>
       <description>代码：
 preg_replace(&amp;quot;&#39;([\r\n])[\s]+&#39;&amp;quot;, &amp;quot;&amp;quot;, $content) //去除回车换行符 // $document 应包含一个 HTML 文档。 // 本例将去掉 HTML 标记，javascript 代码 // 和空白字符。还会将一些通用的 // HTML 实体转换成相应的文本。 $search = array (&amp;quot;&#39;&amp;lt;script&amp;gt;]*?&amp;gt;.*?&amp;lt;/script&amp;gt;&#39;si&amp;quot;, // 去掉 javascript &amp;quot;&#39;]*?&amp;gt;&#39;si&amp;quot;, // 去掉 HTML 标记 &amp;quot;&#39;([\r\n])[\s]+&#39;&amp;quot;, // 去掉空白字符 &amp;quot;&#39;&amp;amp;(quot|#34);&#39;i&amp;quot;, // 替换 HTML 实体 &amp;quot;&#39;&amp;amp;(amp|#38);&#39;i&amp;quot;, &amp;quot;&#39;&amp;amp;(lt|#60);&#39;i&amp;quot;, &amp;quot;&#39;&amp;amp;(gt|#62);&#39;i&amp;quot;, &amp;quot;&#39;&amp;amp;(nbsp|#160);&#39;i&amp;quot;, &amp;quot;&#39;&amp;amp;(iexcl|#161);&#39;i&amp;quot;, &amp;quot;&#39;&amp;amp;(cent|#162);&#39;i&amp;quot;, &amp;quot;&#39;&amp;amp;(pound|#163);&#39;i&amp;quot;, &amp;quot;&#39;&amp;amp;(copy|#169);&#39;i&amp;quot;, &amp;quot;&#39;(\d+);&#39;e&amp;quot;); // 作为 php 代码运行 $replace = array (&amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot; // $document 应包含一个 HTML 文档。 // 本例将去掉 HTML 标记，javascript 代码 // 和空白字符。还会将一些通用的 // HTML 实体转换成相应的文本。 $search = array (&amp;quot;&#39;&amp;lt;script&amp;gt;]*?</description>
     </item>
     
     <item>
       <title>php获取一个日期为当月的第几周</title>
-      <link>https://idc.wf/docs/php-to-get-a-date-for-the-first-few-weeks-of-the-month/</link>
+      <link>https://draychou.github.io/Blog-Hugo/docs/php-to-get-a-date-for-the-first-few-weeks-of-the-month/</link>
       <pubDate>Sat, 12 Feb 2011 00:00:00 +0000</pubDate>
       
-      <guid>https://idc.wf/docs/php-to-get-a-date-for-the-first-few-weeks-of-the-month/</guid>
+      <guid>https://draychou.github.io/Blog-Hugo/docs/php-to-get-a-date-for-the-first-few-weeks-of-the-month/</guid>
       <description>function checkweek($day) { $month = date(&#39;m&#39;, time()); // 获取本月 $year = date(&#39;Y&#39;, time()); // 获取本年 $firstday = date(&#39;w&#39;, mktime(0, 0, 0, $month, 1, $year)); //本月1号星期数 $firstweek = 7 - $firstday; // 第1周天数 $week = ceil(($day - $firstweek) / 7) + 1; return $year.&#39;年&#39;.$month.&#39;月&#39;.$day . &#39;号属于本月第&#39; . $week . &#39;周&#39;; } $a = checkweek(14); //本月几号 echo $a;  </description>
     </item>
     
     <item>
       <title>litespeed_数据库备份工具</title>
-      <link>https://idc.wf/docs/litespeed_-baidu-encyclopedia/</link>
+      <link>https://draychou.github.io/Blog-Hugo/docs/litespeed_-baidu-encyclopedia/</link>
       <pubDate>Fri, 11 Feb 2011 00:00:00 +0000</pubDate>
       
-      <guid>https://idc.wf/docs/litespeed_-baidu-encyclopedia/</guid>
+      <guid>https://draychou.github.io/Blog-Hugo/docs/litespeed_-baidu-encyclopedia/</guid>
       <description>litespeed是一个革命性的备份sql Server数据库的产品。拥有最新的加密和压缩算法可以快速、安全地备份所有的数据。
 数据库失败和各种原因引起的宕机都是当前DBA面临的严酷现实。但是，通过litespeed，数据库的恢复时间和宕机时间都可以达到最小化。
 litespeed可以实现所有sql Server自身的备份功能，包括数据库备份、差异备份、事务日志备份、文件备份、作业等，并且有自己独特的功能。
@@ -692,40 +692,40 @@ litespeed可以实现所有sql Server自身的备份功能，包括数据库备�
     
     <item>
       <title>密码查看工具，用来查看本机保存的密码</title>
-      <link>https://idc.wf/docs/password-viewer-to-view-the-machine-saved-passwords/</link>
+      <link>https://draychou.github.io/Blog-Hugo/docs/password-viewer-to-view-the-machine-saved-passwords/</link>
       <pubDate>Wed, 09 Feb 2011 00:00:00 +0000</pubDate>
       
-      <guid>https://idc.wf/docs/password-viewer-to-view-the-machine-saved-passwords/</guid>
+      <guid>https://draychou.github.io/Blog-Hugo/docs/password-viewer-to-view-the-machine-saved-passwords/</guid>
       <description>这个网站提供一套的密码查看工具，从IM到BROWSER，从聊天工具到浏览器，从google到yahoo，很全很强大。。。
 Download - www.SecurityXploded.com.</description>
     </item>
     
     <item>
       <title>2款 从 twitter 同步到 wordpress 的插件</title>
-      <link>https://idc.wf/docs/2-sync-from-the-twitter-plugin-wordpress/</link>
+      <link>https://draychou.github.io/Blog-Hugo/docs/2-sync-from-the-twitter-plugin-wordpress/</link>
       <pubDate>Fri, 28 Jan 2011 00:00:00 +0000</pubDate>
       
-      <guid>https://idc.wf/docs/2-sync-from-the-twitter-plugin-wordpress/</guid>
+      <guid>https://draychou.github.io/Blog-Hugo/docs/2-sync-from-the-twitter-plugin-wordpress/</guid>
       <description>Twitter Tools 此插件能让你的 Twitter 和 WordPress 完全连在一起，你可选择当在 WordPress 发布新文章时，同时向 Twitter 发布一条关于你文章的消息。或者是当你在 Twitter 发布一条新的消息，同时在你的博客创建一篇新的文章，同时可指定文章的分类和标签。当然也能在博客侧边栏上显示你最新的 Twitter 消息。 下载 Twitter Tools
 Thread Twitter 那就是将自己在 Twitter 上的所有会话输出到 WordPress 博客中，是回复的话会追溯父条目，而且会通过 Twitter Search 查找含有 @自己 的条目，即使它不是一个明确的回复。访问者在查看输出页面的时候，可以直接点击右侧的回复链接转到 Twitter 加入讨论。  下载 Thread Twitter  详见： http://fis.io/twitter</description>
     </item>
     
     <item>
       <title>XML CDATA</title>
-      <link>https://idc.wf/docs/xml-cdata/</link>
+      <link>https://draychou.github.io/Blog-Hugo/docs/xml-cdata/</link>
       <pubDate>Fri, 28 Jan 2011 00:00:00 +0000</pubDate>
       
-      <guid>https://idc.wf/docs/xml-cdata/</guid>
+      <guid>https://draychou.github.io/Blog-Hugo/docs/xml-cdata/</guid>
       <description>&lt;p&gt;&lt;h2 align=&#34;left&#34;&gt;CDATA&lt;/h2&gt;
 &lt;strong&gt;CDATA 内部的所有东西都会被解析器忽略。&lt;/strong&gt;假如文本中包含了大量的 &amp;ldquo;&amp;lt;&amp;rdquo; 和 &amp;ldquo;&amp;amp;&amp;rdquo; 字符 - 就像编程代码中经常出现的情况一样 - 那么这个 XML 元素就可以被定义为一个 CDATA 部分。CDATA 区段开始于 &lt;em&gt;&amp;ldquo;&amp;lt;![CDATA[&amp;rdquo;&lt;/em&gt;，结束于 &lt;em&gt;&amp;rdquo;]]&amp;gt;&amp;rdquo;&lt;/em&gt;：&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>php删除文件unlink</title>
-      <link>https://idc.wf/docs/php-shan-chu-wen-jian-unlink/</link>
+      <link>https://draychou.github.io/Blog-Hugo/docs/php-shan-chu-wen-jian-unlink/</link>
       <pubDate>Fri, 28 Jan 2011 00:00:00 +0000</pubDate>
       
-      <guid>https://idc.wf/docs/php-shan-chu-wen-jian-unlink/</guid>
+      <guid>https://draychou.github.io/Blog-Hugo/docs/php-shan-chu-wen-jian-unlink/</guid>
       <description>本文章来讲讲用php的unlink函数来删除文件和文件夹吧,下面来看看unlink的实例教程你知道如何建立一个档案。您知道如何打开一个文件中各种各样的方式不同。你甚至不知道如何读取和写入数据从一个文件！ 现在是时候了解如何摧毁（删除）文件。在php中删除的文件通过调用中断功能。 php的-文件unlink 当您查看的内容目录，您可以看到所有的档案，存在于该目录，因为作业系统或应用程序，您使用的是显示一个列表文件名。你可以把这些文件名作为链接，加入档案的目录您正在浏览。 如果您断开的文件，你是有效的制度造成忘记它或删除它！ 在您可以删除（断开）的文件，你首先必须确保它无法打开您的程序。使用fclose函数关闭一个开放的档案。 php的-文件unlink 请记住从php文件创建的教训，我们创建了一个文件，名为testFile.txt 。
 $myFile = &amp;quot;testFile.txt&amp;quot;; $fh = fopen($myFile, &#39;w&#39;) or die(&amp;quot;can&#39;t open file&amp;quot;); fclose($fh);  判断是否删除了.
 $myFile = &amp;quot;testFile.txt&amp;quot;; unlink($myFile);  删除文件.注明,删除文件夹在php里面只有文件夹为空时才能用unlink 进行删除操作.</description>
@@ -733,10 +733,10 @@ $myFile = &amp;quot;testFile.txt&amp;quot;; unlink($myFile);  删除文件.注�
     
     <item>
       <title>php检测用户是否使用代理上网的方法</title>
-      <link>https://idc.wf/docs/php-jian-ce-yong-hu-shi-fou-shi-yong-dai-li-shang-wang-de-fang-fa/</link>
+      <link>https://draychou.github.io/Blog-Hugo/docs/php-jian-ce-yong-hu-shi-fou-shi-yong-dai-li-shang-wang-de-fang-fa/</link>
       <pubDate>Fri, 28 Jan 2011 00:00:00 +0000</pubDate>
       
-      <guid>https://idc.wf/docs/php-jian-ce-yong-hu-shi-fou-shi-yong-dai-li-shang-wang-de-fang-fa/</guid>
+      <guid>https://draychou.github.io/Blog-Hugo/docs/php-jian-ce-yong-hu-shi-fou-shi-yong-dai-li-shang-wang-de-fang-fa/</guid>
       <description>获取用户IP地址的三个属性的区别(HTTP_X_FORWARDED_FOR,HTTP_VIA,REMOTE_ADDR)
 一、没有使用代理服务器的情况： 实例：
  REMOTE_ADDR = 158.41.30.94 HTTP_VIA = 没数值或不显示 HTTP_X_FORWARDED_FOR = 没数值或不显示  二、使用透明代理服务器的情况：Transparent Proxies 下例中，实际IP=158.41.30.94，使用代理服务器IP=210.51.46.227
@@ -749,10 +749,10 @@ $myFile = &amp;quot;testFile.txt&amp;quot;; unlink($myFile);  删除文件.注�
     
     <item>
       <title>找到2个wordpress 分享音乐相关的插件，不错哦～</title>
-      <link>https://idc.wf/docs/found-2-wordpress-plugin-share-music-related-oh-well/</link>
+      <link>https://draychou.github.io/Blog-Hugo/docs/found-2-wordpress-plugin-share-music-related-oh-well/</link>
       <pubDate>Fri, 28 Jan 2011 00:00:00 +0000</pubDate>
       
-      <guid>https://idc.wf/docs/found-2-wordpress-plugin-share-music-related-oh-well/</guid>
+      <guid>https://draychou.github.io/Blog-Hugo/docs/found-2-wordpress-plugin-share-music-related-oh-well/</guid>
       <description>WordPress播放插件
 作者：亦歌
 使用WordPress搭建的博客，安装此插件后，可在侧边栏中滚动歌词、控制亦歌播放。
@@ -770,10 +770,10 @@ WordPress分享插件(新!)
     
     <item>
       <title>国外轻量级开源论坛系统vanilla Forums介绍</title>
-      <link>https://idc.wf/docs/foreign-lightweight-open-source-forum-system-introduced-vanilla-forums/</link>
+      <link>https://draychou.github.io/Blog-Hugo/docs/foreign-lightweight-open-source-forum-system-introduced-vanilla-forums/</link>
       <pubDate>Wed, 26 Jan 2011 00:00:00 +0000</pubDate>
       
-      <guid>https://idc.wf/docs/foreign-lightweight-open-source-forum-system-introduced-vanilla-forums/</guid>
+      <guid>https://draychou.github.io/Blog-Hugo/docs/foreign-lightweight-open-source-forum-system-introduced-vanilla-forums/</guid>
       <description>&lt;p&gt;&lt;img title=&#34;vanilla Forums&#34; src=&#34;http://www.latooni.cn/uploads/2010/12/screen-6.gif&#34; alt=&#34;vanilla Forums&#34; width=&#34;500&#34; height=&#34;207&#34;&gt; &lt;strong&gt;简介&lt;/strong&gt;
 ： &lt;strong&gt;vanilla Forums&lt;/strong&gt;
 是一套php+Mysql开源论坛。它的特点在于各种配置，功能，操作界面风格（
@@ -787,19 +787,19 @@ WordPress分享插件(新!)
     
     <item>
       <title>smarty 模板中定义变量的方法</title>
-      <link>https://idc.wf/docs/smarty-e6-a8-a1-e6-9d-bf-e4-b8-ad-e5-ae-9a-e4-b9-89-e5-8f-98-e9-87-8f-e7-9a-84-e6-96-b9-e6-b3-95/</link>
+      <link>https://draychou.github.io/Blog-Hugo/docs/smarty-e6-a8-a1-e6-9d-bf-e4-b8-ad-e5-ae-9a-e4-b9-89-e5-8f-98-e9-87-8f-e7-9a-84-e6-96-b9-e6-b3-95/</link>
       <pubDate>Fri, 21 Jan 2011 00:00:00 +0000</pubDate>
       
-      <guid>https://idc.wf/docs/smarty-e6-a8-a1-e6-9d-bf-e4-b8-ad-e5-ae-9a-e4-b9-89-e5-8f-98-e9-87-8f-e7-9a-84-e6-96-b9-e6-b3-95/</guid>
+      <guid>https://draychou.github.io/Blog-Hugo/docs/smarty-e6-a8-a1-e6-9d-bf-e4-b8-ad-e5-ae-9a-e4-b9-89-e5-8f-98-e9-87-8f-e7-9a-84-e6-96-b9-e6-b3-95/</guid>
       <description>{assign var=&amp;quot;i&amp;quot; value=0} {foreach name=simple_tab from=$zhinan_cate key=key item=item} {if $i} &amp;lt;small&amp;gt;|&amp;lt;/small&amp;gt; {/if} {if $item[&#39;count&#39;]} {math assign=&amp;quot;i&amp;quot; equation=&amp;quot;x + y&amp;quot; x=$i y=1} &amp;lt;span&amp;gt;&amp;lt;a title=&amp;quot;{$segment_parent}期{$item[&#39;title&#39;]}&amp;quot; href=&amp;quot;%7B%24base_url%7Dpinpaizhinan&amp;amp;t_id=%7B%24item%5B&#39;id&#39;%5D%7D&amp;quot;&amp;gt;&amp;lt;/a&amp;gt;{$segment_parent}期{$item[&#39;title&#39;]}&amp;lt;/span&amp;gt; {else} {assign var=&amp;quot;i&amp;quot; value=0} {/if} {/foreach}  </description>
     </item>
     
     <item>
       <title>firefox中用js提交表单</title>
-      <link>https://idc.wf/docs/firefox-zhong-yong-js-ti-jiao-biao-dan/</link>
+      <link>https://draychou.github.io/Blog-Hugo/docs/firefox-zhong-yong-js-ti-jiao-biao-dan/</link>
       <pubDate>Thu, 20 Jan 2011 00:00:00 +0000</pubDate>
       
-      <guid>https://idc.wf/docs/firefox-zhong-yong-js-ti-jiao-biao-dan/</guid>
+      <guid>https://draychou.github.io/Blog-Hugo/docs/firefox-zhong-yong-js-ti-jiao-biao-dan/</guid>
       <description>&lt;div class=&#34;postcontent&#34;&gt;
     &lt;span class=&#34;Apple-style-span&#34;&gt;
         1.document.forms.from.submit();</description>
@@ -807,10 +807,10 @@ WordPress分享插件(新!)
     
     <item>
       <title>sql DISTINCT去掉重复的数据统计方法</title>
-      <link>https://idc.wf/docs/sql-distinct-qu-diao-zhong-fu-de-shu-ju-tong-ji-fang-fa/</link>
+      <link>https://draychou.github.io/Blog-Hugo/docs/sql-distinct-qu-diao-zhong-fu-de-shu-ju-tong-ji-fang-fa/</link>
       <pubDate>Thu, 20 Jan 2011 00:00:00 +0000</pubDate>
       
-      <guid>https://idc.wf/docs/sql-distinct-qu-diao-zhong-fu-de-shu-ju-tong-ji-fang-fa/</guid>
+      <guid>https://draychou.github.io/Blog-Hugo/docs/sql-distinct-qu-diao-zhong-fu-de-shu-ju-tong-ji-fang-fa/</guid>
       <description>sql DISTINCT去掉重复的数据统计方法(2009-01-13 15:05:43)转载 标签：sqldistinct杂谈 分类：sql SELECT指令让我们能够读取表格中一个或数个栏位的所有资料。这将把所有的资料都抓出，无论资料值有无重复。在资料处理中，我们会经常碰到需要找出表格内的不同资料值的情况。换句话说，我们需要知道这个表格/栏位内有哪些不同的值，而每个值出现的次数并不重要。这要如何达成呢？在sql中，这是很容易做到的。我们只要在SELECT后加上一个DISTINCT就可以了。 DISTINCT的语法如下： SELECT DISTINCT &amp;ldquo;栏位名&amp;rdquo; FROM &amp;ldquo;表格名&amp;rdquo; 举例来说，若要在以下的表格，Store_Information，找出所有不同的店名时，Store_Information 表格 store_name Sales Date 1 $1500 Jan-05-1999 2 $250 Jan-07-1999 1 $300 Jan-08-1999 3 $700 Jan-08-1999 我們就鍵入，
 SELECT DISTINCT store_name FROM Store_Information  結果: 1 2 3 DISTINCT 关键字可从 SELECT 语句的结果中除去重复的行。如果没有指定 DISTINCT，那么将返回所有行，包括重复的行。
 select count(distinct t.destaddr) from nbyd_send t where t.input_time &amp;gt; to_date(&#39;2007-2-1&#39;,&#39;yyyy-mm-dd&#39;) and t.input_time &amp;lt; to_date(&#39;2007-3-1&#39;,&#39;yyyy-mm-dd&#39;)  可以统计出一个月中的用户数量。 关于如何快速得知里面每一个号码重复的个数问题的解答: 利用分组函数的sql语句
@@ -819,10 +819,10 @@ select t.tel,count(*) from nbyd_deliver t group by t.</description>
     
     <item>
       <title>smarty 花括号转义</title>
-      <link>https://idc.wf/docs/smarty-escape-braces/</link>
+      <link>https://draychou.github.io/Blog-Hugo/docs/smarty-escape-braces/</link>
       <pubDate>Tue, 18 Jan 2011 00:00:00 +0000</pubDate>
       
-      <guid>https://idc.wf/docs/smarty-escape-braces/</guid>
+      <guid>https://draychou.github.io/Blog-Hugo/docs/smarty-escape-braces/</guid>
       <description>使用 smarty 模板的时候，通常都是用 ‘{’ 和 ‘}’ 作为定界符（delimiter）。
 有时，我们需要在 html 代码里输出大括号，如果在模板里直接写出来，会被 smarty 的解析器认为是定界符，然后会报错：
 smarty error : syntax error: unrecognized tag 无法识别的标签！
@@ -835,29 +835,29 @@ ldelim, rdelim ldelim and rdelim are used for displaying the literal delimiter, 
     
     <item>
       <title>javascript 检查字符串是否是数字的几种方法</title>
-      <link>https://idc.wf/docs/javascript-jian-cha-zi-fu-chuan-shi-fou-shi-shu-zi-de-ji-zhong-fang-fa/</link>
+      <link>https://draychou.github.io/Blog-Hugo/docs/javascript-jian-cha-zi-fu-chuan-shi-fou-shi-shu-zi-de-ji-zhong-fang-fa/</link>
       <pubDate>Mon, 10 Jan 2011 00:00:00 +0000</pubDate>
       
-      <guid>https://idc.wf/docs/javascript-jian-cha-zi-fu-chuan-shi-fou-shi-shu-zi-de-ji-zhong-fang-fa/</guid>
+      <guid>https://draychou.github.io/Blog-Hugo/docs/javascript-jian-cha-zi-fu-chuan-shi-fou-shi-shu-zi-de-ji-zhong-fang-fa/</guid>
       <description>代码：
 //判断是否是正整数 function IsNum(s) { if(s!=null){ var r,re; re = /\d*/i; //\d表示数字,*表示匹配多个数字 r = s.match(re); return (r==s)?true:false; } return false; } //判断是否为数字 function IsNum(s) { if (s!=null &amp;amp;&amp;amp; s!=&amp;quot;&amp;quot;) { return !isNaN(s); } return false; }  </description>
     </item>
     
     <item>
       <title>bluehost下主域名和附加域目录路径的自定义</title>
-      <link>https://idc.wf/docs/bluehost-xia-zhu-yu-ming-he-fu-jia-yu-mu-lu-lu-jing-de-zi-ding-yi/</link>
+      <link>https://draychou.github.io/Blog-Hugo/docs/bluehost-xia-zhu-yu-ming-he-fu-jia-yu-mu-lu-lu-jing-de-zi-ding-yi/</link>
       <pubDate>Sat, 08 Jan 2011 00:00:00 +0000</pubDate>
       
-      <guid>https://idc.wf/docs/bluehost-xia-zhu-yu-ming-he-fu-jia-yu-mu-lu-lu-jing-de-zi-ding-yi/</guid>
+      <guid>https://draychou.github.io/Blog-Hugo/docs/bluehost-xia-zhu-yu-ming-he-fu-jia-yu-mu-lu-lu-jing-de-zi-ding-yi/</guid>
       <description>&lt;p&gt;&lt;span style=&#34;line-height: 18px;&#34;&gt;bluehost在默认情况下，主域名和附加域目录路径如下：&lt;br style=&#34;line-height: normal;&#34;&gt;&lt;br style=&#34;line-height: normal;&#34;&gt;/home/youraccount/public_html/ (主域名对应目录)&lt;br style=&#34;line-height: normal;&#34;&gt;/home/youraccount/public_html/subfolderB (附加域名B)&lt;br style=&#34;line-height: normal;&#34;&gt;/home/youraccount/public_html/subfolderC (附加域名C)&lt;br style=&#34;line-height: normal;&#34;&gt;&lt;br style=&#34;line-height: normal;&#34;&gt;从上面的路径结构可以看出：主域名所对应的目录/public_html中包含有“附加域名B”和“附加域名C”这两个文件夹，如果你希望让上述三者成为并列关系，可以使用.htaccess命令来灵活定制。&lt;br style=&#34;line-height: normal;&#34;&gt;&lt;br style=&#34;line-height: normal;&#34;&gt;例如实现这种目录结构：&lt;br style=&#34;line-height: normal;&#34;&gt;&lt;br style=&#34;line-height: normal;&#34;&gt;/home/youraccount/public_html/subfolderA (主域名对应目录)&lt;br style=&#34;line-height: normal;&#34;&gt;/home/youraccount/public_html/subfolderB (附加域名B对应目录)&lt;br style=&#34;line-height: normal;&#34;&gt;/home/youraccount/public_html/subfolderC (附加域名C对应目录)&lt;br style=&#34;line-height: normal;&#34;&gt;用文本编辑器编辑.htaccess文件，内容修改和参照下面的代码：&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>mantis汉化方法</title>
-      <link>https://idc.wf/docs/mantis-han-hua-fang-fa/</link>
+      <link>https://draychou.github.io/Blog-Hugo/docs/mantis-han-hua-fang-fa/</link>
       <pubDate>Sat, 08 Jan 2011 00:00:00 +0000</pubDate>
       
-      <guid>https://idc.wf/docs/mantis-han-hua-fang-fa/</guid>
+      <guid>https://draychou.github.io/Blog-Hugo/docs/mantis-han-hua-fang-fa/</guid>
       <description>在mantisbt目录里找到config_defaults_inc.php这个文件,在这个文件里找到$g_default_language = &amp;lsquo;english&amp;rsquo;; ，修改为$g_default_language = &amp;lsquo;chinese_simplified&amp;rsquo;;</description>
     </item>
     

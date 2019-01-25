@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>svn on Dray&#39;s Home</title>
-    <link>https://idc.wf/tags/svn/</link>
+    <link>https://draychou.github.io/Blog-Hugo/tags/svn/</link>
     <description>Recent content in svn on Dray&#39;s Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Wed, 23 Feb 2011 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://idc.wf/tags/svn/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://draychou.github.io/Blog-Hugo/tags/svn/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Ubuntu下使用svn</title>
-      <link>https://idc.wf/docs/ubuntu-using-svn/</link>
+      <link>https://draychou.github.io/Blog-Hugo/docs/ubuntu-using-svn/</link>
       <pubDate>Wed, 23 Feb 2011 00:00:00 +0000</pubDate>
       
-      <guid>https://idc.wf/docs/ubuntu-using-svn/</guid>
+      <guid>https://draychou.github.io/Blog-Hugo/docs/ubuntu-using-svn/</guid>
       <description>svn作为日常开发中不可缺少的工具，今天终于开始在Ubuntu下使用了。
 1、首先需要安装svn。Ubuntu下的svn安装十分简单，sudo apt-get install subversion，然后根据提示一步一步，就完成了svn的安装；
 2、检出文件（checkout）。

@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>vanilla on Dray&#39;s Home</title>
-    <link>https://idc.wf/tags/vanilla/</link>
+    <link>https://draychou.github.io/Blog-Hugo/tags/vanilla/</link>
     <description>Recent content in vanilla on Dray&#39;s Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Wed, 26 Jan 2011 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://idc.wf/tags/vanilla/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://draychou.github.io/Blog-Hugo/tags/vanilla/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>国外轻量级开源论坛系统vanilla Forums介绍</title>
-      <link>https://idc.wf/docs/foreign-lightweight-open-source-forum-system-introduced-vanilla-forums/</link>
+      <link>https://draychou.github.io/Blog-Hugo/docs/foreign-lightweight-open-source-forum-system-introduced-vanilla-forums/</link>
       <pubDate>Wed, 26 Jan 2011 00:00:00 +0000</pubDate>
       
-      <guid>https://idc.wf/docs/foreign-lightweight-open-source-forum-system-introduced-vanilla-forums/</guid>
+      <guid>https://draychou.github.io/Blog-Hugo/docs/foreign-lightweight-open-source-forum-system-introduced-vanilla-forums/</guid>
       <description>&lt;p&gt;&lt;img title=&#34;vanilla Forums&#34; src=&#34;http://www.latooni.cn/uploads/2010/12/screen-6.gif&#34; alt=&#34;vanilla Forums&#34; width=&#34;500&#34; height=&#34;207&#34;&gt; &lt;strong&gt;简介&lt;/strong&gt;
 ： &lt;strong&gt;vanilla Forums&lt;/strong&gt;
 是一套php+Mysql开源论坛。它的特点在于各种配置，功能，操作界面风格（

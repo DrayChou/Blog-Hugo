@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>math on Dray&#39;s Home</title>
-    <link>https://idc.wf/tags/math/</link>
+    <link>https://draychou.github.io/Blog-Hugo/tags/math/</link>
     <description>Recent content in math on Dray&#39;s Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Mon, 14 Feb 2011 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://idc.wf/tags/math/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://draychou.github.io/Blog-Hugo/tags/math/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>世界上最神奇的数字是...</title>
-      <link>https://idc.wf/docs/shi-jie-shang-zui-shen-qi-de-shu-zi-shi/</link>
+      <link>https://draychou.github.io/Blog-Hugo/docs/shi-jie-shang-zui-shen-qi-de-shu-zi-shi/</link>
       <pubDate>Mon, 14 Feb 2011 00:00:00 +0000</pubDate>
       
-      <guid>https://idc.wf/docs/shi-jie-shang-zui-shen-qi-de-shu-zi-shi/</guid>
+      <guid>https://draychou.github.io/Blog-Hugo/docs/shi-jie-shang-zui-shen-qi-de-shu-zi-shi/</guid>
       <description>世界上最神奇的数字是： 142857 http://is.gd/Um8nMh</description>
     </item>
     

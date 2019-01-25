@@ -7,18 +7,18 @@
 
 <meta property='og:title' content='php bmp格式图片转换成jpg格式程序 • Dray&#39;s Home'>
 <meta property='og:description' content='&lt;?php /* * To change this template, choose Tools | Templates * and open the template in the editor. */ //php教程将bmp格式图片转换成jpg格式程序 function imagebmp($img,$file=&quot;&quot;,$rle=0) { $colorcount=imagecolorstotal($img); $transparent=imagecolortransparent($img); $istransparent=$transparent!=-1; if($istransparent) $colorcount--; if($colorcount==0) { $colorcount=0; $bitcount=24; }; if(($colorcount&gt;0)and($colorcount&lt;=2)) { $colorcount=2; $bitcount=1; }; if(($colorcount&gt;2)and($colorcount&lt;=16)) { $colorcount=16; $bitcount=4; }; if(($colorcount&gt;16)and($colorcount&lt;=256)) { $colorcount=0; $bitcount=8; }; $width=imagesx($img); $height=imagesy($img); $zbytek=(4-($width/(8/$bitcount))%4)%4; if($bitcount&lt;24) $palsize=pow(2,$bitcount)*4; $size=(floor($width/(8/$bitcount))&#43;$zbytek)*$height&#43;54; $size&#43;=$palsize; $offset=54&#43;$palsize; // bitmap file header $ret = &#39;bm&#39;; // header (2b) $ret .= int_to_dword($size); // size of file (4b) $ret .'>
-<meta property='og:url' content='https://idc.wf/docs/php-bmp-format-image-into-jpg-format-program/'>
+<meta property='og:url' content='https://draychou.github.io/Blog-Hugo/docs/php-bmp-format-image-into-jpg-format-program/'>
 <meta property='og:site_name' content='Dray&#39;s Home'>
 <meta property='og:type' content='article'><meta property='article:section' content='docs'><meta property='article:tag' content='bmp'><meta property='article:published_time' content='2011-02-18T00:00:00Z'/><meta property='article:modified_time' content='2011-02-18T00:00:00Z'/><meta name='twitter:card' content='summary'>
 
 <meta name="generator" content="Hugo 0.53" />
 
   <title>php bmp格式图片转换成jpg格式程序 • Dray&#39;s Home</title>
-  <link rel='canonical' href='https://idc.wf/docs/php-bmp-format-image-into-jpg-format-program/'>
+  <link rel='canonical' href='https://draychou.github.io/Blog-Hugo/docs/php-bmp-format-image-into-jpg-format-program/'>
   
   
-  <link rel='icon' href='/favicon.ico'>
-<link rel='stylesheet' href='/assets/css/main.4a10984a.css'><link rel='stylesheet' href='/css/custom.css'><style>
+  <link rel='icon' href='/Blog-Hugo/favicon.ico'>
+<link rel='stylesheet' href='/Blog-Hugo/assets/css/main.4a10984a.css'><link rel='stylesheet' href='/Blog-Hugo/css/custom.css'><style>
 :root{--color-accent:dodgerblue;}
 </style>
 
@@ -34,8 +34,8 @@
   <header>
     
     <div class='logo'>
-      <a href='/'>
-        <img src='/images/logo.png'>
+      <a href='/Blog-Hugo/'>
+        <img src='/Blog-Hugo/images/logo.png'>
       </a>
     </div>
     
@@ -53,7 +53,7 @@
     <h4 class='title widget-title'>Search</h4>
   </header>
 
-  <form action='/search' id='search-form' class='search-form'>
+  <form action='/Blog-Hugo/search' id='search-form' class='search-form'>
     <label>
       <span class='screen-reader-text'></span>
       <input id='search-term' class='search-term' type='search' name='q' placeholder='&hellip;'>
@@ -63,11 +63,11 @@
 <section class='widget widget-sidebar_menu sep-after'><nav id='sidebar-menu' class='menu sidebar-menu' aria-label='侧边菜单'>
     <div class='container'>
       <ul><li class='item'>
-  <a href='/'>Home</a></li><li class='item'>
-  <a href='/docs/'>Docs</a></li><li class='item'>
-  <a href='/menus/'>About</a></li><li class='item'>
-  <a href='/categories/'>categories</a></li><li class='item'>
-  <a href='/tags/'>Tags</a></li></ul>
+  <a href='/Blog-Hugo/'>Home</a></li><li class='item'>
+  <a href='/Blog-Hugo/docs/'>Docs</a></li><li class='item'>
+  <a href='/Blog-Hugo/menus/'>About</a></li><li class='item'>
+  <a href='/Blog-Hugo/categories/'>categories</a></li><li class='item'>
+  <a href='/Blog-Hugo/tags/'>Tags</a></li></ul>
     </div>
   </nav>
 
@@ -99,7 +99,7 @@
     <style>.widget-breadcrumbs li:after{content:'\2f '}</style>
   <section class='widget widget-breadcrumbs sep-after'>
     <nav id='breadcrumbs'>
-      <ol><li><a href='/'>Home</a></li><li><a href='/docs/'>Docs</a></li><li><span>php bmp格式图片转换成jpg格式程序</span></li></ol>
+      <ol><li><a href='/Blog-Hugo/'>Home</a></li><li><a href='/Blog-Hugo/docs/'>Docs</a></li><li><span>php bmp格式图片转换成jpg格式程序</span></li></ol>
     </nav>
   </section></div>
       </div>
@@ -577,14 +577,14 @@ imagedestroy($image);
   <path d="M22,19a2,2,0,0,1-2,2H4a2,2,0,0,1-2-2V5A2,2,0,0,1,4,3H9l2,3h9a2,2,0,0,1,2,2Z"/>
   
 </svg>
-<span class='screen-reader-text'>分类: </span><a class='category' href='/categories/web/'>web</a></div>
+<span class='screen-reader-text'>分类: </span><a class='category' href='/Blog-Hugo/categories/web/'>web</a></div>
 <div class='tags'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
   
   <path d="M20.59,13.41l-7.17,7.17a2,2,0,0,1-2.83,0L2,12V2H12l8.59,8.59A2,2,0,0,1,20.59,13.41Z"/>
   <line x1="7" y1="7" x2="7" y2="7"/>
   
 </svg>
-<span class='screen-reader-text'>标签: </span><a class='tag' href='/tags/bmp/'>bmp</a></div>
+<span class='screen-reader-text'>标签: </span><a class='tag' href='/Blog-Hugo/tags/bmp/'>bmp</a></div>
 
   </div>
 </footer>
@@ -594,7 +594,7 @@ imagedestroy($image);
 
 <nav class='entry-nav'>
   <div class='container'><div class='prev-entry sep-before'>
-      <a href='/docs/http-functions-php/'>
+      <a href='/Blog-Hugo/docs/http-functions-php/'>
         <span aria-hidden='true'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
   
   <line x1="20" y1="12" x2="4" y2="12"/>
@@ -604,7 +604,7 @@ imagedestroy($image);
  上一个</span>
         <span class='screen-reader-text'>上一篇文章: </span>php 断点续传功能</a>
     </div><div class='next-entry sep-before'>
-      <a href='/docs/jquery-live-and-event-delegation/'>
+      <a href='/Blog-Hugo/docs/jquery-live-and-event-delegation/'>
         <span class='screen-reader-text'>下一篇文章: </span>jQuery.live()与Event Delegation<span aria-hidden='true'>下一个 <svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
   
   <line x1="4" y1="12" x2="20" y2="12"/>
@@ -650,9 +650,9 @@ imagedestroy($image);
       </footer>
 
     </div>
-  </div><script>window.__public_path__='\/assets\/js\/'</script>
+  </div><script>window.__public_path__='\/Blog-Hugo\/assets\/js\/'</script>
 
-<script src='/assets/js/main.fae8ed32.js'></script><script src='/js/custom.js'></script>
+<script src='/Blog-Hugo/assets/js/main.fae8ed32.js'></script><script src='/Blog-Hugo/js/custom.js'></script>
 
 </body>
 

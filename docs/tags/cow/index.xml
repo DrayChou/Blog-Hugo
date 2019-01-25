@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>cow on Dray&#39;s Home</title>
-    <link>https://idc.wf/tags/cow/</link>
+    <link>https://draychou.github.io/Blog-Hugo/tags/cow/</link>
     <description>Recent content in cow on Dray&#39;s Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Wed, 28 Mar 2018 17:44:00 +0000</lastBuildDate>
     
-	<atom:link href="https://idc.wf/tags/cow/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://draychou.github.io/Blog-Hugo/tags/cow/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>pi 安装 ssr，cow 备注</title>
-      <link>https://idc.wf/docs/pi-ssrcow/</link>
+      <link>https://draychou.github.io/Blog-Hugo/docs/pi-ssrcow/</link>
       <pubDate>Wed, 28 Mar 2018 17:44:00 +0000</pubDate>
       
-      <guid>https://idc.wf/docs/pi-ssrcow/</guid>
+      <guid>https://draychou.github.io/Blog-Hugo/docs/pi-ssrcow/</guid>
       <description>偶尔一次使用的东西，记一下！
 ssr 安装 python sudo apt-get install python-pip python3-pip git htop  安装 ssr mkdir /srv/approot git clone https://github.com/ToyoDAdoubi/shadowsocksr shadowsocksr-doubi  配置 ssr nano /srv/approot/ssr-config/jp1.json { &amp;quot;server&amp;quot;: &amp;quot;0.0.0.0&amp;quot;, &amp;quot;server_ipv6&amp;quot;: &amp;quot;::&amp;quot;, &amp;quot;server_port&amp;quot;: 8388, &amp;quot;local_address&amp;quot;: &amp;quot;127.0.0.1&amp;quot;, &amp;quot;local_port&amp;quot;: 1080, &amp;quot;password&amp;quot;: &amp;quot;m&amp;quot;, &amp;quot;method&amp;quot;: &amp;quot;aes-128-ctr&amp;quot;, &amp;quot;protocol&amp;quot;: &amp;quot;auth_aes128_md5&amp;quot;, &amp;quot;protocol_param&amp;quot;: &amp;quot;&amp;quot;, &amp;quot;obfs&amp;quot;: &amp;quot;tls1.2_ticket_auth_compatible&amp;quot;, &amp;quot;obfs_param&amp;quot;: &amp;quot;&amp;quot;, &amp;quot;speed_limit_per_con&amp;quot;: 0, &amp;quot;speed_limit_per_user&amp;quot;: 0, &amp;quot;additional_ports&amp;quot; : {}, // only works under multi-user mode &amp;quot;timeout&amp;quot;: 120, &amp;quot;udp_timeout&amp;quot;: 60, &amp;quot;dns_ipv6&amp;quot;: false, &amp;quot;connect_verbose_info&amp;quot;: 0, &amp;quot;redirect&amp;quot;: &amp;quot;&amp;quot;, &amp;quot;fast_open&amp;quot;: true }  启动 ssr 服务 sudo python3 /srv/approot/shadowsocksr-doubi/shadowsocks/local.</description>
     </item>
     
     <item>
       <title>Shadowsocks 新手指南</title>
-      <link>https://idc.wf/docs/shadowsocks/</link>
+      <link>https://draychou.github.io/Blog-Hugo/docs/shadowsocks/</link>
       <pubDate>Mon, 02 Jun 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://idc.wf/docs/shadowsocks/</guid>
+      <guid>https://draychou.github.io/Blog-Hugo/docs/shadowsocks/</guid>
       <description>#Shadowsocks
 shadowsocks 簡稱 ss 是一套的代理協議，包含服務端應用和客戶端應用。使用 ss:// 格式的鏈接協議來標識服務器地址。
 客戶端 如果你已經有了服務器地址，那麼我們就直接來配置客戶端吧，如果沒有，那麼你需要去找IT男要一個，或者去 ShadowSocks公益组织 找一個吧。
