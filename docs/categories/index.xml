@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on Dray&#39;s Home</title>
+    <link>https://idc.wf/categories/</link>
+    <description>Recent content in Categories on Dray&#39;s Home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	<atom:link href="https://idc.wf/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>diary</title>
+      <link>https://idc.wf/categories/diary/</link>
+      <pubDate>Wed, 18 May 2016 15:18:00 +0000</pubDate>
+      
+      <guid>https://idc.wf/categories/diary/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ide</title>
+      <link>https://idc.wf/categories/ide/</link>
+      <pubDate>Tue, 16 Apr 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://idc.wf/categories/ide/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>linux</title>
+      <link>https://idc.wf/categories/linux/</link>
+      <pubDate>Wed, 28 Mar 2018 17:44:00 +0000</pubDate>
+      
+      <guid>https://idc.wf/categories/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>mac</title>
+      <link>https://idc.wf/categories/mac/</link>
+      <pubDate>Wed, 14 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://idc.wf/categories/mac/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>web</title>
+      <link>https://idc.wf/categories/web/</link>
+      <pubDate>Fri, 13 May 2016 20:05:00 +0000</pubDate>
+      
+      <guid>https://idc.wf/categories/web/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>windows</title>
+      <link>https://idc.wf/categories/windows/</link>
+      <pubDate>Thu, 29 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://idc.wf/categories/windows/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

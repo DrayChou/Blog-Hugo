@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>week on Dray&#39;s Home</title>
+    <link>https://idc.wf/tags/week/</link>
+    <description>Recent content in week on Dray&#39;s Home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sat, 12 Feb 2011 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://idc.wf/tags/week/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>php获取一个日期为当月的第几周</title>
+      <link>https://idc.wf/docs/php-to-get-a-date-for-the-first-few-weeks-of-the-month/</link>
+      <pubDate>Sat, 12 Feb 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://idc.wf/docs/php-to-get-a-date-for-the-first-few-weeks-of-the-month/</guid>
+      <description>function checkweek($day) { $month = date(&#39;m&#39;, time()); // 获取本月 $year = date(&#39;Y&#39;, time()); // 获取本年 $firstday = date(&#39;w&#39;, mktime(0, 0, 0, $month, 1, $year)); //本月1号星期数 $firstweek = 7 - $firstday; // 第1周天数 $week = ceil(($day - $firstweek) / 7) + 1; return $year.&#39;年&#39;.$month.&#39;月&#39;.$day . &#39;号属于本月第&#39; . $week . &#39;周&#39;; } $a = checkweek(14); //本月几号 echo $a;  </description>
+    </item>
+    
+  </channel>
+</rss>

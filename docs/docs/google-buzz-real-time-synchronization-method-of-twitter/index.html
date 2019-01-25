@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang='zh'><head>
+  <meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<meta name='description' content=' 相比Twitter而说，Buzz目前还可以从国内访问，因此昨天我那篇文章的后面就有人咨询，是否能实现Buzz的微博同步到Twitter上，经过我的研究发现，这是可以实现的，而且同步几乎是实时的。
+这主要归功于PubSubHubBub，可以实现RSS Feed的实时更新，而Google Buzz的RSS Feed和Google Reader一样，从一开始就支持PubSubHubBub，这使得Buzz的Feed变成实时的Feed，而恰好Google的另一个产品FeedBurner也支持PubSubHubBub的Feed，因此就可以通过这个来实现微博的实时同步。
+具体同步Google Buzz到Twitter的方法是：在个人Profile页面找到自己Buzz的Feed，通常使用IE或Firefox进入 https://www.google.com/profiles/me 后，会看到地址栏的RSS图标，点击后可看见RSS地址，这个地址格式类似：http://buzz.googleapis.com/feeds/112646999948608559077/public/posted 。
+登录FeedBurner，将上述Feed烧录，然后在Publicize里面，点Socialize，加入自己的Twitter帐号，格式选项中，选Body Only，不加Link，不留retweets空间，保存后就可以实现同步。设置界面如下图所示：
+同步的内容只有140个字，虽然Buzz是不限制字数的，但如果你想把Buzz当作微博客同步Twitter，那么还是将字数限制在140个字好一些。注意同步Twitter后，就不要再Buzz中再连接Twitter了，否则就搞成死循环了。
+经过我的测试，使用FeedBurner将Google Buzz的Feed发布到Twitter，消息同步时间在一分钟内，基本是实时的，如果你想以Buzz为自己主要的微博客，那么就可以采用这种方法同步信息到Twitter，简单而快速。
+从技术的角度我很喜欢Google Buzz，因为它支持PubSubHubBub，可以聚合其他网站内容（连新浪微博都支持同步博客信息），这些东西Twitter至今也不支持。有了实时的RSS，信息的快速传递就可以不依赖于某个平台（如Twitter），这大概就是Twitter至今也不想支持PubSubHubBub的原因吧。
+  
+除非注明，月光博客文章均为原创，转载请以链接形式标明本文地址
+本文地址：http://www.williamlong.info/archives/2086.html
+ '>
+<meta name='theme-color' content='dodgerblue'>
+
+<meta property='og:title' content='Google Buzz实时同步Twitter的方法 • Dray&#39;s Home'>
+<meta property='og:description' content=' 相比Twitter而说，Buzz目前还可以从国内访问，因此昨天我那篇文章的后面就有人咨询，是否能实现Buzz的微博同步到Twitter上，经过我的研究发现，这是可以实现的，而且同步几乎是实时的。
+这主要归功于PubSubHubBub，可以实现RSS Feed的实时更新，而Google Buzz的RSS Feed和Google Reader一样，从一开始就支持PubSubHubBub，这使得Buzz的Feed变成实时的Feed，而恰好Google的另一个产品FeedBurner也支持PubSubHubBub的Feed，因此就可以通过这个来实现微博的实时同步。
+具体同步Google Buzz到Twitter的方法是：在个人Profile页面找到自己Buzz的Feed，通常使用IE或Firefox进入 https://www.google.com/profiles/me 后，会看到地址栏的RSS图标，点击后可看见RSS地址，这个地址格式类似：http://buzz.googleapis.com/feeds/112646999948608559077/public/posted 。
+登录FeedBurner，将上述Feed烧录，然后在Publicize里面，点Socialize，加入自己的Twitter帐号，格式选项中，选Body Only，不加Link，不留retweets空间，保存后就可以实现同步。设置界面如下图所示：
+同步的内容只有140个字，虽然Buzz是不限制字数的，但如果你想把Buzz当作微博客同步Twitter，那么还是将字数限制在140个字好一些。注意同步Twitter后，就不要再Buzz中再连接Twitter了，否则就搞成死循环了。
+经过我的测试，使用FeedBurner将Google Buzz的Feed发布到Twitter，消息同步时间在一分钟内，基本是实时的，如果你想以Buzz为自己主要的微博客，那么就可以采用这种方法同步信息到Twitter，简单而快速。
+从技术的角度我很喜欢Google Buzz，因为它支持PubSubHubBub，可以聚合其他网站内容（连新浪微博都支持同步博客信息），这些东西Twitter至今也不支持。有了实时的RSS，信息的快速传递就可以不依赖于某个平台（如Twitter），这大概就是Twitter至今也不想支持PubSubHubBub的原因吧。
+  
+除非注明，月光博客文章均为原创，转载请以链接形式标明本文地址
+本文地址：http://www.williamlong.info/archives/2086.html
+ '>
+<meta property='og:url' content='https://idc.wf/docs/google-buzz-real-time-synchronization-method-of-twitter/'>
+<meta property='og:site_name' content='Dray&#39;s Home'>
+<meta property='og:type' content='article'><meta property='article:section' content='docs'><meta property='article:tag' content='buzz'><meta property='article:published_time' content='2011-03-12T00:00:00Z'/><meta property='article:modified_time' content='2011-03-12T00:00:00Z'/><meta name='twitter:card' content='summary'>
+
+<meta name="generator" content="Hugo 0.53" />
+
+  <title>Google Buzz实时同步Twitter的方法 • Dray&#39;s Home</title>
+  <link rel='canonical' href='https://idc.wf/docs/google-buzz-real-time-synchronization-method-of-twitter/'>
+  
+  
+  <link rel='icon' href='/favicon.ico'>
+<link rel='stylesheet' href='/assets/css/main.4a10984a.css'><link rel='stylesheet' href='/css/custom.css'><style>
+:root{--color-accent:dodgerblue;}
+</style>
+
+  
+
+</head>
+<body class='page type-docs layout-post has-sidebar'>
+
+  <div class='site'><div id='sidebar' class='sidebar'>
+  <a class='screen-reader-text' href='#main-menu'>跳到主页</a>
+
+  <div class='container'><section class='widget widget-about sep-after'>
+  <header>
+    
+    <div class='logo'>
+      <a href='/'>
+        <img src='/images/logo.png'>
+      </a>
+    </div>
+    
+    <h2 class='title site-title '>
+    Dray&#39;s Home
+    </h2>
+    <div class='desc'>
+    疯狂痴呆傻，美甘苦涩禅。
+    </div>
+  </header>
+
+</section>
+<section class='widget widget-search sep-after'>
+  <header>
+    <h4 class='title widget-title'>Search</h4>
+  </header>
+
+  <form action='/search' id='search-form' class='search-form'>
+    <label>
+      <span class='screen-reader-text'></span>
+      <input id='search-term' class='search-term' type='search' name='q' placeholder='&hellip;'>
+    </label></form>
+
+</section>
+<section class='widget widget-sidebar_menu sep-after'><nav id='sidebar-menu' class='menu sidebar-menu' aria-label='侧边菜单'>
+    <div class='container'>
+      <ul><li class='item'>
+  <a href='/'>Home</a></li><li class='item'>
+  <a href='/docs/'>Docs</a></li><li class='item'>
+  <a href='/menus/'>About</a></li><li class='item'>
+  <a href='/categories/'>categories</a></li><li class='item'>
+  <a href='/tags/'>Tags</a></li></ul>
+    </div>
+  </nav>
+
+</section></div>
+
+  <div class='sidebar-overlay'></div>
+</div><div class='main'><a class='screen-reader-text' href='#content'>跳到文章</a>
+
+<button id='sidebar-toggler' class='sidebar-toggler' aria-controls='sidebar'>
+  <span class='screen-reader-text'>切换侧边栏</span>
+  <span class='open'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <line x1="3" y1="12" x2="21" y2="12" />
+  <line x1="3" y1="6" x2="21" y2="6" />
+  <line x1="3" y1="18" x2="21" y2="18" />
+  
+</svg>
+</span>
+  <span class='close'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <line x1="18" y1="6" x2="6" y2="18" />
+  <line x1="6" y1="6" x2="18" y2="18" />
+  
+</svg>
+</span>
+</button><div class='header-widgets'>
+        <div class='container'>
+    
+    <style>.widget-breadcrumbs li:after{content:'\2f '}</style>
+  <section class='widget widget-breadcrumbs sep-after'>
+    <nav id='breadcrumbs'>
+      <ol><li><a href='/'>Home</a></li><li><a href='/docs/'>Docs</a></li><li><span>Google Buzz实时同步Twitter的方法</span></li></ol>
+    </nav>
+  </section></div>
+      </div>
+
+      <header id='header' class='header site-header'>
+        <div class='container sep-after'>
+          <div class='header-info'><p class='site-title title'>Dray&#39;s Home</p><p class='desc site-desc'>疯狂痴呆傻，美甘苦涩禅。</p>
+          </div>
+        </div>
+      </header>
+
+      <main id='content'>
+
+
+<article lang='zh' class='entry'>
+  <header class='header entry-header'>
+  <div class='container sep-after'>
+    <div class='header-info'>
+      <h1 class='title'>Google Buzz实时同步Twitter的方法</h1>
+      
+
+    </div>
+    <div class='entry-meta'>
+  <span class='posted-on'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+  <line x1="16" y1="2" x2="16" y2="6"/>
+  <line x1="8" y1="2" x2="8" y2="6"/>
+  <line x1="3" y1="10" x2="21" y2="10"/>
+  
+</svg>
+<span class='screen-reader-text'>发布 </span>
+  <time class='entry-date' datetime='2011-03-12T00:00:00Z'>2011-03-12</time>
+</span>
+
+  
+  
+<span class='reading-time'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <circle cx="12" cy="12" r="10"/>
+  <polyline points="12 6 12 12 15 15"/>
+  
+</svg>
+需要1分钟读完
+</span>
+
+
+</div>
+
+
+  </div>
+</header>
+
+  
+  
+
+  <div class='container entry-content'>
+  <p><div>
+<div id="artibody"></p>
+
+<p>相比Twitter而说，Buzz目前还可以从国内访问，因此昨天<a href="http://www.williamlong.info/archives/2085.html" target="_blank">我那篇文章</a>的后面就有人咨询，是否能实现Buzz的微博同步到Twitter上，经过我的研究发现，这是可以实现的，而且同步几乎是实时的。</p>
+
+<p>这主要归功于PubSubHubBub，可以实现RSS Feed的实时更新，而Google Buzz的RSS Feed和Google Reader一样，从一开始就支持PubSubHubBub，这使得Buzz的Feed变成实时的Feed，而恰好Google的另一个产品FeedBurner也支持PubSubHubBub的Feed，因此就可以通过这个来实现微博的实时同步。</p>
+
+<p>具体同步Google Buzz到Twitter的方法是：在个人Profile页面找到自己Buzz的Feed，通常使用IE或Firefox进入 <a href="https://www.google.com/profiles/me" target="_blank"><a href="https://www.google.com/profiles/me" target="_blank">https://www.google.com/profiles/me</a></a> 后，会看到地址栏的RSS图标，点击后可看见RSS地址，这个地址格式类似：<a href="http://buzz.googleapis.com/feeds/112646999948608559077/public/posted" target="_blank">http://buzz.googleapis.com/feeds/112646999948608559077/public/posted</a> 。</p>
+
+<p>登录<a href="http://www.feedburner.com/" target="_blank">FeedBurner</a>，将上述Feed烧录，然后在Publicize里面，点Socialize，加入自己的Twitter帐号，格式选项中，选Body Only，不加Link，不留retweets空间，保存后就可以实现同步。设置界面如下图所示：</p>
+
+<p><img src="http://www.williamlong.info/upload/2086_1.jpg" alt="Google Buzz实时同步Twitter的方法"></p>
+
+<p>同步的内容只有140个字，虽然Buzz是不限制字数的，但如果你想把Buzz当作微博客同步Twitter，那么还是将字数限制在140个字好一些。注意同步Twitter后，就不要再Buzz中再连接Twitter了，否则就搞成死循环了。</p>
+
+<p>经过我的测试，使用FeedBurner将Google Buzz的Feed发布到Twitter，消息同步时间在一分钟内，基本是实时的，如果你想以Buzz为自己主要的微博客，那么就可以采用这种方法同步信息到Twitter，简单而快速。</p>
+
+<p>从技术的角度我很喜欢Google Buzz，因为它支持PubSubHubBub，可以聚合其他网站内容（连新浪微博都支持同步博客信息），这些东西Twitter至今也不支持。有了实时的RSS，信息的快速传递就可以不依赖于某个平台（如Twitter），这大概就是Twitter至今也不想支持PubSubHubBub的原因吧。</p>
+
+<p></div>
+</div>
+<div></p>
+
+<p>除非注明，<a href="http://www.williamlong.info/">月光博客</a>文章均为原创，转载请以链接形式标明本文地址</p>
+
+<p>本文地址：<a href="http://www.williamlong.info/archives/2086.html">http://www.williamlong.info/archives/2086.html</a></p>
+
+<p></div>
+ </p>
+
+</div>
+
+  
+<footer class='entry-footer'>
+  <div class='container sep-before'><div class='categories'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M22,19a2,2,0,0,1-2,2H4a2,2,0,0,1-2-2V5A2,2,0,0,1,4,3H9l2,3h9a2,2,0,0,1,2,2Z"/>
+  
+</svg>
+<span class='screen-reader-text'>分类: </span><a class='category' href='/categories/web/'>web</a></div>
+<div class='tags'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M20.59,13.41l-7.17,7.17a2,2,0,0,1-2.83,0L2,12V2H12l8.59,8.59A2,2,0,0,1,20.59,13.41Z"/>
+  <line x1="7" y1="7" x2="7" y2="7"/>
+  
+</svg>
+<span class='screen-reader-text'>标签: </span><a class='tag' href='/tags/buzz/'>buzz</a></div>
+
+  </div>
+</footer>
+
+
+</article>
+
+<nav class='entry-nav'>
+  <div class='container'><div class='prev-entry sep-before'>
+      <a href='/docs/tai-shen-qi-le-yuan-lai-url-mao-dian/'>
+        <span aria-hidden='true'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <line x1="20" y1="12" x2="4" y2="12"/>
+  <polyline points="10 18 4 12 10 6"/>
+  
+</svg>
+ 上一个</span>
+        <span class='screen-reader-text'>上一篇文章: </span>太神奇了，原来URL锚点...</a>
+    </div><div class='next-entry sep-before'>
+      <a href='/docs/vps-hosting-to-do-with-just-bought-a-mirror/'>
+        <span class='screen-reader-text'>下一篇文章: </span>用刚买的VPS主机做了一个镜像站<span aria-hidden='true'>下一个 <svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <line x1="4" y1="12" x2="20" y2="12"/>
+  <polyline points="14 6 20 12 14 18"/>
+  
+</svg>
+</span>
+      </a>
+    </div></div>
+</nav>
+
+
+
+
+      </main>
+
+      <footer id='footer' class='footer'>
+        <div class='container sep-before'><section class='widget widget-social_menu sep-after'><nav aria-label='社交菜单'>
+    <ul><li>
+        <a href='https://github.com/DrayChou' target='_blank' rel='noopener'>
+          <span class='screen-reader-text'>在新标签打开Github的账户</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+  
+</svg>
+</a>
+      </li><li>
+        <a href='mailto:blog@idc.wf' target='_blank' rel='noopener'>
+          <span class='screen-reader-text'>通过邮件联系</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+  <polyline points="22,6 12,13 2,6"/>
+  
+</svg>
+</a>
+      </li></ul>
+  </nav>
+</section><div class='copyright'>
+  <p>Copyright &copy; 1900-2019 Dray All rights reserved</p>
+</div>
+
+        </div>
+      </footer>
+
+    </div>
+  </div><script>window.__public_path__='\/assets\/js\/'</script>
+
+<script src='/assets/js/main.fae8ed32.js'></script><script src='/js/custom.js'></script>
+
+</body>
+
+</html>
+

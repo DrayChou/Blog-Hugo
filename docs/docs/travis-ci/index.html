@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang='zh'><head>
+  <meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<meta name='description' content='前言 之前换过很多的静态博客系统，但是每个系统都需要本地做一定的部署，这点很麻烦。 Gor 倒是有可执行文件，但是本地部署的时候还是需要合并提交代码，还是略不爽。 今天在查 CI 系统的时候发现了 Travis CI ,于是，一切都很开心了。
+关于 Travis CI 这是一个通过脚本来进行自动部署的系统，本身与 Github 高度集成，目前对于公开的项目免费支持。
+开启travis-ci 首先去 Travis CI 官网，点击右上角Sign in with GitHub通过github授权登录。然后去到个人信息页面，开启需要使用 travis 的项目，在我这里就是 DrayChou/Blog-Hexo 。
+密钥 因为需要通过脚本提交到 Github ，所以需要先申请一个 token ，避免密码或者证书问题造成的麻烦。 Token 申请地址是 https://github.com/settings/tokens 。 记得给予 public_repo 的权限，要不无法提交修改到 GitHub。 记得这个 token ，后面会用到。
+Travis CI 的命令行工具 执行下面的命令安装命令行工具。 gem install travis  生成脚本 切换到 blog 的目录下，执行下面的命令，记得输入 node 语言
+$ travis init detected repository as DrayChou/Blog-Pugo Main programming language used: |HTML| node .'>
+<meta name='theme-color' content='dodgerblue'>
+
+<meta property='og:title' content='使用Travis CI自动部署Hexo • Dray&#39;s Home'>
+<meta property='og:description' content='前言 之前换过很多的静态博客系统，但是每个系统都需要本地做一定的部署，这点很麻烦。 Gor 倒是有可执行文件，但是本地部署的时候还是需要合并提交代码，还是略不爽。 今天在查 CI 系统的时候发现了 Travis CI ,于是，一切都很开心了。
+关于 Travis CI 这是一个通过脚本来进行自动部署的系统，本身与 Github 高度集成，目前对于公开的项目免费支持。
+开启travis-ci 首先去 Travis CI 官网，点击右上角Sign in with GitHub通过github授权登录。然后去到个人信息页面，开启需要使用 travis 的项目，在我这里就是 DrayChou/Blog-Hexo 。
+密钥 因为需要通过脚本提交到 Github ，所以需要先申请一个 token ，避免密码或者证书问题造成的麻烦。 Token 申请地址是 https://github.com/settings/tokens 。 记得给予 public_repo 的权限，要不无法提交修改到 GitHub。 记得这个 token ，后面会用到。
+Travis CI 的命令行工具 执行下面的命令安装命令行工具。 gem install travis  生成脚本 切换到 blog 的目录下，执行下面的命令，记得输入 node 语言
+$ travis init detected repository as DrayChou/Blog-Pugo Main programming language used: |HTML| node .'>
+<meta property='og:url' content='https://idc.wf/docs/travis-ci/'>
+<meta property='og:site_name' content='Dray&#39;s Home'>
+<meta property='og:type' content='article'><meta property='article:section' content='docs'><meta property='article:tag' content='travis-ci'><meta property='article:tag' content='ci'><meta property='article:tag' content='hexo'><meta property='article:published_time' content='2016-05-13T20:05:00Z'/><meta property='article:modified_time' content='2016-05-13T20:05:00Z'/><meta name='twitter:card' content='summary'>
+
+<meta name="generator" content="Hugo 0.53" />
+
+  <title>使用Travis CI自动部署Hexo • Dray&#39;s Home</title>
+  <link rel='canonical' href='https://idc.wf/docs/travis-ci/'>
+  
+  
+  <link rel='icon' href='/favicon.ico'>
+<link rel='stylesheet' href='/assets/css/main.4a10984a.css'><link rel='stylesheet' href='/css/custom.css'><style>
+:root{--color-accent:dodgerblue;}
+</style>
+
+  
+
+</head>
+<body class='page type-docs layout-post has-sidebar'>
+
+  <div class='site'><div id='sidebar' class='sidebar'>
+  <a class='screen-reader-text' href='#main-menu'>跳到主页</a>
+
+  <div class='container'><section class='widget widget-about sep-after'>
+  <header>
+    
+    <div class='logo'>
+      <a href='/'>
+        <img src='/images/logo.png'>
+      </a>
+    </div>
+    
+    <h2 class='title site-title '>
+    Dray&#39;s Home
+    </h2>
+    <div class='desc'>
+    疯狂痴呆傻，美甘苦涩禅。
+    </div>
+  </header>
+
+</section>
+<section class='widget widget-search sep-after'>
+  <header>
+    <h4 class='title widget-title'>Search</h4>
+  </header>
+
+  <form action='/search' id='search-form' class='search-form'>
+    <label>
+      <span class='screen-reader-text'></span>
+      <input id='search-term' class='search-term' type='search' name='q' placeholder='&hellip;'>
+    </label></form>
+
+</section>
+<section class='widget widget-sidebar_menu sep-after'><nav id='sidebar-menu' class='menu sidebar-menu' aria-label='侧边菜单'>
+    <div class='container'>
+      <ul><li class='item'>
+  <a href='/'>Home</a></li><li class='item'>
+  <a href='/docs/'>Docs</a></li><li class='item'>
+  <a href='/menus/'>About</a></li><li class='item'>
+  <a href='/categories/'>categories</a></li><li class='item'>
+  <a href='/tags/'>Tags</a></li></ul>
+    </div>
+  </nav>
+
+</section></div>
+
+  <div class='sidebar-overlay'></div>
+</div><div class='main'><a class='screen-reader-text' href='#content'>跳到文章</a>
+
+<button id='sidebar-toggler' class='sidebar-toggler' aria-controls='sidebar'>
+  <span class='screen-reader-text'>切换侧边栏</span>
+  <span class='open'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <line x1="3" y1="12" x2="21" y2="12" />
+  <line x1="3" y1="6" x2="21" y2="6" />
+  <line x1="3" y1="18" x2="21" y2="18" />
+  
+</svg>
+</span>
+  <span class='close'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <line x1="18" y1="6" x2="6" y2="18" />
+  <line x1="6" y1="6" x2="18" y2="18" />
+  
+</svg>
+</span>
+</button><div class='header-widgets'>
+        <div class='container'>
+    
+    <style>.widget-breadcrumbs li:after{content:'\2f '}</style>
+  <section class='widget widget-breadcrumbs sep-after'>
+    <nav id='breadcrumbs'>
+      <ol><li><a href='/'>Home</a></li><li><a href='/docs/'>Docs</a></li><li><span>使用Travis CI自动部署Hexo</span></li></ol>
+    </nav>
+  </section></div>
+      </div>
+
+      <header id='header' class='header site-header'>
+        <div class='container sep-after'>
+          <div class='header-info'><p class='site-title title'>Dray&#39;s Home</p><p class='desc site-desc'>疯狂痴呆傻，美甘苦涩禅。</p>
+          </div>
+        </div>
+      </header>
+
+      <main id='content'>
+
+
+<article lang='zh' class='entry'>
+  <header class='header entry-header'>
+  <div class='container sep-after'>
+    <div class='header-info'>
+      <h1 class='title'>使用Travis CI自动部署Hexo</h1>
+      
+
+    </div>
+    <div class='entry-meta'>
+  <span class='posted-on'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+  <line x1="16" y1="2" x2="16" y2="6"/>
+  <line x1="8" y1="2" x2="8" y2="6"/>
+  <line x1="3" y1="10" x2="21" y2="10"/>
+  
+</svg>
+<span class='screen-reader-text'>发布 </span>
+  <time class='entry-date' datetime='2016-05-13T20:05:00Z'>2016-05-13</time>
+</span>
+
+  
+  
+<span class='reading-time'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <circle cx="12" cy="12" r="10"/>
+  <polyline points="12 6 12 12 15 15"/>
+  
+</svg>
+需要2分钟读完
+</span>
+
+
+</div>
+
+
+  </div>
+</header>
+
+  
+  
+
+  <div class='container entry-content'>
+  
+
+<h2 id="前言">前言</h2>
+
+<p>之前换过很多的静态博客系统，但是每个系统都需要本地做一定的部署，这点很麻烦。
+<a href="https://github.com/wendal/gor" target="_blank">Gor</a> 倒是有可执行文件，但是本地部署的时候还是需要合并提交代码，还是略不爽。
+今天在查 CI 系统的时候发现了 <a href="https://travis-ci.org/" target="_blank">Travis CI</a> ,于是，一切都很开心了。</p>
+
+<h2 id="关于-travis-ci">关于 Travis CI</h2>
+
+<p>这是一个通过脚本来进行自动部署的系统，本身与 Github 高度集成，目前对于公开的项目免费支持。</p>
+
+<h2 id="开启travis-ci">开启travis-ci</h2>
+
+<p>首先去 <a href="https://travis-ci.org/" target="_blank">Travis CI</a> 官网，点击右上角Sign in with GitHub通过github授权登录。然后去到个人信息页面，开启需要使用 travis 的项目，在我这里就是 DrayChou/Blog-Hexo 。</p>
+
+<h2 id="密钥">密钥</h2>
+
+<p>因为需要通过脚本提交到 Github ，所以需要先申请一个 token ，避免密码或者证书问题造成的麻烦。
+Token 申请地址是 <a href="https://github.com/settings/tokens" target="_blank">https://github.com/settings/tokens</a> 。
+记得给予 public_repo 的权限，要不无法提交修改到 GitHub。
+记得这个 token ，后面会用到。</p>
+
+<h2 id="travis-ci-的命令行工具">Travis CI 的命令行工具</h2>
+
+<h3 id="执行下面的命令安装命令行工具">执行下面的命令安装命令行工具。</h3>
+
+<pre><code>gem install travis
+</code></pre>
+
+<h3 id="生成脚本">生成脚本</h3>
+
+<p>切换到 blog 的目录下，执行下面的命令，记得输入 node 语言</p>
+
+<pre><code>$ travis init
+detected repository as DrayChou/Blog-Pugo
+Main programming language used: |HTML| node
+.travis.yml file created!
+enabled
+</code></pre>
+
+<h2 id="设置脚本">设置脚本</h2>
+
+<p>编辑这个 .travis.yml ，按需添加对应的项。 env.global.secure 是发布的时候生成的数据，请无视。</p>
+
+<pre><code>language: node_js
+
+node_js:
+- '5.1'
+
+env:
+  global:
+  - secure: &quot;long secure base64 string&quot;
+
+before_install:
+- export TZ=Asia/ShangHai
+
+install:
+- npm install
+
+script:
+# 初始化 GIT
+- git config --global user.name &quot;$GIT_NAME&quot;
+- git config --global user.email &quot;$GIT_EMAIL&quot;
+- git config --global push.default simple
+
+# 设置项目路径
+- rm -rf public
+- git clone --depth 50 --branch gh-pages https://$GH_TOKEN@github.com/$GIT_NAME/$HEXO_BLOG public
+
+# 生成
+- hexo generate
+
+# 发布出去
+- cd public
+- git add -A .
+- MESSAGE=`date +\ %Y-%m-%d\ %H:%M:%S`
+- git commit -m &quot;Site updated:$MESSAGE&quot;
+- git push origin gh-pages --quiet
+</code></pre>
+
+<h2 id="执行下面的命令添加执行操作">执行下面的命令添加执行操作</h2>
+
+<p>命令的参数请自行替换。</p>
+
+<pre><code>travis encrypt 'GIT_NAME=&quot;&lt;Personal GitHub Name&gt;&quot; GIT_EMAIL=&quot;&lt;Personal GitHub Email&gt;&quot; HEXO_BLOG=&quot;&lt;Personal Blog Repositories&gt;&quot; GH_TOKEN=&quot;&lt;Personal Access Token&gt;&quot;' --add
+</code></pre>
+
+<p>命令执行完毕之后会自动修改 .travis.yml 添加对应的 env.global.secure。
+把这个文件提交到 Github。</p>
+
+<h2 id="开始执行">开始执行</h2>
+
+<p>Push 到 Github 之后， Github 就会通过之前定义的 hook 去调用 travis ,然后 travis 就会在后台开始按照脚本执行，可以在 <a href="https://travis-ci.org/" target="_blank">travis-ci</a> 后台通过查看日志观察发布有没有问题，如果有问题再按照提示进行调试。</p>
+
+<h2 id="附记">附记</h2>
+
+<p><a href="http://ssk7833.github.io/blog/2016/01/21/using-TravisCI-to-deploy-on-GitHub-pages/" target="_blank">注意：git push 時一定要加 &ndash;quiet，否則先前設定的 Personal Access Token 將會印出，這樣就失去加密意義了。</a></p>
+
+<h2 id="参考">参考</h2>
+
+<ol>
+<li><a href="http://ssk7833.github.io/blog/2016/01/21/using-TravisCI-to-deploy-on-GitHub-pages/" target="_blank">使用 Travis CI 自動部署 GitHub Pages</a></li>
+<li><a href="http://w3cboy.com/post/2016/03/travisci-hexo-deploy/" target="_blank">使用travis-ci自动部署hexo博客</a></li>
+<li><a href="https://hexo.io/zh-tw/docs/commands.html#generate" target="_blank">hexo 指令</a></li>
+</ol>
+
+</div>
+
+  
+<footer class='entry-footer'>
+  <div class='container sep-before'><div class='categories'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M22,19a2,2,0,0,1-2,2H4a2,2,0,0,1-2-2V5A2,2,0,0,1,4,3H9l2,3h9a2,2,0,0,1,2,2Z"/>
+  
+</svg>
+<span class='screen-reader-text'>分类: </span><a class='category' href='/categories/web/'>web</a></div>
+<div class='tags'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M20.59,13.41l-7.17,7.17a2,2,0,0,1-2.83,0L2,12V2H12l8.59,8.59A2,2,0,0,1,20.59,13.41Z"/>
+  <line x1="7" y1="7" x2="7" y2="7"/>
+  
+</svg>
+<span class='screen-reader-text'>标签: </span><a class='tag' href='/tags/travis-ci/'>travis-ci</a>, <a class='tag' href='/tags/ci/'>ci</a>, <a class='tag' href='/tags/hexo/'>hexo</a></div>
+
+  </div>
+</footer>
+
+
+</article>
+
+<nav class='entry-nav'>
+  <div class='container'><div class='prev-entry sep-before'>
+      <a href='/docs/mailgun/'>
+        <span aria-hidden='true'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <line x1="20" y1="12" x2="4" y2="12"/>
+  <polyline points="10 18 4 12 10 6"/>
+  
+</svg>
+ 上一个</span>
+        <span class='screen-reader-text'>上一篇文章: </span>让域名邮箱支持通配符</a>
+    </div><div class='next-entry sep-before'>
+      <a href='/docs/babyun-pad/'>
+        <span class='screen-reader-text'>下一篇文章: </span>Babyun 平板刷机<span aria-hidden='true'>下一个 <svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <line x1="4" y1="12" x2="20" y2="12"/>
+  <polyline points="14 6 20 12 14 18"/>
+  
+</svg>
+</span>
+      </a>
+    </div></div>
+</nav>
+
+
+
+
+      </main>
+
+      <footer id='footer' class='footer'>
+        <div class='container sep-before'><section class='widget widget-social_menu sep-after'><nav aria-label='社交菜单'>
+    <ul><li>
+        <a href='https://github.com/DrayChou' target='_blank' rel='noopener'>
+          <span class='screen-reader-text'>在新标签打开Github的账户</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+  
+</svg>
+</a>
+      </li><li>
+        <a href='mailto:blog@idc.wf' target='_blank' rel='noopener'>
+          <span class='screen-reader-text'>通过邮件联系</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+  <polyline points="22,6 12,13 2,6"/>
+  
+</svg>
+</a>
+      </li></ul>
+  </nav>
+</section><div class='copyright'>
+  <p>Copyright &copy; 1900-2019 Dray All rights reserved</p>
+</div>
+
+        </div>
+      </footer>
+
+    </div>
+  </div><script>window.__public_path__='\/assets\/js\/'</script>
+
+<script src='/assets/js/main.fae8ed32.js'></script><script src='/js/custom.js'></script>
+
+</body>
+
+</html>
+

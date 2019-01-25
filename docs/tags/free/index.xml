@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>free on Dray&#39;s Home</title>
+    <link>https://idc.wf/tags/free/</link>
+    <description>Recent content in free on Dray&#39;s Home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 18 Feb 2011 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://idc.wf/tags/free/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>几个比较好的免费资源</title>
+      <link>https://idc.wf/docs/a-few-good-free-resources/</link>
+      <pubDate>Fri, 18 Feb 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://idc.wf/docs/a-few-good-free-resources/</guid>
+      <description>2010年最新的100个免费HTML模板 108个漂亮而简约的免费图标 15个最佳jQuery幻灯插件和教程 国外30多个设计精良的电子商务网站 20个高质量的免费css模板 9款有用的javascript代码高亮脚本 10款有趣的免费字体 </description>
+    </item>
+    
+  </channel>
+</rss>

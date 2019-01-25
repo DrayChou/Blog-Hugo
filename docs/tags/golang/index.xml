@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>golang on Dray&#39;s Home</title>
+    <link>https://idc.wf/tags/golang/</link>
+    <description>Recent content in golang on Dray&#39;s Home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sat, 30 Nov 2013 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://idc.wf/tags/golang/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>ubuntu 下面配置 go 运行环境</title>
+      <link>https://idc.wf/docs/ubuntu-golang/</link>
+      <pubDate>Sat, 30 Nov 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://idc.wf/docs/ubuntu-golang/</guid>
+      <description>Go 配置安装环境 go 的安装需要用到很多的 package, 所以需要很多版本管理应用的支持，所以首先安装这些环境
+sudo apt-get install bison ed gawk gcc libc6-dev make python-setuptools python-dev build-essential git mercurial  安装Go 到 官方网站 根据机器型号下载相应的版本，然后执行语句解压，
+$ tar -C /usr/local -xzf go$VERSION.$OS-$ARCH.tar.gz  我一般是放在 /usr/local/go 目录下
+添加环境变量 #go config export GOROOT=/usr/local/go export GOARCH=amd64 export GOOS=linux export GOPATH=/srv/go_root export GOBIN=$GOROOT/bin export GOTOOLS=$GOROOT/pkg/tool/ export PATH=$PATH:$GOBIN:$GOTOOLS:$GOPATH/bin  其中 /usr/local/go 为 go 安装目录， /srv/go_root 为代码存放目录 把这些添加到 .bashrc 文件中，然后执行 source ~/.bashrc 刷新配置
+Supervisor 有时候需要 go 持续运行不间断，但是用 crontab 并不方便，自己编写脚本也太麻烦，于是就可以用 Supervisor 了。</description>
+    </item>
+    
+  </channel>
+</rss>

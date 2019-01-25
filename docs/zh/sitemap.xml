@@ -1,0 +1,1389 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://idc.wf/</loc>
+    <lastmod>2015-12-30T23:35:29+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://idc.wf/en/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://idc.wf/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/docs/</loc>
+    <lastmod>2018-03-28T17:44:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/menus/</loc>
+    <lastmod>2015-12-30T23:35:29+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/categories/</loc>
+    <lastmod>2017-06-21T13:30:50+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/tags/</loc>
+    <lastmod>2015-12-30T23:35:35+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/docs/pi-ssrcow/</loc>
+    <lastmod>2018-03-28T17:44:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/docs/yii-asset/</loc>
+    <lastmod>2017-07-10T17:44:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/docs/letsencrypt-cert/</loc>
+    <lastmod>2017-06-21T12:55:52+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/docs/html-to-pdf/</loc>
+    <lastmod>2017-06-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/docs/babyun-pad/</loc>
+    <lastmod>2016-05-18T15:18:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/docs/travis-ci/</loc>
+    <lastmod>2016-05-13T20:05:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/docs/mailgun/</loc>
+    <lastmod>2015-08-03T15:30:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/docs/laravel/</loc>
+    <lastmod>2015-01-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/docs/mac-apps/</loc>
+    <lastmod>2015-01-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/docs/pip-ss/</loc>
+    <lastmod>2015-01-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/docs/twister/</loc>
+    <lastmod>2014-07-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/docs/shadowsocks/</loc>
+    <lastmod>2014-06-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/docs/centos-commands/</loc>
+    <lastmod>2014-05-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/docs/ubuntu-bash-completion/</loc>
+    <lastmod>2014-05-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/docs/pushbullet-api/</loc>
+    <lastmod>2014-04-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/docs/php-soap-and-net-soap/</loc>
+    <lastmod>2014-04-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/docs/oschina_tweet/</loc>
+    <lastmod>2014-03-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/docs/open-your-eyes/</loc>
+    <lastmod>2013-12-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/docs/ubuntu-golang/</loc>
+    <lastmod>2013-11-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/docs/xampp-redis-mongodb-mariadb/</loc>
+    <lastmod>2013-08-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/docs/ubuntu-ssh-proxy/</loc>
+    <lastmod>2013-08-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/docs/pi-webcam/</loc>
+    <lastmod>2013-06-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/docs/uwsginginx-run-flask-twip/</loc>
+    <lastmod>2013-06-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/docs/ubuntu-nginx-php-shell/</loc>
+    <lastmod>2013-06-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/docs/nginx-ssl/</loc>
+    <lastmod>2013-06-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/docs/vps-dropbox/</loc>
+    <lastmod>2013-06-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/docs/sublime-text2-config/</loc>
+    <lastmod>2013-04-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/docs/gedit-plugin/</loc>
+    <lastmod>2013-04-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/docs/ubuntu-grub-boot-windows7-error/</loc>
+    <lastmod>2013-04-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/docs/ubuntu-sources-list/</loc>
+    <lastmod>2013-04-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/docs/ubuntu-sources-update-error/</loc>
+    <lastmod>2013-04-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/docs/ubuntu-ruby/</loc>
+    <lastmod>2013-04-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/docs/30-year-old/</loc>
+    <lastmod>2013-03-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/docs/google-chrome-as-system-default-browse/</loc>
+    <lastmod>2012-06-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/docs/insert-ruby-on-rails-in-ubuntu-11-dot-10/</loc>
+    <lastmod>2012-02-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/docs/upload-folders/</loc>
+    <lastmod>2012-02-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/docs/hello-octopress/</loc>
+    <lastmod>2012-02-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/docs/under-windows-nodejs/</loc>
+    <lastmod>2011-12-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/docs/xiu-gai-vs2010-mo-ren-liu-lan-qi/</loc>
+    <lastmod>2011-12-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/docs/ubuntu-shang-an-zhuang-lamp-fu-wu-qi/</loc>
+    <lastmod>2011-09-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/docs/ubuntu-11-10-beta-2-oneiric-ocelot-fa-bu-liao/</loc>
+    <lastmod>2011-09-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/docs/delete-ubuntu-desktop/</loc>
+    <lastmod>2011-09-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/docs/solve-sysfader-iexplore-exe-application-error/</loc>
+    <lastmod>2011-05-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/docs/automatically-generated-navigation-menu-using-jquery/</loc>
+    <lastmod>2011-05-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/docs/transfer-files-through-ssh/</loc>
+    <lastmod>2011-05-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/docs/webqq-js-code-in-the-adaptive-width/</loc>
+    <lastmod>2011-05-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/docs/my-home-network-and-the-connectivity-of-several-servers/</loc>
+    <lastmod>2011-05-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/docs/remove-the-extra-css-style-page/</loc>
+    <lastmod>2011-05-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/docs/archlinux-some-of-the-information/</loc>
+    <lastmod>2011-04-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/docs/php-log-system-plog/</loc>
+    <lastmod>2011-04-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/docs/recommended-a-public-comment-system-disqus/</loc>
+    <lastmod>2011-04-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/docs/synchronized-to-the-official-facebook-twitter-services-httpapps-facebook-comtwitter/</loc>
+    <lastmod>2011-04-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/docs/shared-google-reader-content-to-twitter-facebook/</loc>
+    <lastmod>2011-04-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/docs/proxy-switchy-can-open-the-https-not-open-http-solution/</loc>
+    <lastmod>2011-04-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/docs/bug-ie6-the-div-a-height-of/</loc>
+    <lastmod>2011-04-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/docs/to-laugh-at-the-worlds-historians-distorted-the-history-of-china-the-chinese-yuan-and-qing-ever/</loc>
+    <lastmod>2011-04-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/docs/directory_separator-and-path_separator-constant-constant/</loc>
+    <lastmod>2011-04-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/docs/original-mysql_insert_id-is-not-safe-ah-do-not-know-any-other-ways-to-get-into-the-self-by-id/</loc>
+    <lastmod>2011-04-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/docs/mysql-database-into-memcached-support-nosql/</loc>
+    <lastmod>2011-04-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/docs/search-engine-configuration-optimization-notes-the-bosss-lecture/</loc>
+    <lastmod>2011-04-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/docs/separation-of-mind-to-read-and-write-mysql/</loc>
+    <lastmod>2011-04-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/docs/interpretation-of-god-i-think-thats-very-good/</loc>
+    <lastmod>2011-04-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/docs/xmarks-browser-favorites-sync-tools-support-ie9-chrome-firefox-iesafari/</loc>
+    <lastmod>2011-03-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/docs/modify-the-ssh-login-message/</loc>
+    <lastmod>2011-03-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/docs/modify-the-ssh-password/</loc>
+    <lastmod>2011-03-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/docs/vps-travel-with-unixbench-test-results/</loc>
+    <lastmod>2011-03-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/docs/vps-hosting-to-do-with-just-bought-a-mirror/</loc>
+    <lastmod>2011-03-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/docs/google-buzz-real-time-synchronization-method-of-twitter/</loc>
+    <lastmod>2011-03-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/docs/tai-shen-qi-le-yuan-lai-url-mao-dian/</loc>
+    <lastmod>2011-03-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/docs/ie-there-stack-overflow-at-line-wrong-solution/</loc>
+    <lastmod>2011-02-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/docs/winetricks-wine-on-a-database-and-software-to-install-windows-on-a-small-program/</loc>
+    <lastmod>2011-02-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/docs/being-wronged-file_exists/</loc>
+    <lastmod>2011-02-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/docs/ubuntu-using-svn/</loc>
+    <lastmod>2011-02-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/docs/modify-the-hosts-file-under-ubuntu/</loc>
+    <lastmod>2011-02-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/docs/have-had-to-buy-bread-as-much-as-17-of-the-bread-tax/</loc>
+    <lastmod>2011-02-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/docs/notepad-to-remove-the-code-line-number-of-the-several-methods/</loc>
+    <lastmod>2011-02-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/docs/jquery-live-and-event-delegation/</loc>
+    <lastmod>2011-02-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/docs/php-bmp-format-image-into-jpg-format-program/</loc>
+    <lastmod>2011-02-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/docs/http-functions-php/</loc>
+    <lastmod>2011-02-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/docs/php-file-download-large-file-support-class-supports-http-over-2g/</loc>
+    <lastmod>2011-02-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/docs/fund-22-asked-you-know-it/</loc>
+    <lastmod>2011-02-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/docs/a-few-good-free-resources/</loc>
+    <lastmod>2011-02-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/docs/php-smarty-caching-application-template-engine/</loc>
+    <lastmod>2011-02-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/docs/php-smarty-cache-operation/</loc>
+    <lastmod>2011-02-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/docs/how-to-determine-whether-a-site-is-the-wall/</loc>
+    <lastmod>2011-02-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/docs/to-achieve-cross-browser-float-center/</loc>
+    <lastmod>2011-02-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/docs/seven-misconceptions-https/</loc>
+    <lastmod>2011-02-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/docs/php-directory-listing-all-the-files/</loc>
+    <lastmod>2011-02-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/docs/shi-jie-shang-zui-shen-qi-de-shu-zi-shi/</loc>
+    <lastmod>2011-02-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/docs/php-remove-html-tags-javascript-code-blank-characters-etc/</loc>
+    <lastmod>2011-02-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/docs/php-to-get-a-date-for-the-first-few-weeks-of-the-month/</loc>
+    <lastmod>2011-02-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/docs/litespeed_-baidu-encyclopedia/</loc>
+    <lastmod>2011-02-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/docs/password-viewer-to-view-the-machine-saved-passwords/</loc>
+    <lastmod>2011-02-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/docs/ah-taobao-taobao-the-project-ah-the-project/</loc>
+    <lastmod>2011-01-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/docs/2-sync-from-the-twitter-plugin-wordpress/</loc>
+    <lastmod>2011-01-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/docs/xml-cdata/</loc>
+    <lastmod>2011-01-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/docs/php-shan-chu-wen-jian-unlink/</loc>
+    <lastmod>2011-01-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/docs/php-jian-ce-yong-hu-shi-fou-shi-yong-dai-li-shang-wang-de-fang-fa/</loc>
+    <lastmod>2011-01-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/docs/found-2-wordpress-plugin-share-music-related-oh-well/</loc>
+    <lastmod>2011-01-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/docs/foreign-lightweight-open-source-forum-system-introduced-vanilla-forums/</loc>
+    <lastmod>2011-01-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/docs/smarty-e6-a8-a1-e6-9d-bf-e4-b8-ad-e5-ae-9a-e4-b9-89-e5-8f-98-e9-87-8f-e7-9a-84-e6-96-b9-e6-b3-95/</loc>
+    <lastmod>2011-01-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/docs/firefox-zhong-yong-js-ti-jiao-biao-dan/</loc>
+    <lastmod>2011-01-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/docs/sql-distinct-qu-diao-zhong-fu-de-shu-ju-tong-ji-fang-fa/</loc>
+    <lastmod>2011-01-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/docs/80-if-you-can-not-afford-a-house-after-the-boys-80-girls-you-can-marry-40-year-old-man/</loc>
+    <lastmod>2011-01-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/docs/smarty-escape-braces/</loc>
+    <lastmod>2011-01-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/docs/i-do-not-know-that-the-above-gives-strong-feelings-meager-sentence/</loc>
+    <lastmod>2011-01-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/docs/three-rules-programmers/</loc>
+    <lastmod>2011-01-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/docs/javascript-jian-cha-zi-fu-chuan-shi-fou-shi-shu-zi-de-ji-zhong-fang-fa/</loc>
+    <lastmod>2011-01-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/docs/bluehost-xia-zhu-yu-ming-he-fu-jia-yu-mu-lu-lu-jing-de-zi-ding-yi/</loc>
+    <lastmod>2011-01-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/docs/mantis-han-hua-fang-fa/</loc>
+    <lastmod>2011-01-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/docs/ubuntu-huan-jing-xia-an-zhuang-java6-sdk/</loc>
+    <lastmod>2011-01-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/docs/zhong-ji-shellzsh/</loc>
+    <lastmod>2011-01-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/docs/http-x-forwarded-proto/</loc>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/docs/centos-delete-php/</loc>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/docs/centos-php-mcrypt/</loc>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/docs/composer-tools/</loc>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/docs/mysqldump/</loc>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/docs/root-google-now/</loc>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/docs/vbox-ubuntu-nginx-redmine/</loc>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/tags/.net/</loc>
+    <lastmod>2014-04-11T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/tags/80/</loc>
+    <lastmod>2011-01-19T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/authors/</loc>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/categories/</loc>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://idc.wf/en/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://idc.wf/categories/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/tags/config/</loc>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/tags/octopress/</loc>
+    <lastmod>2012-02-06T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/tags/og/</loc>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/page/</loc>
+    <lastmod>2015-12-30T23:35:29+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/tags/pushbullet/</loc>
+    <lastmod>2014-04-11T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/search/</loc>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/tags/shadowsocks/</loc>
+    <lastmod>2014-06-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/tags/</loc>
+    <lastmod>2014-04-11T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://idc.wf/en/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://idc.wf/tags/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/tags/visualstudio/</loc>
+    <lastmod>2011-12-06T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/tags/about/</loc>
+    <lastmod>2015-12-30T23:35:29+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/tags/acme/</loc>
+    <lastmod>2017-06-21T12:55:52+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/tags/android/</loc>
+    <lastmod>2016-05-18T15:18:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/tags/api/</loc>
+    <lastmod>2014-04-11T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/tags/app/</loc>
+    <lastmod>2015-01-14T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/tags/archlinux/</loc>
+    <lastmod>2011-04-30T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/tags/asset/</loc>
+    <lastmod>2017-07-10T17:44:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/tags/babyun/</loc>
+    <lastmod>2016-05-18T15:18:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/tags/bash/</loc>
+    <lastmod>2014-05-15T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/tags/bluehost/</loc>
+    <lastmod>2011-01-08T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/tags/bmp/</loc>
+    <lastmod>2011-02-18T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/tags/bug/</loc>
+    <lastmod>2011-05-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/tags/buzz/</loc>
+    <lastmod>2011-03-12T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/tags/centos/</loc>
+    <lastmod>2014-05-15T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/tags/chrome/</loc>
+    <lastmod>2014-03-06T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/tags/ci/</loc>
+    <lastmod>2016-05-13T20:05:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/tags/completion/</loc>
+    <lastmod>2014-05-15T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/tags/cow/</loc>
+    <lastmod>2018-03-28T17:44:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/tags/css/</loc>
+    <lastmod>2011-05-04T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/tags/diary/</loc>
+    <lastmod>2013-03-19T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/categories/diary/</loc>
+    <lastmod>2016-05-18T15:18:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/tags/dir/</loc>
+    <lastmod>2011-02-14T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/tags/disqus/</loc>
+    <lastmod>2011-04-28T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/tags/domain/</loc>
+    <lastmod>2015-08-03T15:30:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/tags/download/</loc>
+    <lastmod>2011-02-18T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/tags/facebook/</loc>
+    <lastmod>2011-04-27T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/tags/file/</loc>
+    <lastmod>2011-02-18T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/tags/file_exists/</loc>
+    <lastmod>2011-02-24T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/tags/float/</loc>
+    <lastmod>2011-02-16T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/tags/fqrouter/</loc>
+    <lastmod>2015-01-14T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/tags/free/</loc>
+    <lastmod>2011-02-18T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/tags/fund/</loc>
+    <lastmod>2011-02-18T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/tags/gedit/</loc>
+    <lastmod>2013-04-15T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/tags/gfw/</loc>
+    <lastmod>2013-12-27T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/tags/gnome/</loc>
+    <lastmod>2011-09-23T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/tags/god/</loc>
+    <lastmod>2011-04-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/tags/golang/</loc>
+    <lastmod>2013-11-30T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/tags/googlereader/</loc>
+    <lastmod>2011-04-27T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/tags/grub/</loc>
+    <lastmod>2013-04-15T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/tags/hexo/</loc>
+    <lastmod>2016-05-13T20:05:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/tags/history/</loc>
+    <lastmod>2011-04-23T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/tags/hosts/</loc>
+    <lastmod>2011-02-23T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/tags/html/</loc>
+    <lastmod>2011-02-12T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/tags/https/</loc>
+    <lastmod>2011-02-15T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/categories/ide/</loc>
+    <lastmod>2013-04-16T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/tags/ie/</loc>
+    <lastmod>2011-02-25T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/tags/ie6/</loc>
+    <lastmod>2011-04-25T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/tags/it/</loc>
+    <lastmod>2011-01-15T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/tags/java/</loc>
+    <lastmod>2011-01-08T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/tags/jquery/</loc>
+    <lastmod>2011-05-17T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/tags/js/</loc>
+    <lastmod>2014-03-06T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/tags/kde/</loc>
+    <lastmod>2011-09-23T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/tags/lamp/</loc>
+    <lastmod>2011-09-25T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/tags/laravel/</loc>
+    <lastmod>2015-01-30T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/tags/letsencrypt/</loc>
+    <lastmod>2017-06-21T12:55:52+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/tags/linux/</loc>
+    <lastmod>2014-05-15T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/categories/linux/</loc>
+    <lastmod>2018-03-28T17:44:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/tags/litespeed/</loc>
+    <lastmod>2011-02-11T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/tags/log/</loc>
+    <lastmod>2011-04-28T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/tags/mac/</loc>
+    <lastmod>2015-01-14T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/categories/mac/</loc>
+    <lastmod>2015-01-14T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/tags/mail/</loc>
+    <lastmod>2015-08-03T15:30:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/tags/mantis/</loc>
+    <lastmod>2011-01-08T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/tags/math/</loc>
+    <lastmod>2011-02-14T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/tags/mt8127/</loc>
+    <lastmod>2016-05-18T15:18:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/tags/mysql/</loc>
+    <lastmod>2011-04-15T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/tags/nginx/</loc>
+    <lastmod>2013-06-16T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/tags/nodejs/</loc>
+    <lastmod>2011-12-26T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/tags/notepad/</loc>
+    <lastmod>2011-02-18T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/tags/oschina/</loc>
+    <lastmod>2014-03-06T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/tags/password/</loc>
+    <lastmod>2011-02-09T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/tags/php/</loc>
+    <lastmod>2014-04-11T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/tags/pi/</loc>
+    <lastmod>2018-03-28T17:44:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/tags/ping/</loc>
+    <lastmod>2011-05-04T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/tags/proxy/</loc>
+    <lastmod>2011-04-26T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/tags/ruby/</loc>
+    <lastmod>2013-04-15T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/tags/seo/</loc>
+    <lastmod>2011-04-14T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/tags/seperator/</loc>
+    <lastmod>2011-04-18T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/tags/shadowsocks/</loc>
+    <lastmod>2014-06-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/tags/smarty/</loc>
+    <lastmod>2011-02-17T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/tags/soap/</loc>
+    <lastmod>2014-04-11T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/tags/sources/</loc>
+    <lastmod>2013-04-15T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/tags/sql/</loc>
+    <lastmod>2011-01-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/tags/ss/</loc>
+    <lastmod>2018-03-28T17:44:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/tags/ssh/</loc>
+    <lastmod>2011-05-14T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/tags/ssl/</loc>
+    <lastmod>2013-06-16T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/tags/ssr/</loc>
+    <lastmod>2018-03-28T17:44:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/tags/sublimetext/</loc>
+    <lastmod>2013-04-16T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/tags/supervisor/</loc>
+    <lastmod>2015-01-14T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/tags/svn/</loc>
+    <lastmod>2011-02-23T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/tags/tag/</loc>
+    <lastmod>2011-03-09T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/tags/taobao/</loc>
+    <lastmod>2011-01-29T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/tags/travis-ci/</loc>
+    <lastmod>2016-05-13T20:05:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/tags/twister/</loc>
+    <lastmod>2014-07-28T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/tags/twitter/</loc>
+    <lastmod>2014-07-28T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/tags/unlink/</loc>
+    <lastmod>2011-01-28T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/tags/upload/</loc>
+    <lastmod>2012-02-17T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/tags/vanilla/</loc>
+    <lastmod>2011-01-26T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/tags/vps/</loc>
+    <lastmod>2017-06-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/categories/web/</loc>
+    <lastmod>2016-05-13T20:05:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/tags/week/</loc>
+    <lastmod>2011-02-12T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/tags/weibo/</loc>
+    <lastmod>2011-01-18T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/categories/windows/</loc>
+    <lastmod>2013-08-29T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/tags/wine/</loc>
+    <lastmod>2011-02-24T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/tags/wordpress/</loc>
+    <lastmod>2011-01-28T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/tags/wsdl/</loc>
+    <lastmod>2014-04-11T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/tags/xampp/</loc>
+    <lastmod>2013-08-29T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/tags/xmarks/</loc>
+    <lastmod>2011-03-24T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/tags/xml/</loc>
+    <lastmod>2011-01-28T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/tags/yii2/</loc>
+    <lastmod>2017-07-10T17:44:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/tags/yuandao/</loc>
+    <lastmod>2016-05-18T15:18:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://idc.wf/tags/zsh/</loc>
+    <lastmod>2011-01-08T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+</urlset>

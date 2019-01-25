@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Octopress on Dray&#39;s Home</title>
+    <link>https://idc.wf/tags/octopress/</link>
+    <description>Recent content in Octopress on Dray&#39;s Home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 06 Feb 2012 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://idc.wf/tags/octopress/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hello Octopress</title>
+      <link>https://idc.wf/docs/hello-octopress/</link>
+      <pubDate>Mon, 06 Feb 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://idc.wf/docs/hello-octopress/</guid>
+      <description>Octopress 是一个很不错的 blog 程序，好处我就不说了，自己查文档，现在把我安装时碰到的问题记录下来，供后来的朋友参考。
+从wordpress导出数据 我参考前面诸位写出来的ruby代码：wordpress2Markdown
+这个ruby脚本的功能：
+ 循环匹配多种代码块，替换为 octopress 格式的代码块 替换url中的汉字为拼音，并去掉不能转换的标点符号等 输出文件到 ansi as utf-8 格式的文件中，避免中文字符乱码  我碰到的问题 第一个:
+rake aborted! You have already activated rake 0.9.2.2, but your Gemfile requires rake 0.9.2. U sing bundle exec may solve this. (See full trace by running task with --trace)  解决：
+bundle exec rake  用上面的语句替代 rake 执行命令
+第二个:
+* * Invoke generate (first_time) * * Execute generate # # Generating Site with Jekyll Unchanged sass/screen.</description>
+    </item>
+    
+  </channel>
+</rss>

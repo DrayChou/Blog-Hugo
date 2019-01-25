@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>wine on Dray&#39;s Home</title>
+    <link>https://idc.wf/tags/wine/</link>
+    <description>Recent content in wine on Dray&#39;s Home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 24 Feb 2011 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://idc.wf/tags/wine/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>winetricks - wine上一个安装Windows有关库和软件的小程序</title>
+      <link>https://idc.wf/docs/winetricks-wine-on-a-database-and-software-to-install-windows-on-a-small-program/</link>
+      <pubDate>Thu, 24 Feb 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://idc.wf/docs/winetricks-wine-on-a-database-and-software-to-install-windows-on-a-small-program/</guid>
+      <description>首先
+sudo apt-get install winetricks
+安装winetricks 之后，就可以让wine自动去安装一些windows上面常用的软件了。
+详细列表参见：http://wiki.winehq.org/winetricks_cn</description>
+    </item>
+    
+  </channel>
+</rss>

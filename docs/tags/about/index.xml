@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>about on Dray&#39;s Home</title>
+    <link>https://idc.wf/tags/about/</link>
+    <description>Recent content in about on Dray&#39;s Home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 30 Dec 2015 23:35:29 +0000</lastBuildDate>
+    
+	<atom:link href="https://idc.wf/tags/about/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>About</title>
+      <link>https://idc.wf/menus/</link>
+      <pubDate>Wed, 30 Dec 2015 23:35:29 +0000</pubDate>
+      
+      <guid>https://idc.wf/menus/</guid>
+      <description> 人生乐趣  看书 看 RSS 看人 看世界  </description>
+    </item>
+    
+  </channel>
+</rss>

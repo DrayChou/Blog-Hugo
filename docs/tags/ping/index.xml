@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ping on Dray&#39;s Home</title>
+    <link>https://idc.wf/tags/ping/</link>
+    <description>Recent content in ping on Dray&#39;s Home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 04 May 2011 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://idc.wf/tags/ping/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>我家里的网络与几个服务器的连通状况</title>
+      <link>https://idc.wf/docs/my-home-network-and-the-connectivity-of-several-servers/</link>
+      <pubDate>Wed, 04 May 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://idc.wf/docs/my-home-network-and-the-connectivity-of-several-servers/</guid>
+      <description>这是从我家ping几台服务器结果的截图，悲剧啊，这TM的就是杯具。。。。
+173.252.207.120
+Ping:
+
+Tracert:
+
+206.221.220.4
+Ping:
+
+Tracert
+
+216.108.229.6
+Ping:
+
+Tracert</description>
+    </item>
+    
+  </channel>
+</rss>

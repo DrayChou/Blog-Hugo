@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang='zh'><head>
+  <meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<meta name='description' content='我们公司的网站做项目使用的是自己封装的Mysql查询函数（注意，是函数，不是过程），没有使用框架，使用的模板也是老板自己写的，所以做读写分离是件比较麻烦的事情。
+一般来说，读写分离有2中方法：
+ 1.代码端 在代码段数据库访问部分进行修改，这点如果项目本身采用框架，或者封装了访问过程，又保证没有直接通过mysql_query()函数来进行查询的话是很简单的一个方法，很多框架默认都是直接读写分离的，只要稍微修改一下配置文件即可。 但这样做有几个缺点： - 1.如果数据库服务器做分布式，比如说有2台进行写操作，2台进行读操作，那么读写数据库时的权重是个很麻烦的问题。 - 2.如果需要添加数据库服务器，那么需要修改配置文件和权重分配，又是一个麻烦的事情。 - 3.一旦其中一台数据库挂掉，单纯的改配置显然是应付不了的。 2.数据库访问代理 就是说在数据库和网络之间增加一层访问代理。这层代理是透明的，外界几乎看不出来区别，所以对于程序员来说，几乎不需要做任何事，只要把端口改成代理的端口就可以了，代码什么的，原封不动。 - 而且代理服务器的另一个好处是，权重和负载均衡，就算有一台服务器挂掉了，也不影响数据库访问。 - 另一个优点是，代理支持水平垂直分表分库，只要做好相应的规则，那么外界访问的时候就不需要管数据库的分表问题。比如说，我要查询用户的信息，只需要select * from user where user_id = ?,不需要再先计算用户属于哪个库那个表之类的，方便啊～，但是要做到这个，就需要对以前的代码做大范围的修改，所以这步我们暂且不做。  两个比较有名的开源数据库代理软件：
+1.Amoeba_proxy
+2.Mysql_proxy
+我们用的是第一个，具体原因嘛，很简单，mysql_proxy 已经好几年没维护了。。。'>
+<meta name='theme-color' content='dodgerblue'>
+
+<meta property='og:title' content='记mysql读写分离 • Dray&#39;s Home'>
+<meta property='og:description' content='我们公司的网站做项目使用的是自己封装的Mysql查询函数（注意，是函数，不是过程），没有使用框架，使用的模板也是老板自己写的，所以做读写分离是件比较麻烦的事情。
+一般来说，读写分离有2中方法：
+ 1.代码端 在代码段数据库访问部分进行修改，这点如果项目本身采用框架，或者封装了访问过程，又保证没有直接通过mysql_query()函数来进行查询的话是很简单的一个方法，很多框架默认都是直接读写分离的，只要稍微修改一下配置文件即可。 但这样做有几个缺点： - 1.如果数据库服务器做分布式，比如说有2台进行写操作，2台进行读操作，那么读写数据库时的权重是个很麻烦的问题。 - 2.如果需要添加数据库服务器，那么需要修改配置文件和权重分配，又是一个麻烦的事情。 - 3.一旦其中一台数据库挂掉，单纯的改配置显然是应付不了的。 2.数据库访问代理 就是说在数据库和网络之间增加一层访问代理。这层代理是透明的，外界几乎看不出来区别，所以对于程序员来说，几乎不需要做任何事，只要把端口改成代理的端口就可以了，代码什么的，原封不动。 - 而且代理服务器的另一个好处是，权重和负载均衡，就算有一台服务器挂掉了，也不影响数据库访问。 - 另一个优点是，代理支持水平垂直分表分库，只要做好相应的规则，那么外界访问的时候就不需要管数据库的分表问题。比如说，我要查询用户的信息，只需要select * from user where user_id = ?,不需要再先计算用户属于哪个库那个表之类的，方便啊～，但是要做到这个，就需要对以前的代码做大范围的修改，所以这步我们暂且不做。  两个比较有名的开源数据库代理软件：
+1.Amoeba_proxy
+2.Mysql_proxy
+我们用的是第一个，具体原因嘛，很简单，mysql_proxy 已经好几年没维护了。。。'>
+<meta property='og:url' content='https://idc.wf/docs/separation-of-mind-to-read-and-write-mysql/'>
+<meta property='og:site_name' content='Dray&#39;s Home'>
+<meta property='og:type' content='article'><meta property='article:section' content='docs'><meta property='article:tag' content='mysql'><meta property='article:published_time' content='2011-04-14T00:00:00Z'/><meta property='article:modified_time' content='2011-04-14T00:00:00Z'/><meta name='twitter:card' content='summary'>
+
+<meta name="generator" content="Hugo 0.53" />
+
+  <title>记mysql读写分离 • Dray&#39;s Home</title>
+  <link rel='canonical' href='https://idc.wf/docs/separation-of-mind-to-read-and-write-mysql/'>
+  
+  
+  <link rel='icon' href='/favicon.ico'>
+<link rel='stylesheet' href='/assets/css/main.4a10984a.css'><link rel='stylesheet' href='/css/custom.css'><style>
+:root{--color-accent:dodgerblue;}
+</style>
+
+  
+
+</head>
+<body class='page type-docs layout-post has-sidebar'>
+
+  <div class='site'><div id='sidebar' class='sidebar'>
+  <a class='screen-reader-text' href='#main-menu'>跳到主页</a>
+
+  <div class='container'><section class='widget widget-about sep-after'>
+  <header>
+    
+    <div class='logo'>
+      <a href='/'>
+        <img src='/images/logo.png'>
+      </a>
+    </div>
+    
+    <h2 class='title site-title '>
+    Dray&#39;s Home
+    </h2>
+    <div class='desc'>
+    疯狂痴呆傻，美甘苦涩禅。
+    </div>
+  </header>
+
+</section>
+<section class='widget widget-search sep-after'>
+  <header>
+    <h4 class='title widget-title'>Search</h4>
+  </header>
+
+  <form action='/search' id='search-form' class='search-form'>
+    <label>
+      <span class='screen-reader-text'></span>
+      <input id='search-term' class='search-term' type='search' name='q' placeholder='&hellip;'>
+    </label></form>
+
+</section>
+<section class='widget widget-sidebar_menu sep-after'><nav id='sidebar-menu' class='menu sidebar-menu' aria-label='侧边菜单'>
+    <div class='container'>
+      <ul><li class='item'>
+  <a href='/'>Home</a></li><li class='item'>
+  <a href='/docs/'>Docs</a></li><li class='item'>
+  <a href='/menus/'>About</a></li><li class='item'>
+  <a href='/categories/'>categories</a></li><li class='item'>
+  <a href='/tags/'>Tags</a></li></ul>
+    </div>
+  </nav>
+
+</section></div>
+
+  <div class='sidebar-overlay'></div>
+</div><div class='main'><a class='screen-reader-text' href='#content'>跳到文章</a>
+
+<button id='sidebar-toggler' class='sidebar-toggler' aria-controls='sidebar'>
+  <span class='screen-reader-text'>切换侧边栏</span>
+  <span class='open'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <line x1="3" y1="12" x2="21" y2="12" />
+  <line x1="3" y1="6" x2="21" y2="6" />
+  <line x1="3" y1="18" x2="21" y2="18" />
+  
+</svg>
+</span>
+  <span class='close'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <line x1="18" y1="6" x2="6" y2="18" />
+  <line x1="6" y1="6" x2="18" y2="18" />
+  
+</svg>
+</span>
+</button><div class='header-widgets'>
+        <div class='container'>
+    
+    <style>.widget-breadcrumbs li:after{content:'\2f '}</style>
+  <section class='widget widget-breadcrumbs sep-after'>
+    <nav id='breadcrumbs'>
+      <ol><li><a href='/'>Home</a></li><li><a href='/docs/'>Docs</a></li><li><span>记mysql读写分离</span></li></ol>
+    </nav>
+  </section></div>
+      </div>
+
+      <header id='header' class='header site-header'>
+        <div class='container sep-after'>
+          <div class='header-info'><p class='site-title title'>Dray&#39;s Home</p><p class='desc site-desc'>疯狂痴呆傻，美甘苦涩禅。</p>
+          </div>
+        </div>
+      </header>
+
+      <main id='content'>
+
+
+<article lang='zh' class='entry'>
+  <header class='header entry-header'>
+  <div class='container sep-after'>
+    <div class='header-info'>
+      <h1 class='title'>记mysql读写分离</h1>
+      
+
+    </div>
+    <div class='entry-meta'>
+  <span class='posted-on'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+  <line x1="16" y1="2" x2="16" y2="6"/>
+  <line x1="8" y1="2" x2="8" y2="6"/>
+  <line x1="3" y1="10" x2="21" y2="10"/>
+  
+</svg>
+<span class='screen-reader-text'>发布 </span>
+  <time class='entry-date' datetime='2011-04-14T00:00:00Z'>2011-04-14</time>
+</span>
+
+  
+  
+<span class='reading-time'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <circle cx="12" cy="12" r="10"/>
+  <polyline points="12 6 12 12 15 15"/>
+  
+</svg>
+需要1分钟读完
+</span>
+
+
+</div>
+
+
+  </div>
+</header>
+
+  
+  
+
+  <div class='container entry-content'>
+  <p>我们公司的网站做项目使用的是自己封装的Mysql查询函数（注意，是函数，不是过程），没有使用框架，使用的模板也是老板自己写的，所以做读写分离是件比较麻烦的事情。</p>
+
+<p>一般来说，读写分离有2中方法：</p>
+
+<ul>
+<li>1.代码端
+在代码段数据库访问部分进行修改，这点如果项目本身采用框架，或者封装了访问过程，又保证没有直接通过mysql_query()函数来进行查询的话是很简单的一个方法，很多框架默认都是直接读写分离的，只要稍微修改一下配置文件即可。
+但这样做有几个缺点：</li>
+<li>- 1.如果数据库服务器做分布式，比如说有2台进行写操作，2台进行读操作，那么读写数据库时的权重是个很麻烦的问题。</li>
+<li>- 2.如果需要添加数据库服务器，那么需要修改配置文件和权重分配，又是一个麻烦的事情。</li>
+<li>- 3.一旦其中一台数据库挂掉，单纯的改配置显然是应付不了的。</li>
+<li>2.数据库访问代理
+就是说在数据库和网络之间增加一层访问代理。这层代理是透明的，外界几乎看不出来区别，所以对于程序员来说，几乎不需要做任何事，只要把端口改成代理的端口就可以了，代码什么的，原封不动。</li>
+<li>- 而且代理服务器的另一个好处是，权重和负载均衡，就算有一台服务器挂掉了，也不影响数据库访问。</li>
+<li>- 另一个优点是，代理支持水平垂直分表分库，只要做好相应的规则，那么外界访问的时候就不需要管数据库的分表问题。比如说，我要查询用户的信息，只需要select * from user where user_id = ?,不需要再先计算用户属于哪个库那个表之类的，方便啊～，但是要做到这个，就需要对以前的代码做大范围的修改，所以这步我们暂且不做。</li>
+</ul>
+
+<p>两个比较有名的开源数据库代理软件：</p>
+
+<p>1.<a href="http://amoeba.sourceforge.net/wordpress/" target="_blank">Amoeba_proxy</a></p>
+
+<p>2.<a href="http://forge.mysql.com/wiki/Mysql_Proxy" target="_blank">Mysql_proxy</a></p>
+
+<p>我们用的是第一个，具体原因嘛，很简单，mysql_proxy 已经好几年没维护了。。。</p>
+
+</div>
+
+  
+<footer class='entry-footer'>
+  <div class='container sep-before'><div class='categories'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M22,19a2,2,0,0,1-2,2H4a2,2,0,0,1-2-2V5A2,2,0,0,1,4,3H9l2,3h9a2,2,0,0,1,2,2Z"/>
+  
+</svg>
+<span class='screen-reader-text'>分类: </span><a class='category' href='/categories/web/'>web</a></div>
+<div class='tags'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M20.59,13.41l-7.17,7.17a2,2,0,0,1-2.83,0L2,12V2H12l8.59,8.59A2,2,0,0,1,20.59,13.41Z"/>
+  <line x1="7" y1="7" x2="7" y2="7"/>
+  
+</svg>
+<span class='screen-reader-text'>标签: </span><a class='tag' href='/tags/mysql/'>mysql</a></div>
+
+  </div>
+</footer>
+
+
+</article>
+
+<nav class='entry-nav'>
+  <div class='container'><div class='prev-entry sep-before'>
+      <a href='/docs/interpretation-of-god-i-think-thats-very-good/'>
+        <span aria-hidden='true'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <line x1="20" y1="12" x2="4" y2="12"/>
+  <polyline points="10 18 4 12 10 6"/>
+  
+</svg>
+ 上一个</span>
+        <span class='screen-reader-text'>上一篇文章: </span>关于神的解释，我觉得这个说的挺好</a>
+    </div><div class='next-entry sep-before'>
+      <a href='/docs/search-engine-configuration-optimization-notes-the-bosss-lecture/'>
+        <span class='screen-reader-text'>下一篇文章: </span>搜索引擎配置优化笔记 - 老板的讲课<span aria-hidden='true'>下一个 <svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <line x1="4" y1="12" x2="20" y2="12"/>
+  <polyline points="14 6 20 12 14 18"/>
+  
+</svg>
+</span>
+      </a>
+    </div></div>
+</nav>
+
+
+
+
+      </main>
+
+      <footer id='footer' class='footer'>
+        <div class='container sep-before'><section class='widget widget-social_menu sep-after'><nav aria-label='社交菜单'>
+    <ul><li>
+        <a href='https://github.com/DrayChou' target='_blank' rel='noopener'>
+          <span class='screen-reader-text'>在新标签打开Github的账户</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+  
+</svg>
+</a>
+      </li><li>
+        <a href='mailto:blog@idc.wf' target='_blank' rel='noopener'>
+          <span class='screen-reader-text'>通过邮件联系</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+  <polyline points="22,6 12,13 2,6"/>
+  
+</svg>
+</a>
+      </li></ul>
+  </nav>
+</section><div class='copyright'>
+  <p>Copyright &copy; 1900-2019 Dray All rights reserved</p>
+</div>
+
+        </div>
+      </footer>
+
+    </div>
+  </div><script>window.__public_path__='\/assets\/js\/'</script>
+
+<script src='/assets/js/main.fae8ed32.js'></script><script src='/js/custom.js'></script>
+
+</body>
+
+</html>
+

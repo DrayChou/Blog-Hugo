@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>download on Dray&#39;s Home</title>
+    <link>https://idc.wf/tags/download/</link>
+    <description>Recent content in download on Dray&#39;s Home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 18 Feb 2011 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://idc.wf/tags/download/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>php 断点续传功能</title>
+      <link>https://idc.wf/docs/http-functions-php/</link>
+      <pubDate>Fri, 18 Feb 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://idc.wf/docs/http-functions-php/</guid>
+      <description>断点续传指的是在上传时，将上传任务（一个文件或一个压缩包）人为的划分为几个部分，每一个部分采用一个线程进行上传，下面我们来看看php 断点续传功能的实现方法吧。
+&amp;lt;?php /** * 作者 于恩水&amp;lt;yuenshui@126.com&amp;gt; * 支持断点续传下载 * 实例代码： * $down = new SD_DownLoad(); * $down-&amp;gt;Down(&#39;E:/iso/MS.Office2003SP1.CHS.iso&#39;); **/ SD_DownLoad { /** * 下载的开始点 * * @access private * @var integer */ private $mDownStart; /** * 文件大小 * * @access private * @var integer */ private $mFileSize; /** * 文件句柄 * * @access private * @var integer */ private $mFileHandle; /** * 文件全路径 * * @access private * @var string */ private $mFilePath; /** * 文件下载时显示的文件名 * * @access private * @var string */ private $mFileName; /** * 构造函数 * * @access public * @return void **/ public function __construct() { } /** * 下载 * * @param string $pFilePath 文件全路径 * @param string pFileName 文件下载时显示的文件名，缺省为实际文件名 * @access public * @return void **/ public function Down($pFilePath, $pFileName = &#39;&#39;) { $this-&amp;gt;mFilePath = $pFilePath; if(!</description>
+    </item>
+    
+  </channel>
+</rss>

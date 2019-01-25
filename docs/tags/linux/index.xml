@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>linux on Dray&#39;s Home</title>
+    <link>https://idc.wf/tags/linux/</link>
+    <description>Recent content in linux on Dray&#39;s Home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 15 May 2014 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://idc.wf/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>ubuntu 安装命令行自动补全</title>
+      <link>https://idc.wf/docs/ubuntu-bash-completion/</link>
+      <pubDate>Thu, 15 May 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://idc.wf/docs/ubuntu-bash-completion/</guid>
+      <description>ubuntu 安装命令行自动补全 ~# apt-get install bash-completion ~# source /etc/bash_completion  编辑/etc/bash.bashrc，在最后加入如下代码
+[plain] if [ -f /etc/bash_completion ]; then /etc/bash_completion fi  重新登录</description>
+    </item>
+    
+    <item>
+      <title>在 ubuntu 11.10 下安装 Ruby on Rails</title>
+      <link>https://idc.wf/docs/insert-ruby-on-rails-in-ubuntu-11-dot-10/</link>
+      <pubDate>Wed, 29 Feb 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://idc.wf/docs/insert-ruby-on-rails-in-ubuntu-11-dot-10/</guid>
+      <description>安装常用到组件
+sudo apt-get install git curl  安装 rvm
+1.配置
+bash &amp;lt; &amp;lt;(curl -s https://rvm.beginrescueend.com/install/rvm)  2.修改控制台配置文件，将 rvm 添加到命令控制台
+gedit ~/.bashrc  3.在 .bashrc 最后添加
+[[ -s &amp;quot;$HOME/.rvm/scripts/rvm&amp;quot; ]] &amp;amp;&amp;amp; source &amp;quot;$HOME/.rvm/scripts/rvm&amp;quot; # Load RVM into a shell session *as a function*  4.更新控制台配置：
+source ~/.bashrc  5.测试 rvm 是否正确安装
+type rvm | head -1  如果显示出来 rvm is a function 或者 rvm 是个函数 那么就证明 rvm 安装成功
+6.执行 rvm 命令，查看都需要安装那些组件</description>
+    </item>
+    
+    <item>
+      <title>Ubuntu 11.10 Beta 2 (Oneiric Ocelot) 发布了</title>
+      <link>https://idc.wf/docs/ubuntu-11-10-beta-2-oneiric-ocelot-fa-bu-liao/</link>
+      <pubDate>Fri, 23 Sep 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://idc.wf/docs/ubuntu-11-10-beta-2-oneiric-ocelot-fa-bu-liao/</guid>
+      <description>下载地址：
+http://www.ubuntu.com/testing/download (Ubuntu and Ubuntu Server) http://releases.ubuntu.com/oneiric/ (Ubuntu, Ubuntu Server) http://cloud-images.ubuntu.com/releases/oneiric/beta-2/ (Ubuntu Cloud Images) http://cdimage.ubuntu.com/releases/oneiric/beta-2/ (Ubuntu DVD, Alternates, pre-installed ARM Images) http://cdimage.ubuntu.com/netboot/11.10/ (Ubuntu Netboot) http://releases.ubuntu.com/kubuntu/oneiric/ (Kubuntu) http://cdimage.ubuntu.com/kubuntu/releases/oneiric/beta-2/ (Kubuntu DVD) http://cdimage.ubuntu.com/xubuntu/releases/oneiric/beta-2/ (Xubuntu) http://cdimage.ubuntu.com/edubuntu/releases/oneiric/beta-2/ (Edubuntu) http://cdimage.ubuntu.com/ubuntustudio/releases/oneiric/beta-2/ (Ubuntu Studio) http://cdimage.ubuntu.com/mythbuntu/releases/oneiric/beta-2/ (Mythbuntu) http://cdimage.ubuntu.com/lubuntu/releases/oneiric/beta-2/ (Lubuntu)
+The final version of Ubuntu 11.10 is expected to be released on October 13 2011.</description>
+    </item>
+    
+    <item>
+      <title>Ubuntu 删除已安装的桌面</title>
+      <link>https://idc.wf/docs/delete-ubuntu-desktop/</link>
+      <pubDate>Fri, 23 Sep 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://idc.wf/docs/delete-ubuntu-desktop/</guid>
+      <description>##Remove Kubuntu Paste this command into the terminal:
+sudo apt-get remove akonadi-server akregator amarok amarok-common amarok-utils appmenu-qt apport-kde apturl-kde ark bluedevil cdparanoia cdrdao docbook-xsl dolphin dragonplayer freespacenotifier gdebi-core gdebi-kde gnupg-agent gnupg2 gpgsm gtk2-engines-oxygen gwenview ibus-qt4 icoutils jockey-kde k3b k3b-data kaddressbook kamera kate kcalc kde-config-gtk kde-config-touchpad kde-window-manager kde-zeroconf kdebase-bin kdebase-data kdebase-runtime kdebase-runtime-data kdebase-workspace kdebase-workspace-bin kdebase-workspace-data kdebase-workspace-kgreet-plugins kdegames-card-data kdegraphics-libs-data kdegraphics-strigi-plugins kdelibs-bin kdelibs5-data kdelibs5-plugins kdemultimedia-kio-plugins kdenetwork-filesharing kdepasswd kdepim-groupware kdepim-kresources kdepim-runtime kdepim-strigi-plugins kdepim-wizards kdepimlibs-kio-plugins kdesudo kdm kdoctools kfind khelpcenter4 kinfocenter klipper kmag kmail kmix kmousetool knm-runtime knotes konsole kontact kopete kopete-message-indicator korganizer kpackagekit kpat kppp krdc krfb krosspython ksnapshot ksysguard ksysguardd ksystemlog ktimetracker ktorrent ktorrent-data kubuntu-debug-installer kubuntu-default-settings kubuntu-desktop kubuntu-docs kubuntu-firefox-installer kubuntu-konqueror-shortcuts kubuntu-netbook-default-settings kubuntu-notification-helper kvkbd kwalletmanager language-selector-kde libakonadi-contact4 libakonadi-kabc4 libakonadi-kcal4 libakonadi-kde4 libakonadi-kmime4 libakonadiprotocolinternals1 libao-common libao4 libasyncns0 libattica0 libaudio2 libbluedevil1 libboost-program-options1.</description>
+    </item>
+    
+  </channel>
+</rss>

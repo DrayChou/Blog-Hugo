@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>xml on Dray&#39;s Home</title>
+    <link>https://idc.wf/tags/xml/</link>
+    <description>Recent content in xml on Dray&#39;s Home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 28 Jan 2011 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://idc.wf/tags/xml/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>XML CDATA</title>
+      <link>https://idc.wf/docs/xml-cdata/</link>
+      <pubDate>Fri, 28 Jan 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://idc.wf/docs/xml-cdata/</guid>
+      <description>&lt;p&gt;&lt;h2 align=&#34;left&#34;&gt;CDATA&lt;/h2&gt;
+&lt;strong&gt;CDATA 内部的所有东西都会被解析器忽略。&lt;/strong&gt;假如文本中包含了大量的 &amp;ldquo;&amp;lt;&amp;rdquo; 和 &amp;ldquo;&amp;amp;&amp;rdquo; 字符 - 就像编程代码中经常出现的情况一样 - 那么这个 XML 元素就可以被定义为一个 CDATA 部分。CDATA 区段开始于 &lt;em&gt;&amp;ldquo;&amp;lt;![CDATA[&amp;rdquo;&lt;/em&gt;，结束于 &lt;em&gt;&amp;rdquo;]]&amp;gt;&amp;rdquo;&lt;/em&gt;：&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>vps on Dray&#39;s Home</title>
+    <link>https://idc.wf/tags/vps/</link>
+    <description>Recent content in vps on Dray&#39;s Home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 02 Jun 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://idc.wf/tags/vps/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>html 转为 pdf</title>
+      <link>https://idc.wf/docs/html-to-pdf/</link>
+      <pubDate>Fri, 02 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://idc.wf/docs/html-to-pdf/</guid>
+      <description>  使用 wkhtmltopdf
+ 安装
+ 下载地址：https://wkhtmltopdf.org/downloads.html Linux 环境下， 0.12.4 版本有问题，需要使用 0.12.3 版本。 不要使用 apt install 的方式安装，安装的为 0.12.4 版本。  示例代码
+ python ``` import pdfkit   pdfkit.from_url(&amp;lsquo;https://wkhtmltopdf.org/docs.html&#39;, &amp;lsquo;out.pdf&amp;rsquo;)
+pdfkit.from_file(&amp;lsquo;test.html&amp;rsquo;, &amp;lsquo;out.pdf&amp;rsquo;) pdfkit.from_string(&amp;lsquo;Hello!&amp;rsquo;, &amp;lsquo;out.pdf&amp;rsquo;)  2. php  &amp;lt;?php
+include &amp;lsquo;./vendor/autoload.php&amp;rsquo;;
+use mikehaertl\wkhtmlto\Pdf;
+if (empty($_GET[&amp;lsquo;url&amp;rsquo;])) { die(); }
+$pdf = new Pdf($_GET[&amp;lsquo;url&amp;rsquo;]); $pdf-&amp;gt;send(); ```
+  </description>
+    </item>
+    
+    <item>
+      <title>在Ubuntu上创建只有访问权限的帐号</title>
+      <link>https://idc.wf/docs/ubuntu-ssh-proxy/</link>
+      <pubDate>Thu, 22 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://idc.wf/docs/ubuntu-ssh-proxy/</guid>
+      <description>ubuntu 首先SSH登录VPS，创建一个登录脚本： vi /bin/nologin.sh 在vim中按下i，添加下面的内容：
+#!/bin/sh echo &amp;quot;&amp;quot; echo &amp;quot; ***********************************************************&amp;quot; echo &amp;quot; * Sorry,you can&#39;t Login by this way, press a key to exit. *&amp;quot; echo &amp;quot; ***********************************************************&amp;quot; echo &amp;quot;&amp;quot; read x exit  写完之后按esc，输入:wq回车保存。为此文件添加执行权限：
+chmod 755 /bin/nologin.sh  添加一个用户到nogroup组，并且指定它的启动脚本：
+useradd newuser -g nogroup -s /bin/nologin.sh  注意有些linux系统是添加到nobody组。最后更改一下这个用户的密码：
+passwd newuser  本地调用代理的话使用
+ssh -qTfnN -D 7070 username@sshserver.com  来生成本地 socks5 代理地址，或者安装 gstm 来配置代理。
+sudo apt-get install gstm  centos 1，增加一个linux用户，并赋予该用户一个nologin的shell权限。</description>
+    </item>
+    
+    <item>
+      <title>uWSGI&#43;Nginx run flask twip</title>
+      <link>https://idc.wf/docs/uwsginginx-run-flask-twip/</link>
+      <pubDate>Sun, 16 Jun 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://idc.wf/docs/uwsginginx-run-flask-twip/</guid>
+      <description>原文:http://ichon.me/post/999.html
+twip.tar.gz:http://ichon.me/uploads/2013/02/twip.tar.gz
+examples:https://github.com/yegle/flask_twip/tree/master/examples
+安装uWSGI
+使用pip：
+pip install uwsgi  安装Flask-Twip
+Flask-Twip是作为Flask的一个插件来安装的，安装依然只需要使用pip：
+pip install Flask-Twip  配置Flask-Twip
+由于 @yegle 湿兄并没有在examples中提供uWSGI运行的示例，所以只好自己动手，按照uWSGI运行的方式改写了示例程序，并且将其打包 twip.tar.gz
+只需将其解压到网站的目录，比如/home/www
+tar zxvf twip.tar.gz -C /home/www  然后修改配置文件settings.py，填写好在dev.twitter.com申请到的TWITTER_CONSUMER_KEY和TWITTER_CONSUMER_SECRET，至于SECRET_KEY嘛，就随便填好了～ 运行uWSGI
+我写了个uWSGI运行Flask程序的脚本server(在twip.tar.gz中)，只需要给其增加可执行权限：
+chmod +x server  执行./server start就可以启动uWSGI，同理，执行./server restart和./server stop可以重启和停止uWSGI。
+查看log文件/tmp/uwsgi-twip.log，如果没有任何错误，就说明uWSGI已经成功运行。 配置Nginx
+光有uWSGI是不能够运行Flask-Twip的，我们还需要Nginx作为Web Server，只需要修改Nginx的配置文件，增加一个server，如下所示：
+server { listen 80; server_name www.example.com; location / { include uwsgi_params; uwsgi_pass unix:/tmp/uwsgi-twip.sock; } location ^~ /twip/static/ { alias /home/www/twip/static/; } }  重启Nginx，如果一切顺利的话，就可以在 http://www.example.com/twip/ 看到熟悉的Twip界面了～
+ps:之前的 server 文件有误，修改 -C 666 为 &amp;ndash;chmod-socket=666</description>
+    </item>
+    
+    <item>
+      <title>ubuntu nginx php shell</title>
+      <link>https://idc.wf/docs/ubuntu-nginx-php-shell/</link>
+      <pubDate>Sun, 16 Jun 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://idc.wf/docs/ubuntu-nginx-php-shell/</guid>
+      <description>ubuntu 下一键安装 nginx php 的环境
+ nginx 配置参考：
+server { listen 80; server_name 127.0.0.1 localhost; root /usr/share/nginx/html/www; index index.php index.html index.htm; location ~ .*\.php(\/.*)*$ { include fastcgi.conf; fastcgi_split_path_info ^(.+\.php)(/.+)$; fastcgi_pass unix:/var/run/php5-fpm.sock; fastcgi_index index.php; fastcgi_connect_timeout 300; fastcgi_send_timeout 300; fastcgi_read_timeout 300; fastcgi_buffers 8 256k; fastcgi_buffer_size 256k; fastcgi_busy_buffers_size 256k; fastcgi_temp_file_write_size 256k; client_max_body_size 20M; fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name; } }  主要是配置缓存大小</description>
+    </item>
+    
+    <item>
+      <title>VPS上使用DropBox定时备份方案</title>
+      <link>https://idc.wf/docs/vps-dropbox/</link>
+      <pubDate>Thu, 13 Jun 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://idc.wf/docs/vps-dropbox/</guid>
+      <description>原文地址:http://www.deepvps.com/dropbox-backup.html
+这个备份方案是直接使用dropbox同步，如果想实时同步就一直守护dropbox进程，会占用一定资源。推荐小内存VPS的同学和deepvps一样使用cron定时备份。 1.linux上安装dropbox
+32位linux
+wget -O dropbox.tar.gz http://www.dropbox.com/download?plat=lnx.x86  64位linux
+wget -O dropbox.tar.gz http://www.dropbox.com/download?plat=lnx.x86_64  解压：
+tar xzvf dropbox.tar.gz  第一次运行生成host_id
+~/.dropbox-dist/dropboxd &amp;amp;  生成id后，将host_id替换下面链接后面的字符在浏览器打开，输入你的帐号密码就绑定机器了．
+https://www.dropbox.com/cli_link?host_id=XXXXXXXXXXXXXXXXXXX  2.建立连接备份网站
+正式开始同步你的网站，通过ln软链接你所有要备份的目录，例如：
+cd ~/Dropbox ln -s /home/wwwroot/html ln -s /home/wwwroot/htdocs ．．．  开始运行同步，美国的vps同步速度非常快的，1G的html文件，只花了几分钟全部同步完成
+~/.dropbox-dist/dropboxd &amp;amp;  3.为了节省资源，可以不使用实时同步，只定时打开同步一天的文件再关掉以节省资源。
+先关掉同步：
+killall dropbox  编写定时同步脚本：
+vi backup.sh  代码如下：
+#!/bin/sh start() { echo starting dropbox /root/.dropbox-dist/dropboxd &amp;amp; } stop() { echo stoping dropbox pkill dropbox } case “$1″ in start) start ;; stop) stop ;; restart) stop start ;; esac  定时运行和关闭：</description>
+    </item>
+    
+    <item>
+      <title>用UnixBench测试是遨游VPS结果</title>
+      <link>https://idc.wf/docs/vps-travel-with-unixbench-test-results/</link>
+      <pubDate>Sat, 19 Mar 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://idc.wf/docs/vps-travel-with-unixbench-test-results/</guid>
+      <description>&lt;p&gt;   #    #  #    #  #  #    #          #####   ######  #    #   ####   #    #   &lt;br&gt;   #    #  ##   #  #   #  #           #    #  #       ##   #  #    #  #    #    &lt;br&gt;   #    #  # #  #  #    ##            #####   #####   # #  #  #       ######    &lt;br&gt;   #    #  #  # #  #    ##            #    #  #       #  # #  #       #    #    &lt;br&gt;   #    #  #   ##  #   #  #           #    #  #       #   ##  #    #  #    #    &lt;br&gt;    ####   #    #  #  #    #          #####   ######  #    #   ####   #    #&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>用刚买的VPS主机做了一个镜像站</title>
+      <link>https://idc.wf/docs/vps-hosting-to-do-with-just-bought-a-mirror/</link>
+      <pubDate>Sat, 19 Mar 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://idc.wf/docs/vps-hosting-to-do-with-just-bought-a-mirror/</guid>
+      <description>前天在 vpsyou 买了一个虚拟主机VPS，但是因为在家里的连接速度不佳被我退了，昨天又买了遨游的虚拟主机，速度还可以。 以下是安装过程：
+1.首先，交钱，拿到自己的VPS的IP
+2.用拿到的账户名+密码使用SSH登录VPS
+3.到http://lnmp.org/install.html按教程安装lnmp，也就是linux,nginx,mysql,php,标准的建站套装
+4.安装完毕，就可以通过访问你的IP地址来查看效果了，如果能看到成功页面，那恭喜你
+5.在http://www.dot.tk/zh/index.html申请一个免费域名，然后 使用Dot TK的免费DNS服务器 绑定A记录的IP地址到你的VPS IP,等域名生效，就可以通过域名来进行访问了。
+6.打包之前的站，用wget下载到VPS，解压放到wwwroot目录，导入mysql数据
+完成安装
+示例：http://zh-x.tk/
+探针：http://zh-x.tk/tools/p.php
+ps:格式明天有空再搞，好困，4点了。</description>
+    </item>
+    
+  </channel>
+</rss>

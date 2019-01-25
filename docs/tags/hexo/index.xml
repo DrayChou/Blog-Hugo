@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>hexo on Dray&#39;s Home</title>
+    <link>https://idc.wf/tags/hexo/</link>
+    <description>Recent content in hexo on Dray&#39;s Home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 13 May 2016 20:05:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://idc.wf/tags/hexo/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>使用Travis CI自动部署Hexo</title>
+      <link>https://idc.wf/docs/travis-ci/</link>
+      <pubDate>Fri, 13 May 2016 20:05:00 +0000</pubDate>
+      
+      <guid>https://idc.wf/docs/travis-ci/</guid>
+      <description>前言 之前换过很多的静态博客系统，但是每个系统都需要本地做一定的部署，这点很麻烦。 Gor 倒是有可执行文件，但是本地部署的时候还是需要合并提交代码，还是略不爽。 今天在查 CI 系统的时候发现了 Travis CI ,于是，一切都很开心了。
+关于 Travis CI 这是一个通过脚本来进行自动部署的系统，本身与 Github 高度集成，目前对于公开的项目免费支持。
+开启travis-ci 首先去 Travis CI 官网，点击右上角Sign in with GitHub通过github授权登录。然后去到个人信息页面，开启需要使用 travis 的项目，在我这里就是 DrayChou/Blog-Hexo 。
+密钥 因为需要通过脚本提交到 Github ，所以需要先申请一个 token ，避免密码或者证书问题造成的麻烦。 Token 申请地址是 https://github.com/settings/tokens 。 记得给予 public_repo 的权限，要不无法提交修改到 GitHub。 记得这个 token ，后面会用到。
+Travis CI 的命令行工具 执行下面的命令安装命令行工具。 gem install travis  生成脚本 切换到 blog 的目录下，执行下面的命令，记得输入 node 语言
+$ travis init detected repository as DrayChou/Blog-Pugo Main programming language used: |HTML| node .</description>
+    </item>
+    
+  </channel>
+</rss>

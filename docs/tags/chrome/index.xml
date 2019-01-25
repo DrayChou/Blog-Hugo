@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>chrome on Dray&#39;s Home</title>
+    <link>https://idc.wf/tags/chrome/</link>
+    <description>Recent content in chrome on Dray&#39;s Home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 06 Mar 2014 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://idc.wf/tags/chrome/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>动弹一下 - 我的第一个 Chrome 应用</title>
+      <link>https://idc.wf/docs/oschina_tweet/</link>
+      <pubDate>Thu, 06 Mar 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://idc.wf/docs/oschina_tweet/</guid>
+      <description> 之前不小心买了 Google 的开发者凭证，于是晋级为了开发者。但是，我完全不知道要拿来做什么。 最近比较关注的 oschina 开放了他的 api ，然后他们的 tweet[动弹] 我也有在用，发现还没有它的 Chrome 应用。于是，做点啥吧，就当练手了，不能白瞎了咱的开发者身份。
+项目地址：  github:https://github.com/DrayChou/oschina_tweet oschina:http://git.oschina.net/drayc/oschina_tweet 应用地址：http://goo.gl/gsK4x3  项目介绍 项目目前实现了下面四个功能。
+ 最新动弹 热门动弹 我的动弹 动弹一下  其他的功能，在我发现 tweet 完全没有好友概念之后，就算了。反正拿出来的肯定是最新的，好友关系可有可无。 另：界面实在很简陋，等我有空再细细雕琢。
+项目笔记  阅读了大量文档，明白了开发 chrome 应用的技术。 原来 javascript mvc 看起来也很爽。 熟练了 javascript 面向对象的编程方法 设计也不容易啊，不能光可以用就行。  </description>
+    </item>
+    
+    <item>
+      <title>设置 google chrome protable 为默认浏览器</title>
+      <link>https://idc.wf/docs/google-chrome-as-system-default-browse/</link>
+      <pubDate>Sat, 16 Jun 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://idc.wf/docs/google-chrome-as-system-default-browse/</guid>
+      <description>以下是 win7 下设置 google chrome protable 为默认浏览器的 注册表文件
+1) chrome.reg:
+Windows Registry Editor Version 5.00 [HKEY_LOCAL_macHINE\SOFTWARE\RegisteredApplications] &amp;quot;chrome Portable&amp;quot;=&amp;quot;Software\\Clients\\StartMenuInternet\\GooglechromePortable\\Capabilities&amp;quot; [HKEY_LOCAL_macHINE\SOFTWARE\Clients\StartMenuInternet\GooglechromePortable\Capabilities] &amp;quot;ApplicationName&amp;quot;=&amp;quot;Google chrome Portable&amp;quot; &amp;quot;ApplicationDescription&amp;quot;=&amp;quot;Google chrome Portable is a web browser that runs web pages and applications with lightning speed. It&#39;s designed to be simple and stylish. It&#39;s packaged as a portable app, so you can take your browsing experience with you.&amp;quot; &amp;quot;ApplicationIcon&amp;quot;=&amp;quot;\&amp;quot;D:\\Softwares\\Portable\\Extracted\\GooglechromePortable\\GooglechromePortable.exe\&amp;quot;,0&amp;quot; &amp;quot;Hidden&amp;quot;=dword:00000000 [HKEY_LOCAL_macHINE\SOFTWARE\Clients\StartMenuInternet\GooglechromePortable\Capabilities\FileAssociations] &amp;quot;.htm&amp;quot;=&amp;quot;GooglechromePortableHTML&amp;quot; &amp;quot;.html&amp;quot;=&amp;quot;GooglechromePortableHTML&amp;quot; &amp;quot;.shtml&amp;quot;=&amp;quot;GooglechromePortableHTML&amp;quot; &amp;quot;.xht&amp;quot;=&amp;quot;GooglechromePortableHTML&amp;quot; &amp;quot;.xhtml&amp;quot;=&amp;quot;GooglechromePortableHTML&amp;quot; [HKEY_LOCAL_macHINE\SOFTWARE\Clients\StartMenuInternet\GooglechromePortable\Capabilities\StartMenu] &amp;quot;StartMenuInternet&amp;quot;=&amp;quot;GooglechromePortable&amp;quot; [HKEY_LOCAL_macHINE\SOFTWARE\Clients\StartMenuInternet\GooglechromePortable\Capabilities\URLAssociations] &amp;quot;http&amp;quot;=&amp;quot;GooglechromePortableURL&amp;quot; &amp;quot;https&amp;quot;=&amp;quot;GooglechromePortableURL&amp;quot; &amp;quot;ftp&amp;quot;=&amp;quot;GooglechromePortableURL&amp;quot; [HKEY_LOCAL_macHINE\SOFTWARE\Clients\StartMenuInternet\GooglechromePortable] &amp;quot;LocalizedString&amp;quot;=&amp;quot;Google chrome Portable&amp;quot; &amp;quot;&amp;quot;=&amp;quot;Google chrome Portable&amp;quot; [HKEY_LOCAL_macHINE\SOFTWARE\Clients\StartMenuInternet\GooglechromePortable\DefaultIcon] &amp;quot;&amp;quot;=&amp;quot;\&amp;quot;D:\\Softwares\\Portable\\Extracted\\GooglechromePortable\\GooglechromePortable.</description>
+    </item>
+    
+  </channel>
+</rss>

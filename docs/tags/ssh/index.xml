@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ssh on Dray&#39;s Home</title>
+    <link>https://idc.wf/tags/ssh/</link>
+    <description>Recent content in ssh on Dray&#39;s Home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sat, 14 May 2011 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://idc.wf/tags/ssh/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>通过ssh传输文件</title>
+      <link>https://idc.wf/docs/transfer-files-through-ssh/</link>
+      <pubDate>Sat, 14 May 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://idc.wf/docs/transfer-files-through-ssh/</guid>
+      <description>通过ssh传输文件 : scp -rp /path/filename username@remoteIP:/path  </description>
+    </item>
+    
+    <item>
+      <title>修改ssh登录的提示信息</title>
+      <link>https://idc.wf/docs/modify-the-ssh-login-message/</link>
+      <pubDate>Thu, 24 Mar 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://idc.wf/docs/modify-the-ssh-login-message/</guid>
+      <description>vi /etc/motd</description>
+    </item>
+    
+    <item>
+      <title>修改SSH登录密码</title>
+      <link>https://idc.wf/docs/modify-the-ssh-password/</link>
+      <pubDate>Sun, 20 Mar 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://idc.wf/docs/modify-the-ssh-password/</guid>
+      <description>SSH登录时要求输入的其实是系统的用户与密码，所以如果要修改ssh登录密码的话，只要更改系统用户的密码就可以了。命令如下：
+passwd root #root就是你要修改密码的用户名,键入命令之后就会要求你修改这个用户的密码，键入两次就OK了。
+ </description>
+    </item>
+    
+  </channel>
+</rss>

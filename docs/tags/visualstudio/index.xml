@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>VisualStudio on Dray&#39;s Home</title>
+    <link>https://idc.wf/tags/visualstudio/</link>
+    <description>Recent content in VisualStudio on Dray&#39;s Home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 06 Dec 2011 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://idc.wf/tags/visualstudio/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>修改 vs2010 默认浏览器</title>
+      <link>https://idc.wf/docs/xiu-gai-vs2010-mo-ren-liu-lan-qi/</link>
+      <pubDate>Tue, 06 Dec 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://idc.wf/docs/xiu-gai-vs2010-mo-ren-liu-lan-qi/</guid>
+      <description>修改该目录里的配置文件
+C:\users\[登陆账户ID]\AppData\Local\Microsoft\VisualStudio\10.0\browsers.xml  修改为
+&amp;lt;?xml version=&amp;quot;1.0&amp;quot;?&amp;gt;&amp;lt;browserinfo&amp;gt;&amp;lt;browser&amp;gt;&amp;lt;name&amp;gt;Mozilla Firefox&amp;lt;/name&amp;gt;&amp;lt;path&amp;gt;&amp;quot;C:\Program Files (x86)\Mozilla Firefox\firefox.exe&amp;quot;&amp;lt;/path&amp;gt;&amp;lt;resolution&amp;gt;0&amp;lt;/resolution&amp;gt;&amp;lt;isdefault&amp;gt;True&amp;lt;/isdefault&amp;gt;&amp;lt;/browser&amp;gt;&amp;lt;browser&amp;gt;&amp;lt;name&amp;gt;Internet Explorer&amp;lt;/name&amp;gt;&amp;lt;path&amp;gt;&amp;quot;C:\Program Files (x86)\Internet Explorer\iexplore.exe&amp;quot;&amp;lt;/path&amp;gt;&amp;lt;resolution&amp;gt;0&amp;lt;/resolution&amp;gt;&amp;lt;isdefault&amp;gt;False&amp;lt;/isdefault&amp;gt;&amp;lt;dde&amp;gt;&amp;lt;service&amp;gt;IExplore&amp;lt;/service&amp;gt;&amp;lt;topicopenurl&amp;gt;WWW_OpenURL&amp;lt;/topicopenurl&amp;gt;&amp;lt;itemopenurl&amp;gt;&amp;quot;%s&amp;quot;,,0xffffffff,3,,,,&amp;lt;/itemopenurl&amp;gt;&amp;lt;topicactivate&amp;gt;WWW_Activate&amp;lt;/topicactivate&amp;gt;&amp;lt;itemactivate&amp;gt;0xffffffff,0&amp;lt;/itemactivate&amp;gt;&amp;lt;/dde&amp;gt;&amp;lt;/browser&amp;gt;&amp;lt;/browserinfo&amp;gt;  然后保存为只读，Ok了</description>
+    </item>
+    
+  </channel>
+</rss>

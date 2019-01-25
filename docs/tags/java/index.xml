@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>java on Dray&#39;s Home</title>
+    <link>https://idc.wf/tags/java/</link>
+    <description>Recent content in java on Dray&#39;s Home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sat, 08 Jan 2011 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://idc.wf/tags/java/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>ubuntu 环境下 安装 java6-sdk</title>
+      <link>https://idc.wf/docs/ubuntu-huan-jing-xia-an-zhuang-java6-sdk/</link>
+      <pubDate>Sat, 08 Jan 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://idc.wf/docs/ubuntu-huan-jing-xia-an-zhuang-java6-sdk/</guid>
+      <description>安装sun-java6 添加partner源
+sudo add-apt-repository &amp;quot;deb http://archive.canonical.com/ubuntu maverick partner&amp;quot;  (注： 如果系统提示没有add-apt-repository命令，则需要先安装python-software-properties，命令sudo apt-get install python-software-properties。另外，有些版本的ubuntu即使安装了python-software-properties 也无add-apt-repository命令,此时需要手动添加此行&amp;rdquo;deb http://archive.canonical.com/ubuntu maverick partner&amp;rdquo;到/etc/apt/sources.list文件中。)
+更新系统
+sudo add-apt-repository &amp;quot;deb http://archive.canonical.com/ubuntu maverick partner&amp;quot;  安装jre
+sudo add-apt-repository &amp;quot;deb http://archive.canonical.com/ubuntu maverick partner&amp;quot;  安装jdk
+sudo add-apt-repository &amp;quot;deb http://archive.canonical.com/ubuntu maverick partner&amp;quot;  查看版本信息
+sudo add-apt-repository &amp;quot;deb http://archive.canonical.com/ubuntu maverick partner&amp;quot;  设为默认Java sudo add-apt-repository &amp;quot;deb http://archive.canonical.com/ubuntu maverick partner&amp;quot;  选择即可  </description>
+    </item>
+    
+  </channel>
+</rss>

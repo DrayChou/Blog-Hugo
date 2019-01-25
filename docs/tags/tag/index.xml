@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>tag on Dray&#39;s Home</title>
+    <link>https://idc.wf/tags/tag/</link>
+    <description>Recent content in tag on Dray&#39;s Home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 09 Mar 2011 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://idc.wf/tags/tag/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>太神奇了，原来URL锚点...</title>
+      <link>https://idc.wf/docs/tai-shen-qi-le-yuan-lai-url-mao-dian/</link>
+      <pubDate>Wed, 09 Mar 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://idc.wf/docs/tai-shen-qi-le-yuan-lai-url-mao-dian/</guid>
+      <description>太神奇了，原来URL锚点还能做成这样，学习了～http://probablyinteractive.com/url-hunter</description>
+    </item>
+    
+  </channel>
+</rss>

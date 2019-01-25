@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>mail on Dray&#39;s Home</title>
+    <link>https://idc.wf/tags/mail/</link>
+    <description>Recent content in mail on Dray&#39;s Home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 03 Aug 2015 15:30:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://idc.wf/tags/mail/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>让域名邮箱支持通配符</title>
+      <link>https://idc.wf/docs/mailgun/</link>
+      <pubDate>Mon, 03 Aug 2015 15:30:00 +0000</pubDate>
+      
+      <guid>https://idc.wf/docs/mailgun/</guid>
+      <description>目前手贱收了一个域名，想配置成支持泛域名解析的邮箱地址，即随便写名称都可以寄到的邮件。
+之前有用 QQ 企业邮箱做过一个泛解析的域名，规则是错误的邮箱地址都转发到一个固定地址，参见地址 什么是错误地址转发功能？。
+后来 Google Domails 推出后，推出了域名 EMAIL 服务，支持 * 通配符，于是开心了，参见地址About wildcard email forwarding。
+但是，新入的域名 Google Domails 不支持这种后缀，于是在 @duyaoo 的推荐下，用了 mailgun 服务。
+这个服务本身是作为商业邮件API使用的，自用算是小 case 。
+按照教程设置玩 DNS 之后，添加一条 routes 规则，指定 什么地址的邮件发送到那个邮箱就可以了。
+以后做小项目的时候也可以用 mailgun 来做邮箱地址托管了，赞一个。
+注：
+添加 mx 地址解析的时候 name 为 @ re 域名注册地址：[internetbs.net](https://internetbs.net/)  </description>
+    </item>
+    
+  </channel>
+</rss>

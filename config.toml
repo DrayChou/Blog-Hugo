@@ -2,11 +2,9 @@ baseURL = "https://idc.wf"
 title = "Dray's Home"
 # for smart copyright line, leave this blank and check [params.copyright]
 copyright = ""
+publishDir = "docs"
 
 theme = "minimo"
-
-disqusShortname = ""
-googleAnalytics = ""
 
 Paginate = 10
 preserveTaxonomyNames = true
@@ -78,6 +76,7 @@ github = "DrayChou"
 
 [params.comments]
 enable = true
+disqusShortname = "weshome"
 
 [permalinks]
 page = "/:slug/"

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>php on Dray&#39;s Home</title>
+    <link>https://idc.wf/tags/php/</link>
+    <description>Recent content in php on Dray&#39;s Home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 11 Apr 2014 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://idc.wf/tags/php/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>记一次 wsdl 服务的调用</title>
+      <link>https://idc.wf/docs/php-soap-and-net-soap/</link>
+      <pubDate>Fri, 11 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://idc.wf/docs/php-soap-and-net-soap/</guid>
+      <description>公司业务要用到某 wsdl 的服务，使用 php5 自带的 soapclient 进行链接，屡次连不上，然后换 nusoap 包进行测试，还是不行，最后找到修改官方包 namespace 的方法才通过，记录下经验吧。
+soapclient  官方推荐的调用对方函数的方法 _soapCall 函数调用如果失败，完全不输出任何信息。 这个包无法查看对方返回的 http 状态。 封装好的数据对方无法解析，直接报解析错误，需要继承并修改官方包，代码如下:   class MSSoapClient extends SoapClient { function __doRequest($request, $location, $action, $version) { $namespace = &amp;quot;http://adc.ecinterface/&amp;quot;; $request = preg_replace(&#39;/ $request = preg_replace(&#39;/ $request = str_replace(array(&#39;/ns1:&#39;, &#39;xmlns:ns1=&amp;quot;&#39; . $namespace . &#39;&amp;quot;&#39;), array(&#39;/&#39;, &#39;&#39;), $request); // parent call return parent::__doRequest($request, $location, $action, $version); } }  nusoap  发出去的数据因为不是系统级的封装，所以数据前会带上不少的噪音，对方完全无法识别。  总结  对于不了解的还是要多祭拜谷歌大神。 还是要多试。  参考地址 http://stackoverflow.</description>
+    </item>
+    
+    <item>
+      <title>php日志系统——plog</title>
+      <link>https://idc.wf/docs/php-log-system-plog/</link>
+      <pubDate>Thu, 28 Apr 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://idc.wf/docs/php-log-system-plog/</guid>
+      <description>我在使用的时候发现了一个问题，就是要想在不同的文件夹下面记录不同的状况，例如： 在/logs/debug/ 下面记录debug 的日志， 在/logs/error/ 下面记录error的日志 就需要分别建立filedebug.php 和 fileerror.php 作为写入的引擎，事实上这两个类在类内部的代码里面是完全一模一样的。 好吧，这不算什么致命的问题，重新集成一次file.php就可以了。 总的来说，这个日志系统还是不错的。 plog的介绍： 日志是一个应用程序的重要组成部分，今天在看pylons对日志的处理时，受到启发，于是plog就诞生了。 很多php框架都忽略了日志的重要性(如kohana)，往往只是能用，自定义和可扩展性不够，等到程序出了问题，再想找原因时就比较麻烦了。 plog简介
+plog是一款轻量级，易定制，易使用，易扩展的php日志系统。可以很方便地添加日志处理工具、自定义输出格式、自定义日志类型等等。 plog使用
+使用plog很简单，在每个要加日志的文件里，输入以下代码 debug(&amp;lsquo;this is debug message&amp;rsquo;); $log-&amp;gt;info(&amp;lsquo;this is info message&amp;rsquo;); plog的配置
+plog的配置很灵活，下面是个demo config debug(&amp;lsquo;this is debug message&amp;rsquo;); $log-&amp;gt;info(&amp;lsquo;this is info message&amp;rsquo;); 几点说明
+levels项，每一个值都是一个方法，不过是小写的，如$log→debug(‘message’)。如果某个方法不在这些levels里会触发异常。 日志格式的可选变量在plog/formatter.php里，每一个get开头的方法就是，如果觉得不够用，可以自己添加。 日志内容
+日志内容取决于日志格式，下面是demo debug(&amp;lsquo;this is debug message&amp;rsquo;); $log-&amp;gt;info(&amp;lsquo;this is info message&amp;rsquo;); 下载
+https://github.com/lzyy/plog &amp;ndash;EOF&amp;ndash;若无特别说明，本站文章均为原创，转载请保留链接，谢谢 来自：http://blog.leezhong.com/project/2010/12/06/plog.html</description>
+    </item>
+    
+    <item>
+      <title>php去掉 HTML标记、javascript 代码、空白字符等</title>
+      <link>https://idc.wf/docs/php-remove-html-tags-javascript-code-blank-characters-etc/</link>
+      <pubDate>Sat, 12 Feb 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://idc.wf/docs/php-remove-html-tags-javascript-code-blank-characters-etc/</guid>
+      <description>代码：
+preg_replace(&amp;quot;&#39;([\r\n])[\s]+&#39;&amp;quot;, &amp;quot;&amp;quot;, $content) //去除回车换行符 // $document 应包含一个 HTML 文档。 // 本例将去掉 HTML 标记，javascript 代码 // 和空白字符。还会将一些通用的 // HTML 实体转换成相应的文本。 $search = array (&amp;quot;&#39;&amp;lt;script&amp;gt;]*?&amp;gt;.*?&amp;lt;/script&amp;gt;&#39;si&amp;quot;, // 去掉 javascript &amp;quot;&#39;]*?&amp;gt;&#39;si&amp;quot;, // 去掉 HTML 标记 &amp;quot;&#39;([\r\n])[\s]+&#39;&amp;quot;, // 去掉空白字符 &amp;quot;&#39;&amp;amp;(quot|#34);&#39;i&amp;quot;, // 替换 HTML 实体 &amp;quot;&#39;&amp;amp;(amp|#38);&#39;i&amp;quot;, &amp;quot;&#39;&amp;amp;(lt|#60);&#39;i&amp;quot;, &amp;quot;&#39;&amp;amp;(gt|#62);&#39;i&amp;quot;, &amp;quot;&#39;&amp;amp;(nbsp|#160);&#39;i&amp;quot;, &amp;quot;&#39;&amp;amp;(iexcl|#161);&#39;i&amp;quot;, &amp;quot;&#39;&amp;amp;(cent|#162);&#39;i&amp;quot;, &amp;quot;&#39;&amp;amp;(pound|#163);&#39;i&amp;quot;, &amp;quot;&#39;&amp;amp;(copy|#169);&#39;i&amp;quot;, &amp;quot;&#39;(\d+);&#39;e&amp;quot;); // 作为 php 代码运行 $replace = array (&amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot; // $document 应包含一个 HTML 文档。 // 本例将去掉 HTML 标记，javascript 代码 // 和空白字符。还会将一些通用的 // HTML 实体转换成相应的文本。 $search = array (&amp;quot;&#39;&amp;lt;script&amp;gt;]*?</description>
+    </item>
+    
+  </channel>
+</rss>

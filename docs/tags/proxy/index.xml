@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>proxy on Dray&#39;s Home</title>
+    <link>https://idc.wf/tags/proxy/</link>
+    <description>Recent content in proxy on Dray&#39;s Home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 26 Apr 2011 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://idc.wf/tags/proxy/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Proxy Switchy! 可以打开https，打不开http的解决方法</title>
+      <link>https://idc.wf/docs/proxy-switchy-can-open-the-https-not-open-http-solution/</link>
+      <pubDate>Tue, 26 Apr 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://idc.wf/docs/proxy-switchy-can-open-the-https-not-open-http-solution/</guid>
+      <description>之前的我Proxy Switchy!代理规则开启的时候，只能打开https的页面，比如https://www.google.com，但是打不开http的页面，比如：http://www.google.com。
+这让我很困惑！
+后来查了一些资料，自己做了一些测试发现了！
+因为我用的是ssh的方式proxy的，所以我应该使用 “SOCKS 代理” ，但是我之前选的是 “HTTP 代理”，而且选了 “对所有协议均使用相同的代理服务器”，这样一来，我访问页面的时候，https还好说，突破性本来就强，但是http就被阻隔到本地了，而我的ssh是不不会proxy的，所以唉。。。。
+删掉其他的http,https,ftp代理服务器，只留一个“SOCKS 代理”就可以了，记得选 SOCKS v5 
+留此文以做纪念！</description>
+    </item>
+    
+    <item>
+      <title>php检测用户是否使用代理上网的方法</title>
+      <link>https://idc.wf/docs/php-jian-ce-yong-hu-shi-fou-shi-yong-dai-li-shang-wang-de-fang-fa/</link>
+      <pubDate>Fri, 28 Jan 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://idc.wf/docs/php-jian-ce-yong-hu-shi-fou-shi-yong-dai-li-shang-wang-de-fang-fa/</guid>
+      <description>获取用户IP地址的三个属性的区别(HTTP_X_FORWARDED_FOR,HTTP_VIA,REMOTE_ADDR)
+一、没有使用代理服务器的情况： 实例：
+ REMOTE_ADDR = 158.41.30.94 HTTP_VIA = 没数值或不显示 HTTP_X_FORWARDED_FOR = 没数值或不显示  二、使用透明代理服务器的情况：Transparent Proxies 下例中，实际IP=158.41.30.94，使用代理服务器IP=210.51.46.227
+ REMOTE_ADDR = 210.14.65.69 (最后一个代理服务器 IP) HTTP_VIA = 1.1 shopex:80 (squid/2.6.STABLE4), 1.0 briage.shopex.cn:81 (squid/2.5.STABLE14) HTTP_X_FORWARDED_FOR = 158.41.30.94, 210.51.46.227  这类代理服务器还是将您的信息转发给您的访问对象，无法达到隐藏真实身份的目的。
+三、使用普通匿名代理服务器的情况：Anonymous Proxies 下例中，实际IP=158.41.30.94，使用代理服务器IP=210.51.46.227
+ REMOTE_ADDR = 210.14.65.69 HTTP_VIA = 1.1 shopex:80 (squid/2.6.STABLE4), 1.0 briage.shopex.cn:81 (squid/2.5.STABLE14) HTTP_X_FORWARDED_FOR = 210.51.46.227  隐藏了您的真实IP，但是向访问对象透露了您是使用代理服务器访问他们的。
+四、使用欺骗性代理服务器的情况：Distorting Proxies 下例中，实际IP=158.41.30.94，使用代理服务器IP=210.51.46.227
+ REMOTE_ADDR = 210.14.65.69 HTTP_VIA = 1.1 shopex:80 (squid/2.6.STABLE4), 1.0 briage.</description>
+    </item>
+    
+  </channel>
+</rss>

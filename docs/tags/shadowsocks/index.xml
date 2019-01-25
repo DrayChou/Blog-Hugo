@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>shadowsocks on Dray&#39;s Home</title>
+    <link>https://idc.wf/tags/shadowsocks/</link>
+    <description>Recent content in shadowsocks on Dray&#39;s Home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 02 Jun 2014 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://idc.wf/tags/shadowsocks/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Shadowsocks 新手指南</title>
+      <link>https://idc.wf/docs/shadowsocks/</link>
+      <pubDate>Mon, 02 Jun 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://idc.wf/docs/shadowsocks/</guid>
+      <description>#Shadowsocks
+shadowsocks 簡稱 ss 是一套的代理協議，包含服務端應用和客戶端應用。使用 ss:// 格式的鏈接協議來標識服務器地址。
+客戶端 如果你已經有了服務器地址，那麼我們就直接來配置客戶端吧，如果沒有，那麼你需要去找IT男要一個，或者去 ShadowSocks公益组织 找一個吧。
+參見： Shadowsocks 客戶端列表
+Windows &amp;amp;&amp;amp; Linux &amp;amp;&amp;amp; OSX 鄙人平常主用 cow ,這個客戶端用 golang 語言編寫，是一个简化穿墙的 HTTP 代理服务器。它能自动检测被墙网站，仅对这些网站使用二级代理，支持 http,ssh 轉發 直接支持 ss ，所以可以用 cow 做二級代理來支持本地其他類型的代理。 比如： 用 cow 轉發 http,ssh,ss 到 pac 代理，讓本地的瀏覽器手機等可以無憂翻牆。
+快速開始 OS X, Linux (x86, ARM): 执行以下命令（也可用于更新）
+curl -L git.io/cow | bash  Windows: 点此下载
+熟悉 Go 的用户可用 go get github.com/cyfdecyf/cow 从源码安装 编辑 ~/.cow/rc (Linux) 或 rc.txt (Windows)，简单的配置例子如下：</description>
+    </item>
+    
+  </channel>
+</rss>

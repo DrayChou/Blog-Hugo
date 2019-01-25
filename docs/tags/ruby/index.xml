@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ruby on Dray&#39;s Home</title>
+    <link>https://idc.wf/tags/ruby/</link>
+    <description>Recent content in ruby on Dray&#39;s Home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 15 Apr 2013 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://idc.wf/tags/ruby/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>ubuntu 安装 Ruby, Rails 运行环境</title>
+      <link>https://idc.wf/docs/ubuntu-ruby/</link>
+      <pubDate>Mon, 15 Apr 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://idc.wf/docs/ubuntu-ruby/</guid>
+      <description>步骤0 － 安装系统需要的包
+Ubuntu 请安装
+$ sudo apt-get install -y build-essential openssl curl libcurl3-dev libreadline6 libreadline6-dev git zlib1g zlib1g-dev libssl-dev libyaml-dev libxml2-dev libxslt-dev autoconf automake libtool imagemagick libmagickwand-dev libpcre3-dev libsqlite3-dev libmysql-ruby libmysqlclient-dev  步骤1 － 安装 RVM
+RVM 是干什么的这里就不解释了，后面你将会慢慢搞明白。
+$ curl -L https://get.rvm.io | bash -s stable  等待一段时间后就可以成功安装好 RVM。
+然后，载入 RVM 环境（新开 Termal 就不用这么做了，会自动重新载入的）
+$ source ~/.rvm/scripts/rvm  检查一下是否安装正确
+$ rvm -v rvm 1.17.3 (stable) by Wayne E. Seguin &amp;lt;wayneeseguin@gmail.</description>
+    </item>
+    
+    <item>
+      <title>在 ubuntu 11.10 下安装 Ruby on Rails</title>
+      <link>https://idc.wf/docs/insert-ruby-on-rails-in-ubuntu-11-dot-10/</link>
+      <pubDate>Wed, 29 Feb 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://idc.wf/docs/insert-ruby-on-rails-in-ubuntu-11-dot-10/</guid>
+      <description>安装常用到组件
+sudo apt-get install git curl  安装 rvm
+1.配置
+bash &amp;lt; &amp;lt;(curl -s https://rvm.beginrescueend.com/install/rvm)  2.修改控制台配置文件，将 rvm 添加到命令控制台
+gedit ~/.bashrc  3.在 .bashrc 最后添加
+[[ -s &amp;quot;$HOME/.rvm/scripts/rvm&amp;quot; ]] &amp;amp;&amp;amp; source &amp;quot;$HOME/.rvm/scripts/rvm&amp;quot; # Load RVM into a shell session *as a function*  4.更新控制台配置：
+source ~/.bashrc  5.测试 rvm 是否正确安装
+type rvm | head -1  如果显示出来 rvm is a function 或者 rvm 是个函数 那么就证明 rvm 安装成功
+6.执行 rvm 命令，查看都需要安装那些组件</description>
+    </item>
+    
+  </channel>
+</rss>

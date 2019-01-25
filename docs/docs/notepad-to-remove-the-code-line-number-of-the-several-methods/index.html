@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang='zh'><head>
+  <meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<meta name='description' content='问：在网页中复制代码时，常常遇到高亮程序自动给代码加上行号或字符“#”，如何格式化？如下：
+
+#1 //去除首字符或行号
+#2 &amp; lt; ? php#100 echo &#39;再长点&#39;;#............#2010 echo &#39;无语了吧&#39;;#2012 ? &gt;
+
+
+'>
+<meta name='theme-color' content='dodgerblue'>
+
+<meta property='og:title' content='Notepad&#43;&#43;去除代码行号的几种方法 • Dray&#39;s Home'>
+<meta property='og:description' content='问：在网页中复制代码时，常常遇到高亮程序自动给代码加上行号或字符“#”，如何格式化？如下：
+
+#1 //去除首字符或行号
+#2 &amp; lt; ? php#100 echo &#39;再长点&#39;;#............#2010 echo &#39;无语了吧&#39;;#2012 ? &gt;
+
+
+'>
+<meta property='og:url' content='https://idc.wf/docs/notepad-to-remove-the-code-line-number-of-the-several-methods/'>
+<meta property='og:site_name' content='Dray&#39;s Home'>
+<meta property='og:type' content='article'><meta property='article:section' content='docs'><meta property='article:tag' content='notepad'><meta property='article:published_time' content='2011-02-18T00:00:00Z'/><meta property='article:modified_time' content='2011-02-18T00:00:00Z'/><meta name='twitter:card' content='summary'>
+
+<meta name="generator" content="Hugo 0.53" />
+
+  <title>Notepad&#43;&#43;去除代码行号的几种方法 • Dray&#39;s Home</title>
+  <link rel='canonical' href='https://idc.wf/docs/notepad-to-remove-the-code-line-number-of-the-several-methods/'>
+  
+  
+  <link rel='icon' href='/favicon.ico'>
+<link rel='stylesheet' href='/assets/css/main.4a10984a.css'><link rel='stylesheet' href='/css/custom.css'><style>
+:root{--color-accent:dodgerblue;}
+</style>
+
+  
+
+</head>
+<body class='page type-docs layout-post has-sidebar'>
+
+  <div class='site'><div id='sidebar' class='sidebar'>
+  <a class='screen-reader-text' href='#main-menu'>跳到主页</a>
+
+  <div class='container'><section class='widget widget-about sep-after'>
+  <header>
+    
+    <div class='logo'>
+      <a href='/'>
+        <img src='/images/logo.png'>
+      </a>
+    </div>
+    
+    <h2 class='title site-title '>
+    Dray&#39;s Home
+    </h2>
+    <div class='desc'>
+    疯狂痴呆傻，美甘苦涩禅。
+    </div>
+  </header>
+
+</section>
+<section class='widget widget-search sep-after'>
+  <header>
+    <h4 class='title widget-title'>Search</h4>
+  </header>
+
+  <form action='/search' id='search-form' class='search-form'>
+    <label>
+      <span class='screen-reader-text'></span>
+      <input id='search-term' class='search-term' type='search' name='q' placeholder='&hellip;'>
+    </label></form>
+
+</section>
+<section class='widget widget-sidebar_menu sep-after'><nav id='sidebar-menu' class='menu sidebar-menu' aria-label='侧边菜单'>
+    <div class='container'>
+      <ul><li class='item'>
+  <a href='/'>Home</a></li><li class='item'>
+  <a href='/docs/'>Docs</a></li><li class='item'>
+  <a href='/menus/'>About</a></li><li class='item'>
+  <a href='/categories/'>categories</a></li><li class='item'>
+  <a href='/tags/'>Tags</a></li></ul>
+    </div>
+  </nav>
+
+</section></div>
+
+  <div class='sidebar-overlay'></div>
+</div><div class='main'><a class='screen-reader-text' href='#content'>跳到文章</a>
+
+<button id='sidebar-toggler' class='sidebar-toggler' aria-controls='sidebar'>
+  <span class='screen-reader-text'>切换侧边栏</span>
+  <span class='open'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <line x1="3" y1="12" x2="21" y2="12" />
+  <line x1="3" y1="6" x2="21" y2="6" />
+  <line x1="3" y1="18" x2="21" y2="18" />
+  
+</svg>
+</span>
+  <span class='close'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <line x1="18" y1="6" x2="6" y2="18" />
+  <line x1="6" y1="6" x2="18" y2="18" />
+  
+</svg>
+</span>
+</button><div class='header-widgets'>
+        <div class='container'>
+    
+    <style>.widget-breadcrumbs li:after{content:'\2f '}</style>
+  <section class='widget widget-breadcrumbs sep-after'>
+    <nav id='breadcrumbs'>
+      <ol><li><a href='/'>Home</a></li><li><a href='/docs/'>Docs</a></li><li><span>Notepad&#43;&#43;去除代码行号的几种方法</span></li></ol>
+    </nav>
+  </section></div>
+      </div>
+
+      <header id='header' class='header site-header'>
+        <div class='container sep-after'>
+          <div class='header-info'><p class='site-title title'>Dray&#39;s Home</p><p class='desc site-desc'>疯狂痴呆傻，美甘苦涩禅。</p>
+          </div>
+        </div>
+      </header>
+
+      <main id='content'>
+
+
+<article lang='zh' class='entry'>
+  <header class='header entry-header'>
+  <div class='container sep-after'>
+    <div class='header-info'>
+      <h1 class='title'>Notepad&#43;&#43;去除代码行号的几种方法</h1>
+      
+
+    </div>
+    <div class='entry-meta'>
+  <span class='posted-on'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+  <line x1="16" y1="2" x2="16" y2="6"/>
+  <line x1="8" y1="2" x2="8" y2="6"/>
+  <line x1="3" y1="10" x2="21" y2="10"/>
+  
+</svg>
+<span class='screen-reader-text'>发布 </span>
+  <time class='entry-date' datetime='2011-02-18T00:00:00Z'>2011-02-18</time>
+</span>
+
+  
+  
+<span class='reading-time'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <circle cx="12" cy="12" r="10"/>
+  <polyline points="12 6 12 12 15 15"/>
+  
+</svg>
+需要1分钟读完
+</span>
+
+
+</div>
+
+
+  </div>
+</header>
+
+  
+  
+
+  <div class='container entry-content'>
+  <p><strong>问：</strong>在网页中复制代码时，常常遇到高亮程序自动给代码加上行号或字符“#”，如何格式化？如下：</p>
+
+<pre><code>#1 //去除首字符或行号
+#2 &amp; lt; ? php#100 echo '再长点';#............#2010 echo '无语了吧';#2012 ? &gt;
+</code></pre>
+
+<p><strong></strong></p>
+
+<p><strong>解1：</strong>手动删除，才2012行~~~不多不多.LOL</p>
+
+<p><strong>解2：</strong>打开 Notepad++，按住 Alt，鼠标点击拖出选择框，这个是<strong> 列选</strong> 方法，相当拉风；</p>
+
+<p><strong>解3：</strong>正则表达式（又是这个万能的东西）。</p>
+
+<p>      打开 Notepad++，Ctrl+H，[查找目标] 输入 下面对应正则表达式 [查找模式] 选择 正则表达式 ，之后 Alt+A，搞定！</p>
+
+<p>#+空格+行号  \S\s\d+
+  <br>行号+空格      <sup class="footnote-ref" id="fnref:0-9"><a href="#fn:0-9">1</a></sup>+</p>
+
+<p><br>行号+.+空格   \s<em>\d</em>.\s</p>
+
+<p><strong>解4：</strong>使用 TextFX 工具</p>
+
+<p>      打开 Notepad++，[全选代码]–点击 工具栏中的 [TextFX] –[TextFX Tools]–[Delete Line Numbers or First word] ，OK！</p>
+
+<p>【补充给6楼<cite> kamal  </cite>同学】加行号的方法：[全选代码]–点击 工具栏中的 [TextFX] –[TextFX Tools]–[Insert Line Numbers] OK！</p>
+
+<p><strong>解5：</strong>编写 宏 命令</p>
+
+<p>      打开 Notepad++，Alt+O 选择宏，开始录制：（光标初始在文首）<strong>注：</strong>全部键盘操作</p>
+
+<p><em><strong>宏流程</strong>：</em>[Home 键]—[Ctrl+Shift+方向键*右]—[Backspace]–[方向键*下]</p>
+
+<p><strong><em>释义：</em></strong>光标顶格—按单词字段选择–删除行首–下一行  //第二步根据情况操作N次。</p>
+
+<p>以上是NP++中我用过的方法，至于其他编辑器应该还有解法，欢迎分享！</p>
+
+<p>PS: 复制代码的时候，先观察下这个网站是不是有 [copy按钮] 可以避免复制到行号的！</p>
+
+<p>版权所有© HzlzH | 本文采用 <a href="http://www.hzlzh.com/#copyright">BY-NC-SA</a> 进行授权</p>
+
+<p><br>转载需注明 转自: 《<a href="http://www.hzlzh.com/notepad-delete-line-number/">Notepad++去除代码行号的几种方法</a></p>
+<div class="footnotes">
+
+<hr />
+
+<ol>
+<li id="fn:0-9">0-9 <a class="footnote-return" href="#fnref:0-9"><sup>[return]</sup></a></li>
+</ol>
+</div>
+</div>
+
+  
+<footer class='entry-footer'>
+  <div class='container sep-before'><div class='categories'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M22,19a2,2,0,0,1-2,2H4a2,2,0,0,1-2-2V5A2,2,0,0,1,4,3H9l2,3h9a2,2,0,0,1,2,2Z"/>
+  
+</svg>
+<span class='screen-reader-text'>分类: </span><a class='category' href='/categories/web/'>web</a></div>
+<div class='tags'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M20.59,13.41l-7.17,7.17a2,2,0,0,1-2.83,0L2,12V2H12l8.59,8.59A2,2,0,0,1,20.59,13.41Z"/>
+  <line x1="7" y1="7" x2="7" y2="7"/>
+  
+</svg>
+<span class='screen-reader-text'>标签: </span><a class='tag' href='/tags/notepad/'>notepad</a></div>
+
+  </div>
+</footer>
+
+
+</article>
+
+<nav class='entry-nav'>
+  <div class='container'><div class='prev-entry sep-before'>
+      <a href='/docs/jquery-live-and-event-delegation/'>
+        <span aria-hidden='true'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <line x1="20" y1="12" x2="4" y2="12"/>
+  <polyline points="10 18 4 12 10 6"/>
+  
+</svg>
+ 上一个</span>
+        <span class='screen-reader-text'>上一篇文章: </span>jQuery.live()与Event Delegation</a>
+    </div><div class='next-entry sep-before'>
+      <a href='/docs/have-had-to-buy-bread-as-much-as-17-of-the-bread-tax/'>
+        <span class='screen-reader-text'>下一篇文章: </span>原来买个馒头都有高达17%的“馒头税”<span aria-hidden='true'>下一个 <svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <line x1="4" y1="12" x2="20" y2="12"/>
+  <polyline points="14 6 20 12 14 18"/>
+  
+</svg>
+</span>
+      </a>
+    </div></div>
+</nav>
+
+
+
+
+      </main>
+
+      <footer id='footer' class='footer'>
+        <div class='container sep-before'><section class='widget widget-social_menu sep-after'><nav aria-label='社交菜单'>
+    <ul><li>
+        <a href='https://github.com/DrayChou' target='_blank' rel='noopener'>
+          <span class='screen-reader-text'>在新标签打开Github的账户</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+  
+</svg>
+</a>
+      </li><li>
+        <a href='mailto:blog@idc.wf' target='_blank' rel='noopener'>
+          <span class='screen-reader-text'>通过邮件联系</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+  <polyline points="22,6 12,13 2,6"/>
+  
+</svg>
+</a>
+      </li></ul>
+  </nav>
+</section><div class='copyright'>
+  <p>Copyright &copy; 1900-2019 Dray All rights reserved</p>
+</div>
+
+        </div>
+      </footer>
+
+    </div>
+  </div><script>window.__public_path__='\/assets\/js\/'</script>
+
+<script src='/assets/js/main.fae8ed32.js'></script><script src='/js/custom.js'></script>
+
+</body>
+
+</html>
+

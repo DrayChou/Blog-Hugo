@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>notepad on Dray&#39;s Home</title>
+    <link>https://idc.wf/tags/notepad/</link>
+    <description>Recent content in notepad on Dray&#39;s Home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 18 Feb 2011 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://idc.wf/tags/notepad/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Notepad&#43;&#43;去除代码行号的几种方法</title>
+      <link>https://idc.wf/docs/notepad-to-remove-the-code-line-number-of-the-several-methods/</link>
+      <pubDate>Fri, 18 Feb 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://idc.wf/docs/notepad-to-remove-the-code-line-number-of-the-several-methods/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;问：&lt;/strong&gt;在网页中复制代码时，常常遇到高亮程序自动给代码加上行号或字符“#”，如何格式化？如下：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;#1 //去除首字符或行号
+#2 &amp;amp; lt; ? php#100 echo &#39;再长点&#39;;#............#2010 echo &#39;无语了吧&#39;;#2012 ? &amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

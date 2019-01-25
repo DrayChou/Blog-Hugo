@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>linux on Dray&#39;s Home</title>
+    <link>https://idc.wf/categories/linux/</link>
+    <description>Recent content in linux on Dray&#39;s Home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 28 Mar 2018 17:44:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://idc.wf/categories/linux/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>pi 安装 ssr，cow 备注</title>
+      <link>https://idc.wf/docs/pi-ssrcow/</link>
+      <pubDate>Wed, 28 Mar 2018 17:44:00 +0000</pubDate>
+      
+      <guid>https://idc.wf/docs/pi-ssrcow/</guid>
+      <description>偶尔一次使用的东西，记一下！
+ssr 安装 python sudo apt-get install python-pip python3-pip git htop  安装 ssr mkdir /srv/approot git clone https://github.com/ToyoDAdoubi/shadowsocksr shadowsocksr-doubi  配置 ssr nano /srv/approot/ssr-config/jp1.json { &amp;quot;server&amp;quot;: &amp;quot;0.0.0.0&amp;quot;, &amp;quot;server_ipv6&amp;quot;: &amp;quot;::&amp;quot;, &amp;quot;server_port&amp;quot;: 8388, &amp;quot;local_address&amp;quot;: &amp;quot;127.0.0.1&amp;quot;, &amp;quot;local_port&amp;quot;: 1080, &amp;quot;password&amp;quot;: &amp;quot;m&amp;quot;, &amp;quot;method&amp;quot;: &amp;quot;aes-128-ctr&amp;quot;, &amp;quot;protocol&amp;quot;: &amp;quot;auth_aes128_md5&amp;quot;, &amp;quot;protocol_param&amp;quot;: &amp;quot;&amp;quot;, &amp;quot;obfs&amp;quot;: &amp;quot;tls1.2_ticket_auth_compatible&amp;quot;, &amp;quot;obfs_param&amp;quot;: &amp;quot;&amp;quot;, &amp;quot;speed_limit_per_con&amp;quot;: 0, &amp;quot;speed_limit_per_user&amp;quot;: 0, &amp;quot;additional_ports&amp;quot; : {}, // only works under multi-user mode &amp;quot;timeout&amp;quot;: 120, &amp;quot;udp_timeout&amp;quot;: 60, &amp;quot;dns_ipv6&amp;quot;: false, &amp;quot;connect_verbose_info&amp;quot;: 0, &amp;quot;redirect&amp;quot;: &amp;quot;&amp;quot;, &amp;quot;fast_open&amp;quot;: true }  启动 ssr 服务 sudo python3 /srv/approot/shadowsocksr-doubi/shadowsocks/local.</description>
+    </item>
+    
+    <item>
+      <title>yii2 用 asset 压缩js,css文件</title>
+      <link>https://idc.wf/docs/yii-asset/</link>
+      <pubDate>Mon, 10 Jul 2017 17:44:00 +0000</pubDate>
+      
+      <guid>https://idc.wf/docs/yii-asset/</guid>
+      <description>偶尔一次使用的东西，记一下！
+安装 java sudo apt-get install default-jre  安装压缩工具 compiler Yii 压缩 JavaScript 默认使用名为 compiler.jar 的 Google Closure compiler 压缩工具。 https://developers.google.com/closure/compiler/
+yuicompressor Yii 压缩 CSS 使用名为 yuicompressor.jar 的YUI Compressor 压缩工具。 https://github.com/yui/yuicompressor/
+生成默认配置脚本 yii asset/template asset.php  生成的模板如下:
+&amp;lt;?php /** * &amp;quot;yii asset&amp;quot; 控制台命令的配置文件 * 注意控制台环境下有些路径别名可能不存在，如 &#39;@webroot&#39; 和 &#39;@web&#39; * 请先定义找不到的路径别名 */ // In the console environment, some path aliases may not exist. Please define these: Yii::setAlias(&#39;@webroot&#39;, __DIR__ . &#39;/backend/web/&#39;); Yii::setAlias(&#39;@web&#39;, &#39;/backend/web/&#39;); return [ // 为 JavaScript 文件压缩调整 command/callback 命令： &#39;jsCompressor&#39; =&amp;gt; &#39;java -jar compiler.</description>
+    </item>
+    
+    <item>
+      <title>使用 acme.sh 来更新 letsencrypt 证书</title>
+      <link>https://idc.wf/docs/letsencrypt-cert/</link>
+      <pubDate>Wed, 21 Jun 2017 12:55:52 +0000</pubDate>
+      
+      <guid>https://idc.wf/docs/letsencrypt-cert/</guid>
+      <description>1. 安装 acme.sh 安装很简单, 一个命令:
+curl https://get.acme.sh | sh  普通用户和 root 用户都可以安装使用. 安装过程进行了以下几步:
+1) 把 acme.sh 安装到你的 home 目录下:
+~/.acme.sh/  并创建 一个 bash 的 alias, 方便你的使用: acme.sh=~/.acme.sh/acme.sh
+2). 自动为你创建 cronjob, 每天 0:00 点自动检测所有的证书, 如果快过期了, 需要更新, 则会自动更新证书.
+更高级的安装选项请参考: https://github.com/Neilpang/acme.sh/wiki/How-to-install
+安装过程不会污染已有的系统任何功能和文件, 所有的修改都限制在安装目录中: ~/.acme.sh/
+2. 生成证书 1. dns 方式, 在域名上添加一条 txt 解析记录, 验证域名所有权. 这种方式的好处是, 你不需要任何服务器, 不需要任何公网 ip, 只需要 dns 的解析记录即可完成验证.
+acme.sh --issue --dns -d mydomain.com  然后, acme.sh 会生成相应的解析记录显示出来, 你只需要在你的域名管理面板中添加这条 txt 记录即可.</description>
+    </item>
+    
+    <item>
+      <title>html 转为 pdf</title>
+      <link>https://idc.wf/docs/html-to-pdf/</link>
+      <pubDate>Fri, 02 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://idc.wf/docs/html-to-pdf/</guid>
+      <description>  使用 wkhtmltopdf
+ 安装
+ 下载地址：https://wkhtmltopdf.org/downloads.html Linux 环境下， 0.12.4 版本有问题，需要使用 0.12.3 版本。 不要使用 apt install 的方式安装，安装的为 0.12.4 版本。  示例代码
+ python ``` import pdfkit   pdfkit.from_url(&amp;lsquo;https://wkhtmltopdf.org/docs.html&#39;, &amp;lsquo;out.pdf&amp;rsquo;)
+pdfkit.from_file(&amp;lsquo;test.html&amp;rsquo;, &amp;lsquo;out.pdf&amp;rsquo;) pdfkit.from_string(&amp;lsquo;Hello!&amp;rsquo;, &amp;lsquo;out.pdf&amp;rsquo;)  2. php  &amp;lt;?php
+include &amp;lsquo;./vendor/autoload.php&amp;rsquo;;
+use mikehaertl\wkhtmlto\Pdf;
+if (empty($_GET[&amp;lsquo;url&amp;rsquo;])) { die(); }
+$pdf = new Pdf($_GET[&amp;lsquo;url&amp;rsquo;]); $pdf-&amp;gt;send(); ```
+  </description>
+    </item>
+    
+    <item>
+      <title>Shadowsocks 新手指南</title>
+      <link>https://idc.wf/docs/shadowsocks/</link>
+      <pubDate>Mon, 02 Jun 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://idc.wf/docs/shadowsocks/</guid>
+      <description>#Shadowsocks
+shadowsocks 簡稱 ss 是一套的代理協議，包含服務端應用和客戶端應用。使用 ss:// 格式的鏈接協議來標識服務器地址。
+客戶端 如果你已經有了服務器地址，那麼我們就直接來配置客戶端吧，如果沒有，那麼你需要去找IT男要一個，或者去 ShadowSocks公益组织 找一個吧。
+參見： Shadowsocks 客戶端列表
+Windows &amp;amp;&amp;amp; Linux &amp;amp;&amp;amp; OSX 鄙人平常主用 cow ,這個客戶端用 golang 語言編寫，是一个简化穿墙的 HTTP 代理服务器。它能自动检测被墙网站，仅对这些网站使用二级代理，支持 http,ssh 轉發 直接支持 ss ，所以可以用 cow 做二級代理來支持本地其他類型的代理。 比如： 用 cow 轉發 http,ssh,ss 到 pac 代理，讓本地的瀏覽器手機等可以無憂翻牆。
+快速開始 OS X, Linux (x86, ARM): 执行以下命令（也可用于更新）
+curl -L git.io/cow | bash  Windows: 点此下载
+熟悉 Go 的用户可用 go get github.com/cyfdecyf/cow 从源码安装 编辑 ~/.cow/rc (Linux) 或 rc.txt (Windows)，简单的配置例子如下：</description>
+    </item>
+    
+    <item>
+      <title>Centos 常用命令备录</title>
+      <link>https://idc.wf/docs/centos-commands/</link>
+      <pubDate>Thu, 15 May 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://idc.wf/docs/centos-commands/</guid>
+      <description> 安装包命令查找：
+yum whatprovides */lspci
+ 查看主板型号：
+dmidecode |grep -A16 &amp;ldquo;System Information$&amp;rdquo;
+ 内存槽及内存条：
+dmidecode |grep -A16 &amp;ldquo;Memory Device$&amp;rdquo;
+ 硬盘：
+fdisk -l smartctl -a /dev/sda HP SmartArray (cciss) hardware RAID controllers： smartctl -d cciss,0 -a /dev/cciss/c0d0
+ 网卡：
+mii-tool
+ scsi/raid卡：
+lspci
+ centos相关命令安装：
+yum -y install smartmontools yum install pciutils -y
+ centos 安装 htop
+rpm 包下载地址: http://packages.sw.be/htop/ 安装命令： rpm –ivh htop-0.8.3-1.el4.rf.i386.rpm
+ end
+  </description>
+    </item>
+    
+    <item>
+      <title>ubuntu 安装命令行自动补全</title>
+      <link>https://idc.wf/docs/ubuntu-bash-completion/</link>
+      <pubDate>Thu, 15 May 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://idc.wf/docs/ubuntu-bash-completion/</guid>
+      <description>ubuntu 安装命令行自动补全 ~# apt-get install bash-completion ~# source /etc/bash_completion  编辑/etc/bash.bashrc，在最后加入如下代码
+[plain] if [ -f /etc/bash_completion ]; then /etc/bash_completion fi  重新登录</description>
+    </item>
+    
+    <item>
+      <title>ubuntu 下面配置 go 运行环境</title>
+      <link>https://idc.wf/docs/ubuntu-golang/</link>
+      <pubDate>Sat, 30 Nov 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://idc.wf/docs/ubuntu-golang/</guid>
+      <description>Go 配置安装环境 go 的安装需要用到很多的 package, 所以需要很多版本管理应用的支持，所以首先安装这些环境
+sudo apt-get install bison ed gawk gcc libc6-dev make python-setuptools python-dev build-essential git mercurial  安装Go 到 官方网站 根据机器型号下载相应的版本，然后执行语句解压，
+$ tar -C /usr/local -xzf go$VERSION.$OS-$ARCH.tar.gz  我一般是放在 /usr/local/go 目录下
+添加环境变量 #go config export GOROOT=/usr/local/go export GOARCH=amd64 export GOOS=linux export GOPATH=/srv/go_root export GOBIN=$GOROOT/bin export GOTOOLS=$GOROOT/pkg/tool/ export PATH=$PATH:$GOBIN:$GOTOOLS:$GOPATH/bin  其中 /usr/local/go 为 go 安装目录， /srv/go_root 为代码存放目录 把这些添加到 .bashrc 文件中，然后执行 source ~/.bashrc 刷新配置
+Supervisor 有时候需要 go 持续运行不间断，但是用 crontab 并不方便，自己编写脚本也太麻烦，于是就可以用 Supervisor 了。</description>
+    </item>
+    
+    <item>
+      <title>在Ubuntu上创建只有访问权限的帐号</title>
+      <link>https://idc.wf/docs/ubuntu-ssh-proxy/</link>
+      <pubDate>Thu, 22 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://idc.wf/docs/ubuntu-ssh-proxy/</guid>
+      <description>ubuntu 首先SSH登录VPS，创建一个登录脚本： vi /bin/nologin.sh 在vim中按下i，添加下面的内容：
+#!/bin/sh echo &amp;quot;&amp;quot; echo &amp;quot; ***********************************************************&amp;quot; echo &amp;quot; * Sorry,you can&#39;t Login by this way, press a key to exit. *&amp;quot; echo &amp;quot; ***********************************************************&amp;quot; echo &amp;quot;&amp;quot; read x exit  写完之后按esc，输入:wq回车保存。为此文件添加执行权限：
+chmod 755 /bin/nologin.sh  添加一个用户到nogroup组，并且指定它的启动脚本：
+useradd newuser -g nogroup -s /bin/nologin.sh  注意有些linux系统是添加到nobody组。最后更改一下这个用户的密码：
+passwd newuser  本地调用代理的话使用
+ssh -qTfnN -D 7070 username@sshserver.com  来生成本地 socks5 代理地址，或者安装 gstm 来配置代理。
+sudo apt-get install gstm  centos 1，增加一个linux用户，并赋予该用户一个nologin的shell权限。</description>
+    </item>
+    
+    <item>
+      <title>樹莓派加裝攝像頭</title>
+      <link>https://idc.wf/docs/pi-webcam/</link>
+      <pubDate>Mon, 24 Jun 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://idc.wf/docs/pi-webcam/</guid>
+      <description>樹莓派買回來好久，一直也沒什麼地方用得上。這次折騰下攝像頭監控的東東。 首先，找一個樹莓派支持的攝像頭。我的是很久以前用過的一個，像素質量已經很差了。幾乎看不清東西，先將就用一下吧。
+首先，插上攝像頭，執行下面命令查看是否已識別：
+ls /dev  看看有沒有列出來 video1 這樣的設備，有的話就是支持的，沒有的話請自行查找驅動了。
+上網查了下，大概有3種方法是比較常用的。
+ fswebcam
+sudo apt-get install fswebcam sudo fswebcam -d /dev/video0 -r 320x240 --bottom-banner --title &amp;quot;RaspberryPi&amp;quot; --no-timestamp /home/pi/yeelink.jpg  motion
+sudo apt-get install motion sudo vi /etc/motion/motion.conf  找到”control_localhost on “和”webcam_localhost on“这两行，改为以下两行后，保存退出
+control_localhost off webcam_localhost off  运行motion软件，输入
+motion -n  在pc上用IE浏览器打开，下面網址進行監控設置 配置网页：http://192.168.1.114:8080 觀察网页：http://192.168.1.114:8081
+ mplayer
+sudo apt-get install mplayer sudo mplayer tv://   裝好之後就是在遠程查看了。motion 有網頁端，在局域網可以觀看，另外的兩個就可以配合 crontab 和 btsync 或者 dropbox 來進行遠程觀察。或者直接放到開放平臺Yeelink上共享出來。</description>
+    </item>
+    
+    <item>
+      <title>uWSGI&#43;Nginx run flask twip</title>
+      <link>https://idc.wf/docs/uwsginginx-run-flask-twip/</link>
+      <pubDate>Sun, 16 Jun 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://idc.wf/docs/uwsginginx-run-flask-twip/</guid>
+      <description>原文:http://ichon.me/post/999.html
+twip.tar.gz:http://ichon.me/uploads/2013/02/twip.tar.gz
+examples:https://github.com/yegle/flask_twip/tree/master/examples
+安装uWSGI
+使用pip：
+pip install uwsgi  安装Flask-Twip
+Flask-Twip是作为Flask的一个插件来安装的，安装依然只需要使用pip：
+pip install Flask-Twip  配置Flask-Twip
+由于 @yegle 湿兄并没有在examples中提供uWSGI运行的示例，所以只好自己动手，按照uWSGI运行的方式改写了示例程序，并且将其打包 twip.tar.gz
+只需将其解压到网站的目录，比如/home/www
+tar zxvf twip.tar.gz -C /home/www  然后修改配置文件settings.py，填写好在dev.twitter.com申请到的TWITTER_CONSUMER_KEY和TWITTER_CONSUMER_SECRET，至于SECRET_KEY嘛，就随便填好了～ 运行uWSGI
+我写了个uWSGI运行Flask程序的脚本server(在twip.tar.gz中)，只需要给其增加可执行权限：
+chmod +x server  执行./server start就可以启动uWSGI，同理，执行./server restart和./server stop可以重启和停止uWSGI。
+查看log文件/tmp/uwsgi-twip.log，如果没有任何错误，就说明uWSGI已经成功运行。 配置Nginx
+光有uWSGI是不能够运行Flask-Twip的，我们还需要Nginx作为Web Server，只需要修改Nginx的配置文件，增加一个server，如下所示：
+server { listen 80; server_name www.example.com; location / { include uwsgi_params; uwsgi_pass unix:/tmp/uwsgi-twip.sock; } location ^~ /twip/static/ { alias /home/www/twip/static/; } }  重启Nginx，如果一切顺利的话，就可以在 http://www.example.com/twip/ 看到熟悉的Twip界面了～
+ps:之前的 server 文件有误，修改 -C 666 为 &amp;ndash;chmod-socket=666</description>
+    </item>
+    
+    <item>
+      <title>ubuntu nginx php shell</title>
+      <link>https://idc.wf/docs/ubuntu-nginx-php-shell/</link>
+      <pubDate>Sun, 16 Jun 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://idc.wf/docs/ubuntu-nginx-php-shell/</guid>
+      <description>ubuntu 下一键安装 nginx php 的环境
+ nginx 配置参考：
+server { listen 80; server_name 127.0.0.1 localhost; root /usr/share/nginx/html/www; index index.php index.html index.htm; location ~ .*\.php(\/.*)*$ { include fastcgi.conf; fastcgi_split_path_info ^(.+\.php)(/.+)$; fastcgi_pass unix:/var/run/php5-fpm.sock; fastcgi_index index.php; fastcgi_connect_timeout 300; fastcgi_send_timeout 300; fastcgi_read_timeout 300; fastcgi_buffers 8 256k; fastcgi_buffer_size 256k; fastcgi_busy_buffers_size 256k; fastcgi_temp_file_write_size 256k; client_max_body_size 20M; fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name; } }  主要是配置缓存大小</description>
+    </item>
+    
+    <item>
+      <title>ubuntu nginx ssl</title>
+      <link>https://idc.wf/docs/nginx-ssl/</link>
+      <pubDate>Sun, 16 Jun 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://idc.wf/docs/nginx-ssl/</guid>
+      <description>原文：http://www.douban.com/note/248058067/
+安装应用并生成证书
+apt-get install ssl-cert make-ssl-cert /usr/share/ssl-cert/ssleay.cnf /etc/ssl/private/blog.crt  然后输入主机名
+生成证书为
+cat /etc/ssl/private/blog.crt  编辑文件并在里面填入我们得到以上文件 的 —–BEGIN PRIVATE KEY—– 和 —–END PRIVATE KEY—- 之间的部分
+vi /etc/ssl/private/blog.key chmod 600 /etc/ssl/private/blog.key  编辑文件并在里面填入得到的文件的下半部分 ， —–BEGIN RSA PRIVATE KEY—– 跟 —–END RSA PRIVATE KEY—– 之间
+vi /etc/ssl/certs/blog.pem  现在我们就可以把 /etc/ssl/private/blog.crt 删除了 。
+rm -f /etc/ssl/private/blog.crt  修改 nginx 文件在 server { 和 } 之间 添加
+listen 443 ssl; listen [::]:443 ipv6only=on ssl; ssl_certificate /etc/ssl/certs/blog.</description>
+    </item>
+    
+    <item>
+      <title>VPS上使用DropBox定时备份方案</title>
+      <link>https://idc.wf/docs/vps-dropbox/</link>
+      <pubDate>Thu, 13 Jun 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://idc.wf/docs/vps-dropbox/</guid>
+      <description>原文地址:http://www.deepvps.com/dropbox-backup.html
+这个备份方案是直接使用dropbox同步，如果想实时同步就一直守护dropbox进程，会占用一定资源。推荐小内存VPS的同学和deepvps一样使用cron定时备份。 1.linux上安装dropbox
+32位linux
+wget -O dropbox.tar.gz http://www.dropbox.com/download?plat=lnx.x86  64位linux
+wget -O dropbox.tar.gz http://www.dropbox.com/download?plat=lnx.x86_64  解压：
+tar xzvf dropbox.tar.gz  第一次运行生成host_id
+~/.dropbox-dist/dropboxd &amp;amp;  生成id后，将host_id替换下面链接后面的字符在浏览器打开，输入你的帐号密码就绑定机器了．
+https://www.dropbox.com/cli_link?host_id=XXXXXXXXXXXXXXXXXXX  2.建立连接备份网站
+正式开始同步你的网站，通过ln软链接你所有要备份的目录，例如：
+cd ~/Dropbox ln -s /home/wwwroot/html ln -s /home/wwwroot/htdocs ．．．  开始运行同步，美国的vps同步速度非常快的，1G的html文件，只花了几分钟全部同步完成
+~/.dropbox-dist/dropboxd &amp;amp;  3.为了节省资源，可以不使用实时同步，只定时打开同步一天的文件再关掉以节省资源。
+先关掉同步：
+killall dropbox  编写定时同步脚本：
+vi backup.sh  代码如下：
+#!/bin/sh start() { echo starting dropbox /root/.dropbox-dist/dropboxd &amp;amp; } stop() { echo stoping dropbox pkill dropbox } case “$1″ in start) start ;; stop) stop ;; restart) stop start ;; esac  定时运行和关闭：</description>
+    </item>
+    
+    <item>
+      <title>ubuntu grub boot windows7 error</title>
+      <link>https://idc.wf/docs/ubuntu-grub-boot-windows7-error/</link>
+      <pubDate>Mon, 15 Apr 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://idc.wf/docs/ubuntu-grub-boot-windows7-error/</guid>
+      <description>手贱，我修改了双系统中 win7 的启动顺序，修改的时候，用的是下面的方法：
+在Ubuntu终端下输入： $sudo vim /etc/default/grub sudo是使用root权限，vim是用vi文本编辑器打开etc文件夹下的default文件夹下的grub文件。 在打开的文本中修改“GRUB_DEFAULT=0”这一项。比如win7在启动项列表中为第5项，则将0改为4。就是win7在启动项列表中的项数减1。 （这里还可以修改该在启动项列表等待的时间，即修改“GRUB_TIMEOUT=所要等待的秒数”，-1表示不倒计时。） 修改完后按[Ctrl]+X，会提示是否保存，输入Y，提示保存的文件名，还是原来的grub文件，所以直接回车确定。 $sudo update-grub，更新一下grub。  然后重启的时候，默认的选项确实也变成了 win7 ，但是进入后确提示：
+a disk read error occurred Press Ctrl+Alt+del  这个问题折腾了一下午加一晚上才修复，这里顺手记下，省得以后再犯错。
+因为出错的时候事实上，我的 windows7 有一个独立的 100mb boot 引导分区，这个分区正常来说应该可以引导我的 windows7 进入系统的。 但是，不知道为什么，就是不行，后来我修改启动文件，把 windows7 的引导指向 c 盘的那个分区，还是不行。再后来，我直接把那 100mb 的引导分区，update grub 还是不行。 没辙，google 之，搜到 boot-repair[https://help.ubuntu.com/community/Boot-Repair]。下载下来，修复一次，然后用 windows cd 修复一次引导，ok,完好如初。</description>
+    </item>
+    
+    <item>
+      <title>ubuntu sources list</title>
+      <link>https://idc.wf/docs/ubuntu-sources-list/</link>
+      <pubDate>Mon, 15 Apr 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://idc.wf/docs/ubuntu-sources-list/</guid>
+      <description>当前我的 ubuntu 源列表
+# deb cdrom:[Ubuntu 12.10 _Quantal Quetzal_ - Release amd64 (20121017.5)]/ quantal main restricted deb http://archive.ubuntu.com/ubuntu/ quantal main restricted deb http://security.ubuntu.com/ubuntu/ quantal-security main restricted deb http://archive.ubuntu.com/ubuntu/ quantal-updates main restricted # See http://help.ubuntu.com/community/UpgradeNotes for how to upgrade to # newer versions of the distribution. deb http://cn.archive.ubuntu.com/ubuntu/ quantal main restricted deb-src http://cn.archive.ubuntu.com/ubuntu/ quantal main restricted ## Major bug fix updates produced after the final release of the ## distribution. deb http://cn.</description>
+    </item>
+    
+    <item>
+      <title>ubuntu sources update error</title>
+      <link>https://idc.wf/docs/ubuntu-sources-update-error/</link>
+      <pubDate>Mon, 15 Apr 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://idc.wf/docs/ubuntu-sources-update-error/</guid>
+      <description>今天在执行 apt-get update 的时候报错，报错内容如下：
+W: Duplicate sources.list entry http://extras.ubuntu.com/ubuntu/ precise/main amd64 Packages (/var/lib/apt/lists/extras.ubuntu.com_ubuntu_dists_precise_main_binary-amd64_Packages) W: Duplicate sources.list entry http://extras.ubuntu.com/ubuntu/ precise/main amd64 Packages (/var/lib/apt/lists/extras.ubuntu.com_ubuntu_dists_precise_main_binary-amd64_Packages) W: Duplicate sources.list entry http://extras.ubuntu.com/ubuntu/ precise/main i386 Packages (/var/lib/apt/lists/extras.ubuntu.com_ubuntu_dists_precise_main_binary-i386_Packages) W: Duplicate sources.list entry http://extras.ubuntu.com/ubuntu/ precise/main i386 Packages (/var/lib/apt/lists/extras.ubuntu.com_ubuntu_dists_precise_main_binary-i386_Packages) W: You may want to run apt-get update to correct these problems  在网上搜索后得知，这是因为以上几条，与
+deb http://extras.ubuntu.com/ubuntu precise main deb-src http://extras.ubuntu.com/ubuntu precise main  冲突了，于是修改这部分源代码为：
+# deb http://security.ubuntu.com/ubuntu quantal-security main restricted # deb-src http://security.</description>
+    </item>
+    
+    <item>
+      <title>ubuntu 安装 Ruby, Rails 运行环境</title>
+      <link>https://idc.wf/docs/ubuntu-ruby/</link>
+      <pubDate>Mon, 15 Apr 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://idc.wf/docs/ubuntu-ruby/</guid>
+      <description>步骤0 － 安装系统需要的包
+Ubuntu 请安装
+$ sudo apt-get install -y build-essential openssl curl libcurl3-dev libreadline6 libreadline6-dev git zlib1g zlib1g-dev libssl-dev libyaml-dev libxml2-dev libxslt-dev autoconf automake libtool imagemagick libmagickwand-dev libpcre3-dev libsqlite3-dev libmysql-ruby libmysqlclient-dev  步骤1 － 安装 RVM
+RVM 是干什么的这里就不解释了，后面你将会慢慢搞明白。
+$ curl -L https://get.rvm.io | bash -s stable  等待一段时间后就可以成功安装好 RVM。
+然后，载入 RVM 环境（新开 Termal 就不用这么做了，会自动重新载入的）
+$ source ~/.rvm/scripts/rvm  检查一下是否安装正确
+$ rvm -v rvm 1.17.3 (stable) by Wayne E. Seguin &amp;lt;wayneeseguin@gmail.</description>
+    </item>
+    
+    <item>
+      <title>在 ubuntu 11.10 下安装 Ruby on Rails</title>
+      <link>https://idc.wf/docs/insert-ruby-on-rails-in-ubuntu-11-dot-10/</link>
+      <pubDate>Wed, 29 Feb 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://idc.wf/docs/insert-ruby-on-rails-in-ubuntu-11-dot-10/</guid>
+      <description>安装常用到组件
+sudo apt-get install git curl  安装 rvm
+1.配置
+bash &amp;lt; &amp;lt;(curl -s https://rvm.beginrescueend.com/install/rvm)  2.修改控制台配置文件，将 rvm 添加到命令控制台
+gedit ~/.bashrc  3.在 .bashrc 最后添加
+[[ -s &amp;quot;$HOME/.rvm/scripts/rvm&amp;quot; ]] &amp;amp;&amp;amp; source &amp;quot;$HOME/.rvm/scripts/rvm&amp;quot; # Load RVM into a shell session *as a function*  4.更新控制台配置：
+source ~/.bashrc  5.测试 rvm 是否正确安装
+type rvm | head -1  如果显示出来 rvm is a function 或者 rvm 是个函数 那么就证明 rvm 安装成功
+6.执行 rvm 命令，查看都需要安装那些组件</description>
+    </item>
+    
+    <item>
+      <title>Ubuntu 上安装 LAMP 服务器</title>
+      <link>https://idc.wf/docs/ubuntu-shang-an-zhuang-lamp-fu-wu-qi/</link>
+      <pubDate>Sun, 25 Sep 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://idc.wf/docs/ubuntu-shang-an-zhuang-lamp-fu-wu-qi/</guid>
+      <description>sudo tasksel  直接从列表中选择LAMP套件，重启自动完成</description>
+    </item>
+    
+    <item>
+      <title>Ubuntu 11.10 Beta 2 (Oneiric Ocelot) 发布了</title>
+      <link>https://idc.wf/docs/ubuntu-11-10-beta-2-oneiric-ocelot-fa-bu-liao/</link>
+      <pubDate>Fri, 23 Sep 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://idc.wf/docs/ubuntu-11-10-beta-2-oneiric-ocelot-fa-bu-liao/</guid>
+      <description>下载地址：
+http://www.ubuntu.com/testing/download (Ubuntu and Ubuntu Server) http://releases.ubuntu.com/oneiric/ (Ubuntu, Ubuntu Server) http://cloud-images.ubuntu.com/releases/oneiric/beta-2/ (Ubuntu Cloud Images) http://cdimage.ubuntu.com/releases/oneiric/beta-2/ (Ubuntu DVD, Alternates, pre-installed ARM Images) http://cdimage.ubuntu.com/netboot/11.10/ (Ubuntu Netboot) http://releases.ubuntu.com/kubuntu/oneiric/ (Kubuntu) http://cdimage.ubuntu.com/kubuntu/releases/oneiric/beta-2/ (Kubuntu DVD) http://cdimage.ubuntu.com/xubuntu/releases/oneiric/beta-2/ (Xubuntu) http://cdimage.ubuntu.com/edubuntu/releases/oneiric/beta-2/ (Edubuntu) http://cdimage.ubuntu.com/ubuntustudio/releases/oneiric/beta-2/ (Ubuntu Studio) http://cdimage.ubuntu.com/mythbuntu/releases/oneiric/beta-2/ (Mythbuntu) http://cdimage.ubuntu.com/lubuntu/releases/oneiric/beta-2/ (Lubuntu)
+The final version of Ubuntu 11.10 is expected to be released on October 13 2011.</description>
+    </item>
+    
+    <item>
+      <title>Ubuntu 删除已安装的桌面</title>
+      <link>https://idc.wf/docs/delete-ubuntu-desktop/</link>
+      <pubDate>Fri, 23 Sep 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://idc.wf/docs/delete-ubuntu-desktop/</guid>
+      <description>##Remove Kubuntu Paste this command into the terminal:
+sudo apt-get remove akonadi-server akregator amarok amarok-common amarok-utils appmenu-qt apport-kde apturl-kde ark bluedevil cdparanoia cdrdao docbook-xsl dolphin dragonplayer freespacenotifier gdebi-core gdebi-kde gnupg-agent gnupg2 gpgsm gtk2-engines-oxygen gwenview ibus-qt4 icoutils jockey-kde k3b k3b-data kaddressbook kamera kate kcalc kde-config-gtk kde-config-touchpad kde-window-manager kde-zeroconf kdebase-bin kdebase-data kdebase-runtime kdebase-runtime-data kdebase-workspace kdebase-workspace-bin kdebase-workspace-data kdebase-workspace-kgreet-plugins kdegames-card-data kdegraphics-libs-data kdegraphics-strigi-plugins kdelibs-bin kdelibs5-data kdelibs5-plugins kdemultimedia-kio-plugins kdenetwork-filesharing kdepasswd kdepim-groupware kdepim-kresources kdepim-runtime kdepim-strigi-plugins kdepim-wizards kdepimlibs-kio-plugins kdesudo kdm kdoctools kfind khelpcenter4 kinfocenter klipper kmag kmail kmix kmousetool knm-runtime knotes konsole kontact kopete kopete-message-indicator korganizer kpackagekit kpat kppp krdc krfb krosspython ksnapshot ksysguard ksysguardd ksystemlog ktimetracker ktorrent ktorrent-data kubuntu-debug-installer kubuntu-default-settings kubuntu-desktop kubuntu-docs kubuntu-firefox-installer kubuntu-konqueror-shortcuts kubuntu-netbook-default-settings kubuntu-notification-helper kvkbd kwalletmanager language-selector-kde libakonadi-contact4 libakonadi-kabc4 libakonadi-kcal4 libakonadi-kde4 libakonadi-kmime4 libakonadiprotocolinternals1 libao-common libao4 libasyncns0 libattica0 libaudio2 libbluedevil1 libboost-program-options1.</description>
+    </item>
+    
+    <item>
+      <title>通过ssh传输文件</title>
+      <link>https://idc.wf/docs/transfer-files-through-ssh/</link>
+      <pubDate>Sat, 14 May 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://idc.wf/docs/transfer-files-through-ssh/</guid>
+      <description>通过ssh传输文件 : scp -rp /path/filename username@remoteIP:/path  </description>
+    </item>
+    
+    <item>
+      <title>archlinux 的一些资料</title>
+      <link>https://idc.wf/docs/archlinux-some-of-the-information/</link>
+      <pubDate>Sat, 30 Apr 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://idc.wf/docs/archlinux-some-of-the-information/</guid>
+      <description>下载地址：http://mirrors.163.com/archlinux/iso/latest/
+中文wiki：https://wiki.archlinux.org/index.php/Archlinux_%E6%96%B0%E6%89%8B%E6%8C%87%E5%8D%97_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)#.E5.AE.89.E8.A3.85Arch_linux
+一些其他朋友的blog
+Archlinux 2010.05安装及基本配置
+打造完美的 linux 桌面 — Arch linux 2007.08-2
+嗯，下个archlinux学习一下linux吧</description>
+    </item>
+    
+    <item>
+      <title>DIRECTORY_SEPARATOR常量与PATH_SEPARATOR常量</title>
+      <link>https://idc.wf/docs/directory_separator-and-path_separator-constant-constant/</link>
+      <pubDate>Mon, 18 Apr 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://idc.wf/docs/directory_separator-and-path_separator-constant-constant/</guid>
+      <description>DIRECTORY_SEPARATOR：路径分隔符，linux上就是’/’ windows上是’\’
+PATH_SEPARATOR：include多个路径使用，在win下，当你要include多个路径的话，你要用”;”隔开，但在linux下就使用”:”隔开的。
+这2个常量的使用能够避免不同平台的兼容性问题。
+注意：
+这两个常量并不是一直存在的，需要在编译的时候包含 Directory 库，或者在运行时被动态加载后才有效。
+所以如果不敢确定这两个常量存在的话，可以用下面的语句：
+if(!defined(&#39;DIRECTORY_SEPERATOR&#39;)){ if(strtoupper(substr(php_os, 0, 3)) === &#39;WIN&#39;) { define(&amp;quot;DIRECTORY_SEPERATOR&amp;quot;,&amp;quot;\&amp;quot;); } else { define(&amp;quot;DIRECTORY_SEPERATOR&amp;quot;,&amp;quot;/&amp;quot;); } }  </description>
+    </item>
+    
+    <item>
+      <title>修改ssh登录的提示信息</title>
+      <link>https://idc.wf/docs/modify-the-ssh-login-message/</link>
+      <pubDate>Thu, 24 Mar 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://idc.wf/docs/modify-the-ssh-login-message/</guid>
+      <description>vi /etc/motd</description>
+    </item>
+    
+    <item>
+      <title>修改SSH登录密码</title>
+      <link>https://idc.wf/docs/modify-the-ssh-password/</link>
+      <pubDate>Sun, 20 Mar 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://idc.wf/docs/modify-the-ssh-password/</guid>
+      <description>SSH登录时要求输入的其实是系统的用户与密码，所以如果要修改ssh登录密码的话，只要更改系统用户的密码就可以了。命令如下：
+passwd root #root就是你要修改密码的用户名,键入命令之后就会要求你修改这个用户的密码，键入两次就OK了。
+ </description>
+    </item>
+    
+    <item>
+      <title>winetricks - wine上一个安装Windows有关库和软件的小程序</title>
+      <link>https://idc.wf/docs/winetricks-wine-on-a-database-and-software-to-install-windows-on-a-small-program/</link>
+      <pubDate>Thu, 24 Feb 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://idc.wf/docs/winetricks-wine-on-a-database-and-software-to-install-windows-on-a-small-program/</guid>
+      <description>首先
+sudo apt-get install winetricks
+安装winetricks 之后，就可以让wine自动去安装一些windows上面常用的软件了。
+详细列表参见：http://wiki.winehq.org/winetricks_cn</description>
+    </item>
+    
+    <item>
+      <title>Ubuntu下使用svn</title>
+      <link>https://idc.wf/docs/ubuntu-using-svn/</link>
+      <pubDate>Wed, 23 Feb 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://idc.wf/docs/ubuntu-using-svn/</guid>
+      <description>svn作为日常开发中不可缺少的工具，今天终于开始在Ubuntu下使用了。
+1、首先需要安装svn。Ubuntu下的svn安装十分简单，sudo apt-get install subversion，然后根据提示一步一步，就完成了svn的安装；
+2、检出文件（checkout）。
+使用命令：svn co http://{svn repository url} /destination
+然后系统会用当前的用户名登录，提示输入密码，如果第一次密码输入错误，会提示你输入用户名；
+输入正确后，就可以检出文件了。
+3、提交文件（commit）。
+进入需要更新的目录，输入命令：
+svn commit -m path-to-commit，其中path-to-commit可以为空，成功后会提示更新后的版本号。
+4、更新文件（update）。
+svn update，在要更新的目录运行这个命令就可以了。
+5、查看日志（log）。
+svn log path
+6、为Eclipse配置svn。
+http://subclipse.tigris.org/files/documents/906/38385/site-1.2.3.zip，可以从 这个地址下载Eclipse的插件，拷贝到plugins目录中以后，重启Eclipse就可以打开svn的视图了。
+也可以通过官方的 安装页面来进行在线安装：http://subclipse.tigris.org/install.html</description>
+    </item>
+    
+    <item>
+      <title>Ubuntu下修改hosts文件</title>
+      <link>https://idc.wf/docs/modify-the-hosts-file-under-ubuntu/</link>
+      <pubDate>Wed, 23 Feb 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://idc.wf/docs/modify-the-hosts-file-under-ubuntu/</guid>
+      <description>在windows系统中,IIS建立站点后经常需要通过hosts指向地址 在ubuntu下,修改hosts文件用方法 #sudo gedit /etc/hosts 编辑保存即可  </description>
+    </item>
+    
+    <item>
+      <title>ubuntu 环境下 安装 java6-sdk</title>
+      <link>https://idc.wf/docs/ubuntu-huan-jing-xia-an-zhuang-java6-sdk/</link>
+      <pubDate>Sat, 08 Jan 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://idc.wf/docs/ubuntu-huan-jing-xia-an-zhuang-java6-sdk/</guid>
+      <description>安装sun-java6 添加partner源
+sudo add-apt-repository &amp;quot;deb http://archive.canonical.com/ubuntu maverick partner&amp;quot;  (注： 如果系统提示没有add-apt-repository命令，则需要先安装python-software-properties，命令sudo apt-get install python-software-properties。另外，有些版本的ubuntu即使安装了python-software-properties 也无add-apt-repository命令,此时需要手动添加此行&amp;rdquo;deb http://archive.canonical.com/ubuntu maverick partner&amp;rdquo;到/etc/apt/sources.list文件中。)
+更新系统
+sudo add-apt-repository &amp;quot;deb http://archive.canonical.com/ubuntu maverick partner&amp;quot;  安装jre
+sudo add-apt-repository &amp;quot;deb http://archive.canonical.com/ubuntu maverick partner&amp;quot;  安装jdk
+sudo add-apt-repository &amp;quot;deb http://archive.canonical.com/ubuntu maverick partner&amp;quot;  查看版本信息
+sudo add-apt-repository &amp;quot;deb http://archive.canonical.com/ubuntu maverick partner&amp;quot;  设为默认Java sudo add-apt-repository &amp;quot;deb http://archive.canonical.com/ubuntu maverick partner&amp;quot;  选择即可  </description>
+    </item>
+    
+    <item>
+      <title>终极Shell——Zsh</title>
+      <link>https://idc.wf/docs/zhong-ji-shellzsh/</link>
+      <pubDate>Sat, 08 Jan 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://idc.wf/docs/zhong-ji-shellzsh/</guid>
+      <description>[撰文/Kardinal] http://linuxtoy.org/archives/zsh.html 子曾经曰过，zsh: The last shell you’ll ever need! Z是最后一个字母，所以它是终极Shell。我曾经搜索到一个比较各种Shell的文章，Zsh交互性是A+级别的，远高于其它Shell。在编程方面，Zsh是A级的吧，也是最高的。只是不知道出于什么原因，Zsh被严重的低估了。 大多数的linux用户比较偏爱Bash，因为大多数的发行版默认的就是它。平心而论，Bash确实比Csh之流的好用多了。不过Bash也有很多地方不尽人意，像自动补全的功能不够强大，定位较长路径不够方便等。 后来我使用Zsh。如果不调整一些必要的配置的话，Zsh甚至还不如Bash好用。这也是很多人尝试过并放弃过的原因。 Zsh配置文件试用 (内附讲解) 不熟悉Zsh的人，对Zsh最深刻的印象应该就是它的命令提示符了。它支持右侧对齐的提示符，并且可以配置成这个样子的： 不过我还是喜欢比较简单的样式。 Zsh的 自动补全功能 十分的强大，如图所示： 它可以自动补全命令、参数、文件名、进程、用户名、变量、权限符等。 Zsh还有一个贴心的功能： 路径别名 。假设有一个很长的路径，例如/home/lighttpd/html，可以把这个路径命名为 ~WWW。 Zsh可以使用 Emacs风格的键绑定 ，习惯Bash键绑定的朋友无需重新适应。Zsh兼容大多数主流Shell，像Bash、Csh等。 错误校正 &amp;ndash; directory &amp;ndash; 是补全类型提示
+/etc/x11 [tab] 后被修正为 /etc/X11 补全类型提示变成了 &amp;ndash; corrections &amp;ndash;
+请注意，这个功能不是单纯的修正大小写，而是各种拼写错误 比如说上面的例子，如果输入的是11或者s11，它一样会修正为X11 有一个前提，就是每次修正，只允许有一处字符错误 两个以上的错误，除非可以匹配其它的选项，否则就不能修正 12 就不能修正为X11 ，除非候选里有 X12、Y12、Z12……
+在配置文件里找到这一行，修改容错字数 zstyle &amp;lsquo;:completion: :approximate: &amp;lsquo; max-errors 1 numeric 当然可以把容错字数改大一些，不过太大了也没有意义了 随便输点什么，就可以匹配所有的，和没有一样
+强大的重定向功能 同时重定向stdout和stderr到file: command |&amp;amp; &amp;gt;file 同时重定向到多个文件: command &amp;gt;file.1 &amp;gt;file.2 比如装系统的时候，可以用这个命令
+blkid &amp;gt;&amp;gt; /boot/grub/menu.</description>
+    </item>
+    
+  </channel>
+</rss>

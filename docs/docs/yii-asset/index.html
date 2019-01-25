@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang='zh'><head>
+  <meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<meta name='description' content='偶尔一次使用的东西，记一下！
+安装 java sudo apt-get install default-jre  安装压缩工具 compiler Yii 压缩 JavaScript 默认使用名为 compiler.jar 的 Google Closure compiler 压缩工具。 https://developers.google.com/closure/compiler/
+yuicompressor Yii 压缩 CSS 使用名为 yuicompressor.jar 的YUI Compressor 压缩工具。 https://github.com/yui/yuicompressor/
+生成默认配置脚本 yii asset/template asset.php  生成的模板如下:
+&lt;?php /** * &quot;yii asset&quot; 控制台命令的配置文件 * 注意控制台环境下有些路径别名可能不存在，如 &#39;@webroot&#39; 和 &#39;@web&#39; * 请先定义找不到的路径别名 */ // In the console environment, some path aliases may not exist. Please define these: Yii::setAlias(&#39;@webroot&#39;, __DIR__ . &#39;/backend/web/&#39;); Yii::setAlias(&#39;@web&#39;, &#39;/backend/web/&#39;); return [ // 为 JavaScript 文件压缩调整 command/callback 命令： &#39;jsCompressor&#39; =&gt; &#39;java -jar compiler.'>
+<meta name='theme-color' content='dodgerblue'>
+
+<meta property='og:title' content='yii2 用 asset 压缩js,css文件 • Dray&#39;s Home'>
+<meta property='og:description' content='偶尔一次使用的东西，记一下！
+安装 java sudo apt-get install default-jre  安装压缩工具 compiler Yii 压缩 JavaScript 默认使用名为 compiler.jar 的 Google Closure compiler 压缩工具。 https://developers.google.com/closure/compiler/
+yuicompressor Yii 压缩 CSS 使用名为 yuicompressor.jar 的YUI Compressor 压缩工具。 https://github.com/yui/yuicompressor/
+生成默认配置脚本 yii asset/template asset.php  生成的模板如下:
+&lt;?php /** * &quot;yii asset&quot; 控制台命令的配置文件 * 注意控制台环境下有些路径别名可能不存在，如 &#39;@webroot&#39; 和 &#39;@web&#39; * 请先定义找不到的路径别名 */ // In the console environment, some path aliases may not exist. Please define these: Yii::setAlias(&#39;@webroot&#39;, __DIR__ . &#39;/backend/web/&#39;); Yii::setAlias(&#39;@web&#39;, &#39;/backend/web/&#39;); return [ // 为 JavaScript 文件压缩调整 command/callback 命令： &#39;jsCompressor&#39; =&gt; &#39;java -jar compiler.'>
+<meta property='og:url' content='https://idc.wf/docs/yii-asset/'>
+<meta property='og:site_name' content='Dray&#39;s Home'>
+<meta property='og:type' content='article'><meta property='article:section' content='docs'><meta property='article:tag' content='yii2'><meta property='article:tag' content='asset'><meta property='article:published_time' content='2017-07-10T17:44:00Z'/><meta property='article:modified_time' content='2017-07-10T17:44:00Z'/><meta name='twitter:card' content='summary'>
+
+<meta name="generator" content="Hugo 0.53" />
+
+  <title>yii2 用 asset 压缩js,css文件 • Dray&#39;s Home</title>
+  <link rel='canonical' href='https://idc.wf/docs/yii-asset/'>
+  
+  
+  <link rel='icon' href='/favicon.ico'>
+<link rel='stylesheet' href='/assets/css/main.4a10984a.css'><link rel='stylesheet' href='/css/custom.css'><style>
+:root{--color-accent:dodgerblue;}
+</style>
+
+  
+
+</head>
+<body class='page type-docs layout-blog has-sidebar'>
+
+  <div class='site'><div id='sidebar' class='sidebar'>
+  <a class='screen-reader-text' href='#main-menu'>跳到主页</a>
+
+  <div class='container'><section class='widget widget-about sep-after'>
+  <header>
+    
+    <div class='logo'>
+      <a href='/'>
+        <img src='/images/logo.png'>
+      </a>
+    </div>
+    
+    <h2 class='title site-title '>
+    Dray&#39;s Home
+    </h2>
+    <div class='desc'>
+    疯狂痴呆傻，美甘苦涩禅。
+    </div>
+  </header>
+
+</section>
+<section class='widget widget-search sep-after'>
+  <header>
+    <h4 class='title widget-title'>Search</h4>
+  </header>
+
+  <form action='/search' id='search-form' class='search-form'>
+    <label>
+      <span class='screen-reader-text'></span>
+      <input id='search-term' class='search-term' type='search' name='q' placeholder='&hellip;'>
+    </label></form>
+
+</section>
+<section class='widget widget-sidebar_menu sep-after'><nav id='sidebar-menu' class='menu sidebar-menu' aria-label='侧边菜单'>
+    <div class='container'>
+      <ul><li class='item'>
+  <a href='/'>Home</a></li><li class='item'>
+  <a href='/docs/'>Docs</a></li><li class='item'>
+  <a href='/menus/'>About</a></li><li class='item'>
+  <a href='/categories/'>categories</a></li><li class='item'>
+  <a href='/tags/'>Tags</a></li></ul>
+    </div>
+  </nav>
+
+</section></div>
+
+  <div class='sidebar-overlay'></div>
+</div><div class='main'><a class='screen-reader-text' href='#content'>跳到文章</a>
+
+<button id='sidebar-toggler' class='sidebar-toggler' aria-controls='sidebar'>
+  <span class='screen-reader-text'>切换侧边栏</span>
+  <span class='open'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <line x1="3" y1="12" x2="21" y2="12" />
+  <line x1="3" y1="6" x2="21" y2="6" />
+  <line x1="3" y1="18" x2="21" y2="18" />
+  
+</svg>
+</span>
+  <span class='close'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <line x1="18" y1="6" x2="6" y2="18" />
+  <line x1="6" y1="6" x2="18" y2="18" />
+  
+</svg>
+</span>
+</button><div class='header-widgets'>
+        <div class='container'>
+    
+    <style>.widget-breadcrumbs li:after{content:'\2f '}</style>
+  <section class='widget widget-breadcrumbs sep-after'>
+    <nav id='breadcrumbs'>
+      <ol><li><a href='/'>Home</a></li><li><a href='/docs/'>Docs</a></li><li><span>yii2 用 asset 压缩js,css文件</span></li></ol>
+    </nav>
+  </section></div>
+      </div>
+
+      <header id='header' class='header site-header'>
+        <div class='container sep-after'>
+          <div class='header-info'><p class='site-title title'>Dray&#39;s Home</p><p class='desc site-desc'>疯狂痴呆傻，美甘苦涩禅。</p>
+          </div>
+        </div>
+      </header>
+
+      <main id='content'>
+
+
+<article lang='zh' class='entry'>
+  <header class='header entry-header'>
+  <div class='container sep-after'>
+    <div class='header-info'>
+      <h1 class='title'>yii2 用 asset 压缩js,css文件</h1>
+      
+
+    </div>
+    <div class='entry-meta'>
+  <span class='posted-on'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+  <line x1="16" y1="2" x2="16" y2="6"/>
+  <line x1="8" y1="2" x2="8" y2="6"/>
+  <line x1="3" y1="10" x2="21" y2="10"/>
+  
+</svg>
+<span class='screen-reader-text'>发布 </span>
+  <time class='entry-date' datetime='2017-07-10T17:44:00Z'>2017-07-10</time>
+</span>
+
+  
+  
+<span class='reading-time'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <circle cx="12" cy="12" r="10"/>
+  <polyline points="12 6 12 12 15 15"/>
+  
+</svg>
+需要1分钟读完
+</span>
+
+
+</div>
+
+
+  </div>
+</header>
+
+  
+  
+
+  <div class='container entry-content'>
+  
+
+<p>偶尔一次使用的东西，记一下！</p>
+
+<h2 id="安装-java">安装 <strong>java</strong></h2>
+
+<pre><code>sudo apt-get install default-jre
+</code></pre>
+
+<h2 id="安装压缩工具">安装压缩工具</h2>
+
+<h3 id="compiler">compiler</h3>
+
+<p>Yii 压缩 JavaScript 默认使用名为 compiler.jar 的 Google Closure compiler 压缩工具。
+<a href="https://developers.google.com/closure/compiler/" target="_blank">https://developers.google.com/closure/compiler/</a></p>
+
+<h3 id="yuicompressor">yuicompressor</h3>
+
+<p>Yii 压缩 CSS 使用名为 yuicompressor.jar 的YUI Compressor 压缩工具。
+<a href="https://github.com/yui/yuicompressor/" target="_blank">https://github.com/yui/yuicompressor/</a></p>
+
+<h2 id="生成默认配置脚本">生成默认配置脚本</h2>
+
+<pre><code>yii asset/template asset.php
+</code></pre>
+
+<p>生成的模板如下:</p>
+
+<pre><code>&lt;?php
+/**
+ * &quot;yii asset&quot; 控制台命令的配置文件
+ * 注意控制台环境下有些路径别名可能不存在，如 '@webroot' 和 '@web'
+ * 请先定义找不到的路径别名
+ */
+
+// In the console environment, some path aliases may not exist. Please define these:
+Yii::setAlias('@webroot', __DIR__ . '/backend/web/');
+Yii::setAlias('@web', '/backend/web/');
+
+return [
+    // 为 JavaScript 文件压缩调整 command/callback 命令：
+    'jsCompressor' =&gt; 'java -jar compiler.jar --js {from} --js_output_file {to}',
+    // 为 CSS 文件压缩调整 command/callback 命令：
+    'cssCompressor' =&gt; 'java -jar yuicompressor.jar --type css {from} -o {to}',
+    // 要压缩的资源包列表：
+    'bundles' =&gt; [
+        'backend\assets\AppAsset',
+        // 'yii\web\YiiAsset',
+        // 'yii\web\JqueryAsset',
+    ],
+    // 输出的已压缩资源包：
+    'targets' =&gt; [
+        'app\config\AllAsset' =&gt; [
+            'basePath' =&gt; 'path/to/web',
+            'baseUrl' =&gt; '',
+            'js' =&gt; 'js/all-{ts}.js',
+            'css' =&gt; 'css/all-{ts}.css',
+        ],
+    ],
+    // 资源管理器配置：
+    'assetManager' =&gt; [
+        'basePath' =&gt; &quot;@webroot&quot;,
+        'baseUrl' =&gt; '@web',
+    ],
+];
+</code></pre>
+
+<h2 id="执行脚本压缩生成配置文件">执行脚本压缩生成配置文件</h2>
+
+<pre><code>php yii asset/compress assets_backend.php backend/config/assets_compressed.php
+</code></pre>
+
+<h2 id="把生成的配置文件加到主配置中">把生成的配置文件加到主配置中</h2>
+
+<p>修改 config/main.php 添加下面的代码</p>
+
+<pre><code>'components' =&gt; [
+    // ...
+    'assetManager' =&gt; [
+        'bundles' =&gt; require 'assets_compressed.php',
+    ],
+],
+</code></pre>
+
+<h2 id="参考页面">参考页面</h2>
+
+<p><a href="http://www.yiifans.com/yii2/guide/structure-assets.html" target="_blank">http://www.yiifans.com/yii2/guide/structure-assets.html</a>
+<a href="http://www.cnblogs.com/zergling9999/p/6097783.html" target="_blank">http://www.cnblogs.com/zergling9999/p/6097783.html</a>
+<a href="http://mayi.so/article/4" target="_blank">http://mayi.so/article/4</a></p>
+
+</div>
+
+  
+<footer class='entry-footer'>
+  <div class='container sep-before'><div class='categories'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M22,19a2,2,0,0,1-2,2H4a2,2,0,0,1-2-2V5A2,2,0,0,1,4,3H9l2,3h9a2,2,0,0,1,2,2Z"/>
+  
+</svg>
+<span class='screen-reader-text'>分类: </span><a class='category' href='/categories/linux/'>linux</a></div>
+<div class='tags'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M20.59,13.41l-7.17,7.17a2,2,0,0,1-2.83,0L2,12V2H12l8.59,8.59A2,2,0,0,1,20.59,13.41Z"/>
+  <line x1="7" y1="7" x2="7" y2="7"/>
+  
+</svg>
+<span class='screen-reader-text'>标签: </span><a class='tag' href='/tags/yii2/'>yii2</a>, <a class='tag' href='/tags/asset/'>asset</a></div>
+
+  </div>
+</footer>
+
+
+</article>
+
+<nav class='entry-nav'>
+  <div class='container'><div class='prev-entry sep-before'>
+      <a href='/docs/letsencrypt-cert/'>
+        <span aria-hidden='true'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <line x1="20" y1="12" x2="4" y2="12"/>
+  <polyline points="10 18 4 12 10 6"/>
+  
+</svg>
+ 上一个</span>
+        <span class='screen-reader-text'>上一篇文章: </span>使用 acme.sh 来更新 letsencrypt 证书</a>
+    </div><div class='next-entry sep-before'>
+      <a href='/docs/pi-ssrcow/'>
+        <span class='screen-reader-text'>下一篇文章: </span>pi 安装 ssr，cow 备注<span aria-hidden='true'>下一个 <svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <line x1="4" y1="12" x2="20" y2="12"/>
+  <polyline points="14 6 20 12 14 18"/>
+  
+</svg>
+</span>
+      </a>
+    </div></div>
+</nav>
+
+
+
+
+      </main>
+
+      <footer id='footer' class='footer'>
+        <div class='container sep-before'><section class='widget widget-social_menu sep-after'><nav aria-label='社交菜单'>
+    <ul><li>
+        <a href='https://github.com/DrayChou' target='_blank' rel='noopener'>
+          <span class='screen-reader-text'>在新标签打开Github的账户</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+  
+</svg>
+</a>
+      </li><li>
+        <a href='mailto:blog@idc.wf' target='_blank' rel='noopener'>
+          <span class='screen-reader-text'>通过邮件联系</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+  <polyline points="22,6 12,13 2,6"/>
+  
+</svg>
+</a>
+      </li></ul>
+  </nav>
+</section><div class='copyright'>
+  <p>Copyright &copy; 1900-2019 Dray All rights reserved</p>
+</div>
+
+        </div>
+      </footer>
+
+    </div>
+  </div><script>window.__public_path__='\/assets\/js\/'</script>
+
+<script src='/assets/js/main.fae8ed32.js'></script><script src='/js/custom.js'></script>
+
+</body>
+
+</html>
+

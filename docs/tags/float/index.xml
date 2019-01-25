@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>float on Dray&#39;s Home</title>
+    <link>https://idc.wf/tags/float/</link>
+    <description>Recent content in float on Dray&#39;s Home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 16 Feb 2011 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://idc.wf/tags/float/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>跨浏览器实现float:center</title>
+      <link>https://idc.wf/docs/to-achieve-cross-browser-float-center/</link>
+      <pubDate>Wed, 16 Feb 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://idc.wf/docs/to-achieve-cross-browser-float-center/</guid>
+      <description>&lt;p&gt;我们都知道float:left和float:right，但是否想过float:center呢？居中浮动。。。  &lt;div&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;div id=&amp;quot;&amp;lt;span style=&amp;quot;color: #8b0000&amp;quot;&amp;gt;macji&amp;lt;/span&amp;gt;&amp;quot;&amp;gt;
+    &amp;lt;ul &amp;lt;span style=&amp;quot;color: #0000ff&amp;quot;&amp;gt;class&amp;lt;/span&amp;gt;=&amp;quot;&amp;lt;span style=&amp;quot;color: #8b0000&amp;quot;&amp;gt;macji-skin&amp;lt;/span&amp;gt;&amp;quot;&amp;gt;
+        &amp;lt;li&amp;gt;列表一&amp;lt;/li&amp;gt;
+        &amp;lt;li&amp;gt;列表二&amp;lt;/li&amp;gt;
+        &amp;lt;li&amp;gt;列表三&amp;lt;/li&amp;gt;
+    &amp;lt;/ul&amp;gt;
+&amp;lt;/div&amp;gt;&amp;lt;br&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;我们希望实现li是浮动的，并且居中的（li个数不固定，ul宽度未知）。可以设置ul的text-align:center,再设置li的display，可以实现居中，但这样不是我们的初衷，我们需要实现float:center。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

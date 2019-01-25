@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>smarty on Dray&#39;s Home</title>
+    <link>https://idc.wf/tags/smarty/</link>
+    <description>Recent content in smarty on Dray&#39;s Home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 17 Feb 2011 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://idc.wf/tags/smarty/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>php模板引擎smarty缓存应用</title>
+      <link>https://idc.wf/docs/php-smarty-caching-application-template-engine/</link>
+      <pubDate>Thu, 17 Feb 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://idc.wf/docs/php-smarty-caching-application-template-engine/</guid>
+      <description>&lt;p&gt;1：smarty 缓存的配置  php代码&lt;a href=&#34;http://writeblog.csdn.net/#&#34;&gt;&lt;/a&gt;  2:smarty缓存的使用和清除  php代码&lt;a href=&#34;http://writeblog.csdn.net/#&#34;&gt;&lt;/a&gt;  &lt;div&gt;&lt;/p&gt;
+
+&lt;p&gt;$&lt;span style=&#34;color: #800000&#34;&gt;smarty-&lt;/span&gt;&amp;gt;&lt;span style=&#34;color: #800000&#34;&gt;display&lt;/span&gt;(&amp;rsquo;&lt;span style=&#34;color: #800000&#34;&gt;cache&lt;/span&gt;.&lt;span style=&#34;color: #800000&#34;&gt;tpl&lt;/span&gt;&amp;rsquo;, &lt;span style=&#34;color: #800000&#34;&gt;cache&lt;/span&gt;&lt;em&gt;&lt;span style=&#34;color: #800000&#34;&gt;id&lt;/span&gt;);  //&lt;span style=&#34;color: #800000&#34;&gt;创建带ID的缓存&lt;/span&gt;,&lt;span style=&#34;color: #800000&#34;&gt;cache&lt;/span&gt;.&lt;span style=&#34;color: #800000&#34;&gt;tpl&lt;/span&gt;  &lt;span style=&#34;color: #800000&#34;&gt;模板文件&lt;/span&gt;
+$&lt;span style=&#34;color: #800000&#34;&gt;smarty-&lt;/span&gt;&amp;gt;&lt;span style=&#34;color: #800000&#34;&gt;clear&lt;/span&gt;&lt;/em&gt;&lt;span style=&#34;color: #800000&#34;&gt;all&lt;/span&gt;&lt;em&gt;&lt;span style=&#34;color: #800000&#34;&gt;cache&lt;/span&gt;(); //&lt;span style=&#34;color: #800000&#34;&gt;清除所有缓存&lt;/span&gt;
+$&lt;span style=&#34;color: #800000&#34;&gt;smarty-&lt;/span&gt;&amp;gt;&lt;span style=&#34;color: #800000&#34;&gt;clear&lt;/span&gt;&lt;/em&gt;&lt;span style=&#34;color: #800000&#34;&gt;cache&lt;/span&gt;(&amp;rsquo;&lt;span style=&#34;color: #800000&#34;&gt;index&lt;/span&gt;.&lt;span style=&#34;color: #800000&#34;&gt;htm&lt;/span&gt;&amp;rsquo;); //&lt;span style=&#34;color: #800000&#34;&gt;清除index&lt;/span&gt;.&lt;span style=&#34;color: #800000&#34;&gt;tpl的缓存&lt;/span&gt;
+$&lt;span style=&#34;color: #800000&#34;&gt;smarty-&lt;/span&gt;&amp;gt;&lt;span style=&#34;color: #800000&#34;&gt;clear&lt;/span&gt;&lt;em&gt;&lt;span style=&#34;color: #800000&#34;&gt;cache&lt;/span&gt;(&amp;rsquo;&lt;span style=&#34;color: #800000&#34;&gt;index&lt;/span&gt;.&lt;span style=&#34;color: #800000&#34;&gt;htm&lt;/span&gt;&amp;rsquo;,&lt;span style=&#34;color: #800000&#34;&gt;cache&lt;/span&gt;&lt;/em&gt;&lt;span style=&#34;color: #800000&#34;&gt;id&lt;/span&gt;); //&lt;span style=&#34;color: #800000&#34;&gt;清除指定id的缓存&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/div&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>php,smarty 缓存操作</title>
+      <link>https://idc.wf/docs/php-smarty-cache-operation/</link>
+      <pubDate>Wed, 16 Feb 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://idc.wf/docs/php-smarty-cache-operation/</guid>
+      <description>&lt;p&gt;一、使用缓存   &lt;br&gt;要开启smarty的缓存,只需将caching设为true,并指定cache_dir即可.    &lt;br&gt;使用cache_lefetime指定缓存生存时间,单位为秒    &lt;br&gt;要对相同页面生成多个不同的缓存,在display或fetch中加入第二参数cache_id,如$smarty-&amp;gt;display(&amp;lsquo;index.tpl&amp;rsquo;,$my_cache_id);此特性可用于对不同的$_GET进行不同的缓存    &lt;br&gt;二、清除缓存  clear_all_cache();//清除所有缓存   &lt;br&gt;clear_cache(&amp;lsquo;index.tpl&amp;rsquo;);//清除index.tpl的缓存    &lt;br&gt;clear_cache(&amp;lsquo;index.tpl&amp;rsquo;,cache_id);//清除指定id的缓存  三、使用自定义缓存方式  设置cache_handler_func使用自定义的函数处理缓存   &lt;br&gt;如:    &lt;br&gt;$smarty-&amp;gt;cache_handler_func = &amp;ldquo;myCache&amp;rdquo;;    &lt;br&gt;function myCache($action, &amp;amp;$smarty_obj, &amp;amp;$cache_content, $tpl_file=null, $cache_id=null, $compile_id=null){    &lt;br&gt;}    &lt;br&gt;该函数的一般是根椐$action来判断缓存当前操作:    &lt;br&gt;switch($action){    &lt;br&gt;case &amp;ldquo;read&amp;rdquo;://读取缓存内容    &lt;br&gt;case &amp;ldquo;write&amp;rdquo;://写入缓存    &lt;br&gt;case &amp;ldquo;clear&amp;rdquo;://清空    &lt;br&gt;}    &lt;br&gt;一般使用md5($tpl_file.$cache_id.$compile_id)作为唯一的cache_id    &lt;br&gt;如果需要,可使用gzcompress和gzuncompress来压缩和解压&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>smarty 模板中定义变量的方法</title>
+      <link>https://idc.wf/docs/smarty-e6-a8-a1-e6-9d-bf-e4-b8-ad-e5-ae-9a-e4-b9-89-e5-8f-98-e9-87-8f-e7-9a-84-e6-96-b9-e6-b3-95/</link>
+      <pubDate>Fri, 21 Jan 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://idc.wf/docs/smarty-e6-a8-a1-e6-9d-bf-e4-b8-ad-e5-ae-9a-e4-b9-89-e5-8f-98-e9-87-8f-e7-9a-84-e6-96-b9-e6-b3-95/</guid>
+      <description>{assign var=&amp;quot;i&amp;quot; value=0} {foreach name=simple_tab from=$zhinan_cate key=key item=item} {if $i} &amp;lt;small&amp;gt;|&amp;lt;/small&amp;gt; {/if} {if $item[&#39;count&#39;]} {math assign=&amp;quot;i&amp;quot; equation=&amp;quot;x + y&amp;quot; x=$i y=1} &amp;lt;span&amp;gt;&amp;lt;a title=&amp;quot;{$segment_parent}期{$item[&#39;title&#39;]}&amp;quot; href=&amp;quot;%7B%24base_url%7Dpinpaizhinan&amp;amp;t_id=%7B%24item%5B&#39;id&#39;%5D%7D&amp;quot;&amp;gt;&amp;lt;/a&amp;gt;{$segment_parent}期{$item[&#39;title&#39;]}&amp;lt;/span&amp;gt; {else} {assign var=&amp;quot;i&amp;quot; value=0} {/if} {/foreach}  </description>
+    </item>
+    
+    <item>
+      <title>smarty 花括号转义</title>
+      <link>https://idc.wf/docs/smarty-escape-braces/</link>
+      <pubDate>Tue, 18 Jan 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://idc.wf/docs/smarty-escape-braces/</guid>
+      <description>使用 smarty 模板的时候，通常都是用 ‘{’ 和 ‘}’ 作为定界符（delimiter）。
+有时，我们需要在 html 代码里输出大括号，如果在模板里直接写出来，会被 smarty 的解析器认为是定界符，然后会报错：
+smarty error : syntax error: unrecognized tag 无法识别的标签！
+如何解决呢？有 2 种办法：
+1：内置变量
+ldelim, rdelim ldelim and rdelim are used for displaying the literal delimiter, in our case “{” or “}”. The template engine always tries to interpret delimiters, so this is the way around that. ldelim 和 rdelim 用于输出分隔符，也就是大括号 ‘{’ 和 ‘}’。如果只是输出很少的几个大括号，请使用此方法。
+2： 文本转义
+我们经常会在 html 里写 javascript 函数，就不可避免地写大量的大括号，这个时候上面的解决方法就不适用了，smarty 提供了一个转义一段代码的标签：</description>
+    </item>
+    
+  </channel>
+</rss>

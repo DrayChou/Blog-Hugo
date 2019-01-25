@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>asset on Dray&#39;s Home</title>
+    <link>https://idc.wf/tags/asset/</link>
+    <description>Recent content in asset on Dray&#39;s Home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 10 Jul 2017 17:44:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://idc.wf/tags/asset/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>yii2 用 asset 压缩js,css文件</title>
+      <link>https://idc.wf/docs/yii-asset/</link>
+      <pubDate>Mon, 10 Jul 2017 17:44:00 +0000</pubDate>
+      
+      <guid>https://idc.wf/docs/yii-asset/</guid>
+      <description>偶尔一次使用的东西，记一下！
+安装 java sudo apt-get install default-jre  安装压缩工具 compiler Yii 压缩 JavaScript 默认使用名为 compiler.jar 的 Google Closure compiler 压缩工具。 https://developers.google.com/closure/compiler/
+yuicompressor Yii 压缩 CSS 使用名为 yuicompressor.jar 的YUI Compressor 压缩工具。 https://github.com/yui/yuicompressor/
+生成默认配置脚本 yii asset/template asset.php  生成的模板如下:
+&amp;lt;?php /** * &amp;quot;yii asset&amp;quot; 控制台命令的配置文件 * 注意控制台环境下有些路径别名可能不存在，如 &#39;@webroot&#39; 和 &#39;@web&#39; * 请先定义找不到的路径别名 */ // In the console environment, some path aliases may not exist. Please define these: Yii::setAlias(&#39;@webroot&#39;, __DIR__ . &#39;/backend/web/&#39;); Yii::setAlias(&#39;@web&#39;, &#39;/backend/web/&#39;); return [ // 为 JavaScript 文件压缩调整 command/callback 命令： &#39;jsCompressor&#39; =&amp;gt; &#39;java -jar compiler.</description>
+    </item>
+    
+  </channel>
+</rss>

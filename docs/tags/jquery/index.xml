@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>jquery on Dray&#39;s Home</title>
+    <link>https://idc.wf/tags/jquery/</link>
+    <description>Recent content in jquery on Dray&#39;s Home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 17 May 2011 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://idc.wf/tags/jquery/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>利用jquery自动生成导航目录</title>
+      <link>https://idc.wf/docs/automatically-generated-navigation-menu-using-jquery/</link>
+      <pubDate>Tue, 17 May 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://idc.wf/docs/automatically-generated-navigation-menu-using-jquery/</guid>
+      <description>翻译自：http://www.jankoatwarpspeed.com/post/2009/08/20/Table-of-contents-using-jQuery.aspx 原文提供了3种样式，但是基本思想都是一样，那就是利用jquery选择器找到文章中的h1,h2,h3标签，修改这个标签的ID并生成对应的锚点链接地址。
+第一种：
+文章内容应该类似这样，由h1,h2,h3等标签分隔：
+&amp;lt;div id=&amp;quot;toc&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div id=&amp;quot;content&amp;quot;&amp;gt; &amp;lt;h1&amp;gt;Title goes her&amp;lt;/h1&amp;gt; &amp;lt;h2&amp;gt;Subtitle goes here&amp;lt;/h2&amp;gt; Text goes here... &amp;lt;/div&amp;gt;  JS部分
+$(&amp;quot;#toc&amp;quot;).append(&#39;In this article:&#39;) $(&amp;quot;h1, h2, h3&amp;quot;).each(function(i) { var current = $(this); current.attr(&amp;quot;id&amp;quot;, &amp;quot;title&amp;quot; + i); $(&amp;quot;#toc&amp;quot;).append(&amp;quot;&amp;lt;a id=&#39;link&amp;quot; + i + &amp;quot;&#39; href=&amp;quot;#title%22%20+%0A%20%20%20%20%20%20%20%20i%20+%20%22&amp;quot; title=&#39;&amp;quot; + current.attr(&amp;quot;tagName&amp;quot;) + &amp;quot;&#39;&amp;gt;&amp;quot; + current.html() + &amp;quot;&amp;lt;/a&amp;gt;&amp;quot;); });  JS替换后的结果
+&amp;lt;div id=&amp;quot;toc&amp;quot;&amp;gt; In this article: &amp;lt;a id=&amp;quot;link0&amp;quot; title=&amp;quot;H1&amp;quot; href=&amp;quot;#title0&amp;quot;&amp;gt;Article title&amp;lt;/a&amp;gt; &amp;lt;a id=&amp;quot;link1&amp;quot; title=&amp;quot;H2&amp;quot; href=&amp;quot;#title1&amp;quot;&amp;gt;Header Level 2&amp;lt;/a&amp;gt; &amp;lt;a id=&amp;quot;link2&amp;quot; title=&amp;quot;H3&amp;quot; href=&amp;quot;#title2&amp;quot;&amp;gt;Header Level 3&amp;lt;/a&amp;gt; &amp;lt;a id=&amp;quot;link3&amp;quot; title=&amp;quot;H3&amp;quot; href=&amp;quot;#title3&amp;quot;&amp;gt;Header level 3 again&amp;lt;/a&amp;gt; &amp;lt;a id=&amp;quot;link4&amp;quot; title=&amp;quot;H3&amp;quot; href=&amp;quot;#title4&amp;quot;&amp;gt;Header level 3 once again&amp;lt;/a&amp;gt; &amp;lt;/div&amp;gt;  </description>
+    </item>
+    
+    <item>
+      <title>jQuery.live()与Event Delegation</title>
+      <link>https://idc.wf/docs/jquery-live-and-event-delegation/</link>
+      <pubDate>Fri, 18 Feb 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://idc.wf/docs/jquery-live-and-event-delegation/</guid>
+      <description>&lt;p&gt;网友Ark刚好问到live()，不知道大家有没有觉得jQuery. live()具有为&amp;rdquo;未来元素&amp;rdquo;设定事件的未卜先知能力很神奇?至少在乍听之余，我觉得很不可思议，莫非它要拦截所有建立元素的过程? 不对，难度很高、没效率、漏洞也很多，那么又是怎么做到的呢?  本草網目官方文件上有詳細的解釋，關鍵在Event Delegation 。 本草网目官方文件上有详细的解释，关键在Event Delegation 。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

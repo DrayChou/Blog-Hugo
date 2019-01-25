@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang='zh'><head>
+  <meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<meta name='description' content='layout: post title: virtualbox ubuntu 下面安装 redmine date: 2016-03-12 15:40:12 categories: - linux tags: - virtualbox - ubuntu
+- redmine 安装 ubuntu 配置网络 然后在 vb 中配置安装 ubuntu ，这里需要注意的是，把网络类型改为 桥接。
+配置静态IP sudo vi /etc/network/interfaces  原有内容只有如下两行：
+auto lo iface lo inet loopback  如果是动态获取IP地址，那么就不需要添加如下内容 如果设置静态IP,向末尾追加以下内容：
+auto eth0 iface eth0 inet static address 静态IP地址 gateway 192.168.0.1 netmask 255.255.255.0  然后保存退出；
+更新源 更新源： /etc/apt/sources.list 阿里更新源（14.04）
+deb http://mirrors.aliyun.com/ubuntu/ trusty main multiverse restricted universe deb http://mirrors.'>
+<meta name='theme-color' content='dodgerblue'>
+
+<meta property='og:title' content=' • Dray&#39;s Home'>
+<meta property='og:description' content='layout: post title: virtualbox ubuntu 下面安装 redmine date: 2016-03-12 15:40:12 categories: - linux tags: - virtualbox - ubuntu
+- redmine 安装 ubuntu 配置网络 然后在 vb 中配置安装 ubuntu ，这里需要注意的是，把网络类型改为 桥接。
+配置静态IP sudo vi /etc/network/interfaces  原有内容只有如下两行：
+auto lo iface lo inet loopback  如果是动态获取IP地址，那么就不需要添加如下内容 如果设置静态IP,向末尾追加以下内容：
+auto eth0 iface eth0 inet static address 静态IP地址 gateway 192.168.0.1 netmask 255.255.255.0  然后保存退出；
+更新源 更新源： /etc/apt/sources.list 阿里更新源（14.04）
+deb http://mirrors.aliyun.com/ubuntu/ trusty main multiverse restricted universe deb http://mirrors.'>
+<meta property='og:url' content='https://idc.wf/docs/vbox-ubuntu-nginx-redmine/'>
+<meta property='og:site_name' content='Dray&#39;s Home'>
+<meta property='og:type' content='article'><meta property='article:section' content='docs'><meta name='twitter:card' content='summary'>
+
+<meta name="generator" content="Hugo 0.53" />
+
+  <title> • Dray&#39;s Home</title>
+  <link rel='canonical' href='https://idc.wf/docs/vbox-ubuntu-nginx-redmine/'>
+  
+  
+  <link rel='icon' href='/favicon.ico'>
+<link rel='stylesheet' href='/assets/css/main.4a10984a.css'><link rel='stylesheet' href='/css/custom.css'><style>
+:root{--color-accent:dodgerblue;}
+</style>
+
+  
+
+</head>
+<body class='page type-docs has-sidebar'>
+
+  <div class='site'><div id='sidebar' class='sidebar'>
+  <a class='screen-reader-text' href='#main-menu'>跳到主页</a>
+
+  <div class='container'><section class='widget widget-about sep-after'>
+  <header>
+    
+    <div class='logo'>
+      <a href='/'>
+        <img src='/images/logo.png'>
+      </a>
+    </div>
+    
+    <h2 class='title site-title '>
+    Dray&#39;s Home
+    </h2>
+    <div class='desc'>
+    疯狂痴呆傻，美甘苦涩禅。
+    </div>
+  </header>
+
+</section>
+<section class='widget widget-search sep-after'>
+  <header>
+    <h4 class='title widget-title'>Search</h4>
+  </header>
+
+  <form action='/search' id='search-form' class='search-form'>
+    <label>
+      <span class='screen-reader-text'></span>
+      <input id='search-term' class='search-term' type='search' name='q' placeholder='&hellip;'>
+    </label></form>
+
+</section>
+<section class='widget widget-sidebar_menu sep-after'><nav id='sidebar-menu' class='menu sidebar-menu' aria-label='侧边菜单'>
+    <div class='container'>
+      <ul><li class='item'>
+  <a href='/'>Home</a></li><li class='item'>
+  <a href='/docs/'>Docs</a></li><li class='item'>
+  <a href='/menus/'>About</a></li><li class='item'>
+  <a href='/categories/'>categories</a></li><li class='item'>
+  <a href='/tags/'>Tags</a></li></ul>
+    </div>
+  </nav>
+
+</section></div>
+
+  <div class='sidebar-overlay'></div>
+</div><div class='main'><a class='screen-reader-text' href='#content'>跳到文章</a>
+
+<button id='sidebar-toggler' class='sidebar-toggler' aria-controls='sidebar'>
+  <span class='screen-reader-text'>切换侧边栏</span>
+  <span class='open'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <line x1="3" y1="12" x2="21" y2="12" />
+  <line x1="3" y1="6" x2="21" y2="6" />
+  <line x1="3" y1="18" x2="21" y2="18" />
+  
+</svg>
+</span>
+  <span class='close'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <line x1="18" y1="6" x2="6" y2="18" />
+  <line x1="6" y1="6" x2="18" y2="18" />
+  
+</svg>
+</span>
+</button><div class='header-widgets'>
+        <div class='container'>
+    
+    <style>.widget-breadcrumbs li:after{content:'\2f '}</style>
+  <section class='widget widget-breadcrumbs sep-after'>
+    <nav id='breadcrumbs'>
+      <ol><li><a href='/'>Home</a></li><li><a href='/docs/'>Docs</a></li><li><span></span></li></ol>
+    </nav>
+  </section></div>
+      </div>
+
+      <header id='header' class='header site-header'>
+        <div class='container sep-after'>
+          <div class='header-info'><p class='site-title title'>Dray&#39;s Home</p><p class='desc site-desc'>疯狂痴呆傻，美甘苦涩禅。</p>
+          </div>
+        </div>
+      </header>
+
+      <main id='content'>
+
+
+<article lang='zh' class='entry'>
+  <header class='header entry-header'>
+  <div class='container sep-after'>
+    <div class='header-info'>
+      <h1 class='title'></h1>
+      
+
+    </div>
+    <div class='entry-meta'>
+  <span class='posted-on'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+  <line x1="16" y1="2" x2="16" y2="6"/>
+  <line x1="8" y1="2" x2="8" y2="6"/>
+  <line x1="3" y1="10" x2="21" y2="10"/>
+  
+</svg>
+<span class='screen-reader-text'>发布 </span>
+  <time class='entry-date' datetime='0001-01-01T00:00:00Z'>0001-01-01</time>
+</span>
+
+  
+  
+<span class='reading-time'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <circle cx="12" cy="12" r="10"/>
+  <polyline points="12 6 12 12 15 15"/>
+  
+</svg>
+需要3分钟读完
+</span>
+
+
+</div>
+
+
+  </div>
+</header>
+
+  
+  
+
+  <div class='container entry-content'>
+  
+
+<p>layout: post
+title: virtualbox ubuntu 下面安装 redmine
+date: 2016-03-12 15:40:12
+categories:
+ - linux
+tags:
+ - virtualbox
+ - ubuntu</p>
+
+<h2 id="redmine">- redmine</h2>
+
+<h2 id="安装-ubuntu">安装 ubuntu</h2>
+
+<h3 id="配置网络">配置网络</h3>
+
+<p>然后在 vb 中配置安装 ubuntu ，这里需要注意的是，把网络类型改为 桥接。</p>
+
+<h3 id="配置静态ip">配置静态IP</h3>
+
+<pre><code>sudo vi /etc/network/interfaces
+</code></pre>
+
+<p>原有内容只有如下两行：</p>
+
+<pre><code>auto lo
+iface lo inet loopback
+</code></pre>
+
+<p>如果是动态获取IP地址，那么就不需要添加如下内容
+如果设置静态IP,向末尾追加以下内容：</p>
+
+<pre><code>auto eth0
+iface eth0 inet static
+address 静态IP地址
+gateway 192.168.0.1
+netmask 255.255.255.0
+</code></pre>
+
+<p>然后保存退出；</p>
+
+<h3 id="更新源">更新源</h3>
+
+<p>更新源： /etc/apt/sources.list
+阿里更新源（14.04）</p>
+
+<pre><code>deb http://mirrors.aliyun.com/ubuntu/ trusty main multiverse restricted universe
+deb http://mirrors.aliyun.com/ubuntu/ trusty-backports main multiverse restricted universe
+deb http://mirrors.aliyun.com/ubuntu/ trusty-proposed main multiverse restricted universe
+deb http://mirrors.aliyun.com/ubuntu/ trusty-security main multiverse restricted universe
+deb http://mirrors.aliyun.com/ubuntu/ trusty-updates main multiverse restricted universe
+deb-src http://mirrors.aliyun.com/ubuntu/ trusty main multiverse restricted universe
+deb-src http://mirrors.aliyun.com/ubuntu/ trusty-backports main multiverse restricted universe
+deb-src http://mirrors.aliyun.com/ubuntu/ trusty-proposed main multiverse restricted universe
+deb-src http://mirrors.aliyun.com/ubuntu/ trusty-security main multiverse restricted universe
+deb-src http://mirrors.aliyun.com/ubuntu/ trusty-updates main multiverse restricted universe
+</code></pre>
+
+<h3 id="vbox-组件">vbox 组件</h3>
+
+<pre><code>sudo apt-get install virtualbox-guest-dkms
+</code></pre>
+
+<h3 id="设置共享目录">设置共享目录</h3>
+
+<pre><code>ln -s /media/sf_Downloads /srv/download
+</code></pre>
+
+<h3 id="目录权限">目录权限</h3>
+
+<p>使用以下命令添加当前用户到 vboxsf 组，以免权限不足编辑共享目录，重启虚拟机生效。</p>
+
+<pre><code>sudo usermod -aG vboxsf $(whoami)
+sudo usermod -aG vboxsf www-data
+</code></pre>
+
+<h2 id="配置-ssh">配置 ssh</h2>
+
+<h3 id="安装-ssh-服务端">安装 ssh 服务端</h3>
+
+<pre><code>sudo apt-get install openssh-server
+</code></pre>
+
+<h3 id="开启服务">开启服务</h3>
+
+<pre><code>sudo server ssh restart
+</code></pre>
+
+<h2 id="配置-mysql">配置 mysql</h2>
+
+<h3 id="安装-mysql">安装 mysql</h3>
+
+<pre><code>sudo apt-get install mysql-server
+</code></pre>
+
+<h3 id="创建数据库">创建数据库</h3>
+
+<pre><code>mysql -u root -p
+CREATE DATABASE redmine CHARACTER SET utf8;
+CREATE USER 'redmine'@'localhost' IDENTIFIED BY 'my_password';
+GRANT ALL PRIVILEGES ON redmine.* TO 'redmine'@'localhost';
+EXIT
+</code></pre>
+
+<h3 id="设置远程访问权限">设置远程访问权限</h3>
+
+<pre><code>grant all privileges on *.* to 'root'@'%' identified by 'password' with grant option;
+flush privileges;
+</code></pre>
+
+<h3 id="打開-my-conf">打開 my.conf</h3>
+
+<pre><code>sudo vim /etc/mysql/my.cnf
+</code></pre>
+
+<h3 id="设置服务器地址">设置服务器地址</h3>
+
+<pre><code>bind-address            = 0.0.0.0
+</code></pre>
+
+<h2 id="配置-ruby">配置 ruby</h2>
+
+<h3 id="安装-rvm">安装 rvm</h3>
+
+<p>輸入指令安裝 RVM，過程中可能會出現一些錯誤訊息，因為我沒有預先使用 apt-get 安裝需要的套件。不過不要緊，跟著系統會告訴哪些還沒裝好，並且會給你安裝的指令，跟著系統指示很快的就可以完成。</p>
+
+<pre><code>curl -L https://get.rvm.io | bash
+</code></pre>
+
+<p>重新登入 vps，輸入 rvm -v 查看 rvm 是否有裝好。</p>
+
+<p>在 RVM 中安裝 Ruby</p>
+
+<pre><code>rvm install 2.2.3
+</code></pre>
+
+<p>將 ruby 2.2.3 設定成預設的 Ruby 語言，這個動作很重要一定要做，因為預設的 Ruby 會是 Ubuntu 系統中預裝的版本，換成 RVM 的版本我們才好處理 Gem 之類的安裝問題</p>
+
+<pre><code>rvm use 2.2.3 --default
+</code></pre>
+
+<p>檢查系統中的 ruby 是否使用 rvm 的 ruby</p>
+
+<p>輸入ruby -v檢查版本
+輸入which ruby 檢查路徑，路徑裡面有 rvm 的才是正確</p>
+
+<h3 id="修改-gem-source">修改 gem source</h3>
+
+<pre><code>gem sources -r https://rubygems.org/
+gem source -a https://ruby.taobao.org
+gem source -l   // 查看当前的source
+</code></pre>
+
+<h3 id="修改-bundle-source">修改 bundle source</h3>
+
+<pre><code>bundle config mirror.https://rubygems.org https://ruby.taobao.org
+</code></pre>
+
+<h3 id="安裝-rails">安裝 Rails</h3>
+
+<p>記得加上 &ndash;no-ri &ndash;no-rdoc ，意思是不要裝文件，因為我們上網查就好了。可以省下很多時間。</p>
+
+<pre><code>gem install rails --no-ri --no-rdoc
+</code></pre>
+
+<h3 id="把-redmine-專案載下來">把 Redmine 專案載下來，</h3>
+
+<pre><code>wget http://www.redmine.org/releases/redmine-3.2.0.zip
+</code></pre>
+
+<h3 id="解壓縮">解壓縮</h3>
+
+<pre><code>unzip redmine-3.2.0.zip
+</code></pre>
+
+<p>現在你有一個 Redmine 的 Rails 專案了。</p>
+
+<h3 id="對-rails-專案的一些處理">對 Rails 專案的一些處理</h3>
+
+<p>bundle 一下。可能會有一些 Ubuntu 的套件沒有裝會噴錯誤。不過都還滿簡單的。</p>
+
+<pre><code>bundle install
+</code></pre>
+
+<p>缺少 imagemagick 的話可以下下面指令。</p>
+
+<pre><code>sudo apt-get install imagemagick
+sudo apt-get install libmagickwand-dev
+</code></pre>
+
+<h3 id="rails-資料庫處理">Rails 資料庫處理</h3>
+
+<pre><code>rake db:create
+rake db:migrate
+</code></pre>
+
+<p>建之前要更新一下 config/database.yml 的內容，把 mysql 帳號密碼寫進去。</p>
+
+<h3 id="安裝-passenger">安裝 Passenger</h3>
+
+<pre><code>gem install passenger --no-ri --no-rdoc
+</code></pre>
+
+<p>使用 Passenger 安裝 nginx</p>
+
+<pre><code>rvmsudo passenger-install-nginx-module
+</code></pre>
+
+<h3 id="安装-nginx-init-script">安装 Nginx init script</h3>
+
+<pre><code>cd ~/
+git clone git://github.com/jnstq/rails-nginx-passenger-ubuntu.git
+sudo mv rails-nginx-passenger-ubuntu/nginx/nginx /etc/init.d/nginx
+sudo chmod +x /etc/init.d/nginx
+</code></pre>
+
+<h3 id="開機自動啟動">開機自動啟動</h3>
+
+<pre><code>sudo update-rc.d nginx defaults
+</code></pre>
+
+<h2 id="設定-nginx-conf">設定 nginx.conf</h2>
+
+<h3 id="打開-nginx-conf">打開 nginx.conf</h3>
+
+<pre><code>sudo vim /opt/nginx/conf/nginx.conf
+</code></pre>
+
+<h3 id="添加-redmine-的配置">添加 redmine 的配置</h3>
+
+<pre><code>server {
+    listen       80;
+    server_name  redmine.zhouw; # 请替换成你网站的域名
+    rails_env    production;
+    root         /srv/www/redmine/public;
+    passenger_enabled on;
+
+    location ~ ^(/assets) {
+        access_log        off;
+        # 设置 assets 下面的浏览器缓存时间为最大值（由于 Rails Assets Pipline 的文件名是根据文件修改产生的 MD5 digest 文件名，所以此处可以放心开启）
+        expires           max;
+    }
+}
+</code></pre>
+
+<h3 id="重新啟動-nginx">重新啟動 Nginx</h3>
+
+<pre><code>sudo /etc/init.d/nginx start
+</code></pre>
+
+</div>
+
+  
+<footer class='entry-footer'>
+  <div class='container sep-before'>
+  </div>
+</footer>
+
+
+</article>
+
+<nav class='entry-nav'>
+  <div class='container'><div class='next-entry sep-before'>
+      <a href='/docs/root-google-now/'>
+        <span class='screen-reader-text'>下一篇文章: </span><span aria-hidden='true'>下一个 <svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <line x1="4" y1="12" x2="20" y2="12"/>
+  <polyline points="14 6 20 12 14 18"/>
+  
+</svg>
+</span>
+      </a>
+    </div></div>
+</nav>
+
+
+
+
+      </main>
+
+      <footer id='footer' class='footer'>
+        <div class='container sep-before'><section class='widget widget-social_menu sep-after'><nav aria-label='社交菜单'>
+    <ul><li>
+        <a href='https://github.com/DrayChou' target='_blank' rel='noopener'>
+          <span class='screen-reader-text'>在新标签打开Github的账户</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+  
+</svg>
+</a>
+      </li><li>
+        <a href='mailto:blog@idc.wf' target='_blank' rel='noopener'>
+          <span class='screen-reader-text'>通过邮件联系</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+  <polyline points="22,6 12,13 2,6"/>
+  
+</svg>
+</a>
+      </li></ul>
+  </nav>
+</section><div class='copyright'>
+  <p>Copyright &copy; 1900-2019 Dray All rights reserved</p>
+</div>
+
+        </div>
+      </footer>
+
+    </div>
+  </div><script>window.__public_path__='\/assets\/js\/'</script>
+
+<script src='/assets/js/main.fae8ed32.js'></script><script src='/js/custom.js'></script>
+
+</body>
+
+</html>
+

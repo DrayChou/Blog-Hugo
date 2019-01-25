@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>nodejs on Dray&#39;s Home</title>
+    <link>https://idc.wf/tags/nodejs/</link>
+    <description>Recent content in nodejs on Dray&#39;s Home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 26 Dec 2011 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://idc.wf/tags/nodejs/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Windows 下的 Nodejs</title>
+      <link>https://idc.wf/docs/under-windows-nodejs/</link>
+      <pubDate>Mon, 26 Dec 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://idc.wf/docs/under-windows-nodejs/</guid>
+      <description>&lt;p&gt;&lt;h2&gt;为什么搞这个？&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;公司电脑的权限管理比较严，不能安装软件，不能常驻系统进程等，所以像 xampp 之类的都不能正常执行&lt;/li&gt;
+    &lt;li&gt;我又想在空闲的时候做点东西&lt;/li&gt;
+    &lt;li&gt;所以坑爹的我只能自己研究在windows下运行nodejs了&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

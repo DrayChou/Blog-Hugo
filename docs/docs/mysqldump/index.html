@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang='zh'><head>
+  <meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<meta name='description' content='layout: post title: mysql 导入导出数据 date: 2015-12-31 02:04:30 categories: - web tags: - mysql
+- linux ##　导出数据库用mysqldump命令（注意mysql的安装路径，即此命令的路径）：
+导出数据和表结构： mysqldump -u用户名 -p密码 数据库名 &gt; 数据库名.sql #/usr/local/mysql/bin/ mysqldump -uroot -p abc &gt; abc.sql 敲回车后会提示输入密码  只导出表结构 mysqldump -u用户名 -p密码 -d 数据库名 &gt; 数据库名.sql #/usr/local/mysql/bin/ mysqldump -uroot -p -d abc &gt; abc.sql  注：/usr/local/mysql/bin/ &mdash;&gt; mysql的data目录
+导入数据库 首先建空数据库 mysql&gt;create database abc;  导入数据库 方法一：  选择数据库 mysql&gt;use abc; 设置数据库编码 mysql&gt;set names utf8; 导入数据（注意sql文件的路径） mysql&gt;source /home/abc/abc.'>
+<meta name='theme-color' content='dodgerblue'>
+
+<meta property='og:title' content=' • Dray&#39;s Home'>
+<meta property='og:description' content='layout: post title: mysql 导入导出数据 date: 2015-12-31 02:04:30 categories: - web tags: - mysql
+- linux ##　导出数据库用mysqldump命令（注意mysql的安装路径，即此命令的路径）：
+导出数据和表结构： mysqldump -u用户名 -p密码 数据库名 &gt; 数据库名.sql #/usr/local/mysql/bin/ mysqldump -uroot -p abc &gt; abc.sql 敲回车后会提示输入密码  只导出表结构 mysqldump -u用户名 -p密码 -d 数据库名 &gt; 数据库名.sql #/usr/local/mysql/bin/ mysqldump -uroot -p -d abc &gt; abc.sql  注：/usr/local/mysql/bin/ &mdash;&gt; mysql的data目录
+导入数据库 首先建空数据库 mysql&gt;create database abc;  导入数据库 方法一：  选择数据库 mysql&gt;use abc; 设置数据库编码 mysql&gt;set names utf8; 导入数据（注意sql文件的路径） mysql&gt;source /home/abc/abc.'>
+<meta property='og:url' content='https://idc.wf/docs/mysqldump/'>
+<meta property='og:site_name' content='Dray&#39;s Home'>
+<meta property='og:type' content='article'><meta property='article:section' content='docs'><meta name='twitter:card' content='summary'>
+
+<meta name="generator" content="Hugo 0.53" />
+
+  <title> • Dray&#39;s Home</title>
+  <link rel='canonical' href='https://idc.wf/docs/mysqldump/'>
+  
+  
+  <link rel='icon' href='/favicon.ico'>
+<link rel='stylesheet' href='/assets/css/main.4a10984a.css'><link rel='stylesheet' href='/css/custom.css'><style>
+:root{--color-accent:dodgerblue;}
+</style>
+
+  
+
+</head>
+<body class='page type-docs has-sidebar'>
+
+  <div class='site'><div id='sidebar' class='sidebar'>
+  <a class='screen-reader-text' href='#main-menu'>跳到主页</a>
+
+  <div class='container'><section class='widget widget-about sep-after'>
+  <header>
+    
+    <div class='logo'>
+      <a href='/'>
+        <img src='/images/logo.png'>
+      </a>
+    </div>
+    
+    <h2 class='title site-title '>
+    Dray&#39;s Home
+    </h2>
+    <div class='desc'>
+    疯狂痴呆傻，美甘苦涩禅。
+    </div>
+  </header>
+
+</section>
+<section class='widget widget-search sep-after'>
+  <header>
+    <h4 class='title widget-title'>Search</h4>
+  </header>
+
+  <form action='/search' id='search-form' class='search-form'>
+    <label>
+      <span class='screen-reader-text'></span>
+      <input id='search-term' class='search-term' type='search' name='q' placeholder='&hellip;'>
+    </label></form>
+
+</section>
+<section class='widget widget-sidebar_menu sep-after'><nav id='sidebar-menu' class='menu sidebar-menu' aria-label='侧边菜单'>
+    <div class='container'>
+      <ul><li class='item'>
+  <a href='/'>Home</a></li><li class='item'>
+  <a href='/docs/'>Docs</a></li><li class='item'>
+  <a href='/menus/'>About</a></li><li class='item'>
+  <a href='/categories/'>categories</a></li><li class='item'>
+  <a href='/tags/'>Tags</a></li></ul>
+    </div>
+  </nav>
+
+</section></div>
+
+  <div class='sidebar-overlay'></div>
+</div><div class='main'><a class='screen-reader-text' href='#content'>跳到文章</a>
+
+<button id='sidebar-toggler' class='sidebar-toggler' aria-controls='sidebar'>
+  <span class='screen-reader-text'>切换侧边栏</span>
+  <span class='open'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <line x1="3" y1="12" x2="21" y2="12" />
+  <line x1="3" y1="6" x2="21" y2="6" />
+  <line x1="3" y1="18" x2="21" y2="18" />
+  
+</svg>
+</span>
+  <span class='close'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <line x1="18" y1="6" x2="6" y2="18" />
+  <line x1="6" y1="6" x2="18" y2="18" />
+  
+</svg>
+</span>
+</button><div class='header-widgets'>
+        <div class='container'>
+    
+    <style>.widget-breadcrumbs li:after{content:'\2f '}</style>
+  <section class='widget widget-breadcrumbs sep-after'>
+    <nav id='breadcrumbs'>
+      <ol><li><a href='/'>Home</a></li><li><a href='/docs/'>Docs</a></li><li><span></span></li></ol>
+    </nav>
+  </section></div>
+      </div>
+
+      <header id='header' class='header site-header'>
+        <div class='container sep-after'>
+          <div class='header-info'><p class='site-title title'>Dray&#39;s Home</p><p class='desc site-desc'>疯狂痴呆傻，美甘苦涩禅。</p>
+          </div>
+        </div>
+      </header>
+
+      <main id='content'>
+
+
+<article lang='zh' class='entry'>
+  <header class='header entry-header'>
+  <div class='container sep-after'>
+    <div class='header-info'>
+      <h1 class='title'></h1>
+      
+
+    </div>
+    <div class='entry-meta'>
+  <span class='posted-on'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+  <line x1="16" y1="2" x2="16" y2="6"/>
+  <line x1="8" y1="2" x2="8" y2="6"/>
+  <line x1="3" y1="10" x2="21" y2="10"/>
+  
+</svg>
+<span class='screen-reader-text'>发布 </span>
+  <time class='entry-date' datetime='0001-01-01T00:00:00Z'>0001-01-01</time>
+</span>
+
+  
+  
+<span class='reading-time'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <circle cx="12" cy="12" r="10"/>
+  <polyline points="12 6 12 12 15 15"/>
+  
+</svg>
+需要1分钟读完
+</span>
+
+
+</div>
+
+
+  </div>
+</header>
+
+  
+  
+
+  <div class='container entry-content'>
+  
+
+<p>layout: post
+title: mysql 导入导出数据
+date: 2015-12-31 02:04:30
+categories:
+ - web
+tags:
+ - mysql</p>
+
+<h2 id="linux">- linux</h2>
+
+<p>##　导出数据库用mysqldump命令（注意mysql的安装路径，即此命令的路径）：</p>
+
+<h3 id="导出数据和表结构">导出数据和表结构：</h3>
+
+<pre><code>mysqldump -u用户名 -p密码 数据库名 &gt; 数据库名.sql
+#/usr/local/mysql/bin/   mysqldump -uroot -p abc &gt; abc.sql
+敲回车后会提示输入密码
+</code></pre>
+
+<h3 id="只导出表结构">只导出表结构</h3>
+
+<pre><code>mysqldump -u用户名 -p密码 -d 数据库名 &gt; 数据库名.sql
+#/usr/local/mysql/bin/   mysqldump -uroot -p -d abc &gt; abc.sql
+</code></pre>
+
+<p>注：/usr/local/mysql/bin/  &mdash;&gt;  mysql的data目录</p>
+
+<h2 id="导入数据库">导入数据库</h2>
+
+<h3 id="首先建空数据库">首先建空数据库</h3>
+
+<pre><code>mysql&gt;create database abc;
+</code></pre>
+
+<h3 id="导入数据库-1">导入数据库</h3>
+
+<h4 id="方法一">方法一：</h4>
+
+<ol>
+<li>选择数据库
+mysql&gt;use abc;</li>
+<li>设置数据库编码
+mysql&gt;set names utf8;</li>
+
+<li><p>导入数据（注意sql文件的路径）
+mysql&gt;source /home/abc/abc.sql;</p>
+
+<h4 id="方法二">方法二：</h4>
+
+<p>mysql -u用户名 -p密码 数据库名 &lt; 数据库名.sql
+#mysql -uabc_f -p abc &lt; abc.sql</p></li>
+</ol>
+
+</div>
+
+  
+<footer class='entry-footer'>
+  <div class='container sep-before'>
+  </div>
+</footer>
+
+
+</article>
+
+<nav class='entry-nav'>
+  <div class='container'><div class='prev-entry sep-before'>
+      <a href='/docs/root-google-now/'>
+        <span aria-hidden='true'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <line x1="20" y1="12" x2="4" y2="12"/>
+  <polyline points="10 18 4 12 10 6"/>
+  
+</svg>
+ 上一个</span>
+        <span class='screen-reader-text'>上一篇文章: </span></a>
+    </div><div class='next-entry sep-before'>
+      <a href='/docs/composer-tools/'>
+        <span class='screen-reader-text'>下一篇文章: </span><span aria-hidden='true'>下一个 <svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <line x1="4" y1="12" x2="20" y2="12"/>
+  <polyline points="14 6 20 12 14 18"/>
+  
+</svg>
+</span>
+      </a>
+    </div></div>
+</nav>
+
+
+
+
+      </main>
+
+      <footer id='footer' class='footer'>
+        <div class='container sep-before'><section class='widget widget-social_menu sep-after'><nav aria-label='社交菜单'>
+    <ul><li>
+        <a href='https://github.com/DrayChou' target='_blank' rel='noopener'>
+          <span class='screen-reader-text'>在新标签打开Github的账户</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+  
+</svg>
+</a>
+      </li><li>
+        <a href='mailto:blog@idc.wf' target='_blank' rel='noopener'>
+          <span class='screen-reader-text'>通过邮件联系</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+  <polyline points="22,6 12,13 2,6"/>
+  
+</svg>
+</a>
+      </li></ul>
+  </nav>
+</section><div class='copyright'>
+  <p>Copyright &copy; 1900-2019 Dray All rights reserved</p>
+</div>
+
+        </div>
+      </footer>
+
+    </div>
+  </div><script>window.__public_path__='\/assets\/js\/'</script>
+
+<script src='/assets/js/main.fae8ed32.js'></script><script src='/js/custom.js'></script>
+
+</body>
+
+</html>
+

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ie6 on Dray&#39;s Home</title>
+    <link>https://idc.wf/tags/ie6/</link>
+    <description>Recent content in ie6 on Dray&#39;s Home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 25 Apr 2011 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://idc.wf/tags/ie6/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>一个IE6的div 高度bug</title>
+      <link>https://idc.wf/docs/bug-ie6-the-div-a-height-of/</link>
+      <pubDate>Mon, 25 Apr 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://idc.wf/docs/bug-ie6-the-div-a-height-of/</guid>
+      <description>我也不想管IE6的，但是这里毕竟是中国，使用IE6的人还是很多地！
+今天做项目的时候发现了一个IE6的bug
+bug表现：
+div 的height 明明设为1px了，但是在IE6下显示出来高度是10px。
+解决方法：
+加上样式:font-size:0;
+至于为什么，我忘掉了。。。</description>
+    </item>
+    
+  </channel>
+</rss>
